@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "lib": ["systemjs", "dom"],
+    "types": ["vite/client"]
+  },
+  "include": ["vite.config.*", "vite.config.*.ts"]
+}
