@@ -11,10 +11,10 @@ import './App.css';
 // Fuse.js configuration for fuzzy searching through medication entries
 const fuseOptions = {
   keys: [
-    { path: 'entry.brand', weight: 0.35 },
-    { path: 'entry.generic', weight: 0.30 },
-    { path: 'entry.dosage', weight: 0.20 },
-    { path: 'entry.remarks', weight: 0.15 },
+    { name: 'entry.brand', weight: 0.35 },
+    { name: 'entry.generic', weight: 0.30 },
+    { name: 'entry.dosage', weight: 0.20 },
+    { name: 'entry.remarks', weight: 0.15 },
   ],
   threshold: 0.35,
   includeScore: true,
