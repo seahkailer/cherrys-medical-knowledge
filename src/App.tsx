@@ -1,6 +1,6 @@
 import React, { useState, useMemo, useCallback } from 'react';
 import Fuse from 'fuse.js';
-import { MedicalCategory, SearchResult, TABLE_COLUMNS } from './types';
+import { SearchResult, TABLE_COLUMNS } from './types';
 import { medicalCategories } from './data/medicalData';
 import { CategoryFilter } from './components/CategoryFilter';
 import { SearchBar } from './components/SearchBar';
