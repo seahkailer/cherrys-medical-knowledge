@@ -1,133 +1,91 @@
 import React, { useState, useMemo, useCallback } from 'react';
 import Fuse from 'fuse.js';
-import { SearchResult, TABLE_COLUMNS } from './types';
 import { medicalCategories } from './data/medicalData';
+import { MedicationEntry, MedicalCategory } from './types';
 import { CategoryFilter } from './components/CategoryFilter';
 import { SearchBar } from './components/SearchBar';
 import { SearchResults } from './components/SearchResults';
 import { ResultDetail } from './components/ResultDetail';
 import './App.css';
 
-// Fuse.js configuration for fuzzy searching through medication entries
-const fuseOptions = {
-  keys: [
-    { name: 'entry.brand', weight: 0.35 },
-    { name: 'entry.generic', weight: 0.30 },
-    { name: 'entry.dosage', weight: 0.20 },
-    { name: 'entry.remarks', weight: 0.15 },
-  ],
+// A flat searchable record — one per medication entry
+export type FlatEntry = {
+  id: string;
+  categoryId: string;
+  category: string;
+  subCategory: string;
+  brand: string;
+  generic: string;
+  dosage: string;
+  remarks: string;
+};
+
+// Fuse.js config — keys are top-level strings (no nesting)
+const fuseOptions: Fuse.IFuseOptions<FlatEntry> = {
+  keys: ['brand', 'generic', 'dosage', 'remarks'],
   threshold: 0.35,
   includeScore: true,
   includeMatches: true,
   minMatchCharLength: 2,
-  should_Sort: true,
+  shouldSort: true,
 };
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [searchQuery, setSearchQuery] = useState<string>('');
-  const [selectedResult, setSelectedResult] = useState<SearchResult | null>(null);
+  const [selectedEntry, setSelectedEntry] = useState<FlatEntry | null>(null);
 
-  // Flatten all medication entries into a searchable dataset
-  const allEntries: SearchResult[] = useMemo(() => {
-    const entries: SearchResult[] = [];
-
+  // Flatten all medication entries into a single searchable list
+  const allEntries: FlatEntry[] = useMemo(() => {
+    const entries: FlatEntry[] = [];
     medicalCategories.forEach((cat) => {
       cat.subCategories.forEach((sub) => {
-        sub.entries.forEach((entry, entryIdx) => {
-          const field = TABLE_COLUMNS.find((c) => c);
+        sub.entries.forEach((entry, idx) => {
           entries.push({
-            id: `${cat.id}-${sub.name}-${entryIdx}`,
+            id: `${cat.id}__${sub.name}__${idx}`,
             categoryId: cat.id,
             category: cat.name,
             subCategory: sub.name,
-            field: 'all',
-            fieldName: 'All Fields',
-            text: `${entry.brand} ${entry.generic} ${entry.dosage} ${entry.remarks}`,
-            entry,
-            score: 0,
+            brand: entry.brand,
+            generic: entry.generic,
+            dosage: entry.dosage,
+            remarks: entry.remarks,
           });
         });
       });
     });
-
     return entries;
   }, []);
 
-  // Initialize Fuse instance
-  const fuse = useMemo(() => new Fuse(allEntries, fuseOptions), [allEntries]);
+  // Entries filtered by selected category
+  const categoryEntries = useMemo(() => {
+    if (selectedCategory === 'all') return allEntries;
+    return allEntries.filter((e) => e.categoryId === selectedCategory);
+  }, [allEntries, selectedCategory]);
 
-  // Filter categories based on selected category
-  const filteredCategories = useMemo(() => {
-    if (selectedCategory === 'all') {
-      return medicalCategories;
-    }
-    return medicalCategories.filter((cat) => cat.id === selectedCategory);
-  }, [selectedCategory]);
+  // Fuse instance — recreated when category changes
+  const fuse = useMemo(
+    () => new Fuse(categoryEntries, fuseOptions),
+    [categoryEntries]
+  );
 
-  // Perform search
+  // Search results
   const searchResults = useMemo(() => {
-    if (!searchQuery.trim()) {
-      return [];
-    }
-
-    const results = fuse.search(searchQuery.trim());
-
-    return results.map((r) => {
-      const item = r.item;
-      // Determine which field matched best by finding the highest-weighted match
-      let bestField = 'all';
-      let bestFieldName = 'All Fields';
-
-      if (r.matches) {
-        let bestMatchScore = 0;
-        for (const match of r.matches) {
-          const fieldName = match.key?.split('.')[0];
-          if (fieldName && match.score && match.score > bestMatchScore) {
-            bestMatchScore = match.score;
-            bestField = match.key || 'all';
-            // Find the human-readable name
-            const col = TABLE_COLUMNS.find((c) => c.key === fieldName);
-            bestFieldName = col?.header || 'All Fields';
-          }
-        }
-      }
-
-      return {
-        ...item,
-        score: r.score || 0,
-        field: bestField,
-        fieldName: bestFieldName,
-      };
-    });
+    if (!searchQuery.trim()) return [];
+    return fuse.search(searchQuery.trim()).map((r) => ({
+      ...r.item,
+      score: r.score ?? 0,
+      matches: r.matches,
+    }));
   }, [fuse, searchQuery]);
 
-  // Handle search input change
-  const handleSearch = useCallback((query: string) => {
-    setSearchQuery(query);
-    if (query.trim()) {
-      setSelectedResult(null);
-    }
-  }, []);
+  // Categories for the sidebar
+  const filteredCategories: MedicalCategory[] = useMemo(() => {
+    if (selectedCategory === 'all') return medicalCategories;
+    return medicalCategories.filter((c) => c.id === selectedCategory);
+  }, [selectedCategory]);
 
-  // Handle category selection
-  const handleCategoryChange = useCallback((categoryId: string) => {
-    setSelectedCategory(categoryId);
-    setSearchQuery('');
-    setSelectedResult(null);
-  }, []);
-
-  // Handle result click
-  const handleResultClick = useCallback((result: SearchResult) => {
-    setSelectedResult(result);
-  }, []);
-
-  // Handle closing detail view
-  const handleCloseDetail = useCallback(() => {
-    setSelectedResult(null);
-  }, []);
-
-  // Get counts for the sidebar
+  // Entry counts per category
   const categoryCounts = useMemo(() => {
     const counts: Record<string, number> = {};
     medicalCategories.forEach((cat) => {
@@ -140,24 +98,34 @@ function App() {
   }, []);
 
   const totalEntries = useMemo(
-    () => medicalCategories.reduce((sum, cat) => sum + categoryCounts[cat.id], 0),
+    () => Object.values(categoryCounts).reduce((a, b) => a + b, 0),
     [categoryCounts]
   );
+
+  const handleSearch = useCallback((query: string) => {
+    setSearchQuery(query);
+    setSelectedEntry(null);
+  }, []);
+
+  const handleCategoryChange = useCallback((categoryId: string) => {
+    setSelectedCategory(categoryId);
+    setSearchQuery('');
+    setSelectedEntry(null);
+  }, []);
 
   return (
     <div className="app-container">
       <header className="app-header">
-        <h1 className="app-title">Medical Knowledge Search</h1>
+        <h1 className="app-title">🏥 Medical Knowledge Search</h1>
         <p className="app-subtitle">
           Search medications by sickness type, condition, or drug name
         </p>
         <p className="doc-meta">
-          Source: LOCUM_GUIDE.docx • {medicalCategories.length} categories • {totalEntries} medication entries
+          Source: LOCUM_GUIDE.docx &nbsp;•&nbsp; {medicalCategories.length} categories &nbsp;•&nbsp; {totalEntries} entries
         </p>
       </header>
 
       <main className="app-main">
-        {/* Sidebar: Category Filter */}
         <aside className="sidebar">
           <CategoryFilter
             categories={filteredCategories}
@@ -168,7 +136,6 @@ function App() {
           />
         </aside>
 
-        {/* Main Content: Search + Results */}
         <div className="content">
           <SearchBar
             value={searchQuery}
@@ -178,13 +145,16 @@ function App() {
           />
 
           <div className="results-container">
-            {selectedResult ? (
-              <ResultDetail result={selectedResult} onClose={handleCloseDetail} />
+            {selectedEntry ? (
+              <ResultDetail
+                entry={selectedEntry}
+                onClose={() => setSelectedEntry(null)}
+              />
             ) : (
               <SearchResults
                 results={searchResults}
                 searchQuery={searchQuery}
-                onResultClick={handleResultClick}
+                onResultClick={setSelectedEntry}
               />
             )}
           </div>
@@ -192,7 +162,7 @@ function App() {
       </main>
 
       <footer className="app-footer">
-        <p>Medical Knowledge Search — Static front-end hosted on GitHub Pages</p>
+        <p>Medical Knowledge Search — Hosted on GitHub Pages</p>
       </footer>
     </div>
   );

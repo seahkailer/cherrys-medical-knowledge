@@ -1,18 +1,17 @@
 import React from 'react';
-import { SearchResult, TABLE_COLUMNS } from '../types';
+import { FlatEntry } from '../App';
 
 interface SearchResultsProps {
-  results: SearchResult[];
+  results: (FlatEntry & { score: number; matches?: readonly Fuse.FuseResultMatch[] })[];
   searchQuery: string;
-  onResultClick: (result: SearchResult) => void;
+  onResultClick: (entry: FlatEntry) => void;
 }
 
 /**
  * Displays search results as a list of medication entries.
- * Highlights matched text in search results.
- * Shows an empty state when no results are found.
+ * Highlights matched text. Shows empty state when no results found.
  */
-export const SearchResults: React.FC<SearchResultsProps> = ({
+const SearchResults: React.FC<SearchResultsProps> = ({
   results,
   searchQuery,
   onResultClick,
@@ -20,8 +19,11 @@ export const SearchResults: React.FC<SearchResultsProps> = ({
   if (!searchQuery.trim()) {
     return (
       <div className="empty-state">
-        <h3>Enter a search term</h3>
-        <p>Search medications by drug name, condition, dosage, or category.</p>
+        <h3>🔍 Search your medical knowledge</h3>
+        <p>Type a drug name, condition, or category to find medication information.</p>
+        <p style={{ marginTop: '0.5rem', fontSize: '0.85rem', color: '#94a3b8' }}>
+          Examples: "atenolol", "diabetes", "asthma", "paediatric"
+        </p>
       </div>
     );
   }
@@ -30,7 +32,7 @@ export const SearchResults: React.FC<SearchResultsProps> = ({
     return (
       <div className="empty-state">
         <h3>No results found</h3>
-        <p>Try searching with different keywords or select a different category.</p>
+        <p>Try different keywords or select a different category from the sidebar.</p>
       </div>
     );
   }
@@ -46,30 +48,30 @@ export const SearchResults: React.FC<SearchResultsProps> = ({
           <div className="result-header">
             <div>
               <div className="result-brand">
-                {highlightText(result.entry.brand, searchQuery)}
+                {highlight(result.brand, searchQuery)}
               </div>
               <div className="result-generic">
-                {highlightText(result.entry.generic, searchQuery)}
+                {highlight(result.generic, searchQuery)}
               </div>
             </div>
-            <div style={{ textAlign: 'right' }}>
+            <div style={{ textAlign: 'right', flexShrink: 0 }}>
               <span className="category-badge">{result.category}</span>
               <div className="subcategory-badge">{result.subCategory}</div>
             </div>
           </div>
 
           <div className="result-dosage">
-            <strong>Dosage:</strong> {highlightText(result.entry.dosage, searchQuery)}
+            <strong>Dosage:</strong> {highlight(result.dosage, searchQuery)}
           </div>
 
-          {result.entry.remarks && (
+          {result.remarks && (
             <div className="result-remarks">
-              <strong>Remarks:</strong> {highlightText(result.entry.remarks, searchQuery)}
+              <strong>Remarks:</strong> {highlight(result.remarks, searchQuery)}
             </div>
           )}
 
           <div className="score-badge">
-            Relevance: {(result.score * 100).toFixed(0)}%
+            Relevance: {Math.round((1 - result.score) * 100)}%
           </div>
         </li>
       ))}
@@ -77,28 +79,27 @@ export const SearchResults: React.FC<SearchResultsProps> = ({
   );
 };
 
-/**
- * Highlights search terms in text by wrapping matching substrings in <mark> tags.
- */
-function highlightText(text: string, query: string): JSX.Element {
+/** Highlights matching text with a yellow mark */
+function highlight(text: string, query: string): JSX.Element {
   if (!query.trim()) return <>{text}</>;
-
-  const regex = new RegExp(`(${query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
-  const parts = text.split(regex);
-
-  return (
-    <>
-      {parts
-        .filter((part) => part.length > 0)
-        .map((part, i) =>
+  try {
+    const escaped = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const regex = new RegExp(`(${escaped})`, 'gi');
+    const parts = text.split(regex);
+    return (
+      <>
+        {parts.map((part, i) =>
           regex.test(part) ? (
-            <mark key={i} className="highlight">
-              {part}
-            </mark>
+            <mark key={i} className="highlight">{part}</mark>
           ) : (
             <span key={i}>{part}</span>
           )
         )}
-    </>
-  );
+      </>
+    );
+  } catch {
+    return <>{text}</>;
+  }
 }
+
+export { SearchResults };

@@ -1,21 +1,19 @@
 import React from 'react';
-import { SearchResult } from '../types';
+import { FlatEntry } from '../App';
 
 interface ResultDetailProps {
-  result: SearchResult;
+  entry: FlatEntry;
   onClose: () => void;
 }
 
 /**
  * Detailed view of a single medication entry.
- * Shows all fields (Brand Name, Generic, Dosage, Remarks) in a structured layout.
+ * Shows all fields in a structured layout.
  */
-export const ResultDetail: React.FC<ResultDetailProps> = ({ result, onClose }) => {
-  const { entry, category, subCategory } = result;
-
+const ResultDetail: React.FC<ResultDetailProps> = ({ entry, onClose }) => {
   return (
-    <div className="detail-overlay">
-      <div className="detail-modal">
+    <div className="detail-overlay" onClick={onClose}>
+      <div className="detail-modal" onClick={(e) => e.stopPropagation()}>
         <button className="close-button" onClick={onClose} aria-label="Close">
           ×
         </button>
@@ -23,9 +21,9 @@ export const ResultDetail: React.FC<ResultDetailProps> = ({ result, onClose }) =
         <div className="detail-header">
           <h2>{entry.brand}</h2>
           <div className="detail-meta">
-            <span>Category: {category}</span>
+            <span>📂 {entry.category}</span>
             <span>•</span>
-            <span>Sub-category: {subCategory}</span>
+            <span>{entry.subCategory}</span>
           </div>
         </div>
 
@@ -44,15 +42,10 @@ export const ResultDetail: React.FC<ResultDetailProps> = ({ result, onClose }) =
             <div className="detail-section-label">Remarks & Clinical Notes</div>
             <div className="detail-section-value">{entry.remarks}</div>
           </div>
-
-          <div className="detail-section">
-            <div className="detail-section-label">Table Column Reference</div>
-            <div className="detail-section-value" style={{ fontSize: '0.85rem', color: '#64748b' }}>
-              Brand Name | Generic Constituents (Pregnancy Safety) | Dosage | Remarks
-            </div>
-          </div>
         </div>
       </div>
     </div>
   );
 };
+
+export { ResultDetail };
