@@ -563,3 +563,106 @@
   min-width: 150px;
   color: #475569;
 }
+
+/* ===== Paediatric Drug Tables ===== */
+.paed-section {
+  width: 100%;
+}
+
+.paed-note {
+  background: #fffbeb;
+  border: 1px solid #fbbf24;
+  border-radius: 6px;
+  padding: 0.6rem 1rem;
+  font-size: 0.8rem;
+  margin-bottom: 1.5rem;
+  color: #78350f;
+}
+
+.paed-dash-inline {
+  font-weight: bold;
+  color: #9ca3af;
+}
+
+.paed-table-section {
+  margin-bottom: 2.5rem;
+}
+
+.paed-table-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 2px solid #2563eb;
+}
+
+.paed-table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.paed-table {
+  border-collapse: collapse;
+  font-size: 0.72rem;
+  width: 100%;
+  min-width: 600px;
+  background: #fff;
+}
+
+.paed-th {
+  border: 1px solid #000;
+  padding: 4px 5px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1.25;
+  white-space: pre-line;
+}
+
+.paed-th-cat {
+  background-color: #dbeafe;
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+
+.paed-th-drug {
+  background-color: #f1f5f9;
+  font-weight: 600;
+  font-size: 0.68rem;
+}
+
+.paed-th-age,
+.paed-th-wt {
+  background-color: #e2e8f0;
+  font-weight: 700;
+}
+
+.paed-td {
+  border: 1px solid #999;
+  padding: 3px 5px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 0.72rem;
+}
+
+.paed-td-age {
+  font-weight: 600;
+  background-color: #f8fafc;
+}
+
+.paed-td-wt {
+  color: #475569;
+  background-color: #f8fafc;
+}
+
+.paed-dash {
+  color: #9ca3af;
+}
+
+.paed-row:nth-child(even) .paed-td-dose:not(.paed-dash) {
+  background-color: #f0fdf4;
+}
+
+.paed-row:hover td {
+  background-color: #eff6ff !important;
+}

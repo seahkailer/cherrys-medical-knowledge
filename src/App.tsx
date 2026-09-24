@@ -7,6 +7,7 @@ import { SearchBar } from './components/SearchBar';
 import { SearchResults } from './components/SearchResults';
 import { ResultDetail } from './components/ResultDetail';
 import { MedicationTable } from './components/MedicationTable';
+import { PaediatricDrugTable } from './components/PaediatricDrugTable';
 import './App.css';
 
 // A flat searchable record — one per medication entry
@@ -173,6 +174,9 @@ function App() {
                 searchQuery={searchQuery}
                 onResultClick={setSelectedEntry}
               />
+            ) : selectedCategory === 'paediatric-drugs' && !searchQuery.trim() ? (
+              /* Show structured paediatric dosage grids */
+              <PaediatricDrugTable />
             ) : selectedSubCategory ? (
               /* Show full medication table when a sub-category is selected */
               <MedicationTable
