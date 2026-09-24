@@ -1,4 +1,4 @@
-# Medical Knowledge Search
+# Cherry's Medical Knowledge
 
 A React + TypeScript front-end for searching a medical document repository (locum guide), organized by sickness type/category. Fully static — deploy to GitHub Pages with client-side fuzzy search powered by Fuse.js.
 

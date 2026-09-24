@@ -1,8 +1,8 @@
 {
-  "name": "medical-knowledge-search",
+  "name": "cherrys-medical-knowledge",
   "version": "0.1.0",
   "private": true,
-  "description": "Front-end for searching medical knowledge by sickness type",
+  "description": "Cherry's Medical Knowledge — search medications by sickness type, condition, or drug name",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -12,11 +12,11 @@
     "test": "vitest"
   },
   "keywords": ["medical", "healthcare", "search", "react"],
-  "author": "",
+  "author": "Cherry",
   "license": "MIT",
-  "homepage": "https://yourusername.github.io/medical-knowledge-search",
+  "homepage": "https://seahkailer.github.io/cherrys-medical-knowledge",
   "bugs": {
-    "url": "https://github.com/yourusername/medical-knowledge-search/issues"
+    "url": "https://github.com/seahkailer/cherrys-medical-knowledge/issues"
   },
   "dependencies": {
     "fuse.js": "^7.0.0",

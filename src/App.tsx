@@ -132,12 +132,9 @@ function App() {
   return (
     <div className="app-container">
       <header className="app-header">
-        <h1 className="app-title">🏥 Medical Knowledge Search</h1>
+        <h1 className="app-title">🍒 Cherry's Medical Knowledge</h1>
         <p className="app-subtitle">
           Search medications by sickness type, condition, or drug name
-        </p>
-        <p className="doc-meta">
-          Source: LOCUM_GUIDE.docx &nbsp;•&nbsp; {medicalCategories.length} categories &nbsp;•&nbsp; {totalEntries} entries
         </p>
       </header>
 
@@ -199,7 +196,7 @@ function App() {
       </main>
 
       <footer className="app-footer">
-        <p>Medical Knowledge Search — Hosted on GitHub Pages</p>
+        <p>Cherry's Medical Knowledge — Hosted on GitHub Pages</p>
       </footer>
     </div>
   );
