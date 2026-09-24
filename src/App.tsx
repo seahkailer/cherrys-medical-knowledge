@@ -1,11 +1,12 @@
 import React, { useState, useMemo, useCallback } from 'react';
 import Fuse from 'fuse.js';
 import { medicalCategories } from './data/medicalData';
-import { MedicationEntry, MedicalCategory } from './types';
+import { MedicalCategory } from './types';
 import { CategoryFilter } from './components/CategoryFilter';
 import { SearchBar } from './components/SearchBar';
 import { SearchResults } from './components/SearchResults';
 import { ResultDetail } from './components/ResultDetail';
+import { MedicationTable } from './components/MedicationTable';
 import './App.css';
 
 // A flat searchable record — one per medication entry
@@ -32,6 +33,7 @@ const fuseOptions: Fuse.IFuseOptions<FlatEntry> = {
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
+  const [selectedSubCategory, setSelectedSubCategory] = useState<string>('');
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [selectedEntry, setSelectedEntry] = useState<FlatEntry | null>(null);
 
@@ -57,11 +59,16 @@ function App() {
     return entries;
   }, []);
 
-  // Entries filtered by selected category
+  // Entries filtered by selected category AND sub-category
   const categoryEntries = useMemo(() => {
     if (selectedCategory === 'all') return allEntries;
+    if (selectedSubCategory) {
+      return allEntries.filter(
+        (e) => e.categoryId === selectedCategory && e.subCategory === selectedSubCategory
+      );
+    }
     return allEntries.filter((e) => e.categoryId === selectedCategory);
-  }, [allEntries, selectedCategory]);
+  }, [allEntries, selectedCategory, selectedSubCategory]);
 
   // Fuse instance — recreated when category changes
   const fuse = useMemo(
@@ -109,6 +116,14 @@ function App() {
 
   const handleCategoryChange = useCallback((categoryId: string) => {
     setSelectedCategory(categoryId);
+    setSelectedSubCategory('');
+    setSearchQuery('');
+    setSelectedEntry(null);
+  }, []);
+
+  const handleSubCategoryChange = useCallback((categoryId: string, subCategory: string) => {
+    setSelectedCategory(categoryId);
+    setSelectedSubCategory(subCategory);
     setSearchQuery('');
     setSelectedEntry(null);
   }, []);
@@ -130,7 +145,9 @@ function App() {
           <CategoryFilter
             categories={filteredCategories}
             selectedCategory={selectedCategory}
+            selectedSubCategory={selectedSubCategory}
             onCategoryChange={handleCategoryChange}
+            onSubCategoryChange={handleSubCategoryChange}
             categoryCounts={categoryCounts}
             totalEntries={totalEntries}
           />
@@ -150,10 +167,26 @@ function App() {
                 entry={selectedEntry}
                 onClose={() => setSelectedEntry(null)}
               />
-            ) : (
+            ) : searchQuery.trim() ? (
               <SearchResults
                 results={searchResults}
                 searchQuery={searchQuery}
+                onResultClick={setSelectedEntry}
+              />
+            ) : selectedSubCategory ? (
+              /* Show full medication table when a sub-category is selected */
+              <MedicationTable
+                subCategoryName={selectedSubCategory}
+                categoryName={
+                  medicalCategories.find((c) => c.id === selectedCategory)?.name ?? ''
+                }
+                entries={categoryEntries}
+                onEntryClick={setSelectedEntry}
+              />
+            ) : (
+              <SearchResults
+                results={[]}
+                searchQuery=""
                 onResultClick={setSelectedEntry}
               />
             )}
