@@ -666,3 +666,247 @@
 .paed-row:hover td {
   background-color: #eff6ff !important;
 }
+
+/* ===== CPG Sidebar Section ===== */
+.cpg-sidebar-section {
+  margin-top: 1.5rem;
+  border-top: 2px solid #e2e8f0;
+  padding-top: 1rem;
+}
+
+.cpg-sidebar-section h2 {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #7c3aed;
+  margin-bottom: 0.5rem;
+}
+
+/* ===== CPG Detail View ===== */
+.cpg-detail {
+  padding: 0;
+}
+
+.cpg-header {
+  background: linear-gradient(135deg, #4c1d95, #7c3aed);
+  color: white;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.cpg-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.cpg-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  font-size: 0.8rem;
+  opacity: 0.9;
+  margin-bottom: 0.5rem;
+}
+
+.cpg-meta span {
+  background: rgba(255,255,255,0.15);
+  border-radius: 0.375rem;
+  padding: 0.2rem 0.5rem;
+}
+
+.cpg-badge {
+  display: inline-block;
+  background: #fbbf24;
+  color: #78350f;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.15rem 0.5rem;
+  border-radius: 9999px;
+  letter-spacing: 0.05em;
+}
+
+.cpg-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.cpg-section {
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.cpg-section-heading {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background: #f1f5f9;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1e293b;
+  transition: background 0.15s;
+}
+
+.cpg-section-heading:hover,
+.cpg-section-heading.open {
+  background: #e0e7ff;
+  color: #4338ca;
+}
+
+.cpg-chevron {
+  font-size: 0.7rem;
+  flex-shrink: 0;
+  margin-left: 0.5rem;
+}
+
+.cpg-section-body {
+  padding: 1rem;
+  background: white;
+  border-top: 1px solid #e2e8f0;
+}
+
+.cpg-text {
+  font-size: 0.875rem;
+  line-height: 1.7;
+  color: #334155;
+  margin-bottom: 0.75rem;
+  white-space: pre-wrap;
+}
+
+.cpg-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.75rem 0;
+}
+
+.cpg-list-item {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: #334155;
+  padding: 0.2rem 0 0.2rem 1.25rem;
+  position: relative;
+}
+
+.cpg-list-item::before {
+  content: '•';
+  position: absolute;
+  left: 0.25rem;
+  color: #7c3aed;
+  font-weight: bold;
+}
+
+.cpg-list-item.depth-1 {
+  padding-left: 2.25rem;
+}
+
+.cpg-list-item.depth-1::before {
+  left: 1.25rem;
+  content: '◦';
+  color: #94a3b8;
+}
+
+.cpg-list-item.depth-2 {
+  padding-left: 3.25rem;
+}
+
+.cpg-list-item.depth-2::before {
+  left: 2.25rem;
+  content: '–';
+  color: #cbd5e1;
+}
+
+.cpg-list-item > .cpg-list {
+  margin-top: 0.25rem;
+}
+
+/* CPG Tables */
+.cpg-table-wrap {
+  overflow-x: auto;
+  margin-bottom: 0.75rem;
+  border-radius: 0.375rem;
+  border: 1px solid #e2e8f0;
+}
+
+.cpg-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+}
+
+.cpg-table th {
+  background: #ede9fe;
+  color: #4c1d95;
+  font-weight: 700;
+  text-align: left;
+  padding: 0.5rem 0.75rem;
+  border-bottom: 2px solid #c4b5fd;
+  white-space: nowrap;
+}
+
+.cpg-table td {
+  padding: 0.45rem 0.75rem;
+  border-bottom: 1px solid #f1f5f9;
+  vertical-align: top;
+  line-height: 1.5;
+  color: #334155;
+}
+
+.cpg-table tr:last-child td {
+  border-bottom: none;
+}
+
+.cpg-table tr:nth-child(even) td {
+  background: #faf9ff;
+}
+
+/* CPG Search Results */
+.cpg-search-hint {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-bottom: 0.75rem;
+}
+
+.cpg-search-result {
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  padding: 0.875rem 1rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.cpg-search-result:hover {
+  background: #f5f3ff;
+  border-color: #c4b5fd;
+}
+
+.cpg-search-result-condition {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #7c3aed;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.cpg-search-result-heading {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 0.25rem;
+}
+
+.cpg-search-result-snippet {
+  font-size: 0.8rem;
+  color: #64748b;
+  line-height: 1.5;
+}

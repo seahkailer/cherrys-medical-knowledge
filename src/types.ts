@@ -1,84 +1,119 @@
 /**
  * Data types for the Medical Knowledge Search application.
  *
- * The source document (LOCUM_GUIDE.docx) is organized into 15 main categories
- * based on sickness type / body system. Within each category are sub-categories
- * (e.g., "Anti-hypertensives" under "Cardiovascular System") and tables with
- * medication information.
- *
- * Table columns: Brand Name, Generic Constituents (Pregnancy Safety), Dosage, Remarks
+ * Two document types are supported:
+ * 1. LOCUM_GUIDE.docx — drug tables with Brand / Generic / Dosage / Remarks columns
+ * 2. NUP CPG PDFs — full clinical practice guidelines with free-form sections
  */
 
-/** The four table headers used in the source document */
+// ---------------------------------------------------------------------------
+// Locum Guide — drug table types
+// ---------------------------------------------------------------------------
+
+/** The four table headers used in the locum guide */
 export type TableColumn = {
-  /** Column display name, e.g. "Brand Name" */
   header: string;
-  /** Column key, e.g. "brand", "generic", "dosage", "remarks" */
   key: string;
 };
 
-/** A single medication row from a table */
+/** A single medication row from a locum guide table */
 export type MedicationEntry = {
-  /** Brand name(s), e.g. "Liziban, Coversyl" */
   brand: string;
-  /** Generic name + pregnancy safety, e.g. "Lisinopril (B)" */
   generic: string;
-  /** Dosage information, e.g. "10-40mg daily" */
   dosage: string;
-  /** Additional remarks, e.g. "Monitor creatinine, K+" */
   remarks: string;
 };
 
-/**
- * A sub-category within a main category.
- *
- * In the document, these appear as bold section headers spanning all table columns,
- * e.g. "Beta-Blockers", "ACE Inhibitors", "Diuretics" under "Cardiovascular System".
- */
+/** A sub-category within a locum guide category (e.g. "Beta-Blockers") */
 export type SubCategory = {
-  /** Sub-category name, e.g. "Beta-Blockers" */
   name: string;
-  /** All medication entries belonging to this sub-category */
   entries: MedicationEntry[];
 };
 
-/**
- * A main sickness category based on the document's table of contents.
- */
+/** A main locum guide category (e.g. "Cardiovascular System") */
 export type MedicalCategory = {
-  /** Unique identifier, e.g. "cardiovascular" */
   id: string;
-  /** Display name, e.g. "Cardiovascular System" */
   name: string;
-  /** Page number in the original document */
   page: number;
-  /** Sub-categories within this system */
   subCategories: SubCategory[];
 };
 
+// ---------------------------------------------------------------------------
+// NUP CPG — clinical practice guideline types
+// ---------------------------------------------------------------------------
+
+/**
+ * A single item in a CPG section list.
+ * Can be plain text or a nested sub-list.
+ */
+export type CpgListItem = {
+  text: string;
+  /** Optional nested items under this bullet */
+  children?: CpgListItem[];
+};
+
+/**
+ * A table row inside a CPG section (arbitrary key-value columns).
+ */
+export type CpgTableRow = Record<string, string>;
+
+/**
+ * A block of content inside a CPG section.
+ * type="text"  — a plain paragraph
+ * type="list"  — a bullet/numbered list
+ * type="table" — a structured table
+ */
+export type CpgBlock =
+  | { type: 'text'; content: string }
+  | { type: 'list'; items: CpgListItem[] }
+  | { type: 'table'; headers: string[]; rows: CpgTableRow[] };
+
+/**
+ * A named section within a CPG document (e.g. "Management", "When to Refer").
+ * Each section has an ordered array of content blocks.
+ */
+export type CpgSection = {
+  /** Section heading as it appears in the document */
+  heading: string;
+  blocks: CpgBlock[];
+};
+
+/**
+ * A complete NUP CPG document for one condition.
+ * The sidebar shows this as a category; subsection name is always "NUP CPG".
+ */
+export type CpgDocument = {
+  id: string;
+  /** Full condition name, e.g. "Allergic Conjunctivitis" */
+  condition: string;
+  /** Source filename */
+  source: string;
+  /** Review date from document */
+  reviewDate: string;
+  /** Specialist advisors credited in the document */
+  advisors: string;
+  /** Ordered sections from the document */
+  sections: CpgSection[];
+};
+
+// ---------------------------------------------------------------------------
+// Shared search types
+// ---------------------------------------------------------------------------
+
 /** A search result entry with relevance metadata */
 export type SearchResult = {
-  /** Unique result ID */
   id: string;
-  /** Category this result belongs to */
   categoryId: string;
-  /** Category display name */
   category: string;
-  /** Sub-category name (empty if at category level) */
   subCategory: string;
-  /** The column that matched, e.g. "brand", "generic", "dosage", "remarks" */
   field: string;
-  /** Human-readable field label */
   fieldName: string;
-  /** The matched text snippet */
   text: string;
-  /** Full medication entry for display */
   entry: MedicationEntry;
-  /** Relevance score (0-1) from Fuse.js */
   score: number;
 };
 
-/** The table column definitions used throughout the document */
+/** The table column definitions used throughout the locum guide */
 export const TABLE_COLUMNS: TableColumn[] = [
   { header: 'Brand Name', key: 'brand' },
   { header: 'Generic Constituents\n(Pregnancy Safety)', key: 'generic' },
