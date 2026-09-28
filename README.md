@@ -1,6 +1,6 @@
 # Cherry's Medical Knowledge
 
-A React + TypeScript front-end for searching a medical document repository (locum guide), organized by sickness type/category. Fully static — deploy to GitHub Pages with client-side fuzzy search powered by Fuse.js.
+A React + TypeScript front-end for searching a medical document repository (locum guide and NUP CPGs), organized by sickness type/category. Fully static — deploy to GitHub Pages with client-side fuzzy search powered by Fuse.js.
 
 ## 📁 Project Structure
 
@@ -21,15 +21,22 @@ medical-knowledge-search/
 │   └── index.css               # Global styles + CSS reset
 ├── .github/workflows/
 │   └── deploy.yml              # GitHub Actions CI/CD for Pages
+├── documents/                  # Source documents repository
+│   ├── 01 LOCUM_GUIDE.docx
+│   ├── 02 NUP CPG - Allergic Conjunctivitis.pdf
+│   ├── 03 NUP CPG - Allergic Rhinitis.pdf
+│   ├── 04 NUP CPG - Anaemia.pdf
+│   ├── 05 NUP CPG - Anxiety Disorder.pdf
+│   └── 06 NUP CPG - Approach and Management of Joint Pain in Primary Care.pdf
 ├── package.json
 ├── tsconfig.json
 ├── vite.config.ts
-└── LOCUM_GUIDE.docx            # Source document
+└── LOCUM_GUIDE.docx            # Source document (also in documents/)
 ```
 
 ## ✨ Features
 
-- **15 sickness categories** from the locum guide:
+- **20 categories** — 15 from the locum guide + 5 NUP CPG guidelines:
   1. Cardiovascular System
   2. Respiratory System
   3. Gastro-intestinal system
@@ -45,6 +52,11 @@ medical-knowledge-search/
   13. Paediatric Drugs
   14. Vaccinations
   15. Acne Treatment
+  16. CPG: Allergic Conjunctivitis
+  17. CPG: Allergic Rhinitis
+  18. CPG: Anaemia
+  19. CPG: Anxiety Disorder
+  20. CPG: Joint Pain (Musculoskeletal)
 
 - **Client-side fuzzy search** (Fuse.js) — no backend required
 - **Category filtering** — narrow results by sickness type
@@ -108,7 +120,17 @@ chmod +x setup-github.sh
 
 ## 📊 Data Population
 
-The search data is in `src/data/medicalData.ts`. It contains the structured representation of `LOCUM_GUIDE.docx`.
+The search data is in `src/data/medicalData.ts`. It contains the structured representation of `LOCUM_GUIDE.docx` plus content extracted from the NUP CPG PDF documents in the `documents/` folder.
+
+### Source Documents
+| # | Document | Type | Categories |
+|---|----------|------|------------|
+| 01 | LOCUM_GUIDE.docx | Locum Drug Guide | Categories 1–15 |
+| 02 | NUP CPG - Allergic Conjunctivitis.pdf | Clinical Practice Guideline | CPG: Allergic Conjunctivitis |
+| 03 | NUP CPG - Allergic Rhinitis.pdf | Clinical Practice Guideline | CPG: Allergic Rhinitis |
+| 04 | NUP CPG - Anaemia.pdf | Clinical Practice Guideline | CPG: Anaemia |
+| 05 | NUP CPG - Anxiety Disorder.pdf | Clinical Practice Guideline | CPG: Anxiety Disorder |
+| 06 | NUP CPG - Approach and Management of Joint Pain in Primary Care.pdf | Clinical Practice Guideline | CPG: Joint Pain (Musculoskeletal) |
 
 To extract full table content from the source `.docx`:
 1. Use `office_read` tool to read each table (`/body/tbl[1]`, `/body/tbl[2]`, etc.)

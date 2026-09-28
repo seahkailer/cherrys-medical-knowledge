@@ -1,6 +1,6 @@
 /**
- * Medical knowledge data — extracted from LOCUM_GUIDE.docx
- * Real data from all 39 document tables.
+ * Medical knowledge data — extracted from LOCUM_GUIDE.docx and NUP CPG documents.
+ * Real data from all 39 document tables plus 5 NUP CPG guidelines.
  */
 import { MedicalCategory } from '../types';
 
@@ -1985,6 +1985,459 @@ export const medicalCategories: MedicalCategory[] = [
             "generic": "Oral Isotretinoin (Roaccutane)",
             "dosage": "- Aim is 1mg/kg/day for 4 months; - But start off with 0.5mg/kg/day; - Each tab is 10mg; - S/E: teratogenicity, headache, raised liver enzymes, hyperlipidaemia, dry skin, arthralgia; - Monitoring:; Pre-treatment LFT, fasting lipids, UPT; LFT and fasting lipids at least once during treatment",
             "remarks": "Acne Treatment Guidelines"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cpg-allergic-conjunctivitis",
+    "name": "CPG: Allergic Conjunctivitis",
+    "page": 0,
+    "subCategories": [
+      {
+        "name": "Topical Antihistamines / Mast Cell Stabilisers Eyedrops",
+        "entries": [
+          {
+            "brand": "Sodium Cromoglycate 2% Eye Drop",
+            "generic": "Sodium Cromoglycate 2%",
+            "dosage": "1 drop QDS",
+            "remarks": "Mast cell stabiliser. Non-formulary (NS). Cost: < $10 per unit. Jan 2024 NUP CPG. Specialist Advisors: Drs Yuen Yew Sen / Lai Yien / Chris Lim (NUH Ophthalmology). Next review: Jan 2029."
+          },
+          {
+            "brand": "Patanol",
+            "generic": "Olopatadine 0.1% Eye Drop 5mL",
+            "dosage": "1 drop BD",
+            "remarks": "Antihistamine / mast cell stabiliser. Non-formulary (NS). Cost: $$. Rule out severe allergic reaction (SOB, wheezing) before prescribing. Avoid topical decongestants (e.g. Naphcon-A) — no action on allergic mediators, risk of rebound hyperaemia."
+          }
+        ]
+      },
+      {
+        "name": "Lubricating Eyedrops",
+        "entries": [
+          {
+            "brand": "Tears Naturale Free",
+            "generic": "Artificial Tears (preservative-free) 0.8mL 32S",
+            "dosage": "Every 3 hourly PRN",
+            "remarks": "Formulary item (NS). Cost: $$. Preferred over Refresh Plus which is non-formulary."
+          },
+          {
+            "brand": "Refresh Plus",
+            "generic": "Artificial Tears (preservative-free) 0.4mL x 30",
+            "dosage": "PRN",
+            "remarks": "Non-formulary, available at retail. Cost: $$."
+          }
+        ]
+      },
+      {
+        "name": "Intranasal Corticosteroids (for concurrent Allergic Rhinitis)",
+        "entries": [
+          {
+            "brand": "Nasonex",
+            "generic": "Mometasone Furoate 0.05% Nasal Spray 140D",
+            "dosage": "2 puffs OD (per nostril)",
+            "remarks": "Formulary S2. Cost: $. Consider when allergic rhinitis co-exists."
+          },
+          {
+            "brand": "Avamys",
+            "generic": "Fluticasone Furoate Nasal Spray 120D",
+            "dosage": "2 puffs OD (per nostril)",
+            "remarks": "Non-formulary (NS). Cost: $$$. Consider when allergic rhinitis co-exists."
+          }
+        ]
+      },
+      {
+        "name": "Systemic Antihistamines (if indicated)",
+        "entries": [
+          {
+            "brand": "Loratadine",
+            "generic": "Loratadine 10mg Tab",
+            "dosage": "10mg OD",
+            "remarks": "2nd generation antihistamine. Formulary S2. Cost: < $10/month. Preferred over 1st generation (avoid Chlorpheniramine, Diphenhydramine due to sedative and anticholinergic effects)."
+          },
+          {
+            "brand": "Cetirizine",
+            "generic": "Cetirizine 10mg Tab",
+            "dosage": "10mg OD",
+            "remarks": "2nd generation antihistamine (alternative). Formulary S2. Cost: < $5/month."
+          }
+        ]
+      },
+      {
+        "name": "Patient Advice",
+        "entries": [
+          {
+            "brand": "Allergen Avoidance",
+            "generic": "Non-pharmacological measures",
+            "dosage": "N/A",
+            "remarks": "Allergen-impermeable mattress and pillow covers; wash bed sheets/linen weekly with hot water; avoid pets; cold compresses. Document: ordered medications, advised to return if worsening itch/red eye/persistent blurring, advised against contact lens use."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cpg-allergic-rhinitis",
+    "name": "CPG: Allergic Rhinitis",
+    "page": 0,
+    "subCategories": [
+      {
+        "name": "Overview & Classification",
+        "entries": [
+          {
+            "brand": "Intermittent Mild",
+            "generic": "Allergic Rhinitis Classification",
+            "dosage": "Step-up approach",
+            "remarks": "Intermittent: < 4 days/week OR < 4 consecutive weeks/year. Persistent: > 4 days/week AND > 4 consecutive weeks/year. Mild: not interfering with quality of life. Moderate-Severe: interferes with QoL (sleep, daily activities, school/work)."
+          }
+        ]
+      },
+      {
+        "name": "Antihistamines",
+        "entries": [
+          {
+            "brand": "Loratadine / Cetirizine",
+            "generic": "2nd generation oral H1-antihistamines",
+            "dosage": "Loratadine 10mg OD; Cetirizine 10mg OD",
+            "remarks": "Recommended for adults and children. 1st generation (e.g. chlorpheniramine) has sedating effects — use with care. Intranasal antihistamines (azelastine, olopatadine) not available in NUP."
+          }
+        ]
+      },
+      {
+        "name": "Intranasal Corticosteroids",
+        "entries": [
+          {
+            "brand": "Avamys",
+            "generic": "Fluticasone Furoate 27.5mcg/spray",
+            "dosage": "Adults: 2 sprays per nostril OD; Children 2-11 yrs: 1 spray per nostril OD",
+            "remarks": "First-line for moderate-severe intermittent or any persistent symptoms. Maximal effect from 2 weeks of daily use. Once controlled, reduce to lowest effective dose. IM/oral long-term corticosteroids NOT recommended."
+          },
+          {
+            "brand": "Nasonex",
+            "generic": "Mometasone 50mcg/spray",
+            "dosage": "≥12 years: 2 sprays per nostril OD",
+            "remarks": "First-line intranasal corticosteroid. Pharmacy can counsel on correct technique. Aqueous and aerosol sprays have different techniques."
+          }
+        ]
+      },
+      {
+        "name": "Decongestants",
+        "entries": [
+          {
+            "brand": "Oxymetazoline / Pseudoephedrine",
+            "generic": "Intranasal or oral decongestants",
+            "dosage": "Short-term only, max 5 days",
+            "remarks": "For nasal obstruction relief only. Prolonged use causes rebound congestion (rhinitis medicamentosa). Not for routine/long-term use."
+          }
+        ]
+      },
+      {
+        "name": "Leukotriene Receptor Antagonist",
+        "entries": [
+          {
+            "brand": "Montelukast",
+            "generic": "LTRA (Montelukast)",
+            "dosage": "As per standard dosing",
+            "remarks": "NOT for primary treatment of allergic rhinitis. May benefit subset with both allergic rhinitis AND asthma."
+          }
+        ]
+      },
+      {
+        "name": "Nasal Irrigation",
+        "entries": [
+          {
+            "brand": "Sterimar / Serenaz",
+            "generic": "Saline nasal spray (OTC)",
+            "dosage": "1–2 times daily",
+            "remarks": "Improves mucous clearance, enhances ciliary activity, removes antigens. Perform nasal irrigation BEFORE nasal medication for better drug penetration. Available OTC at NUP retail pharmacy."
+          }
+        ]
+      },
+      {
+        "name": "When to Refer to ENT",
+        "entries": [
+          {
+            "brand": "Referral Criteria",
+            "generic": "ENT Referral Indications",
+            "dosage": "N/A",
+            "remarks": "Refer if: medical therapy fails; candidate for immunotherapy/surgery; recurrent epistaxis; nasal obstruction without other symptoms; unilateral symptoms; anosmia; mucopurulent rhinorrhoea; posterior rhinorrhoea with thick mucus and no anterior rhinorrhoea; facial pain; children < 2 years old."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cpg-anaemia",
+    "name": "CPG: Anaemia",
+    "page": 0,
+    "subCategories": [
+      {
+        "name": "Diagnosis Thresholds (WHO 2011)",
+        "entries": [
+          {
+            "brand": "Mild Anaemia Hb Levels",
+            "generic": "Haemoglobin cut-offs (g/dL)",
+            "dosage": "Check FBC",
+            "remarks": "Children 6-59m: Mild 10.0-10.9 / Mod 7.0-9.9 / Severe <7.0. Non-pregnant women ≥15y: Mild 11.0-11.9 / Mod 8.0-10.9 / Severe <8.0. Men ≥15y: Mild 11.0-12.9 / Mod 8.0-10.9 / Severe <8.0. Pregnant women: Mild 10.0-10.9 / Mod 7.0-9.9 / Severe <7.0."
+          }
+        ]
+      },
+      {
+        "name": "Iron Deficiency Anaemia — Oral Iron Therapy",
+        "entries": [
+          {
+            "brand": "Ferrous Gluconate",
+            "generic": "Ferrous Gluconate (elemental iron 30mg/tab)",
+            "dosage": "1 tablet BD; start low to avoid intolerance",
+            "remarks": "Available at NUP. Take on empty stomach if tolerated. Side effects: nausea, constipation, metallic taste, dark stools. Take 2h before or 4h after antacids. Combine with Vitamin C to improve absorption. Response: Hb rise ≥1g/dL at 7-10 days. Continue 3 months after Hb normalises to replenish iron stores."
+          },
+          {
+            "brand": "Iron Polymaltose",
+            "generic": "Iron Polymaltose (elemental iron 100mg/tab)",
+            "dosage": "1 tablet OD; may be taken with meals",
+            "remarks": "Available at NUP. Better GI tolerability. Monitor FBC at 4 weeks (2 weeks if Hb 8-10 g/dL). At 12 weeks: check Hb normalisation. At 24 weeks: check FBC + ferritin. Stop when Hb and ferritin normalised and cause resolved."
+          }
+        ]
+      },
+      {
+        "name": "Vitamin B12 Deficiency",
+        "entries": [
+          {
+            "brand": "Cyanocobalamin IM",
+            "generic": "Cyanocobalamin 1000mcg IM injection",
+            "dosage": "Acute: 1000mcg IM daily or every other day x 1 week, then weekly x 4-8 weeks. Neurological sx: step down to fortnightly x 6 months. Maintenance: 1000mcg IM every 1-3 months.",
+            "remarks": "Deficiency cutoff: B12 < 145 pmol/L (definite) or <220 pmol/L with symptoms. Indicated when: severe deficiency, neurological symptoms, malabsorption, compliance issues. Monitor FBC at 1 week (expect Hb ↑ ≥1g/dL). Refer haematologist if no improvement by 8 weeks."
+          },
+          {
+            "brand": "Mecobalamin (Oral)",
+            "generic": "Mecobalamin 1000mcg oral tablet",
+            "dosage": "Acute oral: 1000mcg OD x 6 months. Maintenance: 1000mcg OD.",
+            "remarks": "Oral therapy suitable if no malabsorption/compliance issues. As effective as IM for maintenance. Monitor FBC and B12 yearly on maintenance. High risk groups for monitoring: vegetarians, pernicious anaemia, chronic malabsorption — yearly FBC + B12. Metformin users: 2-yearly B12 monitoring."
+          }
+        ]
+      },
+      {
+        "name": "Folate Deficiency",
+        "entries": [
+          {
+            "brand": "Folic Acid",
+            "generic": "Folic Acid 5mg tab",
+            "dosage": "5mg daily until correction of anaemia (usually 8 weeks)",
+            "remarks": "Rule out Vitamin B12 deficiency BEFORE starting. FBC at 4 weeks and 8 weeks. Refer haematologist if anaemia not normalised by 8 weeks. Stop after 8 weeks or Hb normalised (whichever is later), unless chronic haemolysis/cell turnover disorder. Causes: substance abuse, alcoholism, malabsorption (celiac, IBD), drugs (methotrexate, phenytoin), pregnancy."
+          }
+        ]
+      },
+      {
+        "name": "Referral to Haematologist",
+        "entries": [
+          {
+            "brand": "Haematology Referral",
+            "generic": "Indications for Haematologist referral",
+            "dosage": "N/A",
+            "remarks": "Refer when: haematological emergencies (symptomatic/severe anaemia); other cytopenias present; abnormal blood film; unexplained anaemia; Fe deficiency not responding after 3 months; B12 deficiency with other cytopenias at 1 week; B12/folate anaemia not resolved at 8 weeks; Hb < 10 in ACD or CKD; persistent macrocytosis >1 year; retic > 3% (suspect haemolytic anaemia)."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cpg-anxiety-disorder",
+    "name": "CPG: Anxiety Disorder",
+    "page": 0,
+    "subCategories": [
+      {
+        "name": "GAD-7 Screening & Classification",
+        "entries": [
+          {
+            "brand": "GAD-7 Score",
+            "generic": "Generalised Anxiety Disorder Scale",
+            "dosage": "Administer GAD-2 first; if ≥3, proceed to full GAD-7",
+            "remarks": "Scores: 0–4 No anxiety; 5–9 Mild; 10–14 Moderate; 15–21 Severe. Anxiety types: GAD, Panic Disorder, Adjustment Disorder, Acute Stress Disorder, Social Anxiety, Agoraphobia, PTSD, Specific Phobia. Reviewed Feb 2025 (Dr Jonathan Tung / Dr Benjamin Cheah); June 2025 (Dr Tan Jee Ooi). Next review: June 2028."
+          }
+        ]
+      },
+      {
+        "name": "SSRIs / SNRIs (First-Line Pharmacotherapy)",
+        "entries": [
+          {
+            "brand": "Escitalopram",
+            "generic": "Escitalopram (SSRI)",
+            "dosage": "Standard adult dosing; titrate over 4–8 weeks",
+            "remarks": "1st line for GAD. Check baseline ECG for QTc before starting. Check sodium at 3-4 weeks in patients >65 years or multiple comorbidities. Adequate trial = 6 weeks at therapeutic dose. Early ADRs: agitation, insomnia (co-prescribe BZD / hydroxyzine short-term)."
+          },
+          {
+            "brand": "Sertraline",
+            "generic": "Sertraline (SSRI)",
+            "dosage": "Standard adult dosing",
+            "remarks": "1st line for GAD. All SSRIs suitable for Panic Disorder. Monitor for emergent suicidal thoughts especially in patients <25 years."
+          },
+          {
+            "brand": "Venlafaxine",
+            "generic": "Venlafaxine (SNRI)",
+            "dosage": "Standard adult dosing",
+            "remarks": "2nd line for GAD and Panic Disorder. Check baseline ECG for QTc. Continuation: at least 6–12 months. Taper gradually when discontinuing to minimise discontinuation symptoms."
+          }
+        ]
+      },
+      {
+        "name": "Benzodiazepines (Short-term adjunct only)",
+        "entries": [
+          {
+            "brand": "Xanax",
+            "generic": "Alprazolam 0.25mg tab",
+            "dosage": "Initiate 0.25–0.5mg BD; usual 2–6mg/day in 3–4 divided doses; max 10mg/day",
+            "remarks": "For breakthrough anxiety. Limit to max 2 weeks per consult as adjunct to antidepressant. Max 4 weeks cumulative/year at primary care. Hepatic adjustment required. Contraindicated: pregnancy, narrow-angle glaucoma, severe respiratory insufficiency, myasthenia gravis, sleep apnoea, severe hepatic impairment, concomitant ketoconazole/itraconazole. Avoid in alcohol/drug dependence. ADRs: sedation, muscle weakness, ataxia, paradoxical reactions."
+          },
+          {
+            "brand": "Rivotril",
+            "generic": "Clonazepam 0.5mg tab",
+            "dosage": "Initiate 0.25mg BD; usual 1–3mg/day in 1–4 divided doses; max 4mg/day",
+            "remarks": "For anxiety. Same contraindications as other BZDs. Hepatic adjustment required."
+          },
+          {
+            "brand": "Ativan",
+            "generic": "Lorazepam 0.5mg / 1mg tab",
+            "dosage": "Initiate 0.5–1mg BD; max 10mg/day",
+            "remarks": "For anxiety / insomnia. Prolonged elimination half-life with hepatic impairment. Same precautions as other BZDs."
+          },
+          {
+            "brand": "Librax",
+            "generic": "Chlordiazepoxide 5mg + Clidinium 2.5mg capsule",
+            "dosage": "Adults: 2 capsules QDS; Geriatric: 1 capsule BD",
+            "remarks": "Only for emotional distress caused by irritable bowel syndrome. Not approved for patients below 18 years old."
+          }
+        ]
+      },
+      {
+        "name": "Adjunct Medications",
+        "entries": [
+          {
+            "brand": "Seroquel",
+            "generic": "Quetiapine (2nd generation antipsychotic)",
+            "dosage": "Initiate 25mg ON → titrate to 50mg → up to 150mg ON as tolerated",
+            "remarks": "Augmentation agent — add on to SSRI/SNRI if partial response or unable to tolerate higher doses. Ensure baseline ECG QTc < 500ms before starting. ADRs: sedation, dyslipidaemia, EPSEs, hypothyroidism, prolonged QTc, postural hypotension. Refer to psychiatrist if antipsychotics required (unless stepped down from psychiatry)."
+          },
+          {
+            "brand": "Pregabalin",
+            "generic": "Pregabalin (Gabapentinoid)",
+            "dosage": "150mg/day in 2 divided doses initially; increase to max 600mg/day (2–3 divided doses)",
+            "remarks": "For GAD. Renal adjustment required. ADRs: giddiness, sedation, fatigue. Caution: myasthenia gravis, substance abuse history."
+          },
+          {
+            "brand": "Inderal",
+            "generic": "Propranolol 10/40mg (off-label)",
+            "dosage": "10–40mg BD to TDS PRN; max 40mg TDS",
+            "remarks": "For symptomatic relief of palpitations and hand tremors in anxiety. Contraindicated: asthma, bradycardia, hypotension, heart block. May mask signs of hypoglycaemia and hyperthyroidism. Avoid abrupt withdrawal."
+          },
+          {
+            "brand": "Atarax",
+            "generic": "Hydroxyzine 10mg / 25mg tab",
+            "dosage": "Initiate 10–25mg/day in divided doses; max 400mg/day (single dose max: 100mg adult, 50mg elderly)",
+            "remarks": "MOH approved for anxiety (short-term). Also used for initial insomnia from SSRIs. Renal and hepatic adjustment required. ADRs: dizziness, drowsiness, dry mouth, constipation, urinary retention, QT prolongation. Contraindicated in early pregnancy."
+          }
+        ]
+      },
+      {
+        "name": "Referral to Psychiatry SOC",
+        "entries": [
+          {
+            "brand": "Psychiatric Referral",
+            "generic": "Conditions for Referral to Psychiatry SOC",
+            "dosage": "N/A",
+            "remarks": "Refer when: patient ≤17 years requiring psychotropics; no response to 3 different antidepressants or at very high dose monotherapy; antipsychotics required as adjunct; complicated medical history (Cushing, liver disease); comorbid personality disorder or substance dependence; new onset psychotic or bipolar disorder."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cpg-joint-pain",
+    "name": "CPG: Joint Pain (Musculoskeletal)",
+    "page": 0,
+    "subCategories": [
+      {
+        "name": "Osteoarthritis — Pharmacological Treatment",
+        "entries": [
+          {
+            "brand": "Paracetamol (Oral)",
+            "generic": "Paracetamol",
+            "dosage": "Standard oral dosing",
+            "remarks": "First-line analgesia for OA. Conservative management is first-line and mainstay. Goals: adequate pain control, improve/maintain function, allow independent community functioning. Reviewed Aug 2024 by NUP Ortho SAG. Next review: Aug 2027."
+          },
+          {
+            "brand": "Topical NSAIDs",
+            "generic": "Topical NSAIDs (e.g. diclofenac gel)",
+            "dosage": "Apply topically to affected joint",
+            "remarks": "Preferred over oral NSAIDs where possible to reduce systemic side effects."
+          },
+          {
+            "brand": "Oral NSAIDs",
+            "generic": "Oral NSAIDs / Selective COX-2 inhibitors",
+            "dosage": "Standard dosing if no contraindication",
+            "remarks": "Use if no contraindication. Long-term/large doses affect renal function, increase peptic ulcer risk and cardiovascular events. Check baseline Hb and Cr. Cross-reactive NSAID hypersensitivity: use paracetamol or opioids/tramadol instead."
+          },
+          {
+            "brand": "Intraarticular Injection",
+            "generic": "Hydrocortisone + Lignocaine / Hyaluronic Acid",
+            "dosage": "As clinically indicated",
+            "remarks": "May provide temporary pain relief but not mainstay of conservative treatment. Efficacy and cost-effectiveness remain controversial. Glucosamine/chondroitin supplements: insufficient evidence, essentially placebo effects."
+          }
+        ]
+      },
+      {
+        "name": "Rheumatoid Arthritis — Non-Biologic DMARDs",
+        "entries": [
+          {
+            "brand": "Hydroxychloroquine",
+            "generic": "Hydroxychloroquine (DMARD)",
+            "dosage": "Standard dosing; used alone or in combination",
+            "remarks": "Initiate DMARD as soon as possible for confirmed RA with persistent synovitis. Monitor: FBC, ESR, AST/ALT, Creatinine at 2–3 monthly intervals. Eye assessment for retinal toxicity required with chronic use. Refer to rheumatologist for new DMARD initiation or RA flares requiring high dose steroids (>10mg/day) or long-term glucocorticoids (≥6 months)."
+          },
+          {
+            "brand": "Sulfasalazine",
+            "generic": "Sulfasalazine (DMARD)",
+            "dosage": "Standard dosing",
+            "remarks": "1st line DMARD for RA. Used alone or in combination with hydroxychloroquine and/or methotrexate."
+          },
+          {
+            "brand": "Methotrexate",
+            "generic": "Methotrexate (DMARD)",
+            "dosage": "Standard weekly dosing; check ALT trend — escalate if ALT 3x normal",
+            "remarks": "1st line DMARD. Monitor LFT (ALT rising >30 to 56 to 78 U/L warrants dose reduction). Dose adjustment for renal impairment. Patients on MTX + statin with NAFLD require careful monitoring."
+          },
+          {
+            "brand": "Prednisolone (short trial)",
+            "generic": "Prednisolone 5mg",
+            "dosage": "5mg BD for 2 weeks to assess response in newly diagnosed RA",
+            "remarks": "Effective for RA symptom suppression. Not ideal for long-term due to toxicities. High dose (>10mg/day) or long-term (≥6 months) use requires rheumatologist review with DMARD adjustment."
+          }
+        ]
+      },
+      {
+        "name": "Red Flags / Musculoskeletal Emergencies",
+        "entries": [
+          {
+            "brand": "Septic Arthritis",
+            "generic": "Emergency referral criteria",
+            "dosage": "Refer urgently to ED",
+            "remarks": "Red flags: hot/swollen joint (consider TB in patients on anti-TNF biologics); constitutional symptoms (high-grade fever, weight loss, malaise); weakness suggesting compartment syndrome or acute myelopathy; burning pain/numbness/paraesthesia suggesting myelopathy or radiculopathy. Also refer urgently: suspected active SLE/CTD; active dermatomyositis with ILD; antiphospholipid syndrome with DVT/PE/stroke."
+          }
+        ]
+      },
+      {
+        "name": "Investigations for Joint Pain",
+        "entries": [
+          {
+            "brand": "Blood Tests",
+            "generic": "FBC, ESR, CRP, RF",
+            "dosage": "As indicated",
+            "remarks": "FBC: high WBC in gout/septic arthritis; anaemia of chronic illness or microcytic anaemia from NSAID use. ESR/CRP: help identify inflammatory conditions (normal ESR/CRP does not exclude inflammatory arthritis). RF: order only with reasonable clinical suspicion of inflammatory joint disease — indiscriminate use causes false positives. ANA (not available at NUP): only if systemic symptoms + laboratory features. Upper limit of normal ESR: Male = Age/2; Female = (Age+10)/2."
+          },
+          {
+            "brand": "Plain X-Ray",
+            "generic": "Radiological imaging",
+            "dosage": "When indicated",
+            "remarks": "For significant trauma or focal bone pain. Bilateral weight-bearing AP + lateral views for knee OA assessment. Skyline view if patellofemoral involvement suspected. Not routinely required to diagnose OA with typical presentation. X-ray changes in inflammatory/crystal arthritis only visible in chronic disease (years)."
           }
         ]
       }
