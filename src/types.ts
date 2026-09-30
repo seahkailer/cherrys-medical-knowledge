@@ -53,9 +53,12 @@ export type CpgListItem = {
 };
 
 /**
- * A table row inside a CPG section — ordered cell values matching the headers array.
+ * A table row inside a CPG section.
+ * Supports two shapes:
+ *  - { cells: string[] }  — positional (new docs 07+)
+ *  - Record<string, string> — header-keyed (legacy docs 02–06)
  */
-export type CpgTableRow = { cells: string[] };
+export type CpgTableRow = { cells: string[] } | Record<string, string>;
 
 /**
  * A block of content inside a CPG section.

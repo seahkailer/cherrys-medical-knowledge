@@ -76,8 +76,10 @@ const RenderBlock: React.FC<{ block: CpgBlock }> = ({ block }) => {
           <tbody>
             {block.rows.map((row, i) => (
               <tr key={i}>
-                {block.headers.map((_, j) => (
-                  <td key={j}>{row.cells[j] ?? ''}</td>
+                {block.headers.map((h, j) => (
+                  <td key={j}>
+                    {'cells' in row ? (row.cells[j] ?? '') : ((row as Record<string, string>)[h] ?? '')}
+                  </td>
                 ))}
               </tr>
             ))}
