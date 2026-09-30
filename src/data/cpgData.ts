@@ -5404,6 +5404,795 @@ const hypertension: CpgDocument = {
 };
 
 
+// ---------------------------------------------------------------------------
+// 31 NUP CPG — Insomnia (Dec 2025)
+// ---------------------------------------------------------------------------
+const insomnia: CpgDocument = {
+  id: 'cpg-insomnia',
+  condition: 'Insomnia',
+  source: '31 NUP CPG - Insomnia.pdf',
+  reviewDate: 'Updated December 2025 by Dr Alicia Boo. Next review: December 2028.',
+  advisors: 'Key FP: Dr Alicia Boo. Specialist: Dr Soo Shuenn Chiang. Contributing: Marissa Chin (NUHSP), Dr Benjamin Cheah, Toh Hui Moon (Snr Psychologist), Bindu Runy (Snr MSW).',
+  sections: [
+    {
+      heading: 'Introduction',
+      blocks: [
+        { type: 'text', content: 'Insomnia is a common complaint in the primary care setting. Many mental health issues surface as insomnia as patients consider it more acceptable. Sleep is important for growth, learning, development, and mood.' },
+        {
+          type: 'table',
+          headers: ['Age Group', 'Recommended Sleep Duration'],
+          rows: [
+            { cells: ['Newborns', '14–17 hours/day'] },
+            { cells: ['1–11 months', '12–15 hours/day'] },
+            { cells: ['1–2 years old', '11–14 hours/day'] },
+            { cells: ['3–5 years old', '10–13 hours/day'] },
+            { cells: ['6–13 years old', '9–11 hours/day'] },
+            { cells: ['13–17 years old', '8–10 hours/day'] },
+          ],
+        },
+        { type: 'text', content: 'Blue light (iPads / phones / tablets) blocks melatonin. Circadian troughs (dips) occur in late afternoon and middle of the night. Sleep deprivation can cause learning problems, poor attention, hyperactivity, difficulty with memory-related tasks, obesity, and more frequent illnesses.' },
+      ],
+    },
+    {
+      heading: 'Screening and Diagnosis — DSM-5 Criteria',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Complaint of dissatisfaction with sleep quality/quantity — difficulty initiating OR maintaining sleep, OR early morning awakenings' },
+          { text: 'Causing significant distress or impairment in functioning' },
+          { text: 'Occurs at least 3 nights/week despite adequate opportunity to sleep' },
+          { text: 'Present for at least 3 months' },
+          { text: 'Sleep difficulty occurs despite adequate opportunity for sleep' },
+          { text: 'Not better explained by another sleep-wake disorder (e.g. narcolepsy, breathing-related sleep disorder, circadian rhythm disorder, parasomnia)' },
+          { text: 'Not attributable to physiological effects of a substance (drug of abuse, medication)' },
+          { text: 'Coexisting mental disorders and medical conditions do not adequately explain the predominant complaint of insomnia' },
+        ]},
+        { type: 'text', content: '40–50% of those with insomnia have comorbid mental illness. Ask about eczema, low mood, anxiety, restless legs (check ferritin, treat if needed), recent environmental changes, pain, drug/substance use, shift work, obstructive sleep apnoea symptoms, nocturnal seizures, stimulant ingestion (coffee/tea/nicotine/chocolates), and noisy environment.' },
+      ],
+    },
+    {
+      heading: 'Insomnia Severity Index (ISI) — Interpretation and Referral',
+      blocks: [
+        {
+          type: 'table',
+          headers: ['Total Score', 'Interpretation', 'Treatment / Referral Recommendations'],
+          rows: [
+            { cells: ['0–7', 'No clinically significant insomnia', 'Usual care'] },
+            { cells: ['8–14', 'Subthreshold insomnia', 'TCU MSW within 8 weeks for self-help strategies, sleep hygiene, and monitoring of symptom progression'] },
+            { cells: ['15–21', 'Clinical insomnia (moderate severity)', 'If no/low suicide risk: TCU Psychology (Short) FV for CBT-I within 4 weeks; TCU Dr HMC (first visit) for medication consideration. If moderate suicide risk: refer Psychiatry SOC (Direct access) with safety planning. If high suicide risk: refer ED.'] },
+            { cells: ['22–28', 'Clinical insomnia (severe)', 'If no/low suicide risk: TCU Psychology (Short) FV for CBT-I within 2 weeks. If moderate suicide risk: refer Psychiatry SOC (Direct access) with safety planning. If high suicide risk: refer ED.'] },
+          ],
+        },
+      ],
+    },
+    {
+      heading: 'Special Situations — Delayed Sleep Wake Phase Disorder (DSWPD)',
+      blocks: [
+        { type: 'text', content: 'DSWPD occurs in 3–16% of youths. Not true insomnia but causes dysfunction due to school/societal demands. Normal sleep latency, maintenance and duration if allowed own schedule. Get sleep diary of 2-week duration.' },
+        {
+          type: 'table',
+          headers: ['Management', 'Examples'],
+          rows: [
+            { cells: ['Bright light therapy', 'Open blinds/curtains to allow natural sunlight at appropriate timing'] },
+            { cells: ['Bedtime fading (when >30 min between going to bed and falling asleep)', 'Temporarily set bedtime later, bring forward by 15 min every 2 nights (may take 7–10 nights). Avoid weekend sleep-ins and naps.'] },
+            { cells: ['Chronotherapy (for motivated patients; principle of increasing sleep drive by keeping sleep <9 hours for adolescents)', 'Day 1: sleep 3am–11am; Day 2: 6am–2pm; Day 3: 9am–5pm; Day 4: 12pm–8pm; Day 5: 3pm–11pm; Day 6: 6pm–2am; Day 7: 9pm–5am; Day 8: 10pm–6am. Maintain for 2 months on weekends/holidays to "set" internal clock.'] },
+          ],
+        },
+      ],
+    },
+    {
+      heading: 'Management — Non-Pharmacological (First Line)',
+      blocks: [
+        {
+          type: 'table',
+          headers: ['Intervention', 'Details'],
+          rows: [
+            { cells: ['Cognitive Behavioural Therapy for Insomnia (CBT-I) — First line', 'Better long-term effectiveness than medications. 4–6 sessions including: (1) Cognitive restructuring; constructive worry time (15 min problem-solving at least 2 hours before bed). (2) Stimulus control, sleep restriction, relaxation training. (3) Psychoeducation on sleep biology and misconceptions.'] },
+            { cells: ['Sleep Restriction Therapy', 'Step 1: Determine allowed time in bed (average sleep time + 30 mins, no less than 5 hours). Step 2: Set standard wake-up time. Step 3: Determine bedtime by counting back. Step 4: When sleep efficiency reaches 90%, increase time in bed by 15 min per week.'] },
+            { cells: ['Sleep Hygiene', 'Avoid stimulants/caffeine/nicotine/alcohol. Exercise at least 2 hours before bedtime. No clock watching, no electronic devices in bed, nap before 3pm if needed but not >1 hour. Cool/dark environment.'] },
+            { cells: ['Stimulus Control', 'Go to bed only when sleepy. Go to another room if unable to sleep within 15–20 min. Bedroom for sleep and sex only.'] },
+            { cells: ['Relaxation Training', '1. Progressive muscle relaxation. 2. Diaphragmatic breathing. 3. Autogenic training.'] },
+          ],
+        },
+      ],
+    },
+    {
+      heading: 'Management — Pharmacological',
+      blocks: [
+        {
+          type: 'table',
+          headers: ['Drug', 'Usual Dose', 'Common ADR', 'Remarks / Contraindications / Precautions'],
+          rows: [
+            { cells: ['Melatonin — Circadin 2mg prolonged release (S1; 1 box = 21 tablets)', '2mg 1–2 hours before bedtime, up to 13 weeks (can prescribe up to 52 weeks). First Rx: prescribe 12 weeks, supply 1 box first.', 'Not well-established. Vivid dreams, nightmares, dizziness, daytime sleepiness, headache, irritability, stomach cramps.', 'For sleep onset insomnia. Consider in elderly, cognitive dysfunction, glaucoma, BPH. Available as POM for ≥55 years (max 13 weeks). Off-label use <55 years or >13 weeks: patient must have had unsatisfactory trial of OTC melatonin. OTC supplement not routinely recommended as not of medicinal grade.'] },
+            { cells: ['Promethazine — Sedating Antihistamine (S1, $0.20/tab)', '12.5–25mg ON', 'Sedation, dizziness', 'Caution in elderly (anticholinergic side effects: dry mouth/eyes, urinary hesitancy, confusion). Tolerance may develop. Hydroxyzine useful for insomnia with anxiety.'] },
+            { cells: ['Hydroxyzine (S1, $0.20/tab)', '10–50mg ON', 'Sedation, dizziness', 'See promethazine remarks.'] },
+            { cells: ['Chlorpheniramine (S1, $0.08/tab)', '4mg ON', 'Sedation, dizziness', 'See promethazine remarks.'] },
+            { cells: ['Diphenhydramine (only URTI combination product in NUP formulary)', '25–50mg ON', 'Sedation, dizziness', 'See promethazine remarks.'] },
+            { cells: ['Alprazolam/Xanax (NS, $0.20/tab)', '0.25mg ON', 'Somnolence, drowsiness, dizziness, ataxia', 'Adjunctive/bridge therapy. Limit to <2 weeks, once every 2–3 nights when necessary. Must document indication for repeated BZD prescriptions. Dependence risk. Avoid in opioid/substance use disorder. Increased risk of sedation, respiratory depression, coma, death with opioids. Refer psychiatry if unable to discontinue.'] },
+            { cells: ['Lorazepam/Ativan (S1, $0.20/tab)', '0.5–1mg ON', 'Somnolence, drowsiness, dizziness, ataxia', 'See alprazolam remarks.'] },
+            { cells: ['Clonazepam (S1, $0.37/tab)', '0.5mg ON', 'Somnolence, drowsiness, dizziness, ataxia', 'See alprazolam remarks.'] },
+            { cells: ['Zopiclone (NS, $0.30/tab)', '3.75–15mg ON (3.75mg ON in elderly)', 'Somnolence, drowsiness, dizziness, ataxia, next-morning residual sedation', 'For sleep onset and sleep maintenance insomnia. Rarely may cause complex sleep-related behaviours (sleep-talking, sleepwalking) → injury/death. Avoid in opioid/substance use disorder or history of complex sleep-related behaviour. Increased risk of excessive sedation, cognitive impairment, delirium and falls in elderly.'] },
+            { cells: ['Zolpidem ER (not available in NUP)', '6.25–12.5mg ON (6.25mg in elderly)', 'Somnolence, drowsiness, dizziness, ataxia, next-morning residual sedation', 'See zopiclone remarks.'] },
+            { cells: ['Mirtazapine (S2, $$)', '7.5–30mg ON (up to 45mg/day for depression)', 'Somnolence, increased appetite, weight gain, dizziness. Caution in metabolic syndrome.', 'For patients with anxiety or depression. May cause cognitive/motor impairment. Suicidal ideation risk in young. Risk of hyponatraemia, serotonin syndrome, QT-prolongation, bleeding, mania activation. Avoid in angle-closure glaucoma. Caution in seizure disorders.'] },
+            { cells: ['Fluvoxamine (S2, $$$)', '50–300mg/day in 2 divided doses', 'Somnolence, nausea/vomiting, diarrhoea, dizziness, nervousness, dry mouth. May cause sexual dysfunction.', 'For depression/anxiety.'] },
+            { cells: ['Amitriptyline (S1, $)', '10–50mg ON (up to 300mg/day for depression)', 'Somnolence, weight gain, dry mouth, constipation, dizziness, headache. Avoid in elderly.', 'Antidepressant with sedative effect.'] },
+            { cells: ['Trazodone (not in NUP formulary)', '25–50mg ON, up to 200mg ON', 'Orthostatic hypotension, syncope, oedema, blurred vision, diarrhoea, nasal congestion, weight loss. May cause priapism.', 'Not available in NUP.'] },
+            { cells: ['Quetiapine (S2, $)', '25–100mg ON (higher for psychosis)', 'Sedation, nausea/vomiting, constipation, dry mouth, orthostatic hypotension, headache, weight gain', 'For patients with concomitant psychosis or BPSD. Can augment antidepressant effect. Higher risk of weight gain/diabetes/dyslipidaemia with olanzapine; higher EPS/tardive dyskinesia risk with risperidone. Rarely: neuroleptic malignant syndrome, seizures, agranulocytosis, increased mortality in elderly with dementia-related psychosis.'] },
+            { cells: ['Risperidone (S2, $$$$)', '0.5–8mg/day (for psychosis/schizophrenia)', 'See quetiapine', 'See quetiapine remarks.'] },
+            { cells: ['Olanzapine (S2, $$$$)', '2.5–30mg/day (for psychosis/schizophrenia)', 'See quetiapine', 'See quetiapine remarks.'] },
+          ],
+        },
+        { type: 'text', content: 'Drug cost legend: $ <$10/month; $$ $10–<$20; $$$ $20–<$30; $$$$ $30–<$60; $$$$$ $60–<$90; $$$$$$ ≥$90/month. Amount payable depends on patient subsidy level and drug subsidy class (SDL S1/S2, Non-Standard NS). Unit prices before GST, accurate as of Dec 2023.' },
+      ],
+    },
+    {
+      heading: 'Role of Health Team Members',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Family Physician — TCU NUP Psychologist for CBT-I. Refer Dr Health and Mind Clinic (HMC, for ≥18 years with depression/anxiety/adjustment/insomnia). Manage stable patients discharged from HMC. Refer Psychiatry SOC for high suicide risk or exclusion list (addictions/legal/bipolar/new onset psychosis or OCD).' },
+          { text: 'Care Manager in HMC (HMC CM) — Conduct depression, anxiety, insomnia, and suicide risk screening for first-time HMC Dr visit. Offer psychoeducation and basic self-help techniques.' },
+          { text: 'Family Physician in HMC (HMC Dr) — Manage new and follow-up cases of depression/anxiety/adjustment disorders/insomnia ≥18 years old. Follow-up psychiatric step-down cases. Escalate to SOC if needed.' },
+          { text: 'Psychologist — Psychological assessment and intervention. Conduct screening/assessment for severity, complexity, risk tendencies. Formulate treatment plan. Provide psychological and behavioural interventions.' },
+          { text: 'Medical Social Worker — Basic sleep hygiene and self-help; care assessment; supportive counselling; crisis intervention; Advance Care Planning; non-medical financial assistance; information and community referral.' },
+          { text: 'Financial Counsellor — Financial assessment and assistance for patients with medical bill difficulties.' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Referrals',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Refer to Sleep Unit (ENT or Respiratory) if suspected obstructive sleep apnoea or restless legs syndrome.' },
+          { text: 'Consider pointing patients to Family Service Centres (FSC) for supportive counselling (social issues). Search "FSC locator" with postal code.' },
+          { text: 'TCU Medical Social Worker for brief supportive counselling (complex psychosocial setup) or subthreshold insomnia.' },
+          { text: 'TCU Psychologist Counselling (Short)(First Visit) for non-pharmacological interventions — should be first line for primary insomnia.' },
+          { text: 'TCU Dr Health and Mind (Long) FV if suspected underlying depression/anxiety requiring longitudinal follow-up or medications needed. May trial antihistamines or SSRIs.' },
+          { text: 'Refer NUHS Psychological Medicine if failed trial of ≥2 agents at adequate dose and duration, or require prolonged BZD or Z-drug use.' },
+        ]},
+      ],
+    },
+  ],
+};
+
+// ---------------------------------------------------------------------------
+// 32 NUP CPG — Kidney Cysts (Nov 2024)
+// ---------------------------------------------------------------------------
+const kidneyCysts: CpgDocument = {
+  id: 'cpg-kidney-cysts',
+  condition: 'Kidney Cysts',
+  source: '32 NUP CPG - Kidney Cysts.pdf',
+  reviewDate: 'Reviewed November 2024 by Dr Sky Koh. Next review: November 2027.',
+  advisors: 'Key FPs: Dr Charmaine Low, Dr Sky Koh. Specialist: Asst Prof Benjamin Goh (Consultant, NUH).',
+  sections: [
+    {
+      heading: 'Introduction',
+      blocks: [
+        { type: 'text', content: 'Kidney cysts are fluid-filled sacs that develop within the kidneys. They are typically non-cancerous and can vary in size from very small to large cysts that can cause discomfort and affect kidney function.' },
+        { type: 'text', content: 'Epidemiology: Benign kidney cysts are common — estimated 30% of patients above 60 years old will be diagnosed with at least one simple kidney cyst through abdominal imaging. Prevalence increases with age and is higher in males than females.' },
+        { type: 'text', content: 'Importance: In primary care, kidney cysts are often incidental findings. Primary care physicians must differentiate between benign and complex cysts as complex cysts are associated with increased risk of malignancy (may require further imaging, biopsy, or surgery). Kidney cysts can also be present due to autosomal dominant polycystic kidney disease, Von Hippel-Lindau syndrome, and prolonged haemodialysis in ESRD.' },
+      ],
+    },
+    {
+      heading: 'Screening and Diagnosis',
+      blocks: [
+        { type: 'text', content: 'In many cases, benign kidney cysts do not cause symptoms and are discovered incidentally. Larger or multiplying cysts may cause:' },
+        { type: 'list', items: [
+          { text: 'Flank or back pain' },
+          { text: 'Urinary frequency' },
+          { text: 'Haematuria' },
+          { text: 'Hypertension' },
+          { text: 'Urinary tract infections' },
+          { text: 'Kidney stones' },
+          { text: 'Chronic kidney disease in advanced cases' },
+        ]},
+        { type: 'text', content: 'Diagnosis: Kidney cysts are commonly diagnosed through imaging — ultrasound kidneys in primary care. CT and MRI can also visualise size, number, and characteristics.' },
+        { type: 'text', content: 'Classification: Kidney cysts detected on CT or MRI are classified using the Bosniak classification system (2019). Ultrasound kidneys can risk-stratify cysts for further imaging.' },
+        {
+          type: 'table',
+          headers: ['Type', 'US Appearance', 'Recommendation'],
+          rows: [
+            { cells: ['Simple', 'Thin smooth wall; anechoic, no septa, calcification or solid component', 'No follow-up required, unless symptomatic'] },
+            { cells: ['Complex (lower risk, <6cm, risk of malignancy <1%)', 'Few thin septa; septa and wall may appear echogenic; may have fine calcifications/milk of calcium; small cyst (<6cm)', 'Look for previous US or CT to assess change in size. If not available, repeat imaging in 1 year. If stable, discuss with patient; no follow-up required unless symptomatic.'] },
+            { cells: ['Complex (higher risk)', 'Thickened hyperechoic wall; thickened septa or many thin septa; multiple coarse calcium calcifications; any one cyst ≥6cm', 'Refer Urology (Routine)'] },
+            { cells: ['Complex (high suspicion)', '≥1 hyperechoic thick or irregular walls or multiple thickened septa', 'Refer Urology (Early)'] },
+            { cells: ['Highly suspicious for malignancy', 'Solid nodule; presence of vascularity inside index lesion (with Doppler)', 'Refer Urology (Direct Access)'] },
+          ],
+        },
+      ],
+    },
+    {
+      heading: 'Bosniak (CT) Classification of Kidney Cysts',
+      blocks: [
+        {
+          type: 'table',
+          headers: ['Bosniak Class', 'CT Appearance', 'Risk of Malignancy (%)', 'Recommendation'],
+          rows: [
+            { cells: ['I', 'Thin smooth wall (≤2mm) which may enhance; homogenous simple fluid; no septa, calcification or solid component', '0%', 'No follow-up required, unless symptomatic'] },
+            { cells: ['II', 'Thin smooth wall (≤2mm); few hairline thin septa (≤2mm); septa and wall may enhance; may have fine calcifications; small hyperdense cysts (<6cm)', '1%', 'Look for previous US or CT. If not, repeat imaging in 1 year. If stable, no follow-up unless symptomatic.'] },
+            { cells: ['II-F', 'Minimally thickened (3mm) enhancing wall, or smooth minimal thickening (3mm) of ≥1 enhancing septa, or many (≥4) hairline thin septa (≤2mm); multiple coarse calcifications; large hyperdense cysts (≥6cm)', '1–38%', 'Refer Urology (routine)'] },
+            { cells: ['III', '≥1 enhancing thick (≥4mm) or enhancing irregular walls or septa', '50%', 'Refer Urology (early)'] },
+            { cells: ['IV', '≥1 enhancing nodule(s)', '>90%', 'Refer Urology (direct access)'] },
+          ],
+        },
+      ],
+    },
+    {
+      heading: 'Management and Referral',
+      blocks: [
+        { type: 'text', content: 'Recommended Follow-Up: (1) Simple renal cysts are benign and do not require further follow-up imaging. (2) Complex cysts, large size, multiple cysts, solid nodule, thick septa, multiple calcification should be referred to Urology for further imaging.' },
+        { type: 'text', content: 'Other Indications for Referral to Urology:' },
+        { type: 'list', items: [
+          { text: 'Patients with symptomatic kidney cysts' },
+          { text: 'Patients with multiple cysts and family history suggestive of polycystic kidney disease or Von Hippel-Lindau syndrome' },
+          { text: 'Incidental findings of hydronephrosis, stone, or suspected tumour — refer urgently to Urology (direct access)' },
+        ]},
+        { type: 'text', content: 'Indications for Referral to Emergency Department:' },
+        { type: 'list', items: [
+          { text: 'Cyst infection/rupture with symptoms/signs: fever, flank pain, haematuria, hypotension' },
+          { text: 'Hydronephrosis, stone or tumour with signs of urosepsis or severe renal impairment' },
+        ]},
+        { type: 'text', content: 'Things to Note: (1) Radiological results labelled "R1U — Unexpected" demand additional attention and must not be overlooked. Example: echogenic nodule with small eccentric cystic component and vascularity suggests possible renal cell carcinoma — referral is warranted. (2) For incidental renal cysts identified on US HBS where complexity could not be determined, further US kidneys is recommended.' },
+      ],
+    },
+  ],
+};
+
+// ---------------------------------------------------------------------------
+// 33 NUP CPG — Lipids (Dec 2025)
+// ---------------------------------------------------------------------------
+const lipids: CpgDocument = {
+  id: 'cpg-lipids',
+  condition: 'Lipids (Dyslipidaemia)',
+  source: '33 NUP CPG - Lipids.pdf',
+  reviewDate: 'Reviewed December 2025 by Dr Siau Kai Rong. Next review: December 2028.',
+  advisors: 'Key FPs: Dr Siau Kai Rong, Dr Choong Shoon Thai, Dr Cheah Ming Hann. Specialist: Dr Khoo Chin Meng (Senior Consultant, Dept of Medicine, NUH).',
+  sections: [
+    {
+      heading: 'Introduction',
+      blocks: [
+        { type: 'text', content: 'Hyperlipidaemia is a major risk factor for coronary artery disease (CAD). Elevated LDL-C causes atherosclerosis. Low HDL-C is associated with increased CAD risk. Moderate to severe hypertriglyceridemia increases risk of pancreatitis. Healthy lifestyle (diet, physical activity, tobacco abstinence) with pharmacotherapy where indicated improves cardiovascular risk.' },
+        { type: 'text', content: 'Epidemiology: National Population Health Survey 2022 — about 3 in 10 Singapore residents aged 18–74 reported hyperlipidaemia. Males (36.2%) higher than females (27.9%). Prevalence increases with age — from ~10% (18–29 years) to >50% (60–74 years).' },
+      ],
+    },
+    {
+      heading: 'Screening',
+      blocks: [
+        { type: 'text', content: 'Whom to screen:' },
+        { type: 'list', items: [
+          { text: 'All patients aged ≥40 years' },
+          { text: 'All patients aged ≥18 years with risk factors for CAD (DM, multiple CAD risk factors, family history of CVD before age 50 in males or 60 in females, family history suggestive of FH)' },
+          { text: 'All patients with established coronary heart disease, cerebrovascular disease, peripheral vascular disease, hypertension, DM, impaired fasting glycaemia, or impaired glucose tolerance — irrespective of age' },
+          { text: 'All first-degree relatives of diagnosed familial hypercholesterolaemia patients' },
+        ]},
+        { type: 'text', content: 'Screening for lipids should be part of a global cardiovascular/cardiometabolic risk assessment. Consider screening for blood pressure and blood glucose concurrently.' },
+        { type: 'text', content: 'Screening frequency: Annually, except low-risk individuals with results within LDL-C target levels and not on lipid-modifying therapy — repeat at 3-yearly intervals. May use fasting or non-fasting Lipid Panel (fasting preferred for high-risk/strong family history).' },
+        { type: 'text', content: 'Non-fasting Lipid Panel: Be aware of possible over-diagnosis of hypertriglyceridaemia (post-meal TG slightly higher) and under-diagnosis of hyperlipidaemia (post-meal LDL-C slightly lower). For TG interpretation, may consider repeating fasting lipid profile before starting pharmacological therapy. For patients with non-fasting results close to threshold, may need earlier fasting recheck.' },
+      ],
+    },
+    {
+      heading: 'Risk Stratification and Treatment Goals',
+      blocks: [
+        { type: 'text', content: 'Overall CV risk provides the starting point for lipid management. Assess for medical conditions that confer very high/high risk. If none, calculate 10-year risk using SG-FRS-2023. Select statin of appropriate intensity. Consider further intensification if LDL-C above target despite appropriate statin.' },
+      ],
+    },
+    {
+      heading: 'Singapore-Modified Framingham Risk Score 2023 (SG-FRS-2023) — Men',
+      blocks: [
+        { type: 'text', content: 'Estimate 10-year CAD risk by allocating points for age, total and HDL cholesterol, smoking status, and systolic BP. Check total points against Table 1.2.' },
+        {
+          type: 'table',
+          headers: ['Age', 'Points'],
+          rows: [
+            { cells: ['20–34', '-9'] }, { cells: ['35–39', '-4'] }, { cells: ['40–44', '0'] },
+            { cells: ['45–49', '3'] }, { cells: ['50–54', '6'] }, { cells: ['55–59', '8'] },
+            { cells: ['60–64', '10'] }, { cells: ['65–69', '11'] }, { cells: ['70–74', '12'] }, { cells: ['75–79', '13'] },
+          ],
+        },
+        {
+          type: 'table',
+          headers: ['HDL Cholesterol mmol/L (mg/dL)', 'Points'],
+          rows: [
+            { cells: ['≥1.6 (60)', '-1'] },
+            { cells: ['1.3–1.5 (50–59)', '0'] },
+            { cells: ['1.0–1.2 (40–49)', '1'] },
+            { cells: ['<1.0 (<40)', '2'] },
+          ],
+        },
+        {
+          type: 'table',
+          headers: ['Total Cholesterol mmol/L (mg/dL)', 'Age 20–39', 'Age 40–49', 'Age 50–59', 'Age 60–69', 'Age 70–79'],
+          rows: [
+            { cells: ['<4.1 (160)', '0', '0', '0', '0', '0'] },
+            { cells: ['4.1–5.1 (160–199)', '4', '3', '2', '1', '0'] },
+            { cells: ['5.2–6.1 (200–239)', '7', '5', '3', '1', '0'] },
+            { cells: ['6.2–7.2 (240–279)', '9', '6', '4', '2', '1'] },
+            { cells: ['≥7.3 (≥280)', '11', '8', '5', '3', '1'] },
+          ],
+        },
+        {
+          type: 'table',
+          headers: ['Systolic BP (mmHg)', 'If untreated', 'If treated'],
+          rows: [
+            { cells: ['<120', '0', '0'] },
+            { cells: ['120–129', '0', '1'] },
+            { cells: ['130–139', '1', '2'] },
+            { cells: ['140–159', '1', '2'] },
+            { cells: ['≥160', '2', '3'] },
+          ],
+        },
+        {
+          type: 'table',
+          headers: ['Smoker', 'Age 20–39', 'Age 40–49', 'Age 50–59', 'Age 60–69', 'Age 70–79'],
+          rows: [
+            { cells: ['No', '0', '0', '0', '0', '0'] },
+            { cells: ['Yes', '8', '5', '3', '1', '1'] },
+          ],
+        },
+        {
+          type: 'table',
+          headers: ['Total Points', '10-Year Risk — Chinese (%)', '10-Year Risk — Malay (%)', '10-Year Risk — Indian (%)'],
+          rows: [
+            { cells: ['-5 to 0', '<1', '<1', '<1'] },
+            { cells: ['1', '<1', '<1', '1'] },
+            { cells: ['2', '<1', '1', '1'] },
+            { cells: ['3', '<1', '1', '1'] },
+            { cells: ['4', '1', '1', '1'] },
+            { cells: ['5', '1', '1', '2'] },
+            { cells: ['6', '1', '2', '2'] },
+            { cells: ['7', '1', '2', '3'] },
+            { cells: ['8', '2', '3', '4'] },
+            { cells: ['9', '2', '3', '5'] },
+            { cells: ['10', '3', '4', '6'] },
+            { cells: ['11', '3', '5', '7'] },
+            { cells: ['12', '4', '7', '10'] },
+            { cells: ['13', '5', '9', '12'] },
+            { cells: ['14', '7', '11', '15'] },
+            { cells: ['15', '9', '14', '19'] },
+            { cells: ['16', '11', '18', '24'] },
+            { cells: ['17', '14', '22', '30'] },
+            { cells: ['18', '18', '28', '37'] },
+            { cells: ['19', '23', '34', '45'] },
+            { cells: ['20', '28', '42', '54'] },
+          ],
+        },
+      ],
+    },
+    {
+      heading: 'SG-FRS-2023 — Women',
+      blocks: [
+        {
+          type: 'table',
+          headers: ['Age', 'Points'],
+          rows: [
+            { cells: ['20–34', '-7'] }, { cells: ['35–39', '-3'] }, { cells: ['40–44', '0'] },
+            { cells: ['45–49', '3'] }, { cells: ['50–54', '6'] }, { cells: ['55–59', '8'] },
+            { cells: ['60–64', '10'] }, { cells: ['65–69', '12'] }, { cells: ['70–74', '14'] }, { cells: ['75–79', '16'] },
+          ],
+        },
+        {
+          type: 'table',
+          headers: ['Total Cholesterol mmol/L (mg/dL)', 'Age 20–39', 'Age 40–49', 'Age 50–59', 'Age 60–69', 'Age 70–79'],
+          rows: [
+            { cells: ['<4.1 (160)', '0', '0', '0', '0', '0'] },
+            { cells: ['4.1–5.1 (160–199)', '4', '3', '2', '1', '0'] },
+            { cells: ['5.2–6.1 (200–239)', '8', '6', '4', '2', '1'] },
+            { cells: ['6.2–7.2 (240–279)', '11', '8', '5', '3', '2'] },
+            { cells: ['≥7.3 (≥280)', '13', '10', '7', '4', '2'] },
+          ],
+        },
+        {
+          type: 'table',
+          headers: ['Systolic BP (mmHg)', 'If untreated', 'If treated'],
+          rows: [
+            { cells: ['<120', '0', '0'] },
+            { cells: ['120–129', '1', '3'] },
+            { cells: ['130–139', '2', '4'] },
+            { cells: ['140–159', '3', '5'] },
+            { cells: ['≥160', '4', '6'] },
+          ],
+        },
+        {
+          type: 'table',
+          headers: ['Smoker', 'Age 20–39', 'Age 40–49', 'Age 50–59', 'Age 60–69', 'Age 70–79'],
+          rows: [
+            { cells: ['No', '0', '0', '0', '0', '0'] },
+            { cells: ['Yes', '9', '7', '4', '2', '1'] },
+          ],
+        },
+        {
+          type: 'table',
+          headers: ['Total Points', '10-Year Risk — Chinese (%)', '10-Year Risk — Malay (%)', '10-Year Risk — Indian (%)'],
+          rows: [
+            { cells: ['0–8', '<1', '<1', '<1'] },
+            { cells: ['9', '<1', '<1', '1'] },
+            { cells: ['10', '<1', '1', '1'] },
+            { cells: ['11', '<1', '1', '1'] },
+            { cells: ['12', '<1', '1', '1'] },
+            { cells: ['13', '1', '1', '2'] },
+            { cells: ['14', '1', '1', '2'] },
+            { cells: ['15', '1', '2', '3'] },
+            { cells: ['16', '1', '2', '3'] },
+            { cells: ['17', '2', '3', '4'] },
+            { cells: ['18', '2', '4', '6'] },
+            { cells: ['19', '3', '5', '7'] },
+            { cells: ['20', '4', '7', '10'] },
+            { cells: ['21', '5', '9', '12'] },
+            { cells: ['22', '7', '11', '16'] },
+            { cells: ['23', '8', '14', '20'] },
+            { cells: ['24', '11', '18', '25'] },
+            { cells: ['25', '14', '23', '31'] },
+            { cells: ['26', '18', '29', '39'] },
+            { cells: ['27', '22', '36', '47'] },
+          ],
+        },
+      ],
+    },
+    {
+      heading: 'Secondary Dyslipidaemia',
+      blocks: [
+        { type: 'text', content: 'Secondary dyslipidaemia should be excluded in any patient presenting with dyslipidaemia.' },
+        { type: 'list', items: [
+          { text: 'Causes of increased Total Cholesterol and LDL-C: Hypothyroidism, Nephrosis, Cholestatic liver disease (e.g. Primary Biliary Cirrhosis), Progestin or anabolic steroid treatment, Dysgammaglobulinaemia (SLE, Multiple myeloma), Protease inhibitors for HIV.' },
+          { text: 'Causes of increased Triglyceridaemia and VLDL-C: Type 2 DM, Chronic renal failure, Excessive alcohol, Hypothyroidism, Obesity, Antihypertensives (thiazide diuretics, β-blockers), Corticosteroid therapy, Oral oestrogens/OCPs/pregnancy, Protease inhibitors for HIV.' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Hypertriglyceridaemia',
+      blocks: [
+        { type: 'text', content: 'TG levels >1.7 mmol/L are considered elevated. Association with CAD is attenuated after adjustment for other lipids. Very high TG (>4.5 mmol/L, especially >10 mmol/L) increases risk of acute pancreatitis — treat to reduce this risk. Statins reduce TG by 10–20%. For patients with TG ≤1.7 mmol/L, LDL-M can be used for monitoring but all should still have full lipid panel annually.' },
+      ],
+    },
+    {
+      heading: 'Familial Hypercholesterolaemia (FH)',
+      blocks: [
+        { type: 'text', content: 'Patients with LDL >4.9 mmol/L should be evaluated for FH. Refer to Genomic Assessment Centre (GAC) for genetic testing after excluding secondary causes. FH patients are at high/very high CV risk — goal LDL-C 2.6 or 1.8 mmol/L depending on additional CV risk. Screen all first-degree relatives; children from age 2 years.' },
+        { type: 'text', content: 'Use Dutch Lipid Clinic Network (DLCN) criteria (preferred over Simon Broome). Treat patients with DLCN ≥6 as clinical FH with or without genetic test.' },
+        {
+          type: 'table',
+          headers: ['DLCN Criterion', 'Score'],
+          rows: [
+            { cells: ['Verified causal genetic mutation (LDLR, ApoB, PCSK9)', '8'] },
+            { cells: ['LDL-C ≥8.5 mmol/L', '8'] },
+            { cells: ['LDL-C 6.5–8.4 mmol/L', '5'] },
+            { cells: ['LDL-C 5.0–6.4 mmol/L', '3'] },
+            { cells: ['LDL-C 4.0–4.9 mmol/L', '1'] },
+            { cells: ['Tendon Xanthomata', '6'] },
+            { cells: ['Arcus Cornealis (age <45 years)', '4'] },
+            { cells: ['1st degree relative with premature CAD OR 1st degree relative with verified LDL-C above 95th percentile', '1'] },
+            { cells: ['1st degree relative with tendon xanthomata or arcus cornealis OR children with LDL-C above 95th percentile', '2'] },
+            { cells: ['Patient: premature coronary artery disease', '2'] },
+            { cells: ['Patient: premature cerebral or peripheral artery disease', '1'] },
+          ],
+        },
+        { type: 'text', content: 'DLCN Diagnosis: Definite FH ≥8 points; Probable FH 6–7 points; Possible FH 3–5 points; Unlikely FH <3 points. *Premature disease: before age 55 (men) or 60 (women).' },
+        {
+          type: 'table',
+          headers: ['Simon Broome Criteria', 'Total Cholesterol', 'LDL-C'],
+          rows: [
+            { cells: ['Child/young person aged <16 years', '>6.7 mmol/L', '>4.0 mmol/L'] },
+            { cells: ['Adult', '>7.5 mmol/L', '>4.9 mmol/L'] },
+          ],
+        },
+      ],
+    },
+    {
+      heading: 'Management — Drug Therapy',
+      blocks: [
+        {
+          type: 'table',
+          headers: ['Drug', 'Common Dose', 'Maximum Dose', 'Common ADR', 'Contraindications / Precautions'],
+          rows: [
+            { cells: ['Simvastatin 10/20mg tablets (S1)', '10–40mg ON', '40mg/day', 'Headache, myalgia, fatigue, constipation, flatulence, dyspepsia, nausea, abdominal pain', 'Caution: renal impairment, liver disease history, elderly. Contraindicated: active liver disease, transaminases >3×ULN, CK >5×ULN, pregnancy, breastfeeding. Patients on simvastatin >40mg may be maintained only if on that dose ≥12 months without muscle toxicity.'] },
+            { cells: ['Atorvastatin (Lipitor) 10/20/40/80mg (S2)', '10–80mg OD', '80mg/day', 'Same as above', 'Same as above'] },
+            { cells: ['Rosuvastatin (Crestor) 10mg (S2)', '5–20mg OD', '40mg/day (>20mg under specialist)', 'Same as above', 'Same as above'] },
+            { cells: ['Lovastatin 20mg (S1)', '10–40mg ON', '80mg/day', 'Same as above', 'Contraindicated with itraconazole, ketoconazole, posaconazole, erythromycin, clarithromycin, telithromycin, HIV PIs, boceprevir, telaprevir, nefazodone, cyclosporin, gemfibrozil. Do not exceed 20mg with danazol, diltiazem, verapamil; 40mg with amiodarone, ticagrelor. Avoid >1L grapefruit juice/day.'] },
+            { cells: ['Pravastatin 10/20mg (S2)', '10–40mg ON', '80mg/day', 'Same as above', 'Same class precautions.'] },
+            { cells: ['Ezetimibe (Ezetrol) 10mg (S2)', '10mg OD', '10mg OD', 'Arthralgia, dizziness, URTI, diarrhoea, GGT increase. With statin: AST/ALT increase, myalgia, fatigue, headache.', 'Secondary prevention: reduces LDL-C 15–20% added to statin. Caution: severe renal impairment (CrCl <30mL/min), mild hepatic impairment (Child-Pugh A). Not recommended in moderate/severe hepatic impairment. Contraindication: active hepatic disease or unexplained transaminase elevations.'] },
+            { cells: ['Evolocumab PCSK9 inhibitor (NUP: FH patients only)', 'SC 140mg every 2 weeks', '140mg every 2 weeks (fixed)', 'Injection site reactions, URTI symptoms, pruritus, arthralgia, back pain', 'Consider if LDL-C targets not reached despite maximally tolerated statin ± ezetimibe (especially post-ACS, recurrent ASCVD, polyvascular disease, FH). No routine biochemical monitoring needed. Contraindication: serious hypersensitivity to PCSK9 inhibitor.'] },
+            { cells: ['Fenofibrate (S1; 100/300mg caps; Lipanthyl 160mg micronized tab)', 'Caps: 100–300mg OD; micronized: 160mg OD', 'Non-micronized: 400mg/day (300mg with statin); micronized: Lipanthyl Supra 160mg/day (200mg with statin)', 'Abdominal pain, nausea, vomiting, diarrhoea, flatulence, transaminases increased.', 'Can use in CKD stages 1–3 (reduce dose, monitor). CrCl <30mL/min: contraindicated. Contraindicated in primary biliary cirrhosis, pre-existing gallbladder disease. Gemfibrozil (delisted from NUP Dec 2024) should not be used with statins.'] },
+            { cells: ['Cholestyramine (not available in NUP)', '4g once to four times daily', '16g/day', 'Constipation, nausea, vomiting, abdominal pain, headache', 'Contraindicated in complete biliary obstruction. Space at least 1 hour before or 4 hours after other medications.'] },
+            { cells: ['Omega-3 Fish Oils (OTC)', '2–4g/day EPA and DHA', '4g/day', 'Fishy aftertaste, abdominal bloating/pain, diarrhoea. May worsen LDL-C.', 'Use in severe hypertriglyceridaemia when fibrates alone inadequate. No effect on LDL-C or CV mortality — not a substitute for statins. Caution with high dose (>3g/day) in patients at risk of bleeding or high LDL-C.'] },
+          ],
+        },
+        {
+          type: 'table',
+          headers: ['% Effect on LDL-C', 'Simvastatin (S1)', 'Atorvastatin (S2)', 'Rosuvastatin (S2)', 'Lovastatin (S1)', 'Pravastatin (S2)'],
+          rows: [
+            { cells: ['-27', '10mg $', '', '', '20mg $', ''] },
+            { cells: ['-34', '20mg $', '10mg $$', '5mg $', '40mg $', '40mg $$$$$'] },
+            { cells: ['-41', '40mg $', '20mg $$', '10mg $$', '80mg $$', '80mg $$$$$$'] },
+            { cells: ['-48', '', '40mg $$', '20mg $$', '', ''] },
+            { cells: ['-55', '', '80mg $$$', '40mg $$$', '', ''] },
+          ],
+        },
+        { type: 'text', content: 'Simvastatin dose limitations: Contraindicated with itraconazole, ketoconazole, posaconazole, erythromycin, clarithromycin*, telithromycin, HIV PIs, nefazodone, gemfibrozil, cyclosporin, danazol. Do not exceed 10mg with verapamil or diltiazem; 20mg with amiodarone, ranolazine, amlodipine; 40mg with ticagrelor. *If clarithromycin cannot be avoided, suspend lovastatin or simvastatin during treatment.' },
+      ],
+    },
+    {
+      heading: 'Initiating Therapy',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Obtain baseline liver enzymes (ALT/AST) and CK if no recent result (<6 months). Take history of prior muscle symptoms to establish baseline.' },
+          { text: 'Transaminases <3×ULN: do not routinely exclude from statin therapy.' },
+          { text: 'Transaminases 3×ULN or more: consider referral to Gastroenterology. Refer to ED if >5×ULN or 300 IU/L (whichever lower).' },
+          { text: 'CK ≥5×ULN: consider referral to General Medicine. CK ≥10×ULN: consider ED to rule out rhabdomyolysis.' },
+          { text: 'Inform patients: notify immediately if muscle symptoms (pain, tenderness, cramping, weakness) or hepatotoxicity symptoms (fatigue, weakness, loss of appetite, jaundice). Blood sugar increases have been reported with statins. Check all contraindicated medications.' },
+          { text: 'Initiate at lowest dose or dose required to achieve LDL-C/TG goal (see Statin Conversion Table).' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Monitoring Side-Effects',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Abnormal liver enzymes: Stop therapy if transaminases >3×ULN. Repeat ALT/AST within 2–3 weeks, monitor till normal. May restart at lower dose if normalised. Stop permanently if serious liver injury with clinical symptoms/hyperbilirubinemia/jaundice.' },
+          { text: 'Muscle symptoms or elevated CK: If mild/moderate symptoms AND/OR CK >3×ULN or 800 IU/L (lower): discontinue; evaluate other causes; rechallenge with same or lower statin to confirm causality; if confirmed, use low dose hydrophilic statin (rosuvastatin or pravastatin). After 2 months without statin, if symptoms persist consider autoimmune myositis.' },
+          { text: 'Unexplained severe muscle symptoms or CK >10×ULN: discontinue statin and refer to Emergency Department.' },
+          { text: 'Cognitive impairment: Stop statin. Generally reversible; variable time to onset (1 day to years) and resolution (median 3 weeks).' },
+          { text: 'Order repeat Lipid Panel, ALT/AST at 2–3 months after initiation/intensification. Repeat CK if baseline abnormal, muscle symptoms, or statin + fibrate. Routine repeat ALT/AST/CK not needed if no dose increase and patient is asymptomatic.' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Combination Therapy and Special Considerations',
+      blocks: [
+        { type: 'text', content: 'Combination therapy: Statins reduce major CV events by 20–25% per 1 mmol/L LDL-C reduction. Ezetimibe lowers LDL-C by 15–20% with associated CV risk reduction when added to statin. PCSK9 inhibitors reduce LDL-C by additional 45–60% when added to statin (for select ASCVD or FH patients). Niacin: no incremental benefit when LDL-C <2.1 mmol/L on statin ± ezetimibe.' },
+        { type: 'list', items: [
+          { text: 'Children: Screen FH children from age 2 years. Offer specialist referral for children with possible/probable/definite FH for therapy recommendation.' },
+          { text: 'Women: Statins contraindicated in pregnancy, planning to conceive, or breastfeeding.' },
+          { text: 'Elderly (>75 years): Consider potential risk-reduction, adverse effects, drug-drug interactions, functional status, and patient preferences. Start at lowest dose; titrate gently. No need to reduce therapy if LDL-C <2.1 mmol/L and well-tolerated.' },
+          { text: 'Renal disease: Statins did not significantly improve CV outcomes in ESRD on dialysis. Atorvastatin and simvastatin (max 40mg/day) do not need renal adjustment. Monitor CK and renal function. Fibrates contraindicated if CrCl <30mL/min.' },
+          { text: 'Liver disease: If transaminases <3×ULN, statins and fibrates can be given at low starting dose with careful monitoring.' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Recommended Follow-Up Intervals',
+      blocks: [
+        {
+          type: 'table',
+          headers: ['Criteria', 'Recommended TCU Frequency', 'Alternate Dr/CM Visit'],
+          rows: [
+            { cells: ['Achieved treatment target AND no complication', '6–12 months', '✓'] },
+            { cells: ['Achieved fair level of control over past 4–6 months', '3–4 months', '✓'] },
+            { cells: ['Not achieved target AND started on statin OR requires medication titration', '2–3 months', '✓'] },
+          ],
+        },
+      ],
+    },
+    {
+      heading: 'Referral to Hospital',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Possible or definite FH — refer to specialist for genetic testing and cascade screening.' },
+          { text: 'Pre-treatment ALT/AST 1.5–3×ULN (or 150 IU/L, whichever lower) or post-treatment persistently >3×ULN — refer Gastroenterology.' },
+          { text: 'Pre-treatment CK ≥5×ULN — refer General Medicine.' },
+          { text: 'CK ≥10×ULN — refer Emergency Department to rule out rhabdomyolysis.' },
+          { text: 'LDL-C above target or TG persistently >4.5 mmol/L despite lifestyle changes and maximum tolerated drug therapy — refer Endocrinology.' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Recommended Care Components for Lipid Disorders',
+      blocks: [
+        {
+          type: 'table',
+          headers: ['Recommended Care Component', 'Minimum Frequency', 'Remarks'],
+          rows: [
+            { cells: ['Lipid Profile', 'Annually', 'Risk stratify all patients; receive disease and lifestyle education. Personalise treatment targets by risk level.'] },
+            { cells: ['Smoking Assessment', 'Annually for smokers; once-off for non-smokers (unless change in habit)', 'Assess smoking habits (sticks/day) and provide smoking cessation counselling.'] },
+            { cells: ['Serum Transaminases', 'Before starting statins and as clinically indicated (e.g. hepatotoxicity symptoms, statin dose increase)', 'Stop statin/fibrate if symptomatic.'] },
+            { cells: ['Serum Creatine Kinase', 'Before starting statins and as indicated (muscle symptoms)', 'Stop medication if CK >3×ULN or ~800 IU/L (whichever lower).'] },
+          ],
+        },
+      ],
+    },
+  ],
+};
+
+// ---------------------------------------------------------------------------
+// 34 NUP CPG — Thrombocytosis and Erythrocytosis (Apr 2023)
+// ---------------------------------------------------------------------------
+const thrombocytosisErythrocytosis: CpgDocument = {
+  id: 'cpg-thrombocytosis-erythrocytosis',
+  condition: 'Thrombocytosis and Erythrocytosis',
+  source: '34 NUP CPG - Management Algorithm for Thrombocytosis and Erythrocytosis in Primary Care.pdf',
+  reviewDate: 'Published April 2023.',
+  advisors: 'Key FPs: Dr Tan Zhirong Julio, Dr Justin Chong, Dr Tan Yee Leng. Specialists: Dr Lee Shir Ying (Senior Consultant, Haematology-Oncology, National University Cancer Institute) and Dr Chee Yen Lin (Head & Senior Consultant, Haematology-Oncology, NUCI).',
+  sections: [
+    {
+      heading: 'Management Algorithm for Thrombocytosis',
+      blocks: [
+        { type: 'text', content: 'Approach to elevated platelet count in primary care (above ULN):' },
+        { type: 'list', items: [
+          { text: 'Platelet ≥1000 x10⁹/L, OR ≥600 x10⁹/L with recent thrombosis/bleed → Urgent referral to haematology (within 2 weeks) or ED as clinically indicated.' },
+          { text: 'Platelet ≥600 x10⁹/L → Routine referral to haematology.' },
+          { text: 'Platelet ULN to <600 x10⁹/L with elevated WBC or haematocrit, or hepatosplenomegaly → (1) History and examination for secondary thrombocytosis; (2) Review previous platelet counts; (3) PBF, ESR and Iron Panel. Manage infection/inflammation/iron deficiency. If persists: refer haematology.' },
+          { text: 'Platelet ULN to 450 x10⁹/L, no alarm signs → Repeat platelet count in 3 months.' },
+          { text: 'Platelet >450–600 x10⁹/L for >3 months → Refer haematology.' },
+          { text: 'Platelet ≥600 x10⁹/L at repeat → Refer haematology.' },
+          { text: 'Platelet ULN to 450 x10⁹/L, no alarm signs, stable → Monitor in primary care 6–12 monthly.' },
+        ]},
+        {
+          type: 'table',
+          headers: ['', 'Examples'],
+          rows: [
+            { cells: ['Common causes of secondary thrombocytosis', 'Iron deficiency, inflammation, infection, recent blood loss/surgery, prior splenectomy, borderline high normal variant'] },
+            { cells: ['Common causes of primary thrombocytosis', 'Essential thrombocytosis, chronic myeloid leukaemia'] },
+            { cells: ['Alarm signs requiring haematology referral', '≥600 x10⁹/L (urgent if ≥1000 or thrombosis/bleeding); >450–600 x10⁹/L for >3 months; hepatosplenomegaly; significantly elevated WBC and/or haematocrit; abnormal PBF'] },
+          ],
+        },
+      ],
+    },
+    {
+      heading: 'Management Algorithm for Erythrocytosis',
+      blocks: [
+        { type: 'text', content: 'Approach to elevated haematocrit (HCT) in primary care (above ULN):' },
+        { type: 'list', items: [
+          { text: 'HCT >58% for male / >54% for female, OR recent thrombosis/neurologic symptoms → Urgent referral to haematology (within 2 weeks) or ED as clinically indicated.' },
+          { text: 'HCT >52–58% for male / >48–54% for female → Routine referral to haematology.' },
+          { text: 'Elevated WBC or platelet, or hepatosplenomegaly → Refer haematology.' },
+          { text: 'HCT ULN to ≤52% male / ≤48% female with no alarm signs — Step 1: (1) History and exam for secondary erythrocytosis, check SpO₂; (2) Review previous haematocrits; (3) If SpO₂ <94% or OSA symptoms → refer Respiratory specialist; (4) Advise hydration, stop smoking, stop haematinics, stop diuretics if possible; (5) Manage weight and hypertension; (6) Repeat NON-FASTING FBC in 3 months.' },
+          { text: 'HCT still elevated >3 months — Step 2: (1) Advise hydration, stop smoking, stop haematinics/diuretics if possible; (2) Repeat FBC and PBF in 3 months + LFT, GGT, Creatinine, Calcium if none in last 6 months.' },
+          { text: 'HCT remains elevated >6 months → Refer haematology. (Urgent if alarm signs present.)' },
+        ]},
+        {
+          type: 'table',
+          headers: ['', 'Examples'],
+          rows: [
+            { cells: ['Common causes of secondary erythrocytosis', 'Dehydration/diuretics/fasting, smoking, Gaisbock syndrome (obesity + hypertension), obstructive sleep apnoea, liver and kidney cysts, borderline high normal variant, chronic hypoxic states (COPD, right-to-left cardiac shunt)'] },
+            { cells: ['Common causes of primary erythrocytosis', 'Polycythaemia rubra vera, idiopathic erythrocytosis'] },
+            { cells: ['Alarm signs requiring haematology referral', 'Recent thrombosis or neurologic symptoms (headache, dizziness, blurring of vision); HCT >52% for males / >48% for females; hepatosplenomegaly; significantly elevated WBC and/or platelets; abnormal PBF'] },
+          ],
+        },
+      ],
+    },
+    {
+      heading: 'FAQs',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Thrombocytosis: Our lab ULN is 360 x10⁹/L but referral threshold is 450 x10⁹/L — do we refer 360–450 x10⁹/L? Most patients with platelets <450 x10⁹/L that are not increasing over years are likely benign. Essential thrombocytosis criteria requires sustained >450 x10⁹/L. Monitor in primary care.' },
+          { text: 'Thrombocytosis: Should constitutional symptoms (weight loss, night sweats, pruritus, flushing, erythromelalgia) be alarm signs? Majority do not have symptoms at presentation; other abnormalities will usually also be present. Continue holistic assessment.' },
+          { text: 'Erythrocytosis: Why do LFT and calcium in erythrocytosis work-up? To screen for rare causes like erythropoietin-producing tumours (hepatocellular carcinoma, parathyroid adenoma/carcinoma).' },
+          { text: 'Erythrocytosis: If referred to ENT/Respiratory for OSA, do we still follow the algorithm? Yes — specialists may not agree that erythrocytosis is from OSA, and the patient may have another concurrent cause.' },
+          { text: 'Erythrocytosis: If persistent erythrocytosis found on review of previous haematocrits, start from "HCT remains elevated >3 months or >6 months" diamond in the algorithm.' },
+          { text: 'Erythrocytosis: At 3-month and 6-month marks — ensure haematocrit is taken as NON-FASTING sample (fasting + diuretics/OHAs can cause haemoconcentration). Advise hydration, stop smoking, stop haematinics, stop diuretics, manage hypertension and obesity. Some Gaisbock syndrome patients may take >6 months to decline. If persistently elevated >6 months, refer haematology to exclude polycythaemia rubra vera or idiopathic erythrocytosis.' },
+        ]},
+      ],
+    },
+  ],
+};
+
+// ---------------------------------------------------------------------------
+// 35 NUP CPG — Management of Acne and Skin Infections (Jan 2026)
+// ---------------------------------------------------------------------------
+const acneSkinInfections: CpgDocument = {
+  id: 'cpg-acne-skin-infections',
+  condition: 'Acne and Skin Infections',
+  source: '35 NUP CPG - Management of Acne and Skin Infections.pdf',
+  reviewDate: 'Updated January 2026 by Dr Choong Siew Li. Next review: January 2029.',
+  advisors: 'Key FP: Dr Choong Siew Li. Specialist: Adj A/Prof Nisha Suyien Chandran (Senior Consultant, NUH).',
+  sections: [
+    {
+      heading: 'Acne Vulgaris — Introduction',
+      blocks: [
+        { type: 'text', content: 'Acne vulgaris is a chronic inflammatory disease of the pilosebaceous unit characterised by the formation of comedones, erythematous papules, pustules, and/or nodules (pseudocysts) that can be accompanied by scarring.' },
+      ],
+    },
+    {
+      heading: 'Acne — Patient Education',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Gentle soap-free pH-balanced cleanser' },
+          { text: 'Non-comedogenic or oil-free cosmetics' },
+          { text: 'Acne-specific moisturiser and sunscreen' },
+          { text: 'Low glycaemic index diet and avoid dairy products' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Acne — Severity Assessment (Comprehensive Acne Severity Scale — CASS)',
+      blocks: [
+        {
+          type: 'table',
+          headers: ['Grade', 'Description'],
+          rows: [
+            { cells: ['Clear (0)', 'No lesions to barely noticeable ones; very few scattered comedones and papules'] },
+            { cells: ['Almost clear (1)', 'Hardly visible from 2.5 metres away; a few scattered comedones and small papules; very few pustules'] },
+            { cells: ['Mild (2)', 'Easily recognisable; <half of affected area involved; many comedones, papules and pustules'] },
+            { cells: ['Moderate (3)', 'More than half of affected area involved; numerous comedones, papules and pustules'] },
+            { cells: ['Severe (4)', 'Entire area involved; covered with comedones; numerous pustules and papules; few nodules and cysts'] },
+            { cells: ['Very Severe (5)', 'Highly inflammatory acne covering the affected area, nodules, and cysts present'] },
+          ],
+        },
+      ],
+    },
+    {
+      heading: 'Acne — Treatment by Severity',
+      blocks: [
+        {
+          type: 'table',
+          headers: ['Disease Severity', 'Type of Therapy', 'Agent', 'Side Effect / Comment'],
+          rows: [
+            { cells: ['Mild', 'Topical', 'Morning: Benzoyl peroxide 5% gel OM OR Acne cream/lotion OM ± Clindamycin 1% solution/gel OD. Night: Adapalene 0.1% ON ($$).', 'Burning, erythema, stinging, pruritus. BP can bleach hair/clothes. Topical antibiotic monotherapy NOT recommended (resistance). Adapalene: irritant contact dermatitis, photosensitivity (use sunscreen). Strategies: every-other-day dosing, titrate upward slowly, use moisturiser, avoid astringents.'] },
+            { cells: ['Moderate', 'Topical + Systemic', 'Same as mild PLUS Doxycycline (or Erythromycin if cannot use Doxy; second line Minocycline — not in NUP)', 'Oral antibiotics should not exceed 3–4 months. Not as single agent or with another topical antibiotic. Start Doxycycline 100mg BD OR Erythromycin 500mg BD; review 4–6 weeks; taper to Doxy 100mg OD or Erythromycin 250mg BD on improvement. Stop when inflammatory lesions clear. If no improvement despite oral antibiotics, consider OCP (females) or dermatology referral. Take with food. Doxy causes photosensitivity.'] },
+            { cells: ['Severe', 'Systemic', 'Oral Isotretinoin (*not available in NUP)', 'Refer to Dermatologist'] },
+          ],
+        },
+      ],
+    },
+    {
+      heading: 'Acne — Differential Diagnosis',
+      blocks: [
+        {
+          type: 'table',
+          headers: ['Diagnosis', 'Important Factors', 'Location', 'Clinical Features'],
+          rows: [
+            { cells: ['Rosacea', 'Slow onset; aggravated by cold, alcohol, hot foods, stress; unknown aetiology', 'Central face', 'Erythema, telangiectasias, papules/pustules; can have rhinophyma or chronic eye inflammation'] },
+            { cells: ['Perioral dermatitis', 'Sometimes associated with prolonged use of high-potency topical steroids', 'Chin, perioral and nasolabial folds', 'Papules, pustules, erythema confined to chin and nasolabial folds with sparing of area directly adjacent to vermillion border'] },
+            { cells: ['Gram-negative folliculitis', 'Can occur with long-term antibiotic therapy', '(a) Nose and mouth areas (common); (b) Neck (uncommon)', '(a) Superficial pustules; (b) Large nodules'] },
+            { cells: ['Steroid acne', 'Associated with oral corticosteroid therapy', 'Chest, back, upper arms, face', 'Small, monomorphic papules, pustules or closed comedones'] },
+            { cells: ['Pityrosporum folliculitis', 'Increases in hot/humid weather or with increased sweating', 'Chest, back', 'Absence of comedones; history e.g. newly conscripted NS man'] },
+          ],
+        },
+      ],
+    },
+    {
+      heading: 'Acne — Specialist Consultation Criteria',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Severe acne' },
+          { text: 'Nodulocystic acne' },
+          { text: 'Unsatisfactory response to treatment after 2 months of oral antibiotics' },
+          { text: 'Acne scars' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Skin Infections — Viral',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Varicella (Chicken Pox): Avoid scratching. Adults: Oral Acyclovir 800mg 5×/day for 1 week (renal adjustment for CKD). Paediatric dose chart for 5-day paediatric dosing. Medical leave 10–14 days. Refer severe/complicated cases and pregnant women.' },
+          { text: 'Herpes Zoster: Uncomplicated — Acyclovir 800mg 5×/day for 1 week with adequate analgesia. Severe multidermatomal/disseminated zoster — refer ED. Post-herpetic neuralgia: WHO analgesia ladder; if persistent pain after 1 week, consider Gabapentin/Tricyclic antidepressants. Refer ophthalmologist if V1 trigeminal dermatomal involvement; refer neurologist if PHN not responsive to analgesia.' },
+          { text: 'Hand Foot Mouth Disease: Supportive care, good hygiene. Medical leave 7–10 days. Refer A&E if poor oral intake. Return to school criteria: no fever, no oral ulcers, no blisters on hands/arms/feet/legs/buttocks.' },
+          { text: 'Viral Warts: Topical Salicylic Acid Lotion ON up to 12 weeks (not for face or genital warts). Contraindications: children ≤2 years, DM, impaired circulation. Refer if: recalcitrant warts, unsatisfactory response after 2 months, periungual/subungual warts, facial warts, cutaneous horns/ulcerated lesions, immunosuppressed patients.' },
+          { text: 'Viral Exanthem: Expectant management. Resolve in few days to 3 weeks.' },
+          { text: 'Herpes Simplex: First line — PO Acyclovir 400mg TDS × 5–10 days (localised, e.g. cold sores). Second line — Valacyclovir (not in NUP).' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Skin Infections — Bacterial',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Folliculitis, Furuncle, Impetigo: For non-infections, consider non-antibiotic alternatives: Chlorhexidine 1% cream; denatured alcohol 70%, potassium permanganate 0.1% solution, Chlorhexidine 0.05% solution. Mild/localised: Topical Fusidic acid 2% cream Q12H × 1 week OR Tetracycline 3% ointment Q12H × 1 week.' },
+          { text: 'Abscess, Cellulitis: First line — Cephalexin 500mg Q8H × 5 days OR Cloxacillin 500mg Q6H × 5 days. Second line — Clindamycin 300–450mg Q6H × 5 days. Elevate affected area. For abscess, drainage recommended with hygiene and dressing advice. Consult pharmacist for renal adjustments.' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Skin Infections — Fungal',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Tinea corporis/cruris/pedis: First line — Send for fungus smear. Topical Miconazole 2% cream BD or Clotrimazole 1% BD (apply on affected area + 2cm normal borders, continue 1 week after symptoms resolve). ± Ketoconazole 2% shampoo OD as wash (leave 5 min). ± Clotrimazole 1% powder BD. Second line (BSA >10% or failure): PO Itraconazole 200mg OD × 1 week or 100mg BD × 2 weeks — check LFT and drug interactions. Exclude DM/immunosuppression.' },
+          { text: 'Tinea Versicolor: First line — Send fungus smear. Ketoconazole 2% shampoo as wash (leave 5 min). Ketoconazole 2% cream BD × 14 days. Other options: Selenium sulfide shampoo. Second line — PO Itraconazole 200mg OD × 5–7 days — check LFT and drug interactions. Exclude DM/immunosuppression.' },
+          { text: 'Pityrosporum folliculitis: First line — Ketoconazole 2% shampoo EOD as wash (leave 5 min). Ketoconazole 2% cream BD × 4 weeks. Second line — PO Itraconazole 200mg OD × 1–3 weeks — check LFT and drug interactions.' },
+          { text: 'Onychomycosis: First line — Clotrimazole 1% lotion BD to affected nails until clinical resolution (improvement may require months). Refer Dermatologist for oral antifungal (poor topical response, ≥4 nails affected — appropriate fungal cultures needed before oral therapy). Oral antifungals generally contraindicated in liver disease/congestive cardiac failure.' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Skin Infections — Parasitic',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Scabies: Suspect in pruritic scaly papules especially involving web spaces, flexures, anogenital areas. Ask about nursing home or close contacts with similar symptoms. First line — Topical Malathion 0.5% (for ≥6 months) lotion for all suspected cases: apply all areas from neck down, wash off after 24 hours, repeat in 1 week (caution skin irritation). Treat all close contacts simultaneously. Machine wash and treat clothing/linen (≥60°C). Non-sedating antihistamines OM + sedating antihistamine ON. Watch for secondary bacterial infection. Post-scabietic itch: topical corticosteroids after adequate malathion treatment. Second line / children <6 months — Refer Dermatologist for Permethrin (not in NUP).' },
+          { text: 'Lice (head/body/pubic): Diagnose by visualisation of adult lice or nits (check seams of clothing). First line — Malathion 0.5% lotion on hair/scalp/trunk/pubic area × 12 hours, single application (repeat in 7–9 days if live lice still visible). Not for infants <6 months. Head lice: wet combing every 3–4 days until no live louse found for 2 continuous weeks. Children may return to school after first application. Examine and treat close contacts. Treatment of clothing/linen same as scabies. Non-sedating antihistamine (day) + sedating antihistamine (night). Topical corticosteroids BD after eradication for symptom relief. Second line — Permethrin lotion (not in NUP).' },
+        ]},
+      ],
+    },
+  ],
+};
+
 export const cpgDocuments: CpgDocument[] = [
   allergicConjunctivitis,
   allergicRhinitis,
@@ -5434,4 +6223,9 @@ export const cpgDocuments: CpgDocument[] = [
   erectileDysfunction,
   heartFailure,
   hypertension,
+  insomnia,
+  kidneyCysts,
+  lipids,
+  thrombocytosisErythrocytosis,
+  acneSkinInfections,
 ];
