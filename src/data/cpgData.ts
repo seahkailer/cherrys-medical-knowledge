@@ -6785,6 +6785,379 @@ const upperLimbFractures: CpgDocument = {
   ],
 };
 
+// ---------------------------------------------------------------------------
+// 41 NUP CPG — Minor Fractures, Sprains and Strains — Foot and Ankle (Dec 2023)
+// ---------------------------------------------------------------------------
+const footAnkleFractures: CpgDocument = {
+  id: 'cpg-foot-ankle-fractures',
+  condition: 'Minor Fractures, Sprains and Strains — Foot and Ankle',
+  source: '41 NUP CPG - Management of Minor fractures, Sprains and Strains of the Foot and Ankle.pdf',
+  reviewDate: 'Reviewed December 2023 by Dr Zhang Zhi Peng, Dr Ma Yueyun, Dr Tan Juanmin, Dr Amaris Lim.',
+  advisors: 'Key FPs: Dr Ma Yueyun, Dr Tan Juanmin, Dr Amaris Lim. Key Contributors: Dr Valerie Tan Huali, Dr Zhang Zhi Peng, Dr Sky Koh Wei Chee. Specialist: Dr Hong Choon Chiet (Consultant, Orthopaedic Surgery, NUHS).',
+  sections: [
+    {
+      heading: 'Introduction and Principles',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Strain: Tearing injury to muscle fibres from excessive tension or overuse.' },
+          { text: 'Sprain: Tearing injury to one or more ligaments of a joint when forced beyond normal motion.' },
+          { text: 'Fracture: Disruption in bone tissue from force, repetitive stress, or invasive process.' },
+        ]},
+        { type: 'text', content: 'Acute management principles (PRICE): P — Protect (support/splint). R — Rest, avoid weight bearing on injured side. I — Ice 15 min every 2–3 hours (not directly on skin). C — Compress with elastic bandage (not when sleeping). E — Elevate to reduce swelling/bruising. Always evaluate joint above and below site of injury.' },
+        { type: 'text', content: 'RED FLAGS (refer ALL to ED): Unstable fractures requiring backslab/cast or involving joint lines; fractures involving weight-bearing/long bones (exception: small avulsion/chip fractures without significant pain not involving a joint); open fractures or significant soft tissue injuries; acute dislocations; any injury with neurovascular compromise. If high clinical suspicion but negative X-ray, manage as possible fracture; otherwise review and repeat radiographs in 1–2 weeks.' },
+      ],
+    },
+    {
+      heading: 'Toe Fractures',
+      blocks: [
+        { type: 'text', content: 'Anatomy: Great toe has 2 phalanges (crucial for balance and locomotion). Lesser toes (2nd–5th) have 3 phalanges each (occasionally 2). Each toe has plantar and dorsal arteries and nerves — unusual to injure except in open or severe crush injuries. Most closed toe fractures can be treated conservatively with excellent outcomes.' },
+        { type: 'text', content: 'Clinical Evaluation: Exclude open fractures. Assess severity of subungual haematoma (hallmark of distal phalangeal fracture). Clinical toe alignment and rotational deformity. Neurovascular status. Suggested investigation: XR Toe AP and Oblique views.' },
+        { type: 'text', content: 'Management of toe fractures:' },
+        { type: 'list', items: [
+          { text: 'Subungual haematoma: Displaced/fractured nail → treat as open fracture. Intact nail <48h → consider referral to ED for trephination vs. nailbed laceration repair. If decline referral, counsel on possible nail loss and deformity.' },
+          { text: 'Open fracture, distal neurovascular compromise, significant displacement/fracture dislocation → Refer to ED immediately.' },
+          { text: '<18 years old → TCU Paediatric Orthopaedic Surgery 1–2 weeks.' },
+          { text: 'Multiple toe fractures → TCU Orthopaedic Surgery 1–2 weeks.' },
+          { text: 'Manage in polyclinic (closed, minimally displaced, single fracture in adult ≥18 years): Analgesia; buddy splint fractured toe to adjacent toe × 1–2 weeks; daily elevation and minimise walking on injured foot in first 2 weeks; avoid sports/jumping/running × 6–8 weeks. Most toe fractures heal within 6–8 weeks. Residual stiffness, pain, swelling may last 3–6 months. Scheduled follow-up not routinely required; arrange 6–8 week review at clinician\'s discretion. Offer up to 10–14 days MC, 14 days light duty (excuse boots).' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Metatarsal Fractures',
+      blocks: [
+        { type: 'text', content: 'Suggested investigation: XR foot AP and Oblique views.' },
+        { type: 'list', items: [
+          { text: 'Acute fractures: Most treated conservatively (elevation, ice, analgesia, immobilisation). Non-displaced or minimally displaced can be splinted conservatively. Significant displacement/angulation requires reduction before immobilisation. Refer acute metatarsal fractures to ED for immobilisation (backslab + non-weight bearing). Small avulsion/chip fractures not involving joint and without significant pain → early Orthopaedic Surgery review in 1–2 weeks.' },
+          { text: 'CAUTION: Small avulsions/chip fractures involving the joint could represent Lisfranc injury or MTPJ collateral ligament avulsion → refer to ED. Lisfranc injury can present with seemingly minor X-ray findings (e.g. misalignment of 2nd MTPJ) — high index of suspicion required.' },
+          { text: 'Stress fractures: Most commonly 2nd and 3rd metatarsals. Conservative management: 6–8 weeks rest and orthotics to offload metatarsals. Calcium and Vitamin D supplementation at clinician\'s discretion. Refer to Orthopaedic Surgery outpatient clinic in 2–4 weeks.' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Tarsal Bone Fractures',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Talus, Navicular, Calcaneal fractures: Mostly from high-velocity trauma (fall from height, RTA). May be associated with ligamentous injuries or joint dislocations. Talus and navicular have increased risk of avascular necrosis. Investigations: XR foot AP and Oblique + XR ankle AP and Lateral (talus/navicular); XR calcaneum Axial and Lateral (calcaneal). Refer to ED in acute setting.' },
+          { text: 'Calcaneal stress fractures: From repetitive stress on heel. Mild symptoms — activity restriction and heel inserts. Significant symptoms (pain/swelling with walking) — non-weight bearing with crutches until symptoms subside. XR calcaneum Axial and Lateral. Calcium and Vitamin D at clinician\'s discretion. Refer to Orthopaedic Surgery outpatient clinic in 2–4 weeks.' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Ankle Sprain',
+      blocks: [
+        { type: 'text', content: 'Ankle sprains are among the commonest sports injuries. Exclude ankle fracture with targeted physical exam and appropriate imaging. Initial management: PRICE. Nursing team can bandage sprained ankle. Refer to physiotherapy for rehabilitation (proprioceptive training, peroneal tendon strengthening and stretching ± ankle bracing). If swelling and bruising out of proportion to trauma → suspect occult fracture; consider temporary immobilisation + non-weight bearing 1–2 weeks; refer to ED if needed. Refer to Orthopaedic Surgery in 4–6 weeks for residual ankle instability, recurrent sprains, pain and swelling on re-attendance.' },
+      ],
+    },
+    {
+      heading: 'Ankle Fractures and Ottawa Ankle/Foot Rule',
+      blocks: [
+        { type: 'text', content: 'Ankle fractures are among the commonest orthopaedic injuries. Suggested investigation: XR ankle AP and Lateral views.' },
+        { type: 'text', content: 'Ottawa Ankle/Foot Rule:' },
+        { type: 'list', items: [
+          { text: 'Radiographs of ANKLE only required if: Pain in malleolar region PLUS one of — bony tenderness at distal posterior edge of fibula (6cm) or tip of lateral malleolus; OR bony tenderness at distal posterior edge of tibia (6cm) or tip of medial malleolus; OR inability to bear weight (limping = bearing weight) both immediately and in consult room for 4 steps.' },
+          { text: 'Radiographs of FOOT only required if: Pain in midfoot region PLUS one of — bony tenderness at base of 5th metatarsal; OR bony tenderness at navicular; OR inability to bear weight both immediately and in consult room for 4 steps.' },
+          { text: 'Acute ankle fractures: Refer to ED for immobilisation (backslab + non-weight bearing). Small avulsion/chip fractures without significant pain may not require ED — early Orthopaedic Surgery review in 1–2 weeks; consider ankle brace.' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Follow-Ups',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Scheduled follow-up for closed, minimally displaced toe fractures not routinely required.' },
+          { text: 'Non-toe fractures: referred to ED for backslab or early orthopaedics review after stabilisation.' },
+          { text: 'Bony and ligamentous injuries can take up to 6–9 months to heal. Symptoms usually improve progressively after initial 6–8 weeks.' },
+          { text: 'Patients with initially negative radiographs but persistent symptoms: repeat assessment and radiographs; ensure adequate pain control and compliance to rest, elevation and weight-bearing restrictions.' },
+          { text: 'Consider specialist referral for: worsening/persistent pain, swelling, or loss of function; malunion, nonunion, or delayed union; injuries requiring claim/compensation or legal input; any outstanding physician or patient concern.' },
+        ]},
+      ],
+    },
+  ],
+};
+
+// ---------------------------------------------------------------------------
+// 42 NUP CPG — Other Common Skin Conditions (Jan 2026)
+// ---------------------------------------------------------------------------
+const otherSkinConditions: CpgDocument = {
+  id: 'cpg-other-skin-conditions',
+  condition: 'Other Common Skin Conditions',
+  source: '42 NUP CPG - Management of Other Common Skin Conditions in Primary Care.pdf',
+  reviewDate: 'Updated January 2026 by Dr Choong Siew Li. Next review: January 2029.',
+  advisors: 'Key FP: Dr Choong Siew Li. Specialist: Adj A/Prof Nisha Suyien Chandran (Senior Consultant, NUH).',
+  sections: [
+    {
+      heading: 'Urticaria',
+      blocks: [
+        { type: 'text', content: 'Urticaria is a skin reaction characterised by transient pruritic oedematous, erythematous lesions. Individual lesions typically last <24 hours with no post-inflammatory hyperpigmentation.' },
+        { type: 'list', items: [
+          { text: 'Patient Education: Eliminate cause (drugs/diet/physical environment).' },
+          { text: 'Investigations: Consider FBC, ESR and TFT in chronic urticaria (>6 weeks duration).' },
+          { text: 'H1-Antihistamines: First line — 2nd generation: Cetirizine or Loratadine 10mg BD (can increase up to 4× standard dose). Second line — switch to Fexofenadine 180mg BD or Bilastine 20mg OD/BD (*not in NUP; can increase up to 4× standard dose). Consider adding another 2nd generation H1-antihistamine. Consider adding 1st generation antihistamine at bedtime (Chlorpheniramine 4mg ON or Hydroxyzine 10–25mg ON). Treat for at least 2 weeks, or 2 months if chronic. Consult pharmacist for renal dose adjustments.' },
+          { text: 'H2-Antihistamines (if H1 insufficient): Famotidine 20mg BD (renal dose adjustment required); or Cimetidine 400mg BD (*not in NUP). Weak evidence for H1 + H2 combination.' },
+          { text: 'Oral Corticosteroids: Short course prednisolone (0.5–1mg/kg/day, max 60mg/day) × 3–7 days for severe acute urticaria.' },
+          { text: 'Specialist Consultation: Dermatologist for refractory urticaria or suspected urticarial vasculitis (pain, purpura/pigmentation, lesions lasting >24 hours, atypical features). A&E for severe angioedema with airway compromise or haemodynamic instability.' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Alopecia',
+      blocks: [
+        { type: 'text', content: 'Alopecia = partial or complete absence of hair where it normally grows. Non-scarring: hair follicles preserved and visible. Scarring: follicles obliterated and destroyed.' },
+        { type: 'text', content: 'Causes: (1) Disturbance of hair follicle — androgenetic alopecia, alopecia areata. (2) Disturbance of hair cycle — telogen effluvium. (3) Physical factors — trauma (pulling/pressure), traction (hair styling). (4) Skin disease — fungal infection, inflammatory skin disease causing scarring (discoid lupus, lichen planus). (5) Systemic factors — drugs, endocrine disorders. (6) Hair shaft abnormalities — genetic disease, hair treatment damage.' },
+        { type: 'text', content: 'Consider laboratory investigations (FBC, Iron panel, TFT) for new onset diffuse non-scarring hair loss without clear cause.' },
+        { type: 'list', items: [
+          { text: 'Androgenetic Alopecia ("patterned" alopecia, frontal recession in males, crown/vertex thinning, family history): First line — OTC Minoxidil (2%, 3%, 5%) Solution BD (females: 2%; males: 5% recommended, switch to lower if irritation). Continue indefinitely. Hair wig. Specialist: Refer to dermatologist for finasteride (males)/spironolactone (females). Finasteride 1mg OD can be stepped down to primary care — monitor for sexual dysfunction, gynaecomastia, breast tenderness, prostate cancer. Cosmetic: hair transplant.' },
+          { text: 'Alopecia Areata (localised non-scarring patchy alopecia): 1st line — Betamethasone 0.1% scalp lotion OM (start in primary care). Concurrently refer to dermatologist for intralesional corticosteroid or topical immunotherapy. Adjunct: Minoxidil (2–5%) Solution BD. Topical corticosteroids (less efficacious).' },
+          { text: 'Telogen Effluvium (diffuse hair loss of relatively short duration): Detailed history for underlying cause (recent delivery, severe stress, recent febrile illness e.g. dengue). Spontaneously improves within 6–9 months. Treat underlying cause.' },
+          { text: 'Scarring Alopecia: Refer to dermatologist for assessment and management. Treat existing scalp infections (bacterial/fungal/viral). Advise against tight curls if traction alopecia suspected.' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Common Acquired Pigmentary Disorders',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Freckles: Encourage sun protection. No urgency to refer (cosmetic, not subsidised).' },
+          { text: 'Post-inflammatory Hyperpigmentation (PIH): Usually follows skin inflammation (eczema, acne, injury) especially in darker phototypes (III–VI). PIH will take time to fade (months to a few years). Treat underlying cause of PIH (optimise eczema/acne treatment). Encourage emollients and regular sunscreen use.' },
+          { text: 'Vitiligo: Depigmented macules/patches — focal, segmental, or mixed. Fluoresce under Wood\'s lamp. Assess severity and stability (stable = no increase in size and no new lesions in previous 3–6 months). Goals: stabilisation, repigmentation, prevention of recurrence. Manage expectations regarding efficacy. Can be left alone if patient does not want treatment. For stable localised disease: 1st line — topical corticosteroids (mometasone furoate 0.1% cream OD or betamethasone 0.025% cream OD/BD) for up to 2 months. Watch for cutaneous atrophy. If no repigmentation, consider referral to Dermatology for phototherapy.' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Drug Rashes and Allergy Testing',
+      blocks: [
+        {
+          type: 'table',
+          headers: ['Diagnosis', 'Clinical Features', 'Recommended Disposition'],
+          rows: [
+            { cells: ['Suspected Food Allergy', 'Food-induced trigger suspected or cannot be confidently excluded in patient with dermatosis', '1. Referral to allergist (NSC does not offer food provocation testing). 2. Whilst awaiting, advise patient to keep a food diary.'] },
+            { cells: ['Angioedema / Anaphylaxis', 'Angioedema/anaphylaxis ± urticaria. Drug aetiology usually within 24 hours. Non-IgE reactions (NSAID intolerance, opioids, contrast media, ACE inhibitors/ARBs) can have latency of hours to short days.', '1. Stop culprit drug if applicable. 2. Life/airway-threatening presentations → ED immediately. 3. Refer Dermatologist if no obvious trigger. 4. If food trigger suspected, refer to allergist.'] },
+            { cells: ['Exanthema', 'Acute generalised eruption (maculopapular, macular, papular etc.). Usually viral trigger or drug-induced (latency 4–14 days). WARNING SIGNS of evolving SCAR: mucositis, erosions/Nikolsky\'s sign, dusky target → EM-SJS-TEN (4–30 day latency); fever >38.5°C, purpura, facial/earlobe oedema, scaling, induration → DRESS/DHS (4–6 weeks up to 3 months); pustules (especially flexural) ± facial oedema → AGEP (1–4 day latency)', '1. Stop culprit drug if applicable. 2. If no warning signs: stop offending drug, treat symptomatically with moderate-high potency topical steroids, review in a few days (no need to refer at outset). 3. If warning signs present → refer to ED immediately. 4. If unsure of categorisation/management → refer to Dermatologist early.'] },
+          ],
+        },
+      ],
+    },
+    {
+      heading: 'Skin Growths, Tumours, Scars and Keloids',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Skin Tags, Seborrheic Keratoses, Sebaceous Hyperplasia, Syringomas: No urgency to refer (cosmetic/non-medical). Refer as private patient to Dermatologist.' },
+          { text: 'Suspected BCC, SCC, Melanoma, Bowen\'s Disease: Refer to Dermatologist for biopsy/excision and histology.' },
+          { text: 'Keloids: First line — intralesional steroid (*not in NUP). Consider referral to Dermatologist.' },
+          { text: 'Scars: Refer to Dermatology clinic if patient requests scar treatment (non-subsidised).' },
+        ]},
+      ],
+    },
+  ],
+};
+
+// ---------------------------------------------------------------------------
+// 43 NUP CPG — Management of Psoriasis (Mar 2025)
+// ---------------------------------------------------------------------------
+const psoriasis: CpgDocument = {
+  id: 'cpg-psoriasis',
+  condition: 'Psoriasis',
+  source: '43 NUP CPG - Management of Psoriasis.pdf',
+  reviewDate: 'Published March 2025.',
+  advisors: 'Key FP: Dr Choong Siew Li. Specialist: Adj A/Prof Nisha Suyien Chandran (Senior Consultant, NUH).',
+  sections: [
+    {
+      heading: 'Introduction',
+      blocks: [
+        { type: 'text', content: 'Psoriasis is a chronic, relapsing and remitting, non-infectious inflammatory skin disease characterised by well-demarcated thick scaling erythematous plaques. It has a bimodal age of onset (16–22 years and 57–60 years) and affects both sexes equally. It is an immune-mediated disease with genetic predisposition. Distribution: usually extensor surfaces (elbows, knees), scalp, nails. Intertriginous areas (axilla, groin folds, natal cleft) can sometimes be involved.' },
+      ],
+    },
+    {
+      heading: 'Types of Psoriasis',
+      blocks: [
+        {
+          type: 'table',
+          headers: ['Type', 'Description', 'Management'],
+          rows: [
+            { cells: ['Plaque psoriasis', 'Most common type', 'See management section'] },
+            { cells: ['Inverse psoriasis', 'Affects skin folds of the body', 'See management section'] },
+            { cells: ['Guttate psoriasis', 'Acute eruption of fine-scaled, small papules', 'See management section'] },
+            { cells: ['Pustular psoriasis — Localised (e.g. palmoplantar)', 'Pustules that may be surrounded by inflamed skin', 'Avoid irritants; topical therapies'] },
+            { cells: ['Pustular psoriasis — Generalised (Erythrodermic psoriasis)', 'Acute/subacute onset of generalised erythema >90% of the body. Signs of haemodynamic instability, multiple comorbidities.', 'Refer ED to consider hospitalisation'] },
+            { cells: ['Uncertain diagnosis / stable chronic', '—', 'Refer to dermatologist for assessment/biopsy'] },
+          ],
+        },
+      ],
+    },
+    {
+      heading: 'Differential Diagnoses',
+      blocks: [
+        {
+          type: 'table',
+          headers: ['Differential Diagnosis', 'Distinguishing Features'],
+          rows: [
+            { cells: ['Atopic dermatitis', 'Predominant pruritus; typical morphology and distribution (flexural lichenification in adults/older children; facial and extensor papules in infancy)'] },
+            { cells: ['Lichen planus', 'Typically pruritic; violaceous papules with frequent mucosal involvement'] },
+            { cells: ['Pityriasis rosea', 'Pink, oval papules and patches with "Christmas tree" configuration on trunk; presence of herald patch with sparing of face and distal extremities'] },
+            { cells: ['Tinea corporis', 'Annular scaly patches and plaques with central clearance'] },
+            { cells: ['Onychomycosis', 'No cutaneous/joint manifestations; nail clippings for microscopy and culture'] },
+          ],
+        },
+      ],
+    },
+    {
+      heading: 'Management — Non-Pharmacological',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Assess impact of disease on patient and psychological distress.' },
+          { text: 'Identify and avoid triggers.' },
+          { text: 'Consider replacing potentially inducing or aggravating drugs where clinically appropriate (e.g. beta-blockers).' },
+          { text: 'Avoid scratching/trauma.' },
+          { text: 'Counsel on support groups (Psoriasis Association of Singapore).' },
+          { text: 'Advise on weight management, reduce alcohol intake and smoking cessation to reduce cardiovascular risk factors.' },
+          { text: 'Screen and manage comorbidities (lipid panel and fasting glucose) — psoriasis is associated with metabolic syndrome.' },
+          { text: 'Look for nail or joint involvement.' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Management — Stable Chronic Plaque Psoriasis (Topical Therapy)',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'First line: Betamethasone 0.1% cream BD or Mometasone 0.1% cream OD for plaques on trunk and limbs — aim to taper to Betamethasone 0.05% cream BD when better. Betamethasone 0.025% cream BD for plaques on face and flexures. If scalp involved: Betamethasone 0.1% scalp lotion BD; Coal tar shampoo or cetrimide shampoo twice weekly (or more often). Coal tar 10% in aqueous cream OD/BD as emollient substitute. *Tar products may stain skin, hair, or clothing; patients may find odour unpleasant.' },
+          { text: 'Second line: Ointment equivalents for thicker plaques (e.g. Betamethasone 0.1% ointment BD for trunk/limbs; Betamethasone 0.025% ointment BD for face/flexures). Betamethasone dipropionate 0.05% + Salicylic acid 3% ointment (Betacyclic) BD for resistant lesions — switch to lower-strength topical corticosteroid once lesions have flattened until complete resolution. *Topical Vitamin D3 analogue (Calcipotriol), phototherapy, systemic therapy (acitretin, methotrexate, cyclosporine, biologics) — not available in polyclinic.' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Specialist Consultation Criteria',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Unsatisfactory response to topical treatments (steroids or coal tar).' },
+          { text: 'Psoriasis affecting 3–10% BSA (1 palm ≈ 1% BSA).' },
+          { text: 'Patients who may benefit from phototherapy or systemic therapy.' },
+          { text: 'Pustular/Erythrodermic psoriasis.' },
+          { text: 'Psoriatic arthropathy.' },
+          { text: 'Uncertain diagnosis.' },
+        ]},
+      ],
+    },
+  ],
+};
+
+// ---------------------------------------------------------------------------
+// 44/45 NUP CPG — MASLD (Nov 2025)
+// ---------------------------------------------------------------------------
+const masld: CpgDocument = {
+  id: 'cpg-masld',
+  condition: 'Metabolic Dysfunction-Associated Steatotic Liver Disease (MASLD)',
+  source: '45 NUP CPG - Metabolic Dysfunction-Associated Steatotic Liver Disease.pdf',
+  reviewDate: 'Updated November 2025 by Dr Phua Yiyong. Next review: November 2028.',
+  advisors: 'Key FPs: Dr Amanda Loke, Dr Phua Yiyong. Specialist: Dr Mark Dinesh Muthiah (Senior Consultant, NUH).',
+  sections: [
+    {
+      heading: 'Introduction',
+      blocks: [
+        { type: 'text', content: 'Since 2023, MASLD is the new nomenclature for NAFLD/non-alcoholic fatty liver disease ("fatty liver") to better reflect the understanding of this liver disease. It lies on a spectrum: MASLD → MASH (metabolic dysfunction-associated steatohepatitis) → Fibrosis → Cirrhosis → HCC.' },
+        { type: 'text', content: 'Importance: Most patients with MASLD are asymptomatic and receive care in primary care. Due to the multi-systemic and metabolic nature of the disease, patients with earlier stages are best managed in primary care. Early case identification, management and prognostication can mitigate huge morbidity and costs.' },
+        { type: 'text', content: 'Epidemiology: Becoming the most common liver disease worldwide. Closely linked with rising obesity and metabolic syndrome. Local prevalence up to 40% (Goh GB, 2016).' },
+      ],
+    },
+    {
+      heading: 'Screening and Diagnosis',
+      blocks: [
+        { type: 'text', content: 'Most patients are asymptomatic and picked up incidentally via: health screening; raised liver enzymes; hepatic steatosis on imaging for other reasons; or when commencing medications requiring routine liver enzyme monitoring (e.g. statins, allopurinol).' },
+        { type: 'text', content: 'If presenting with raised liver enzymes, MASLD usually shows: ALT 40–250 U/L (consider alternate pathology if higher); ALT higher than AST; some may have raised ALP; raised GGT (if done in external screening).' },
+        { type: 'text', content: 'Diagnosis requires: (1) Hepatic steatosis on imaging or biopsy, AND (2) At least 1 of 5 cardiometabolic criteria:' },
+        { type: 'list', items: [
+          { text: 'BMI ≥23 kg/m² (or >25 for Caucasian) OR waist circumference >94cm (males) / >80cm (females)' },
+          { text: 'Type 2 DM or pre-diabetes' },
+          { text: 'Blood pressure ≥130/85 mmHg OR on specific antihypertensive treatment' },
+          { text: 'Plasma triglycerides ≥1.70 mmol/L OR on lipid-lowering treatment' },
+          { text: 'Plasma HDL ≤1.0 mmol/L (males) / ≤1.3 mmol/L (females) OR on lipid-lowering treatment' },
+        ]},
+        { type: 'text', content: 'Secondary causes of hepatic steatosis must be ruled out: large alcohol consumption (males >21 standard drinks/week; females >14/week); viral hepatitis (HepB and HepC — HepC is unsubsidised in NUP, test if high-risk behaviours); drug-induced liver injury (DILI from medication, CAM, supplements — refer LiverTox).' },
+      ],
+    },
+    {
+      heading: 'Initial Assessment',
+      blocks: [
+        {
+          type: 'table',
+          headers: ['Assessment Domain', 'Details'],
+          rows: [
+            { cells: ['History', 'Alcohol intake; concomitant medications; complementary and alternative medicines (CAM), herbs, supplements'] },
+            { cells: ['Physical Examination', 'Blood pressure; BMI; waist circumference; hepatomegaly and stigmata of chronic liver disease'] },
+            { cells: ['Imaging', 'Ultrasound of the liver'] },
+            { cells: ['Lab — Comorbidities', 'HbA1c, lipid profile'] },
+            { cells: ['Lab — Complications', 'FBC for thrombocytopenia; Liver function test (minimally AST/ALT)'] },
+            { cells: ['Lab — Viral hepatitis', 'HBsAg, Anti-HBs antibodies; Anti-HCV for high-risk patients'] },
+            { cells: ['Lab — Wilson disease', 'Strong family history of neurological or psychiatric illness → refer to gastroenterology for evaluation'] },
+          ],
+        },
+      ],
+    },
+    {
+      heading: 'FIB-4 Risk Stratification',
+      blocks: [
+        { type: 'text', content: 'Liver fibrosis is the key determinant of liver-related complications and mortality. FIB-4 is the preferred non-invasive test for MASLD — requires only simple blood tests (platelets, AST, ALT).' },
+        { type: 'text', content: 'FIB-4 formula: Age (years) × AST (U/L) / [Platelet count (10⁹/L) × √ALT (U/L)]. Can be calculated at MDCalc. Note: FIB-4 may be inaccurate if conditions affect AST, ALT, or platelet count (e.g. low platelets from medication/infection/autoimmune thrombocytopenia; elevated AST/ALT from statins, alcohol, TCM). Higher rate of false positives in patients >65 years.' },
+        {
+          type: 'table',
+          headers: ['FIB-4 Score', 'Management'],
+          rows: [
+            { cells: ['FIB-4 <1.3', 'Optimise metabolic and lifestyle in primary care. Repeat FIB-4: annually if T2DM or ≥2 cardiometabolic criteria; every 2 years if no T2DM and ≤2 cardiometabolic criteria.'] },
+            { cells: ['FIB-4 1.3–2.67', 'Refer to gastroenterologist or for Vibration Controlled Transient Elastography (VCTE/Fibroscan) if available. If stiffness 8–10 kPa: intensive lifestyle/diet changes for weight loss. If stiffness >10 kPa: refer to gastroenterologist for specialised management. (Open access VCTE currently not available at NUP.)'] },
+            { cells: ['FIB-4 >2.67', 'Refer to gastroenterologist.'] },
+          ],
+        },
+      ],
+    },
+    {
+      heading: 'Management',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Lifestyle: Abstain from regular alcohol (occasional 1–2 standard drinks/week permissible for special occasions). Regular physical exercise.' },
+          { text: 'Metabolic comorbidities: DM — screen for diabetes in new MASLD with no known DM; manage per NUP DM CPG. Hypertension — per NUP CPG. Hyperlipidaemia — per NUP CPG.' },
+          { text: 'Weight loss: Encourage >10% weight loss. Liver and cardiometabolic benefits begin at 5–7% weight loss. Target BMI 18.5–23 kg/m² (Asians) or 18.5–24.9 (Caucasians).' },
+          { text: 'Vaccinations: Hepatitis A and B if non-immune. Influenza annually. Pneumococcal (18–64 years: one dose PPSV23; ≥65 years: one dose PCV13, then one dose PPSV23 1 year later).' },
+          { text: 'Cancer Screening: Increased risk of colon and breast cancer in MASLD — adhere to current cancer screening recommendations. Insufficient evidence for HCC screening without cirrhosis.' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Management Algorithm',
+      blocks: [
+        { type: 'text', content: 'When incidental hepatic steatosis on imaging or raised liver enzymes → suspect MASLD → take history, PE, and investigations to exclude other causes. If other cause present → manage other liver diseases. If metabolic risk factors present → calculate FIB-4. If FIB-4 <1.3 → lifestyle modifications + metabolic comorbidity management + cancer screening + vaccinations → repeat AST, ALT, FBC at 1 year (T2DM or ≥2 metabolic risk factors) or every 2 years (no T2DM and <2 risk factors). If FIB-4 ≥1.3 → refer gastroenterologist. If absent risk factors with persistently raised liver enzymes or atypical features (≥2 family members with idiopathic/cryptogenic cirrhosis; features suggestive of Wilson\'s disease) → refer gastroenterologist.' },
+      ],
+    },
+    {
+      heading: 'Recommended Care Components',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Annual FIB-4 scoring.' },
+          { text: 'Good control of metabolic conditions: hypertension, diabetes, pre-diabetes, BMI, and hyperlipidaemia.' },
+          { text: 'Up to date and appropriate vaccinations.' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Referrals — Elevated ALT Management',
+      blocks: [
+        { type: 'text', content: 'Refer to A&E: ALT >1000 IU; OR ALT at any level with signs of acute liver failure, jaundice with fever, or clinically ill.' },
+        { type: 'text', content: 'Refer GE Direct Access: 200 ≤ ALT ≤ 1000 IU; solid mass (liver, pancreas, intra-abdominal) on imaging; jaundice with no fever; hepatomegaly, splenomegaly, ascites, oedema; cirrhosis suspected/newly diagnosed (raised bilirubin without jaundice, low albumin, low platelets); transaminitis with elevated globulin; unexplained weight loss (≥5% in 6–12 months).' },
+        { type: 'text', content: 'Refer GE Routine: Persistently elevated ALT (120 ≤ ALT <200 IU) for ≥2 weeks (non-Hep B transaminitis); Hepatitis C.' },
+        { type: 'text', content: 'For ALT elevated but <200 IU — Stepwise approach: (1) Review drugs/alcohol; (2) Review Hep B status; (3) Review Hep C status; (4) If both unknown, offer Hep B and Hep C screening with LFT. If clinically well and negative for both Hep B and C with no known cause: Repeat LFT in 1–2 weeks (ALT 120–200 IU) or 1–2 months (ALT normal to 120 IU). Based on repeat: if ≥120 IU → Table 1; if normal → repeat in 3–4 months; if raised but <120 → FBC, TFT, US liver. Final step: repeat LFT 3–4 months; if ≥120 IU → refer GE; if <120 IU and patient well → repeat in 6–12 months or discharge.' },
+      ],
+    },
+    {
+      heading: 'Role of Non-Doctor Team Members',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Dietician: Dietary counselling to aid management of metabolic conditions, especially weight loss.' },
+          { text: 'Care Managers: Adjuvant counselling for management of metabolic conditions.' },
+          { text: 'Care Coordinators: Encourage uptake of preventive health measures (vaccinations, cancer screening).' },
+        ]},
+      ],
+    },
+  ],
+};
+
 export const cpgDocuments: CpgDocument[] = [
   allergicConjunctivitis,
   allergicRhinitis,
@@ -6825,4 +7198,8 @@ export const cpgDocuments: CpgDocument[] = [
   gout,
   chronicCoronarySyndrome,
   upperLimbFractures,
+  footAnkleFractures,
+  otherSkinConditions,
+  psoriasis,
+  masld,
 ];
