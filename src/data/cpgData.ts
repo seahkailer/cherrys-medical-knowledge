@@ -3345,8 +3345,2065 @@ const chronicHepatitisB: CpgDocument = {
 };
 
 // ---------------------------------------------------------------------------
+// 17. Chronic Hepatitis C
+// ---------------------------------------------------------------------------
+const chronicHepatitisC: CpgDocument = {
+  id: 'chronic-hepatitis-c',
+  condition: 'Chronic Hepatitis C',
+  source: 'NUP CPG',
+  reviewDate: 'October 2024',
+  advisors: 'Dr Mark Muthiah (Senior Consultant, NUH) / Dr Alexander Yip (Consultant, Alexandra Hospital) / Dr Alex Soh (Consultant, Alexandra Hospital)',
+  sections: [
+    {
+      heading: 'Introduction',
+      blocks: [
+        { type: 'text', content: 'Hepatitis C is an inflammation of the liver caused by the hepatitis C virus (HCV). HCV is primarily a blood-borne virus. The most common modes of infection are: (1) Injecting drug through sharing of injection equipment; (2) Inadequate sterilization of medical equipment; (3) Transfusion of unscreened blood and blood products; (4) Unsafe sex practices that lead to exposure to blood, people with multiple sexual partners and among men who have sex with men (less common).' },
+        { type: 'text', content: 'Acute Hepatitis C infections are usually asymptomatic. Around 30% of infected persons clear the virus spontaneously within 6 months without treatment. The remaining 70% will develop chronic HCV infection. Among this group, the risk of cirrhosis ranges from 15–30% within 20 years.' },
+        { type: 'text', content: 'Unlike Hepatitis B, there is currently no effective vaccine against hepatitis C. However, Direct-acting antiviral agents (DAAs) can cure more than 95% of persons affected by HCV.' },
+        { type: 'text', content: 'In Singapore, acute hepatitis C infection is a notifiable disease under section 6 of the Infectious Disease Act within 72 hours from time of diagnosis. Chronic hepatitis C need not be reported to MOH.' },
+        { type: 'text', content: 'Epidemiology: Globally, an estimated 50 million people have chronic HCV infection with approximately 1 million new infections per year. In Singapore, the seroprevalence is low (0.37–0.54%) based on blood donor studies, with majority among those with history of injecting drug use. Approximately 45% of people who inject drugs show evidence of current or past HCV infection.' },
+      ],
+    },
+    {
+      heading: 'Screening and Diagnosis',
+      blocks: [
+        { type: 'text', content: 'Screening (per Report of Screening Test Review Committee, March 2019) is recommended for:' },
+        { type: 'list', items: [
+          { text: 'At-Risk Groups', children: [
+            { text: 'Children born to HCV positive mothers' },
+            { text: 'Chronic haemodialysis patients' },
+            { text: 'Past or present intravenous drug abusers' },
+            { text: 'Individuals who underwent invasive procedures in health-care facilities with inadequate infection control practices' },
+            { text: 'Individuals with known exposures to HCV (e.g. healthcare workers following needle stick injury, recipients of blood or organs from HCV-positive donor)' },
+            { text: 'Individuals whose past or present sex partners were/are HCV infected or intravenous drug abusers' },
+            { text: 'HIV patients' },
+          ]},
+          { text: 'Healthcare Workers', children: [
+            { text: 'All HCWs with direct patient contact are encouraged to have their status checked' },
+            { text: 'HCWs practising in specialties or areas involving exposure-prone procedures' },
+          ]},
+        ]},
+        { type: 'text', content: 'Diagnosis depends on detection of antibodies to recombinant antigens (Anti-HCV antibody) and detection of viral RNA (e.g. by PCR techniques).' },
+        { type: 'text', content: 'Clinical Presentation: Most patients do not have symptoms in the first week of infection. Symptoms may develop anywhere between 2 weeks to 6 months. In the local context, most patients in the primary care setting were either discharged from specialist or defaulted follow-up. Patients who are treated and discharged would have achieved sustained virological response (SVR) defined by undetectable HCV RNA ≥ 12 weeks after treatment completion with DAA and transaminase normalization. Likelihood of achieving SVR with DAA generally exceeds 95%.' },
+      ],
+    },
+    {
+      heading: 'Management and Follow-Up',
+      blocks: [
+        { type: 'text', content: 'Patients who are discharged generally do not require follow-up if there is no evidence of cirrhosis. Assessment for other causes of liver disease is recommended for patients with persistently elevated transaminase levels after SVR. Patients who have risk of recurrence (habit of adding tattoo, IVDU, multiple sexual partners) should be counselled.' },
+        { type: 'text', content: 'Cirrhotic patients are at risk for Hepatocellular Carcinoma and should undergo surveillance every 6 months with ultrasound (with or without AFP testing) with Gastro SOC. If relapse is suspected or cannot be ruled out, refer to Gastro for HCV-RNA testing. HCV antibody remains positive in most patients after achieving SVR; testing for recurrence via HCV RNA is recommended.' },
+        { type: 'text', content: 'People who achieve SVR can have HCV recurrence due to reinfection or late relapse. Annual testing for HCV reinfection is recommended for patients with ongoing risk (injection drug use or high-risk sexual exposure).' },
+      ],
+    },
+    {
+      heading: 'Non-Pharmacological / Lifestyle',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Avoid sharing toothbrushes, and dental or shaving equipment. Cover any bleeding wound.' },
+          { text: 'Persons who inject drugs: counsel to avoid reusing or sharing syringes, needles, water, cotton and other drug preparation equipment.' },
+          { text: 'Advised not to donate blood and to discuss HCV serostatus prior to donation of body organs, other tissue or semen.' },
+          { text: 'Persons with HIV and those with multiple sexual partners should be reinforced to use barrier precautions.' },
+          { text: 'Household surfaces contaminated with visible blood should be cleaned using 1 part household bleach to 9 parts water. Wear gloves when cleaning up blood spills.' },
+          { text: 'Screening for at-risk family members such as children of persons with HCV infection and sexual contacts is recommended.' },
+          { text: 'HCV is not spread by sneezing, hugging, holding hands, coughing, sharing eating utensils or drinking glasses, nor through food or water.' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Pharmacological Treatment',
+      blocks: [
+        { type: 'text', content: 'Direct-acting antiviral agents (DAAs) are prescribed by a specialist physician (gastroenterologist, hepatologist, or infectious disease specialist). DAAs can cure more than 95% of persons affected by HCV.' },
+      ],
+    },
+    {
+      heading: 'Self-Monitoring',
+      blocks: [
+        { type: 'text', content: 'Patients who have achieved SVR can develop recurrence from reinfection or relapse. They should be advised to monitor for:' },
+        { type: 'list', items: [
+          { text: 'Jaundice' },
+          { text: 'Abdominal pain' },
+          { text: 'Pale stools or tea-coloured urine' },
+          { text: 'Loss of weight and/or loss of appetite' },
+          { text: 'Vomiting of blood' },
+          { text: 'Per rectal bleeding' },
+          { text: 'Abdominal swelling' },
+        ]},
+        { type: 'text', content: 'Signs or symptoms suggesting decompensated liver disease, cirrhosis or hepatocellular carcinoma should be referred to Gastroenterologist for further management.' },
+      ],
+    },
+  ],
+};
+
+// ---------------------------------------------------------------------------
+// 18. Chronic Kidney Disease
+// ---------------------------------------------------------------------------
+const chronicKidneyDisease: CpgDocument = {
+  id: 'chronic-kidney-disease',
+  condition: 'Chronic Kidney Disease',
+  source: 'NUP CPG',
+  reviewDate: 'December 2025',
+  advisors: 'Dr Chua Horng Ruey (Senior Consultant, NUH) / Dr Clara Ngoh (Consultant, NUH) / Dr Chua Yan Ting (Associate Consultant, NUH)',
+  sections: [
+    {
+      heading: 'Introduction',
+      blocks: [
+        { type: 'text', content: 'Chronic kidney disease (CKD) is defined as abnormalities of kidney function or structure persisting for at least three months, with implications for health. This guide aims to optimise and manage patients with CKD to the point of referral and management by the nephrologist.' },
+        { type: 'text', content: 'Haematuria and proteinuria are the hallmarks of glomerular disease. In addition, hypertension, impaired kidney function and fluid retention can be present. Conditions covered include: (a) Chronic Glomerulonephritis (presenting as nephritic or nephrotic syndromes), (b) Nephropathies (e.g. secondary to underlying diabetes or other conditions) and (c) Chronic Kidney Diseases (with or without known underlying aetiology).' },
+        { type: 'text', content: 'Epidemiology: In 2017, the estimated global prevalence of CKD was 9.1%. In Singapore, prevalence among residents aged 18 to 74 years was 8.8% in 2019–2020. CKD has remained in the top ten causes of death from 2009 to 2019 with CKD-related deaths rising by 76% within that decade.' },
+      ],
+    },
+    {
+      heading: 'Screening and Diagnosis',
+      blocks: [
+        { type: 'text', content: 'Risk Factors for CKD include: Age (≥60 years), Gender (male > female), Diabetes mellitus, Hypertension, Obesity (BMI ≥27.5 kg/m²), Hyperuricaemia or gout, Smoking, Family history of CKD or ESRF, Hereditary kidney disease, History of AKI, Recurrent kidney stones, Nephrotoxic medications (including frequent or chronic NSAID use).' },
+        { type: 'text', content: 'Diagnosis of CKD is made if any of the following is present for at least three months: GFR <60 mL/min/1.73m², UACR ≥3 mg/mmol (≥30 mg/g), or other marker of kidney damage.' },
+        { type: 'text', content: 'HALT-CKD Criteria — Normal ACR: male <2.5 mg/mmol, female <3.5 mg/mmol. Microalbuminuria: male 2.5–30 mg/mmol, female 3.5–30 mg/mmol. Macroalbuminuria: ACR >30–70 mg/mmol. Overt Proteinuria: ACR >70 mg/mmol. ACR 30 mg/mmol is equivalent to PCR 50 mg/mmol and UTP 500 mg/day. ACR 70 mg/mmol is equivalent to PCR 100 mg/mmol and UTP 1,000 mg/day.' },
+        { type: 'text', content: 'Common Causes of CKD and ESRF: (1) Diabetic kidney disease; (2) Hypertensive nephrosclerosis; (3) Primary glomerulonephritis (GN); (4) Autoimmune diseases — SLE; (5) Cystic diseases — polycystic kidney disease; (6) Others — chronic pyelonephritis, obstruction.' },
+      ],
+    },
+    {
+      heading: 'Management — Targets of Treatment (HALT CKD)',
+      blocks: [
+        { type: 'table', headers: ['Goal', 'Target / Action'], rows: [
+          { cells: ['Diagnose CKD', 'Add "Chronic Renal Failure" to visit diagnosis and problem list if UACR ≥3 mg/mmol or eGFR <60 mL/min/1.73m² for more than 3 months apart'] },
+          { cells: ['Lifestyle Modification', 'Refer all patients age <80 years for HALT-CKD counselling; stop smoking; encourage weight loss; counsel on low salt (<2 g/day) diet; counsel on low protein diet (<0.8 g/kg/day) for CKD G3B patients without DM; advise 150 min/week moderate intensity exercise'] },
+          { cells: ['Maximize ACE-I/ARB', 'Optimise dosages until maximal recommended dose, normoalbuminuria + BP target achieved, or maximal tolerated dose. Order ACE-I/ARB panel in 2–4 weeks with CM review'] },
+          { cells: ['Optimize BP', '<130/80 mmHg for ALL patients; <140/90 mmHg for older patients, high fall risk, multiple co-morbidities'] },
+          { cells: ['Optimize HbA1c', '≤7% for age ≤75 years; ≤8% for age 76–80 years'] },
+          { cells: ['Optimize LDL-C', '<1.8 mmol/L for DM patients; <2.6 mmol/L for non-DM patients; more stringent for patients with ASCVD'] },
+          { cells: ['Start SGLT-2 Inhibitor', 'Can be started if patient is on ACE-I/ARB; multiple benefits including weight loss, BP and DM control, reducing albuminuria, retarding progression, reducing mortality'] },
+          { cells: ['Co-manage with Renal', 'Refer CKD G3B, G4 and G5 or persistent significant albuminuria to Nephrology'] },
+        ]},
+      ],
+    },
+    {
+      heading: 'Use of SGLT2 Inhibitors in CKD',
+      blocks: [
+        { type: 'text', content: 'SGLT2 inhibitors have been shown to reduce risk of worsening kidney function, onset of kidney failure or death from renal causes, with the added benefit of reducing risk of CV events in patients with CKD, with or without DM.' },
+        { type: 'text', content: 'An acute eGFR decline may occur at 2–4 weeks after initiation of an SGLT2 inhibitor. An initial rise in serum creatinine of up to 30% is not associated with long-term kidney function loss, and treatment should not be discontinued. For patients with CKD without DM, the recommended dosage of Dapagliflozin and Empagliflozin is limited to 10 mg daily.' },
+        { type: 'list', items: [
+          { text: 'Criteria to meet before initiating SGLT2i: Patient initiated on ACE-I/ARB with appropriate eGFR; if significant proteinuria (TUP >1 g/day) for patients without DM, consider referral to Nephrology; ensure adequate counselling on benefits, hydration, genital hygiene, sick day precaution.' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Other Management',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Stop use of nephrotoxic drugs', children: [
+            { text: 'NSAID (except Aspirin)' },
+            { text: 'Antibiotics: Sulphonamides, Aminoglycosides' },
+            { text: 'Contrast media' },
+          ]},
+          { text: 'Diet advice for early CKD: Low salt, low protein (if applicable), adequate hydration. Allopurinol may need to be dose-adjusted (refer to Gout CPG).' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Special Situations',
+      blocks: [
+        { type: 'text', content: 'Acute Kidney Injury (AKI): Defined as increase in serum creatinine ≥26.5 μmol/L within 48 hours, or ≥1.5 times baseline within 7 days, or urine volume <0.5 ml/kg/h for 6 hours. Evaluate for pre-renal (dehydration), renal (medications, autoimmune), and post-renal (obstruction) causes. Repeat non-fasting sodium, potassium, creatinine within 3–7 days.' },
+        { type: 'text', content: 'Handling cessation of ACEi/ARB or SGLT2i post-hospital discharge: Discontinuation of ACEi/ARBs was associated with an almost twofold increased risk of progression to advanced CKD. For clinically stable patients with potentially good health outcomes, consider stepwise re-initiation and uptitration.' },
+        { type: 'text', content: 'Use in Elderly: Research suggests comparable effectiveness and safety to younger populations. However, careful monitoring and awareness of potential drug interactions and adverse effects (postural hypotension) are crucial.' },
+        { type: 'text', content: 'Use in Advanced CKD: Dapagliflozin (DAPA-CKD) can be continued until dialysis. ACEi/ARB with renally adjusted doses can be continued for advanced CKD patients, unless hyperkalaemia, hypotension, or unusually rapid worsening of eGFR occurs.' },
+      ],
+    },
+    {
+      heading: 'Referral Criteria',
+      blocks: [
+        { type: 'table', headers: ['Clinical Problem', 'Initial Management', 'Disposition'], rows: [
+          { cells: ['Rise in creatinine >2x baseline', 'Repeat within 3–7 days', 'Refer A&E'] },
+          { cells: ['Rise in creatinine >1.5x baseline (no ACEi/ARB change)', 'Repeat within 3–7 days', 'Direct access Nephro'] },
+          { cells: ['Rise in creatinine >1.5x baseline (ACEi/ARB increased)', 'Stop/decrease ACEi/ARB, recheck Cr within 2 weeks; if back to baseline: Routine Nephro; if >30% rise: Early Nephro; if >50% rise: Direct access Nephro', ''] },
+          { cells: ['Hyperkalaemia K+ ≥6', 'Hyperkalaemia management per protocol', 'Refer A&E'] },
+          { cells: ['Hyperkalaemia K+ 5.6–5.9', 'Repeat K+ within 1 week; if remains 5.6–5.9 → Direct access Nephro', ''] },
+          { cells: ['Fluid overload in CKD G5 despite ≥120mg daily loop diuretic', '', 'Refer A&E'] },
+          { cells: ['Fluid overload in CKD G3–G4 despite loop diuretic', '', 'Early Nephro appt'] },
+          { cells: ['CKD G5 (2 occasions over 90-day period, asymptomatic)', '', 'Early Nephro appt'] },
+          { cells: ['CKD G3B–G4 with eGFR decline >5 mL/min/1.73m² over 3 months', '', 'Early Nephro appt'] },
+          { cells: ['Average eGFR decline >10 mL/min/1.73m² over 12 months', '', 'Early Nephro appt'] },
+          { cells: ['UPCR >300 or UACR >200 mg/mmol (non-diabetic)', '', 'Direct access Nephro'] },
+          { cells: ['UPCR >300 or UACR >200 mg/mmol (diabetic)', '', 'Routine Nephro appt'] },
+          { cells: ['UPCR >100 or UACR >70 mg/mmol with haematuria', '', 'Early Nephro appt'] },
+          { cells: ['UPCR >100 or UACR >70 mg/mmol, no haematuria (non-diabetic)', 'Optimise ACEi/ARB; if persistent UPCR >100 or UACR >70 → Routine Nephro', ''] },
+          { cells: ['RPGN suspected', '', 'Refer A&E'] },
+        ]},
+      ],
+    },
+    {
+      heading: 'Recommended Care Components',
+      blocks: [
+        { type: 'table', headers: ['Care Component', 'Minimum Frequency', 'Remarks'], rows: [
+          { cells: ['Blood Pressure measurement', 'Twice a year', 'ACEi and ARBs should be used for BP control when proteinuria is present'] },
+          { cells: ['Weight and BMI', 'Twice a year', ''] },
+          { cells: ['Lipid profile', 'Annually', ''] },
+          { cells: ['Diabetes screening', 'Annually', 'Or more frequent in pre-diabetes or diabetes'] },
+          { cells: ['Kidney Function (Na, K, Cr and eGFR)', 'Twice a year', ''] },
+          { cells: ['Albuminuria (uPCR or uACR)', 'Twice a year', ''] },
+          { cells: ['Smoking assessment', 'Annually for smokers', 'Once-off for non-smokers unless change in smoking habit'] },
+          { cells: ['Influenza Vaccination', 'Annually or per season', 'As recommended under NAIS'] },
+          { cells: ['Pneumococcal, Herpes Zoster, COVID-19 Vaccinations', 'As recommended under NAIS/NCIS', ''] },
+          { cells: ['Hepatitis B Vaccination', 'As directed by Nephrology', ''] },
+        ]},
+      ],
+    },
+  ],
+};
+
+// ---------------------------------------------------------------------------
+// 19. Chronic Obstructive Pulmonary Disease
+// ---------------------------------------------------------------------------
+const copd: CpgDocument = {
+  id: 'copd',
+  condition: 'Chronic Obstructive Pulmonary Disease (COPD)',
+  source: 'NUP CPG',
+  reviewDate: 'October 2025',
+  advisors: 'Dr See Kay Choong (Senior Consultant, NUH)',
+  sections: [
+    {
+      heading: 'Introduction',
+      blocks: [
+        { type: 'text', content: 'Chronic Obstructive Pulmonary Disease (COPD) is a heterogeneous disorder characterised by airflow obstruction that is not fully reversible. The airflow limitation is usually both progressive and associated with exposure to noxious particles or gases. Smoking is by far the most important risk factor.' },
+        { type: 'text', content: 'Globally in 2019, COPD is the third most common cause of death. In Singapore, COPD is estimated to be the tenth highest cause of death and seventeenth highest cause of disability-adjusted life years, with an annual societal cost of SGD$3,304 per capita in 2022.' },
+      ],
+    },
+    {
+      heading: 'Screening and Diagnosis',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Screen all patients with any risk factors for COPD symptoms, and vice versa, at least yearly.' },
+          { text: 'Suspect COPD in any patient with at least one COPD symptom and risk factor.' },
+          { text: 'All patients suspected to have COPD MUST be evaluated by spirometry.' },
+          { text: 'Screening spirometry in the general asymptomatic population is not recommended.' },
+        ]},
+        { type: 'text', content: 'Diagnosis of COPD requires ALL of the following: (1) At least one COPD symptom; (2) At least one risk factor; (3) Evidence of airflow limitation: post-bronchodilator spirometry FEV1/FVC <0.70.' },
+        { type: 'table', headers: ['COPD Symptoms', 'Risk Factors', 'Co-Morbidities'], rows: [
+          { cells: ['Chronic cough (generally initial symptom, may be intermittent)', 'Age 40 years and above', 'Heart disease'] },
+          { cells: ['Chronic sputum production (any pattern, may be intermittent)', 'Tobacco smoke (ex and current smoker)', 'Hypertension'] },
+          { cells: ['Chronic unexplained dyspnoea or reduced effort tolerance (hallmark, progressive, persistent)', 'Environmental exposure (second-hand smoke, air pollution)', 'Diabetes'] },
+          { cells: ['Recurrent lower respiratory tract infections', 'Occupational exposure (dust, vapour, fumes, gases)', 'Chronic kidney disease'] },
+          { cells: ['Wheezing (may be exertional or nocturnal)', 'History of abnormal lung development, severe childhood infections, or pulmonary tuberculosis', 'Osteoporosis'] },
+          { cells: ['Fatigue', 'Rare risk factor: alpha-1-antitrypsin deficiency', 'Sleep apnoea, Depression, Cognitive impairment, Lung cancer'] },
+          { cells: ['Severe COPD: weight loss, muscle mass loss, anorexia, ankle swelling (cor pulmonale), depression/anxiety', '', ''] },
+        ]},
+      ],
+    },
+    {
+      heading: 'Investigation',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Spirometry: Mandatory to establish COPD diagnosis (post-bronchodilator FEV1/FVC <0.70 confirms COPD). Should be undertaken when patients are clinically stable and free from respiratory tract infections.' },
+          { text: 'Pulse oximetry: to evaluate the need for supplemental oxygen therapy.' },
+          { text: 'Chest X-ray: Not useful to establish COPD diagnosis but valuable to exclude alternative diagnosis and establish comorbidities.' },
+          { text: 'Full blood count: to rule out anaemia; blood eosinophil count guides use of ICS (eosinophils <100 cells/μl: ICS little/no effect; 100–299 cells/μl: consider ICS if symptoms not better; ≥300 cells/μl: ICS beneficial).' },
+          { text: 'Alpha-1 antitrypsin deficiency (AATD) screening: WHO recommends all COPD patients be screened once.' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Management Goals',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'To reduce symptoms: relieve symptoms, improve exercise tolerance, and improve health status.' },
+          { text: 'To reduce risks: prevent disease progression, prevent and treat exacerbation, and reduce mortality.' },
+          { text: 'To prevent or minimise side effects from treatment.' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Follow-Up and Monitoring',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Assess symptoms at least yearly using CAT score (document in EPIC Flowsheets). More frequently for patients who are more symptomatic, have more frequent exacerbations, or have recent escalation in treatment.' },
+          { text: 'History of exacerbations: Increased risk of future exacerbation if TWO OR MORE exacerbations requiring antibiotics or steroids in the previous year, OR ONE exacerbation leading to hospitalisation in the previous year.' },
+          { text: 'Smoking assessment (2 As approach): Ask all patients about smoking; Act to help all smokers quit.' },
+          { text: 'Pharmacotherapy: optimise bronchodilator treatment and assess inhaler technique and medication adherence at every visit.' },
+          { text: 'Ensure up-to-date vaccination: Annual influenza; Pneumococcal (per NAIS); Tdap; Covid-19; RSV (age >60 with chronic heart or lung disease); Zoster (COPD patients over 50).' },
+          { text: 'Nutritional support: weight loss and malnutrition may develop as COPD progresses. Nutritional repletion (including protein supplementation) plays an important role.' },
+          { text: 'Long-term oxygen therapy (LTOT): indicated when SaO2 <88% on room air when stable (confirmed 2x over 3-week period), or SaO2 =88% with evidence of right heart failure or erythrocytosis.' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Pharmacotherapy',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Start a long-acting bronchodilator treatment, preferably a LAMA (preferred over LABA-only inhalers), for patients with infrequent or less intense symptoms and lower risk of exacerbation. SAMA or SABA alone can be considered in patients with very occasional dyspnoea.' },
+          { text: 'Start dual bronchodilator therapy with LAMA+LABA for patients with frequent or intense COPD symptoms, or a higher risk of exacerbation.' },
+          { text: 'Consider triple therapy with LAMA+LABA+ICS for patients with: (1) Higher risk for exacerbations and blood eosinophils ≥300 cells/μl; (2) Frequent exacerbations on LAMA+LABA with blood eosinophils ≥100 cells/μl; (3) History of asthma or features of both asthma and COPD.' },
+          { text: 'Avoid ICS in patients with recurrent pneumonia, blood eosinophils <100 cells/μl, or history of mycobacterial infections.' },
+        ]},
+        { type: 'table', headers: ['Medication', 'Adult Dose', 'Significant Adverse Reactions', 'Contraindications'], rows: [
+          { cells: ['SABA: salbutamol (Ventolin) 100mcg MDI', '1–2 puffs 3–4 times PRN', 'Hypersensitivity reactions, hypokalaemia (high doses)', 'Hypersensitivity to salbutamol or any component'] },
+          { cells: ['SAMA: ipratropium bromide (Atrovent N) 20mcg MDI', '2 puffs 3–4 times PRN', 'Dry mouth, constipation, tachycardia, palpitations, arrhythmias, ocular complications', 'Hypersensitivity to ipratropium, atropine, or its derivatives'] },
+          { cells: ['LAMA: umeclidinium bromide (Incruse Ellipta) DPI 62.5mcg', '1 INH OD. Max 1 INH/day', 'CV effects, hypersensitivity reactions, increased intraocular pressure, urinary retention', 'Hypersensitivity to umeclidinium or any component; severe hypersensitivity to milk proteins'] },
+          { cells: ['LAMA: tiotropium bromide (Spiriva Respimat) 2.5mcg', '2 INH OD. Max 2 INH/day', 'Xerostomia, URTI, pharyngitis, sinusitis', 'Hypersensitivity to ipratropium, tiotropium, or any component'] },
+          { cells: ['LABA+LAMA: vilanterol+umeclidinium (Anoro Ellipta) DPI 25/62.5mcg', '1 INH OD. Max 1 INH/day', 'Hypersensitivity reactions, tachycardia, hyperglycaemia, hypokalaemia, urinary retention', 'Hypersensitivity to umeclidinium, vilanterol; asthma monotherapy; acute bronchospasm; concomitant LABA'] },
+          { cells: ['LABA+LAMA+ICS: Vilanterol/umeclidinium/Fluticasone (Trelegy Ellipta) DPI 25/62.5/100mcg (Not available in NUP)', '1 INH OD. Max 1 INH/day', 'Nasopharyngitis, headache, oral candidiasis, UTI, pneumonia', 'Hypersensitivity to components; primary treatment of status asthmaticus or acute COPD episodes'] },
+          { cells: ['LABA+ICS: formoterol+budesonide (Duoresp Spiromax) DPI 4.5/160mcg', '2 INH BD (max dose)', 'Headache, nasopharyngitis, oral candidiasis, skin bruises', 'Hypersensitivity to budesonide or formoterol; primary treatment of status asthmaticus'] },
+          { cells: ['LABA+ICS: salmeterol+fluticasone (Seretide Accuhaler) DPI 50/500mcg', '1 INH BD (max dose)', 'Hypokalaemia, paradoxical bronchospasm, QTc prolongation', 'Hypersensitivity to fluticasone, salmeterol; status asthmaticus; acute COPD episodes'] },
+        ]},
+      ],
+    },
+    {
+      heading: 'Acute Exacerbation of COPD',
+      blocks: [
+        { type: 'text', content: 'Definition: An event characterized by dyspnoea and/or cough and sputum production that worsens over ≤14 days; may be accompanied by tachypnoea and/or tachycardia.' },
+        { type: 'text', content: 'Severity (ROME criteria): MILD — Dyspnea VAS <5, RR <24, HR <95 bpm, O2 sat >92% RA. MODERATE — Dyspnea VAS ≥5, RR ≥24, HR ≥95 bpm, O2 sat <92% RA (≥3/5 criteria). SEVERE — Marked dyspnoea and tachypnoea (RR >30), use of accessory muscles at rest, cyanosis, confusion, O2 sat <90% RA.' },
+        { type: 'text', content: 'Home management: (1) Increase dose/frequency of SABA; (2) Consider adding SAMA; (3) Consider starting antibiotics if ≥2/3 Anthonisen criteria (increased dyspnoea, increased sputum volume, increased sputum purulence) — first line: PO amoxicillin/clavulanate 625mg TDS 5 days OR PO azithromycin 500mg OM for 3 days; alternative: PO doxycycline 100mg BD 5 days; (4) Consider oral corticosteroids (PO prednisolone 30mg OM 5 days); (5) Encourage fluid intake and sputum clearance; (6) Smoking cessation.' },
+        { type: 'text', content: 'Indications for hospitalisation: Moderate to severe exacerbation, acute respiratory failure, onset of new physical signs (cyanosis, peripheral oedema), failure to respond to initial medical management, presence of serious comorbidities, insufficient home support.' },
+      ],
+    },
+    {
+      heading: 'Referrals',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Indication for Respiratory Medicine Referral', children: [
+            { text: 'Severe or frequent exacerbations' },
+            { text: 'Onset of cor pulmonale, bullous lung disease, need for LTOT or home nebuliser therapy' },
+            { text: 'Disease with age <40 years and <10 pack years (TRO AATD)' },
+            { text: 'Rapid decline in FEV1 (>60 mL/year)' },
+            { text: 'Development of new symptoms such as haemoptysis' },
+          ]},
+          { text: 'Palliative treatment options to reduce dyspnoea include opioids, pulmonary rehabilitation, patient self-management education, neuromuscular electrical stimulation, chest wall vibration, and blowing air onto the face.' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Recommended Care Components',
+      blocks: [
+        { type: 'table', headers: ['Care Component', 'Minimum Frequency', 'Remarks'], rows: [
+          { cells: ['Weight and BMI', 'Yearly', ''] },
+          { cells: ['CAT score', 'Yearly', ''] },
+          { cells: ['Spirometry', 'For diagnosis', ''] },
+          { cells: ['Smoking assessment', 'Yearly for smokers; Once-off for non-smokers', 'Assess smoking habits and provide smoking cessation counselling'] },
+          { cells: ['Inhaler technique', 'Every follow-up and prior to modifying therapy', ''] },
+          { cells: ['Influenza Vaccination', 'Yearly', ''] },
+          { cells: ['Pneumococcal Vaccination', 'Ensure up to date according to NAIS', ''] },
+          { cells: ['Covid-19 Vaccination', 'Ensure up to date following National Guidelines', ''] },
+        ]},
+      ],
+    },
+  ],
+};
+
+// ---------------------------------------------------------------------------
 // Combined export of all CPG documents (15 total)
 // ---------------------------------------------------------------------------
+
+// ---------------------------------------------------------------------------
+// 20. Dementia
+// ---------------------------------------------------------------------------
+const dementia: CpgDocument = {
+  id: 'dementia',
+  condition: 'Dementia',
+  source: 'NUP CPG',
+  reviewDate: 'September 2024',
+  advisors: 'Dr Tsoi Tung (Senior Consultant, Psycho-Geriatrician, Department of Psychological Medicine, NUH)',
+  sections: [
+    {
+      heading: 'Introduction',
+      blocks: [
+        { type: 'text', content: 'Dementia is a neurodegenerative disease characterised by progressive impairment of cognitive function. As the disease increases in severity, patients may experience memory loss, language impairment, disorientation, changes in personality, difficulty with activities of daily living, self-neglect, neuropsychiatric symptoms and out of character behaviour.' },
+        { type: 'text', content: 'Causes of dementia: (a) Irreversible: Alzheimer\'s disease, fronto-temporal dementia, dementia with Lewy body, vascular dementia, Parkinson\'s disease dementia, prion-associated disorders. (b) Potentially Reversible: infectious disorders (meningitis, encephalitis), toxic or metabolic encephalopathies (hypothyroidism, vitamin B12 deficiency, alcohol-related syndromes), neoplastic causes, hydrocephalus.' },
+        { type: 'text', content: 'Epidemiology: Singapore has one of the fastest ageing populations in Asia-Pacific. Dementia cases are expected to increase from 22,000 in 2005 to almost 53,000 in 2020 and 241,000 in 2050. Vascular risk factors (mid-life hypertension, hypercholesterolaemia, DM, strokes) have all been shown to be associated with an increased risk of incident dementia.' },
+      ],
+    },
+    {
+      heading: 'Screening and Diagnosis',
+      blocks: [
+        { type: 'text', content: 'Screening should be targeted at individuals with: (1) Complaints of memory or cognitive impairment (self-reported or reported by caregiver); (2) Suspicion of cognitive impairment by healthcare professionals; (3) History of stroke or known risk factors of stroke; (4) Increased risk of dementia (strong family history); (5) Questionable mental competency needing important decisions; (6) Assessment for fitness to drive (elderly driver).' },
+        { type: 'text', content: 'Symptoms include: progressive forgetfulness (especially short-term memory), new problems with communication, misplacing things, confusion with time and place, difficulties performing daily activities (especially iADL), problems with planning or solving problems, impaired judgment, changes in mood and personality, withdrawal from work or social activities, difficulty understanding visual images and spatial relationships.' },
+        { type: 'text', content: 'Assessment in Teamlet/General Pool: (1) Exclude delirium if acute presentation; (2) Consider potentially reversible neurological conditions and depression if sub-acute; (3) Abbreviated Mental Test (AMT) — 10-item screening test validated locally. Score ≤7 suggests cognitive impairment in patients with primary school education or below; score ≤8 for patients with secondary education or higher.' },
+        { type: 'text', content: 'Dementia Work-up Panel: Full blood count, Vitamin B12, Sodium/potassium/creatinine, Liver function test, Thyroid function test, Corrected Calcium, ECG (to exclude conduction problems which is a contraindication to AChEI therapy).' },
+        { type: 'text', content: 'Criteria for Diagnosis (DSM-5): Evidence of significant cognitive decline from previous level in one or more domains (complex attention, executive function, learning and memory, language, perceptual-motor, or social cognition); the cognitive deficits interfere with independence in everyday activities; deficits do not occur exclusively in context of delirium; not better explained by another mental disorder. Mild Neurocognitive Disorder (MCI): as above except cognitive decline is modest and deficits do not interfere with independence.' },
+        { type: 'text', content: 'mcMMSE cut-offs by educational level — Abnormal if less than: No Formal Education: 20; Primary: 22; Secondary/Tertiary: 24. Severity: Mild 18–24; Moderate 10–17; Severe <10.' },
+        { type: 'text', content: 'CT Scan indications (CCCAD): Age <60 years; rapid unexplained decline in cognition or function; "short" duration of dementia (<2 years); recent significant head trauma; unexplained neurological symptoms; history of cancer; anticoagulants or bleeding disorder; history of urinary incontinence and gait disorder; new localising sign; unusual or atypical cognitive symptoms; gait disturbance.' },
+        { type: 'table', headers: ['Severity', 'Functional Status'], rows: [
+          { cells: ['Mild Dementia', 'Need assistance in instrumental ADL (managing money, marketing, housework, cooking)'] },
+          { cells: ['Moderate Dementia', 'Need assistance in basic ADL (feeding, toileting, bathing, dressing)'] },
+          { cells: ['Severe Dementia', 'ADL dependent'] },
+        ]},
+      ],
+    },
+    {
+      heading: 'Management',
+      blocks: [
+        { type: 'text', content: 'Initial Management: Assess using mcMMSE and consolidate history from patients and caregivers. Refer to CT Scan if needed. If diagnosed with Dementia, offer second assessment for functional screening using Modified Barthel Index (MBI) and Lawton, Zarit Burden Interview Scale for Caregivers.' },
+        { type: 'text', content: 'Follow-up domains: (i) Affect and mood — anxiety and depression common in early stages; (ii) BPSD — Behavioural and Psychological Symptoms in Dementia (wandering, verbal/non-verbal abuse, agitation, screaming, sleep problems) treated through non-pharmacological ABC approach (Antecedent, Behaviour, Consequence) and pharmacological methods as adjunct; (iii) Cognition — repeat mcMMSE to look for deterioration; (iv) Drugs — assess for anti-cholinergic medications which should be avoided (amitriptyline, imipramine, prochlorperazine, oxybutynin, diphenhydramine, chlorpheniramine, benztropine, olanzapine, quetiapine); (v) Social environment — caregiver stress, elder abuse, financial difficulties; (vi) Functional assessment — home/driving safety, falls, functional decline, swallowing, constipation, incontinence, malnutrition.' },
+        { type: 'text', content: 'Interval of re-assessment ranges from 3 to 6 months. Consider yearly CM assessment for mcMMSE, Modified Barthel Index, Lawton-Brody Instrumental ADL Scale, and Zarit Burden Interview Scale.' },
+      ],
+    },
+    {
+      heading: 'Non-Pharmacological Management',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Designing and maintaining a daily routine.' },
+          { text: 'Encouraging activities to engage the patient such as daily chores, creative or intellectual activities, physical activities.' },
+          { text: 'Caregiver education and training should be considered to support caregivers in caring for patients in the community.' },
+          { text: 'Appropriate utilisation of community resources such as dementia day care centres, caregiver support groups.' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Pharmacological Management',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Treating identifiable reversible causes: treat depression, replace deficiency states (B12, hypothyroidism), correct metabolic abnormalities, remove anti-cholinergic medications.' },
+          { text: 'Reduction of vascular risk factors: hyperlipidaemia, hypertension, DM, smoking cessation, obesity; anti-platelet agents for secondary stroke prevention; anti-coagulation for AF.' },
+          { text: 'Slowing rate of disease progression: AChEIs (donepezil, rivastigmine) and NMDA receptor antagonist (memantine) — only after detailed discussion with caregiver and patient on risks, benefits and cost.' },
+        ]},
+        { type: 'table', headers: ['Drug', 'Initial Dose / Titration', 'Maximum Dose', 'Common ADR', 'Remarks / Contraindications'], rows: [
+          { cells: ['Donepezil (S2)', '5 mg/day; titrate 5 mg every 4 weeks', '23 mg/day', 'Diarrhoea, nausea, vomiting, headache, anorexia, abnormal dreams, bradycardia, syncope, dizziness', 'Common 1st line for mild-moderate dementia. For elderly, may start 2.5 mg OM for 4–6 weeks. Contraindicated: bradycardia or cardiac conduction disease. Caution: PUD, COPD/asthma, seizure disorder, urinary tract obstruction.'] },
+          { cells: ['Rivastigmine patch (NS) (Exelon) 4.6/9.5 mg/24h', '4.6 mg/24 hours; titrate 9.5 mg every 4 weeks', '13.3 mg/24 hours', 'Diarrhoea, nausea, vomiting, headache, anorexia, agitation, bradycardia, syncope, dizziness; contact rash, pruritus (rotate patch sites)', 'Contraindicated: bradycardia or cardiac conduction disease. Caution: PUD, COPD/asthma, seizure disorder, urinary tract obstruction.'] },
+          { cells: ['Memantine (S2)', '5 mg/day; titrate 5 mg every 2 weeks', '20 mg/day', 'Headache, dizziness, agitation, constipation, confusion', 'Renal dose adjustment required. Avoid if Cr >200 μmol/L or eGFR <30 ml/min. Max 5 mg BD for eGFR 30–60 ml/min. Caution: severe hepatic impairment, seizure disorder.'] },
+        ]},
+        { type: 'table', headers: ['Drug (for BPSD)', 'Initial Dose / Titration', 'Maximum Dose', 'Common ADR', 'Remarks / Contraindications'], rows: [
+          { cells: ['Fluvoxamine (S2) (Faverin) 50mg tablets', '25–50 mg; titrate 25–50 mg every 1 week; usual dose 50–100 mg/day', '100 mg/day (combination max Fluvoxamine 50mg + Mirtazapine 15mg)', 'Nausea, vomiting, diarrhoea, dry mouth, nervousness, headache, dizziness; sexual dysfunction, tremors, hyponatremia, QT prolongation', 'Sedating, useful to help sleep. Avoid antidepressants with anticholinergic activity. Contraindicated: MAOI concurrent or within 14 days.'] },
+          { cells: ['Escitalopram (NS) (Lexapro) 10mg tablets', '5 mg/day; titrate 5 mg every 4 weeks', '10 mg/day', '(see above)', 'Activating. Contraindicated: MAOI concurrent or within 14 days.'] },
+          { cells: ['Mirtazapine (S2) (Remeron) 15mg tablets', '15 mg; titrate 7.5–15 mg every 1–2 weeks; usual 15–30 mg/day', '30 mg/day (combination max Fluvoxamine 50mg + Mirtazapine 15mg)', 'Dry mouth, constipation, sedation (more sedating at lower doses), increased appetite, orthostatic hypotension, headache', 'Sedating, improves appetite. Useful for patients with poor appetite. Contraindicated: MAOI concurrent or within 14 days. Check FBC before starting.'] },
+          { cells: ['Zopiclone (NS) 7.5mg tablets', '3.75 mg ON/PRN for sleep', '7.5 mg ON PRN', 'Sedation, nausea, vomiting, dry mouth, dizziness, headache', 'Short course ≤2 weeks. Contraindicated: severe respiratory impairment, myasthenia gravis, severe hepatic insufficiency, history of complex sleep behaviours.'] },
+          { cells: ['Quetiapine (S2) (Seroquel) 25/100mg tablets', '12.5–25 mg/day; titrate 6.25–12.5 mg every 1 week', '75 mg BD', 'Sedation, nausea, constipation, dry mouth, orthostatic hypotension, headache, weight gain', 'FDA black box warning for antipsychotics and adverse cardiovascular events. Use beyond 12 weeks not recommended. Preferred atypical antipsychotic if high risk of extrapyramidal symptoms.'] },
+        ]},
+      ],
+    },
+    {
+      heading: 'Special Situations and Referrals',
+      blocks: [
+        { type: 'text', content: 'Referral to NUP Memory Clinic — Inclusion criteria: above 65 years old with memory problems; memory loss >6 months. Exclusion criteria: legal issues/LPA/requires neuropsychological testing (refer Psychiatry); age <65 years (refer Neurology for early onset dementia).' },
+        { type: 'text', content: 'Discharge Criteria from Memory Clinic: Diagnosis made; BPSD well managed; no medication issues or side effects; caregiver stress addressed; dementia assessment and Zarit score completed in past 1 year; family and patient agreeable. Yearly TCU NUR CM Consult still recommended post-discharge.' },
+        { type: 'text', content: 'Referral Back to Memory Clinic: Sudden drastic decline in memory (MMSE dropped >4 points/year; usual expected decline 1–2 points/year); BPSD surfaces or worsens; caregiver stress and burn-out.' },
+        { type: 'text', content: 'Refer to EMD: <3 months duration with sudden onset neurological deficits; suspected delirium; patient causing significant harm to self or others.' },
+        { type: 'text', content: 'Special Precautions with Chronic Diseases: DM — do not aim for excessively tight glycaemic control; HTN/Cardiac Arrhythmia — CCB or beta blockers can worsen bradycardia in patients on AChEI; COPD/Asthma — AChEI can cause bronchoconstriction; Parkinson\'s — avoid typical antipsychotics; Renal Impairment — avoid Memantine if Cr >200 μmol/L or eGFR <30 ml/min.' },
+      ],
+    },
+    {
+      heading: 'Recommended Care Components',
+      blocks: [
+        { type: 'table', headers: ['Care Component', 'Minimum Frequency', 'Remarks'], rows: [
+          { cells: ['Assessment of Memory', 'Annually', 'For patients on cognitive enhancers, objective documentation with bedside cognitive screening instrument (e.g. MMSE) must be performed.'] },
+          { cells: ['Assessment of Mood and Behaviour', 'Annually', 'Enquire about mood and behaviour and initiate appropriate non-pharmacological and/or pharmacological treatment.'] },
+          { cells: ['Assessment of Social Difficulties and Caregiver Stress', 'Annually', 'Assessment and referral to care coordinator, MSW or appropriate community services may be required.'] },
+          { cells: ['Functional Needs Assessment', 'Annually', 'To assess home safety, driving safety, falls, functional decline and swallowing difficulties.'] },
+          { cells: ['Influenza Vaccination', 'Annually or per season', 'As recommended under NAIS.'] },
+        ]},
+      ],
+    },
+  ],
+};
+
+// ---------------------------------------------------------------------------
+// 21. Depression
+// ---------------------------------------------------------------------------
+const depression: CpgDocument = {
+  id: 'depression',
+  condition: 'Depression',
+  source: 'NUP CPG',
+  reviewDate: 'June 2025',
+  advisors: 'Dr Soo Shuenn Chiang (Senior Consultant, Department of Psychological Medicine, NUH) / Dr Wan Yi Min (Consultant, Department of Psychiatry, NTFGH)',
+  sections: [
+    {
+      heading: 'Introduction',
+      blocks: [
+        { type: 'text', content: 'Major depression is the most common mental illness in Singapore. Based on the National Mental Health Study in 2016, 6.2% of the adult population suffered from major depression at some point in their lifetime. 14.3% of people with a chronic illness had a mental illness, and 50.6% of people with a mental illness also had a chronic illness. Diabetic patients have increased depressive symptoms. The 12-month treatment gap for Major Depressive Disorder was 73%.' },
+      ],
+    },
+    {
+      heading: 'Screening for Depression',
+      blocks: [
+        { type: 'text', content: 'Opportunistic screening is not recommended. Patients with risk factors should be screened.' },
+        { type: 'table', headers: ['Clinical Risk Factors', 'Symptom Risk Factors'], rows: [
+          { cells: ['History of depression', 'Unexplained physical symptoms'] },
+          { cells: ['Family history of depression', 'Chronic pain'] },
+          { cells: ['High users of medical services and chronic medical conditions (especially cardiovascular disease, diabetes, neurological disorders)', 'Fatigue'] },
+          { cells: ['Other psychiatric conditions', 'Insomnia'] },
+          { cells: ['Times of hormonal challenge (e.g. peripartum)', 'Anxiety, Substance abuse'] },
+        ]},
+        { type: 'text', content: 'Screening can be done with PHQ-2 (two questions over the last 2 weeks: (1) Little or no pleasure in doing things; (2) Feeling down, depressed, or hopeless). If PHQ-2 score ≥3, proceed to PHQ-9. Patients with PHQ-9 ≥10 should be evaluated by a doctor.' },
+      ],
+    },
+    {
+      heading: 'Suicide Risk Assessment',
+      blocks: [
+        { type: 'text', content: 'Patients reporting a recent suicide attempt or experiencing suicidal ideation should receive a suicide risk assessment by a HMC-trained care manager, doctor or psychologist on the same day. Standardised assessment tools such as C-SSRS (nationally preferred scale) or P4 can be used. Examples of higher risks: attempted self-harm, dramatic changes in mood, talking about death or making plans, expressing hopelessness, withdrawal from friends/family/society.' },
+      ],
+    },
+    {
+      heading: 'DSM-5 Criteria for Depression',
+      blocks: [
+        { type: 'text', content: '5 or more of the following 9 symptoms (at least one involving symptom 1 or 2), for 2 weeks duration: (1) Depressed mood; (2) Reduced interest or pleasure in almost all activities; (3) Weight gain or loss / change in appetite; (4) Insomnia or hypersomnia; (5) Psychomotor agitation or retardation; (6) Fatigue or loss of energy; (7) Feelings of worthlessness or inappropriate guilt; (8) Poor concentration or indecisiveness; (9) Thought of death or suicidal ideation. Plus: significant distress or functional impairment; never had a manic or hypomanic episode.' },
+      ],
+    },
+    {
+      heading: 'Differentials for Depression',
+      blocks: [
+        { type: 'text', content: 'Medical conditions causing depressive symptoms: Endocrine (hypothyroidism, Cushing disease, Addison disease), Malignancy, Neurological (stroke, syphilis, tumour, Parkinson\'s disease), Chronic illness (heart failure, SLE), Sleep disorders.' },
+        { type: 'text', content: 'Psychiatric conditions: Psychotic disorders (schizophrenia, schizoaffective disorder, delusional disorder), Bipolar disorder (may present first as unipolar depression), Comorbid anxiety disorder, PTSD.' },
+        { type: 'text', content: 'Drugs that may cause or aggravate depressive symptoms or cause drug interactions with SSRIs: Chronic conditions — Beta blockers, Statins (simvastatin); Endocrine/Hormones — Prednisolone, progestogens, oestrogen; Neurology — Levodopa, Bromocriptine, Anticonvulsants (Gabapentin, Topiramate); Others — PPIs, Ciprofloxacin; Substance Abuse — Alcohol, benzodiazepines, opioids.' },
+      ],
+    },
+    {
+      heading: 'PHQ-9 Interpretation and TCU / Referral Recommendations',
+      blocks: [
+        { type: 'table', headers: ['PHQ-9 Score', 'Severity', 'TCU / Referral Recommendation'], rows: [
+          { cells: ['0–4', 'Minimal', 'Reassure patient, routine follow up, encourage regular exercise and self-care.'] },
+          { cells: ['5–9', 'Mild', 'Psychological education + simple self-help strategies. TCU MSW (psychosocial support / CBT) within 8 weeks.'] },
+          { cells: ['10–14', 'Moderate', 'TCU Psychologist (First Visit) if agreeable within 4 weeks. TCU Dr HMC Long (FV) for consideration of medication within 4 weeks.'] },
+          { cells: ['15–19', 'Moderately severe', 'TCU Psychologist (First Visit) if agreeable within 2 weeks. TCU Dr HMC Long (FV) within 2 weeks; may start SSRIs if appropriate and patient agreeable.'] },
+          { cells: ['20–27', 'Severe', 'Refer SOC (Direct Access). Safety planning (.nupsafetyplan).'] },
+          { cells: ['Any (moderate suicide risk)', 'Any', 'Refer SOC (Direct Access). Safety planning.'] },
+          { cells: ['Any (severe suicide risk)', 'Any', 'Refer ED.'] },
+        ]},
+      ],
+    },
+    {
+      heading: 'Pharmacotherapy',
+      blocks: [
+        { type: 'text', content: 'Antidepressants are effective for moderate to severe depression and also effective for anxiety and obsessions. Onset of action is usually around 3–4 weeks. Onset of side effects are immediate and get better within 2 weeks. SSRIs are the class of choice for initial therapy due to effectiveness, tolerability, and safety in overdose. Drug of choice for depressed persons with cardiovascular disease.' },
+        { type: 'table', headers: ['Class', 'Drug Name / Dose', 'Side Effects', 'Remarks'], rows: [
+          { cells: ['SSRI', 'Fluoxetine (S2) — Initiation 10–20 mg OM; Maintenance 20–80 mg', 'Headache, GI (nausea/diarrhoea), excessive daytime somnolence, orthostatic hypotension, insomnia, anticholinergic effects; uncommon: sexual dysfunction, tremors, akathisia, QTc prolongation, SIADH, hyponatremia, bleeding risk', 'More likely to cause insomnia. Generally safe in renal and hepatic impairment (avoid in hepatic impairment due to extensive metabolism and long half-life). Sertraline preferred for pregnancy and cardiac diseases.'] },
+          { cells: ['SSRI', 'Fluvoxamine (S2) — Initiation 25–50 mg ON; Maintenance 50–200 mg (doses >100 mg/day in 2 divided doses)', '(see above)', ''] },
+          { cells: ['SSRI', 'Sertraline (S2) — Initiation 25–50 mg OM; Maintenance 50–200 mg', '(see above)', 'Preferred SSRI for pregnancy and cardiac diseases.'] },
+          { cells: ['SSRI', 'Escitalopram (NS) — Initiation 5–10 mg OM; Maintenance 10–20 mg', '(see above)', 'Less drug-drug interactions but may cause weight gain.'] },
+          { cells: ['SNRI', 'Venlafaxine XR (S2) 75 mg — Initiation 75 mg OM; Maintenance 150–225 mg', 'Headache, sweating, nausea, dry mouth, constipation, nervousness, insomnia, dose-dependent BP increase; Serotonin syndrome, SIADH/hyponatremia, sexual dysfunction', 'Not recommended in angle closure glaucoma, seizures. Use caution with hepatic/renal impairment.'] },
+          { cells: ['NaSSA', 'Mirtazapine (S2) 15mg — Initiation 7.5–15 mg ON; Maintenance 15–45 mg', 'Sedation, weight gain, appetite gain, dry mouth, constipation', 'Low doses used for concomitant insomnia (preferentially blocks histamine receptor). Less sexual/nausea side effects and less hyponatremia than SSRIs.'] },
+          { cells: ['TCA', 'Amitriptyline (S1) 10/25 mg — Initiation 10–25 mg ON; Maintenance 50–100 mg', 'Anticholinergic effects (dry mouth, constipation, blurred vision, urinary retention, weight gain), dizziness, somnolence, palpitations, tachycardia, orthostatic hypotension', 'Not first line due to anticholinergic and cardiotoxic side effects. Contraindicated: MAOI. Toxic cardiac effects in overdose.'] },
+        ]},
+        { type: 'text', content: 'Serotonin Syndrome: An Adverse Drug Reaction which can be life threatening. Usually occurs with combination therapy (SSRIs, SNRIs, MAOIs, TCAs, valproate, antiemetics, tramadol, dextromethorphan). Patients present with a triad of altered mental state, autonomic symptoms, and neuromuscular excitation. Management: discontinue the offending agent and refer to A&E for monitoring and support.' },
+      ],
+    },
+    {
+      heading: 'Using Antidepressants — Key Points',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'If partial response after 4 weeks, consider increasing dosage. If no response after 4–8 weeks, consider switching to another SSRI, then another class.' },
+          { text: 'Possible risk of suicidal behaviour and self-harm during initial 1–3 months. Order CM HMC Teleconsultation at ~2 weeks after starting SSRIs for nurses to check tolerability, adherence, and suicide risk.' },
+          { text: 'Stop antidepressant if hypomanic/manic symptoms emerge. Refer to psychiatrist for potential bipolar disorder.' },
+          { text: 'Stopping antidepressants: typically considered after 1st depressive episode with ≥6–9 months response after remission. Taper over 4 weeks or more.' },
+          { text: 'Consider long-term maintenance in patients with severe depressive episodes or ≥3 episodes of depression.' },
+          { text: 'Young adults (18–24 years): Monitor closely for worsening suicidal ideation; black box warning applies. Overall benefits of treatment far outweigh risks.' },
+          { text: 'Elderly (>65 years): Psychotherapy remains preferred treatment. Monitor sodium while on antidepressants (especially SSRIs/SNRIs).' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Referral to Specialist and Step-Down Care',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Referral to Specialist: patients ≤17 years who might need antidepressants; no response to 3 different antidepressants; complicated medical history (antenatal/postpartum, breastfeeding, liver disease, Cushing); comorbid personality disorders, substance dependence; new onset psychotic or bipolar disorder; potential need for interventional psychiatry (ECT, rTMS).' },
+          { text: 'Step-down care accepted at NUP: patients with predominantly depression or anxiety, stable and mild to moderate severity; on NUP formulary medications; not reliant on regular benzodiazepines (occasional benzos acceptable up to 5 tablets; standalone benzos discouraged); patients on two antidepressants have increased serotonin syndrome risk; if on antipsychotics, do BMI, fasting glucose, lipid, BP check every year.' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Recommended Care Components',
+      blocks: [
+        { type: 'table', headers: ['Care Component', 'Minimum Frequency', 'Remarks'], rows: [
+          { cells: ['Doctor review', 'Twice a year or longer if stable', 'Includes assessment for symptoms, response/adherence to medications, psychosocial interventions, risk of harm, general physical health, and basic emotional support.'] },
+          { cells: ['PHQ-9 Score', 'Every clinical review when appropriate; minimally 6 monthly for patients with depression', 'Reportable clinical indicator.'] },
+        ]},
+        { type: 'text', content: 'Postpartum Depression: Please refer to the NUP Women\'s Health CPG for guidelines on antepartum and postpartum depression.' },
+      ],
+    },
+  ],
+};
+
+// ---------------------------------------------------------------------------
+// 22. Diabetes Mellitus
+// ---------------------------------------------------------------------------
+const diabetesMellitus: CpgDocument = {
+  id: 'diabetes-mellitus',
+  condition: 'Diabetes Mellitus',
+  source: 'NUP CPG',
+  reviewDate: 'January 2026',
+  advisors: 'Dr Khoo Chin Meng (Senior Consultant, Department of Medicine, NUH)',
+  sections: [
+    {
+      heading: 'Introduction — Classification',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Type 1 DM (T1DM): β-cell destruction due to autoimmune process. Commonly occurs in childhood/adolescence but can occur at any age. Some adults may present resembling T2DM (LADA — Latent Autoimmune Diabetes of Adulthood).' },
+          { text: 'Type 2 DM (T2DM): Most common form of diabetes. Characterised by disorders of insulin action and insulin secretion. Risk associated with increasing age, obesity and lack of physical activity. Frequently undiagnosed for many years as hyperglycaemia develops gradually.' },
+          { text: 'Gestational Diabetes (GDM): Onset or first recognition of any degree of glucose intolerance during pregnancy. Applies irrespective of whether insulin is used for treatment or whether condition persists after pregnancy.' },
+          { text: 'Other Specific Types: Genetic defects of β-cell function or insulin action, diseases of the exocrine pancreas, diabetes induced by other endocrinopathies, drugs, toxins, infections. MODY (Maturity Onset Diabetes of the Young) — early age onset, autosomal dominant, absence of autoimmunity.' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Screening and Diagnosis',
+      blocks: [
+        { type: 'text', content: 'Screening should be considered in adults of any age with one or more risk factors. Without risk factors, testing should begin at 40 years. Screening every 3 years for normal HbA1c or glucose tolerance; annually for IFG or IGT.' },
+        { type: 'text', content: 'Risk factors: Overweight/obesity (Asian BMI >23 kg/m²), first degree relative with DM, high risk race/ethnicity, women who delivered ≥4 kg baby or previously diagnosed with GDM, hypertension (>140/90 mmHg), HDL <1.0 mmol/L (male)/<1.3 mmol/L (female) and/or triglyceride >2.2 mmol/L, polycystic ovarian syndrome, history of cardiovascular disease.' },
+        { type: 'text', content: 'Screening using HbA1c: ≤6.0% — low probability of DM, no further test needed; 6.1–6.9% — proceed to FPG or OGTT; ≥7.0% — high probability, diagnose and manage as DM.' },
+        { type: 'text', content: 'Intermediate categories (Pre-diabetes): Impaired Fasting Glycaemia (IFG): FPG 6.1–6.9 mmol/L and 2H-OGTT <7.8 mmol/L. Impaired Glucose Tolerance (IGT): FPG <7.0 mmol/L and 2H-OGTT 7.8–11.0 mmol/L.' },
+        { type: 'text', content: 'Diagnosis — In patients with typical symptoms, DM can be diagnosed if any one is present: (1) Random plasma glucose ≥11.1 mmol/L; (2) FPG ≥7.0 mmol/L; (3) 2-hour post-challenge plasma glucose ≥11.1 mmol/L. Glucometers should NOT be used for diagnosis. Other individuals should have a repeat test on a subsequent day.' },
+      ],
+    },
+    {
+      heading: 'Treatment Targets',
+      blocks: [
+        { type: 'table', headers: ['Test', 'General Target', 'Frail patient susceptible to hypoglycaemia'], rows: [
+          { cells: ['HbA1c (%)', '<7%', '7.0–8.5%'] },
+          { cells: ['Pre Meal Glucose (mmol/L)', '4.0–7.0', '6.5–9.0'] },
+          { cells: ['2HPP (mmol/L)', '5–10', '12'] },
+        ]},
+        { type: 'text', content: 'HbA1c: Check 3–4 monthly if unstable glycaemic control, recent adjustment in therapy, or intensive insulin therapy. Check 6-monthly if stable glycaemic control and meeting treatment goals. Lower HbA1c to ≤6.5% may be considered for some T2DM patients with short duration, long life expectancy, no significant CV complications. BMI target: <25 kg/m² (Asian: <23 kg/m²).' },
+      ],
+    },
+    {
+      heading: 'Lifestyle Modification',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Medical Nutrition Therapy: Individuals with diabetes should receive individualised medical nutritional therapy provided by a dietitian. Consistently distribute carbohydrate intake throughout the day. Weight reduction of 5–10% for overweight/obese patients. Daily consumption of 20–35 g of dietary fibre. Minimize or avoid sugary beverages entirely.' },
+          { text: 'Physical Activity: At least 150 mins/week of moderate to vigorous aerobic exercise spread over at least 3 days per week, with no more than 2 consecutive days between bouts. Pre-exercise evaluation important for sedentary/older diabetic individuals.' },
+          { text: 'Avoidance of Smoking: Smoking cessation counselling and support should be routine. Nicotine replacement therapy is subsidized (MAF claimable) at pharmacist-led smoking cessation clinics.' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Glucose-Lowering Agents',
+      blocks: [
+        { type: 'table', headers: ['Drug', 'Initial Dose', 'Maximum Dose', 'Common ADR', 'Remarks / Contraindications'], rows: [
+          { cells: ['Metformin IR (S1) 250/500 mg', '500 mg OM', '750 mg TDS', 'Nausea, anorexia, vomiting, diarrhoea, abdominal cramps, cholestatic hepatitis; risk of lactic acidosis in renal/hepatic insufficiency', 'Preferred initial agent. HbA1c lowering 1–1.5%. Take with or after meals. Dose adjust in renal impairment: eGFR 45–59 normal dose; 30–44 max 500 mg BD; <30 stop. Long-term use may cause B12 deficiency.'] },
+          { cells: ['Dapagliflozin (Forxiga) (NS) 10 mg', '5 or 10 mg once daily', '10 mg once daily', 'Thirst, increased urination', 'SGLT-2 inhibitors lower HbA1c 0.6–0.9%, body weight and BP. Improved CV outcomes. Avoid in patients at risk of DKA. Not recommended at eGFR <30 (for glycaemic control). MAF subsidy ceased Aug 2024; consider switching to empagliflozin (subsidised SDL2) for cost concerns.'] },
+          { cells: ['Empagliflozin (Jardiance) (S2) 10/25 mg', '10 or 25 mg once daily', '25 mg once daily', 'Thirst, increased urination', 'See above. Consider as class; choose lowest cost option.'] },
+          { cells: ['Dulaglutide (Trulicity) SC 0.75/1.5 mg weekly', '0.75 mg weekly; titrate to 1.5 mg after 1 month', '1.5 mg weekly', 'Predominantly GI (nausea, vomiting, diarrhoea)', 'GLP-1 receptor agonist. HbA1c lowering 1–1.5%. Significant weight loss (up to 9.6 kg). Do NOT use with DPP-4 inhibitors. Contraindicated: personal/family history of MTC or MEN2; pregnancy (washout ≥6 weeks). Caution: pancreatitis, gastroparesis, IBD. Initiated/endorsed by senior doctors.'] },
+          { cells: ['Glipizide (S1) 5 mg', '2.5 mg OM', '15 mg BD', 'Very infrequent mild nausea, vomiting, diarrhoea, allergic reactions', 'Sulfonylurea. HbA1c lowering 1–1.5%. Risk of hypoglycaemia and weight gain. Use second generation SUs. Avoid glibenclamide in elderly ≥60 years or eGFR <60.'] },
+          { cells: ['Gliclazide (S1) 80 mg', '40 mg OM', '160 mg BD', '(see above)', ''] },
+          { cells: ['Linagliptin (Trajenta) (NS) 5 mg — MAF eligible in T2DM with CKD ≥3B', '5 mg once daily', '5 mg once daily', '', 'DPP-4 inhibitor. HbA1c lowering 0.5–0.8%. Weight neutral. Does not require dose adjustment for declining renal function. Consider when SU/SGLT-2 not suitable.'] },
+          { cells: ['Sitagliptin (Januvia) (S2) 50/100 mg', '50 or 100 mg once daily', '100 mg once daily', '', 'DPP-4 inhibitor. Dose adjust in renal impairment: eGFR ≥45 → 100 mg; eGFR 30–44 → 50 mg; eGFR <30 → 25 mg.'] },
+        ]},
+        { type: 'text', content: 'Initiate glucose-lowering agents when lifestyle intervention is insufficient. Oral agents preferred. Do not delay insulin in patients with symptomatic hyperglycaemia, unexplained recent weight loss, ketonuria or DKA. Consider insulin use if HbA1c >10% or random glucose >16.7 mmol/L. Insulin therapy should be considered if optimal combination therapy fails (2 consecutive HbA1c >8% over 3–6 months interval).' },
+      ],
+    },
+    {
+      heading: 'Prevention of Cardiovascular Disease',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'BP control: Target <130/80 mmHg for most DM patients. ACE-I/ARB is preferred for patients with DM and proteinuria or CKD.' },
+          { text: 'Lipid control: Target LDL <1.8 mmol/L for DM patients with established CVD or additional risk factors. (See Lipids CPG)' },
+          { text: 'Antiplatelet therapy: Low-dose aspirin (75–162 mg daily) for DM patients with established cardiovascular disease (secondary prevention). Not routinely recommended for primary prevention in low-risk DM patients.' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Prevention and Management of Complications',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Retinopathy: Annual dilated retinal photography (DRP). Refer ophthalmologist if retinopathy detected.' },
+          { text: 'Nephropathy: Annual urine albumin-creatinine ratio (UACR) and serum creatinine/eGFR. ACE-I/ARB if proteinuria present. SGLT-2 inhibitors for cardiorenal benefits.' },
+          { text: 'Neuropathy/Foot: Annual diabetic foot screening (DFS). Examine feet at each visit if gross neuropathy or PVD.' },
+          { text: 'Hypoglycaemia management: For mild/moderate (patient conscious): 15–20 g fast-acting carbohydrates, repeat if glucose <4 mmol/L after 15 minutes. For severe (patient unable to swallow or unconscious): Glucagon IM/SC or IV dextrose if glucagon not available or fails.' },
+          { text: 'Hyperglycaemia: For BGL ≥20 mmol/L, consult family physicians. For suspected HHS or DKA (fever, drowsiness, vomiting, abdominal pain, dehydration), rapid hydration with IV normal saline, IV insulin, send to A&E.' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Recommended Care Components',
+      blocks: [
+        { type: 'table', headers: ['Parameter', 'Frequency'], rows: [
+          { cells: ['HbA1c', '3–6 monthly (3–4 monthly if poor control or recent adjustment)'] },
+          { cells: ['Weight', 'Every 2–6 months'] },
+          { cells: ['Blood Pressure', 'Every 2–6 months'] },
+          { cells: ['Peripheral Neuropathy examination', 'Yearly'] },
+          { cells: ['DM Panel test (HbA1c, Lipid Panel, Serum Creatinine, UACR)', 'Yearly'] },
+          { cells: ['ECG', 'Baseline once upon diagnosis'] },
+          { cells: ['Dilated Retinal Photography (DRP)', 'Yearly'] },
+          { cells: ['Diabetic Foot Screening (DFS)', 'Yearly'] },
+          { cells: ['Smoking assessment', 'Advise to stop at each visit'] },
+        ]},
+      ],
+    },
+    {
+      heading: 'Pre-Diabetes Management',
+      blocks: [
+        { type: 'text', content: 'Pre-diabetes: IFG (FPG 6.1–6.9 mmol/L) or IGT (2H-OGTT 7.8–11.0 mmol/L). Both represent increased risk for DM and cardiovascular disease.' },
+        { type: 'list', items: [
+          { text: 'Lifestyle intervention: Weight loss of 5–7% of body weight through dietary changes and exercise.' },
+          { text: 'Diet: Reduce total calorie intake; choose complex carbohydrates; increase dietary fibre; reduce saturated fat and sugar.' },
+          { text: 'Weight Management: BMI target <23 kg/m² for Asians.' },
+          { text: 'Physical Activity: At least 150 min/week of moderate-intensity aerobic exercise.' },
+          { text: 'Pharmacological: Metformin can be considered for individuals with IGT or IFG and other risk factors (BMI >35, age <60, prior GDM).' },
+          { text: 'Follow-up: Annually for patients with IFG or IGT; 3-yearly for those who revert to normal glucose tolerance.' },
+        ]},
+      ],
+    },
+  ],
+};
+
+
+
+// ---------------------------------------------------------------------------
+// 23. Dyspepsia
+// ---------------------------------------------------------------------------
+const dyspepsia: CpgDocument = {
+  id: 'dyspepsia',
+  condition: 'Dyspepsia',
+  source: 'NUP CPG',
+  reviewDate: 'August 2025',
+  advisors: 'Dr Tang Si Ying (Consultant, Alexandra Hospital) / Dr Alexander Yip (Consultant, Alexandra Hospital)',
+  sections: [
+    {
+      heading: 'Introduction',
+      blocks: [
+        { type: 'text', content: 'Dyspepsia or indigestion refers to pain or discomfort in the epigastric area (central upper abdomen and lower chest area) attributed to the Gastrointestinal System for a period of at least 1 month. It typically occurs after meals but can also happen if there is no intake of food during normal mealtimes. Other associated symptoms include burping, feeling bloated, feeling nauseated, heartburn (burning sensation behind sternum), and early satiety.' },
+        { type: 'text', content: 'Epidemiology: Locally, up to 38% of Singaporeans have dyspepsia at some point. It is more common in females, smokers and those who take NSAIDs. The most common type of dyspepsia at up to 70% is "Functional Dyspepsia" where a structural cause is not found.' },
+      ],
+    },
+    {
+      heading: 'Screening and Diagnosis',
+      blocks: [
+        { type: 'text', content: 'The PROMPT Model (Murtagh, 2024) is suggested as a practical diagnostic tool for primary care practitioners:' },
+        { type: 'list', items: [
+          { text: 'P — Probable diagnosis: Most likely diagnosis is luminal cause (functional dyspepsia, gastritis, or reflux). Key history: patient age, symptoms and signs, onset/time course/duration, risk factors.' },
+          { text: 'R — Red Flags (not to be missed):', children: [
+            { text: 'Cardiac: New ECG changes, new reduction in effort tolerance, new onset exertional chest pain.' },
+            { text: 'GI Malignancy: New onset persistent dyspepsia age >45; unintentional significant weight loss (≥5% over 6–12 months); family history of gastric cancer; dysphagia; odynophagia; epigastric/abdominal mass; melena or haematemesis; risk factors for Barrett\'s Oesophagus (Chronic GERD ≥5 years + 3 of: age >50, male, obesity BMI >23.5, tobacco use, 1st degree relative with Barrett\'s or oesophageal adenocarcinoma).' },
+            { text: 'Peptic Ulcer Disease: Melena, haematemesis.' },
+            { text: 'Pancreatitis or cholecystitis: Unwell looking, fever, tender abdomen, positive Murphy\'s finding.' },
+          ]},
+          { text: 'O — Often Missed Causes:', children: [
+            { text: 'Medications (temporal relationship to onset): Metformin, acarbose, GLP-1 agonist; iron tablets; NSAIDs; antidepressants (SSRIs); potassium chloride; Orlistat; antibiotics especially doxycycline; herbs (Ginkgo, Saw palmetto, garlic).' },
+            { text: 'Alcohol Gastritis — long-term or acute large consumption.' },
+          ]},
+          { text: 'M — Masquerades: Depression/anxiety (somatization as epigastric pain); Aerophagy (excessive air swallowing); Oesophageal Spasm and Biliary Motility Disorder.' },
+          { text: 'PT — Is the patient trying to tell me something? Explore ideas, concerns, and expectations.' },
+        ]},
+        { type: 'text', content: 'Key causes of luminal dyspepsia: (1) Functional Dyspepsia (FD): ROME IV criteria — one or more of: bothersome postprandial fullness, bothersome early satiation, bothersome epigastric pain, bothersome epigastric burning, with no evidence of structural disease. Criteria fulfilled for last 3 months with symptom onset ≥6 months prior. (2) Gastritis: H. pylori infection (prevalence 31% in Singapore) or exogenous/endogenous causes. (3) GERD: Stomach acid rises into oesophagus, may be triggered by lying down after meals.' },
+        { type: 'text', content: 'Extra-luminal GI causes: (1) Biliary Colic — typically occurs after fatty meal, pain quickly escalating then resolving, may radiate to upper back or right shoulder, gallstones on U/S HBS. (2) Chronic Pancreatitis — epigastric pain radiating to back, endocrine insufficiency, weight loss, chronic diarrhoea/steatorrhea; most common cause is alcohol overuse.' },
+      ],
+    },
+    {
+      heading: 'Diagnostic Investigations Available in NUP',
+      blocks: [
+        { type: 'table', headers: ['Test', 'Open Access UBT', 'Open Access OGD', 'GastroClear'], rows: [
+          { cells: ['Age Limitations', 'Above 16 years', 'Between 21 and 60 years', 'Above 40 years'] },
+          { cells: ['Indications', 'Positive H. pylori antibodies; close family contact recently diagnosed with H. pylori', 'Dyspepsia symptoms without red flags; reflux/heartburn; recurrent upper abdominal pain/bloating', 'Screening test to identify intermediate to high-risk patients for gastric cancer; patients not keen for gastroscopy as first line investigation'] },
+          { cells: ['Description', 'Swallow a pill/liquid containing urea; blow into a solution; detects active H. pylori infection', 'Tube with camera inserted via mouth under sedation; direct visualization; can carry out therapeutic procedures', 'Venous blood test; analyzes specific microRNA biomarkers to identify individuals at risk for gastric cancer'] },
+          { cells: ['Sensitivity/Specificity', '94.2% sensitivity, 100% specificity for H. pylori', 'Operator dependent; overall sensitivity 87%, specificity 68%', 'Screening test — risk stratification only (low/intermediate/high)'] },
+          { cells: ['Cost', 'About $150 per test for Singapore Citizen', 'At least $700 (additional cost for histology, therapeutic procedure)', 'About $80 till further notice'] },
+          { cells: ['Risk', 'Non-invasive, very low risk', 'Invasive (GI tract bleeding, perforation, sedation risks)', 'Low risk — venipuncture related risk'] },
+          { cells: ['Common Pitfalls', 'Positive UBT requires repeat UBT for proof of cure; negative test may still require OGD for other causes', 'Do not offer with open access UBT (duplicity); not suitable for cancer screening in asymptomatic patients', 'Only stratifies risk; intermediate/high risk requires Gastroenterology referral (not OA-OGD); defer OA-OGD until GastroClear result is out if ordering both'] },
+        ]},
+      ],
+    },
+    {
+      heading: 'Management and Follow-Up',
+      blocks: [
+        { type: 'text', content: 'General approach: Exclude non-luminal causes and red flags first. If red flags present, urgent/early referral to Gastroenterology or appropriate speciality is warranted. Non-luminal causes should be referred appropriately (e.g. biliary colic to Hepatobiliary Surgery). After ruling out red flags and extra-luminal causes, adopt a test-and-treat approach for persistent luminal causes.' },
+        { type: 'text', content: 'H. pylori Infection Treatment:' },
+        { type: 'list', items: [
+          { text: '1st line (no penicillin allergy): Omeprazole 20 mg BD + amoxicillin 1 gram BD + clarithromycin 500 mg BD for 2 weeks.' },
+          { text: '1st line (penicillin allergy): Omeprazole 20 mg BD + metronidazole 400 mg TDS + clarithromycin 500 mg BD for 2 weeks.' },
+          { text: '2nd line: Omeprazole 20 mg BD + bismuth subcitrate 240 mg BD (or bismuth subsalicylate 525 mg QDS) + metronidazole 400 mg TDS + tetracycline 500 mg QDS for 2 weeks. Note: bismuth subcitrate and tetracycline not stocked in NUP; provide external prescription.' },
+        ]},
+        { type: 'text', content: 'Functional Dyspepsia Treatment Algorithm: (1) Proton pump inhibitors (PPIs) remain the mainstay of initial treatment — Omeprazole 20 mg OM (no added benefit for BD or higher dosage). H2RA (famotidine 10 mg OM or BD) is an alternative. (2) Initiate appropriate lifestyle and dietary changes. (3) If persistent dyspepsia despite PPI trial, refer to Gastroenterology.' },
+        { type: 'text', content: 'Persistent Dyspepsia (normal OGD, mild gastritis, or eradicated H. pylori but symptomatic beyond 4 weeks): Start PPI for 4–8 weeks. If symptoms improve: continue PPI for 6 months, then discontinue or taper to lowest dose. If no improvement: refer Gastroenterology.' },
+        { type: 'text', content: 'GERD Treatment Algorithm: Initiate lifestyle and diet changes. Identify severity: Mild/intermittent (<2 episodes/week): PRN H2RA and/or antacid/alginates, review in 2–4 weeks. Severe/frequent (≥2 episodes/week or impaired quality of life): Start PPI + antacid/alginates PRN, review in 8 weeks. If red flags or Barrett\'s risk factors, refer to Gastroenterology.' },
+      ],
+    },
+    {
+      heading: 'Non-Pharmacological / Lifestyle',
+      blocks: [
+        { type: 'table', headers: ['Category', 'Trigger / Modulators', 'Suggested Lifestyle and Diet Changes'], rows: [
+          { cells: ['Eating behaviour', 'Eating too fast; large portions; eating beyond satiety; eating close to bedtime; irregular mealtimes', 'Serve smaller portions; use smaller plates; finish eating 3 hours before lying down; schedule proper meals to avoid grazing'] },
+          { cells: ['Dietary factors', 'Fatty/fried/oily food; spicy or sour food; excessive alcohol; excessive coffee or tea; carbonated drinks', 'Add fruits and vegetables (avoid citrus); reduce fatty/fried/oily food; eliminate or wean down caffeine; limit alcohol; choose water over carbonated drinks'] },
+          { cells: ['Lifestyle', 'Weight gain; smoking; tight garments or belt', 'Lose weight; aim 7000–10000 steps/day; accumulate 150 min/week moderate exercise; stop smoking; wear loose clothing; lie on left side to minimise reflux; elevate head of bed'] },
+          { cells: ['Emotional/behavioural factors', 'High stress environment or period; hypervigilance', 'Practice deep breathing or other stress releasing techniques'] },
+        ]},
+      ],
+    },
+    {
+      heading: 'Pharmacological Medications',
+      blocks: [
+        { type: 'table', headers: ['Medication', 'Common Dose', 'Remarks'], rows: [
+          { cells: ['PPI: Omeprazole', '20 mg OM', 'Requires 3–4 days for full onset of acid reduction effect but more efficacious than H2RA. Given for 8 weeks.'] },
+          { cells: ['H2RA: Famotidine', '20 mg OD–BD', 'Faster onset than PPI but may achieve tachyphylaxis in 4–6 weeks; prefer for mild and intermittent cases.'] },
+          { cells: ['Antacid: Magnesium Trisilicate Mixture / Antacid tablets', '5–15 ml QDS PRN / 1–2 tablets TDS PRN', 'Neutralize gastric acid.'] },
+          { cells: ['Alginate: Gaviscon', '10–20 ml TDS PRN', 'Contains carbonates to neutralize gastric acid; alginates form a viscous gel at the gastroesophageal junction to neutralize acid pocket.'] },
+        ]},
+      ],
+    },
+  ],
+};
+
+// ---------------------------------------------------------------------------
+// 24. Ear Infections
+// ---------------------------------------------------------------------------
+const earInfections: CpgDocument = {
+  id: 'ear-infections',
+  condition: 'Ear Infections',
+  source: 'NUP CPG',
+  reviewDate: 'July 2025',
+  advisors: 'Dr Goh Xue Ying (Consultant, Department of Otolaryngology – Head & Neck Surgery, NUH)',
+  sections: [
+    {
+      heading: 'Middle Ear Infections (Otitis Media) — Introduction',
+      blocks: [
+        { type: 'text', content: 'Otitis media (OM) encompasses a spectrum of diseases including Acute Otitis Media (AOM), Otitis Media with Effusion (OME) and Chronic Suppurative Otitis Media (CSOM). AOM is a self-limiting infection mainly affecting children, attributable to eustachian-tube dysfunction, most often caused by an upper respiratory infection. CSOM is characterized by chronic suppurative middle ear inflammation usually associated with a persistently perforated tympanic membrane. OME is characterized by the presence of glue-like fluid behind an intact tympanic membrane without signs of acute inflammation.' },
+        { type: 'text', content: 'Epidemiology: AOM is one of the most common diseases in childhood, with ~80% of all children experiencing it during their lifetime. Most commonly between 6 and 12 months of age. Microbiology: Bacteria (Streptococcus pneumoniae, non-typeable Haemophilus influenzae, Moraxella catarrhalis) or Viruses (RSV, coronaviruses, influenza, adenoviruses). In infants <2 weeks, may also be caused by group B Streptococcus, enteric gram-negative bacilli, or Staphylococcus aureus.' },
+      ],
+    },
+    {
+      heading: 'AOM — Clinical Presentation and Diagnosis',
+      blocks: [
+        { type: 'text', content: 'History: Otalgia (most common complaint; may manifest as ear rubbing/tugging in non-verbal child), decreased hearing, ear drainage (if TM ruptured — sudden relief of pain with purulent otorrhoea), fever (in 1/3 to 2/3 of children), symptoms of preceding URTI, nonspecific symptoms in young children (fussiness, poor sleep, poor feeding, vomiting).' },
+        { type: 'text', content: 'Physical Examination: Key features — bulging tympanic membrane; decreased/absent mobility of TM (pneumatic otoscope). Other features — partial/complete opacification of TM; erythema of TM; acute TM perforation with purulent otorrhoea; bullae in TM.' },
+        { type: 'text', content: 'Diagnosis (AAP guidelines): AOM should be diagnosed when there is moderate to severe TM bulging or new-onset otorrhoea not caused by otitis externa. AOM may be diagnosed with mild TM bulging and recent onset ear pain (<48 hours) or intense TM erythema. AOM should NOT be diagnosed when middle ear effusion is absent.' },
+      ],
+    },
+    {
+      heading: 'AOM — Management',
+      blocks: [
+        { type: 'text', content: 'Most children get better within 3 days without antibiotics. Antibiotics are the mainstay of treatment in adults.' },
+        { type: 'table', headers: ['Age / Clinical Status', 'Treatment'], rows: [
+          { cells: ['Children ≥6 months: Severe AOM (bilateral or unilateral)', 'Treat with antibiotics'] },
+          { cells: ['Children 6–23 months: Non-severe bilateral AOM', 'Treat with antibiotics'] },
+          { cells: ['Children 6–23 months: Non-severe unilateral AOM', 'Treat with antibiotics OR watchful waiting (initiate antibiotics if worsens or fails to improve within 48–72 hours) — based on joint decision making with caregiver'] },
+          { cells: ['Children ≥24 months: Non-severe AOM (bilateral or unilateral)', 'Treat with antibiotics OR watchful waiting'] },
+          { cells: ['Adults: Any severity of AOM', 'Treat with antibiotics'] },
+        ]},
+        { type: 'table', headers: ['Patient', 'Choice', 'Antibiotic / Dose'], rows: [
+          { cells: ['Children — First-line (no amoxicillin in last 30 days; no concurrent purulent conjunctivitis; not allergic to penicillin)', '', 'Amoxicillin 40–50 mg/kg/day in 2–3 doses; max 1.5 g/day'] },
+          { cells: ['Children — First-line for penicillin allergy', '', 'Clarithromycin 15 mg/kg/day in 2 doses; max 1 g/day'] },
+          { cells: ['Children — Second-choice (amoxicillin in last 30 days; concurrent purulent conjunctivitis; recurrent AOM unresponsive to amoxicillin)', '', 'Amoxicillin/clavulanic acid 40–50 mg/kg/day (amoxicillin component) in 2 doses; max 3 g/day'] },
+          { cells: ['Adults — First-line', '', 'Amoxicillin/clavulanic acid 625 mg TDS'] },
+          { cells: ['Adults — First-line if allergic to penicillin', '', 'Doxycycline 100 mg BD'] },
+          { cells: ['Adults — Allergic to penicillin + contraindications to doxycycline', '', 'Clarithromycin 500 mg BD'] },
+        ]},
+        { type: 'text', content: 'Duration: Children — 10 days if age <2 or with TM perforation; 5–7 days if ≥2 years with intact TM and no history of recurrent AOM. Adults — 5–7 days mild to moderate; 10 days severe.' },
+        { type: 'text', content: 'Preventive Care: Pneumococcal conjugate vaccine and annual influenza vaccine per immunization schedule. Avoid tobacco smoke exposure. Prophylactic antibiotics NOT indicated to reduce frequency of AOM in children with recurrent AOM.' },
+        { type: 'text', content: 'When to Refer: AOM associated with severe systemic infection or acute complications (mastoiditis, meningitis, intracranial abscess, sinus thrombosis, facial nerve paralysis) → refer to ED. Recurrent AOM (3 episodes in 6 months, or 4 episodes in 12 months with 1 in preceding 6 months) → refer to ENT. Hearing loss persisting >2 weeks after resolution → audiogram and ENT. TM perforations persisting ≥12 weeks → refer to ENT.' },
+      ],
+    },
+    {
+      heading: 'External Ear Infections (Otitis Externa) — Introduction',
+      blocks: [
+        { type: 'text', content: 'Otitis externa (OE) refers to inflammation of the external auditory canal, which may also involve the pinna or tympanic membrane. OE can be acute (<6 weeks) or chronic (>3 months). Acute otitis externa (AOE) is most commonly bacterial and presents with rapid onset of ear pain, tenderness, itching, aural fullness and hearing loss. Necrotising/malignant otitis externa involves skin and soft tissue of the external auditory canal and bone tissue of the temporal bone.' },
+        { type: 'text', content: 'Epidemiology: ~10% of people develop OE during their lifetime; 95% are acute. Peak incidence at age 7–14 years. Most common pathogens: Pseudomonas aeruginosa and Staphylococcus aureus. Fungal OE is rare (~9%).' },
+      ],
+    },
+    {
+      heading: 'AOE — Clinical Presentation and Diagnosis',
+      blocks: [
+        { type: 'text', content: 'History/Symptoms: Ear pain, pruritus, otorrhoea, hearing loss, aural fullness. Risk factors: Water exposure/swimming, trauma or use of devices in ear canal, skin conditions (atopic dermatitis, psoriasis, allergic contact dermatitis), narrow ear canals, ear canal obstruction, prior ear surgery or radiation, stress, immunocompromised.' },
+        { type: 'text', content: 'Physical Examination: Tenderness of tragus and/or pinna; ear canal oedema and erythema; associated debris (spores or curdy debris suggestive of fungal OE); tympanic membrane may be erythematous.' },
+        { type: 'text', content: 'Diagnosis (AAP-HNS criteria): Rapid onset (generally within 48 hours) in the past 3 weeks AND symptoms of ear canal inflammation (otalgia, itching, or fullness, with or without hearing loss or jaw pain) AND signs of ear canal inflammation (tenderness of tragus and/or pinna, or diffuse ear canal oedema/erythema, with or without otorrhoea).' },
+        { type: 'text', content: 'Complications: (1) Periauricular cellulitis — erythema, oedema, warmth of skin around pinna, generally mild pain without systemic manifestations. (2) Malignant external otitis — potentially fatal; most common in older adult diabetic or immunocompromised patients; spreads to bone/marrow spaces of skull base; severe otalgia out of proportion to examination; granulation tissue at bony cartilaginous junction; cranial nerve palsies indicate poor prognosis.' },
+        { type: 'text', content: 'Differential Diagnosis: Contact dermatitis (pruritus dominant; consider if no response to OE treatment over 1 week); CSOM (symptoms mild, TM perforation and purulent middle ear drainage on otoscopy, minimal external canal oedema); Carcinoma of ear canal (consider if abnormal tissue growth or no response to prolonged OE treatment; friable lesion with surrounding purulence).' },
+      ],
+    },
+    {
+      heading: 'AOE — Management',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Prescribe analgesia according to severity of pain.' },
+          { text: 'Topical antibiotics for initial treatment of diffuse, uncomplicated AOE. Use topical antibiotic providing coverage against Pseudomonas aeruginosa and Staphylococcus aureus (ciprofloxacin ear drops or neomycin-polymyxin B-dexamethasone ear drops). Treat for 1 week; continue additional week if not resolved; return for review if symptoms persist beyond 2 weeks.' },
+          { text: 'If known or suspected TM perforation: use non-ototoxic preparation (topical fluoroquinolone for 7 days is preferred).' },
+          { text: 'Oral antibiotics in addition to topical antibiotics: severe OE with cellulitis and/or fever; immunocompromised patients regardless of severity.' },
+          { text: 'Oral fluoroquinolone is the antibiotic of choice when oral antibiotics are indicated. If not a candidate for systemic fluoroquinolones, amoxicillin/clavulanate is acceptable.' },
+          { text: 'If no response within 48–72 hours, reassess for other causes of illness.' },
+        ]},
+        { type: 'text', content: 'Preventive Care: No devices in ear canal until symptoms resolved; disinfect prior to reuse. Prevention strategies: remove obstructing cerumen, use acidifying ear drops before/after swimming, use ear plugs while swimming, dry ear canal with hair dryer, avoid trauma to external auditory canal.' },
+        { type: 'text', content: 'Instructions for Patients: Lie down with affected ear up; fill ear canal with drops entirely; stay in position for 3–5 minutes; gentle to-and-fro movement of ear may help; keep ear dry while using drops; try not to clean the ear yourself.' },
+        { type: 'text', content: 'When to Refer: Refractory symptoms — start oral antibiotic for 1 week and refer to ENT. Patients with possible malignant OE, CSOM or carcinoma of the ear canal → promptly refer to ENT.' },
+      ],
+    },
+  ],
+};
+
+// ---------------------------------------------------------------------------
+// 25. Eczema
+// ---------------------------------------------------------------------------
+const eczema: CpgDocument = {
+  id: 'eczema',
+  condition: 'Eczema',
+  source: 'NUP CPG',
+  reviewDate: 'March 2025',
+  advisors: 'Adj A/Prof Nisha Suyien Chandran (Senior Consultant, NUH)',
+  sections: [
+    {
+      heading: 'Introduction',
+      blocks: [
+        { type: 'text', content: 'Eczema or dermatitis is skin inflammation caused by internal or external stimuli. It tends to be a chronic skin condition affecting patients\' quality of life. Key challenges include variability in presentation across different ages, durations, and ethnic groups; unfamiliarity with treatment options; and complexity of patients\' ideas, concerns and expectations (ICE) regarding skin condition and treatment.' },
+      ],
+    },
+    {
+      heading: 'Diagnosis and Differential Diagnosis',
+      blocks: [
+        { type: 'text', content: 'Eczema is a clinical diagnosis. Itching or pruritus is a cardinal symptom. Lesion morphology varies by duration: acute (subcutaneous oedema, vesicles, erosions, weeping/crusting); chronic (thickened plaques, post-inflammatory pigmentation changes, lichenification, prurigo nodules); subacute (features of both). Superimposed bacterial infection (impetiginisation): weeping, yellow crusting, or signs of deeper infection. Note: erythema may be harder to appreciate in patients with darker skin; post-inflammatory hyperpigmentation is more common than hypopigmentation in Asian context.' },
+        { type: 'text', content: 'Types of Eczema:' },
+        { type: 'list', items: [
+          { text: 'Atopic Dermatitis: Chronic relapsing-remitting condition starting in infancy or childhood. Exacerbated by environmental triggers (extremes of temperature, low humidity, house dust mites, contact allergens), irritants, infections, food. Associated with personal/family history of atopic disorders (asthma, allergic rhinitis, allergic conjunctivitis). Distribution: infantile — face, scalp, neck, extensor areas; childhood/adolescence — elbow, knee, wrist, neck flexures. Other features: keratosis pilaris, hyperlinear palms, ichthyosis vulgaris, atypical vascular responses.' },
+          { text: 'Contact Dermatitis: Due to exogenous substances (household, occupational, iatrogenic). Types: Irritant Contact Dermatitis (ICD — local toxic effect) and Allergic Contact Dermatitis (ACD — immunologically mediated). Work-related contact dermatitis may be a reportable Occupational Skin Disease (Ministry of Manpower, Workplace Safety and Health Act).' },
+          { text: 'Stasis Dermatitis: Affects dependent areas of lower limbs; associated with chronic venous insufficiency (CVI — dependent oedema, telangiectasias, varicose veins, lipodermatosclerosis, venous ulceration typically over medial malleolar region).' },
+          { text: 'Asteatotic/Xerotic Eczema: Occurs in areas of dry skin, particularly extensor surfaces in older adults. Dry skin with pattern of cracks and superficial fissures (\'crazy-paving\').' },
+          { text: 'Discoid/Nummular Eczema: Coin-shaped markedly pruritic subacute dermatitic plaques on upper and lower limbs. May occur without any trigger.' },
+          { text: 'Seborrhoeic Dermatitis: Occurs in infants or adults; erythematous plaques with greasy scaling in scalp, eyebrows, ears, nasolabial folds. May be associated with HIV or neurological disorders (Parkinson\'s).' },
+          { text: 'Dyshidrotic Eczema/Pompholyx: Firm vesicles on fingers and soles; intensely pruritic and relapsing; may be triggered by stress and contact dermatitis.' },
+          { text: 'Lichen Simplex Chronicus/Prurigo Nodularis: Lichenified/nodular lesions due to chronic rubbing or scratching.' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Management of Eczema',
+      blocks: [
+        { type: 'text', content: 'The components of treatment are: (1) Identify and address triggers; (2) Improving the epidermal barrier; (3) Treat skin inflammation; (4) Treat pruritus; (5) Use of antimicrobials where appropriate; (6) Patient education.' },
+      ],
+    },
+    {
+      heading: 'Identify and Address Triggers',
+      blocks: [
+        { type: 'table', headers: ['Diagnosis', 'Possible Triggers', 'Strategies to Address Triggers'], rows: [
+          { cells: ['Atopic Dermatitis', 'Environmental (temperature, humidity, house dust mites, allergens); irritants; infections (Staphylococcus aureus); food (small minority, especially children with severe/refractory disease)', 'House dust mite avoidance advice; treat superimposed bacterial infection; consider allergy testing referral for appropriate patients'] },
+          { cells: ['Contact Dermatitis', 'Household, occupational, iatrogenic contactants (incl. traditional/Western medications)', 'Eliminate suspected contactants if possible or recommend PPE; consider allergy testing referral'] },
+          { cells: ['Stasis Dermatitis', 'Obesity, prolonged standing, history of DVT', 'Elevate lower limbs at rest; compression stockings; referral to vascular surgery where appropriate'] },
+          { cells: ['Asteatotic/Xerotic Eczema', 'Dry/cold weather', 'Avoid excessively warm baths; intensive use of emollients'] },
+        ]},
+      ],
+    },
+    {
+      heading: 'Improving the Epidermal Barrier',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Use mild soap-free or moisturising cleansers.' },
+          { text: 'Avoid hot showers/baths of excessive duration. Prefer lukewarm or cold water.' },
+          { text: 'Regular use of moisturisers: occlusives form a barrier on the skin surface; humectants bind water within the skin.' },
+          { text: 'If excessive oozing/weeping, use compresses with astringent agents to dry up excessive fluid.' },
+        ]},
+        { type: 'table', headers: ['Type', 'Drug', 'Dose', 'Remarks'], rows: [
+          { cells: ['Occlusive', 'Emulsifying Ointment', '1 application OM/BD', 'May also be used as a soap'] },
+          { cells: ['Occlusive', 'White Soft Paraffin', '1 application BD/TDS', 'May be used on dry or chapped lips'] },
+          { cells: ['Humectant', 'Aqueous Cream', '1 application BD/TDS', 'May also be used as soap substitute, cleanser, and makeup remover'] },
+          { cells: ['Humectant', 'Urea cream', '1 application BD/TDS', 'Keratolytic effect useful for scaly lesions. Avoid in children; may cause mild stinging/itching.'] },
+          { cells: ['Astringent', 'Potassium permanganate', '1 application as needed', 'Dilute 1:8 with water. Do not apply directly on skin. Use as compress over weepy/oozing skin 10–20 min, up to twice daily. May stain skin and clothing.'] },
+        ]},
+      ],
+    },
+    {
+      heading: 'Treat Skin Inflammation',
+      blocks: [
+        { type: 'text', content: 'Topical Corticosteroids (TCS) are the mainstay of treating skin inflammation. Select appropriate vehicle (ointments for thicker localized lesions — deliver higher amount of steroid; creams for larger surfaces — less greasy). Select appropriate potency for the intensity of inflammation and area of skin.' },
+        { type: 'table', headers: ['Potency', 'Drug(s)', 'Dose', 'Remarks'], rows: [
+          { cells: ['Potent', 'Betamethasone valerate 0.1% cream/ointment; Mometasone furoate 0.1% cream', '1 application OD/BD; 1 application OD', 'Betamethasone valerate 0.1% ointment is the most potent.'] },
+          { cells: ['Moderate', 'Betamethasone valerate 0.025%, 0.05% cream/ointment', '1 application OD/BD', ''] },
+          { cells: ['Mild', 'Hydrocortisone 1% cream', '1 application OD/BD', 'Recommended for neonates/infants/young children; for mild lesions or lesions on the face.'] },
+        ]},
+        { type: 'table', headers: ['Drug', 'Dose', 'Remarks'], rows: [
+          { cells: ['Hydrocortisone 1% with clioquinol 3%', '1 application OD/BD', 'Clioquinol has antifungal and antibacterial activity against gram-positive bacteria'] },
+          { cells: ['Betamethasone 0.025%/0.1% with clioquinol 3%', '1 application OD/BD', ''] },
+          { cells: ['Betamethasone dipropionate 0.05% and salicylic acid 3% ointment (Betacyclic)', '1 application OD/BD', 'Use limited to resistant lesions (lichenified AD, chronic plaque psoriasis, prurigo nodularis). Switch to lower strength TCS once lesions have flattened.'] },
+        ]},
+        { type: 'text', content: '1 fingertip unit (FTU) = amount squeezed from tip of adult finger to volar distal interphalangeal joint crease = sufficient for 2 adult palm-sizes of skin. TCS are safe if used for appropriate indications, at appropriate potencies, for appropriate durations. Adverse events (rare): skin atrophy and bruising, telangiectasias, acneiform eruptions, hypertrichosis, HPA axis suppression. Use of mild-to-moderate TCS in pregnancy has not been associated with adverse maternal or neonatal outcomes. Taper TCS dose (potency or frequency) once improved.' },
+        { type: 'text', content: 'Topical Calcineurin Inhibitors (TCI): Non-steroidal anti-inflammatory agents, adjuncts to TCS. No side effect of skin atrophy. Suitable for sensitive areas (face, around eyes, neck, groin, skin flexures). Drug: Pimecrolimus 1% cream — 1 application OD/BD. For children ≥3 months. Should not be used in pregnancy. Adverse effects: local burning/pruritus/soreness/stinging (usually self-resolving). FDA black box warning: long-term safety not established; rare cases of malignancy reported.' },
+      ],
+    },
+    {
+      heading: 'Treat Pruritus and Use of Antimicrobials',
+      blocks: [
+        { type: 'text', content: 'Pruritus: Sedating antihistamines may be useful to decrease itching and permit sleep during flares. There is lack of high-quality evidence on efficacy of non-sedating antihistamines (cetirizine, loratadine).' },
+        { type: 'text', content: 'Antimicrobials: Signs of bacterial superinfection (weepy or impetiginized lesions) should be treated with systemic antibiotics against gram-positive agents, particularly Staphylococcus aureus. Non-penicillin allergic: cloxacillin, cephalexin. Penicillin allergic: erythromycin, clindamycin. Topical antiseptics may be useful adjuncts.' },
+      ],
+    },
+    {
+      heading: 'Patient Education and Referrals',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Patient Education (Atopic Dermatitis): Importance of regular moisturizer use; removal of triggers, especially House Dust Mites; appropriate use of TCS and FTU (address fear of topical corticosteroids upfront).' },
+          { text: 'Indications for referral to a dermatologist: diagnostic uncertainty; skin condition does not respond to treatment; specialist-level treatments required (UV therapy, systemic immunosuppression, biologic agents).' },
+          { text: 'Indications for Emergency Department referral: suspected eczema herpeticum (sudden eruption of vesicles on erosions, frequently with fever, malaise, lymphadenopathy); clinically unwell patient (febrile, toxic-appearing); extensive disease (erythroderma).' },
+        ]},
+        { type: 'text', content: 'House Dust Mite Avoidance Advice: Wash bedsheets and pillowcases in hot water ≥60°C weekly or fortnightly. Avoid beddings made of natural fibres; use synthetic fibres. Remove stuffed toys and thick curtains. Damp dust surfaces; avoid feather dusters. Clean air-conditioners regularly. Avoid carpets in the room. Consider mite-proof mattresses, pillow covers and blankets; use good quality vacuum cleaners or air purifiers.' },
+      ],
+    },
+  ],
+};
+
+
+
+const epilepsy: CpgDocument = {
+  id: 'epilepsy',
+  condition: 'Epilepsy',
+  source: 'NUP CPG',
+  reviewDate: 'October 2027',
+  advisors: 'Dr Tan Wei Beng / Dr Ang Lai Lai; Specialist: Dr Rahul Rathakrishnan (Senior Consultant, Division of Neurology, NUH)',
+  sections: [
+    {
+      heading: 'Objectives',
+      blocks: [
+        {
+          type: 'list',
+          items: [
+            { text: 'Appreciate the different presentation of epilepsy.' },
+            { text: 'Understand how a diagnosis is established.' },
+            { text: 'Be familiar with the common medications used in the treatment of epilepsy and their associated side effects.' },
+            { text: 'Special consideration — the woman patient during pregnancy and lactation.' },
+            { text: 'Be familiar with issues related to fitness certification for patients with epilepsy.' },
+            { text: 'Be prepared for the emergency management of a patient during seizure.' },
+          ],
+        },
+      ],
+    },
+    {
+      heading: 'Background',
+      blocks: [
+        {
+          type: 'list',
+          items: [
+            { text: 'Epilepsy is one of the more serious yet treatable neurological disorders, affecting over 50 million people worldwide.' },
+            { text: 'An estimated 20 million new cases occur each year globally.' },
+            { text: 'If properly treated, about 70–80% people with epilepsy could lead normal lives.' },
+          ],
+        },
+      ],
+    },
+    {
+      heading: 'Definition',
+      blocks: [
+        {
+          type: 'list',
+          items: [
+            { text: 'Epilepsy is a chronic neurological disorder characterized by recurrent unprovoked seizures. The seizures can be partial or generalised.' },
+            { text: 'They are divided into: (a) Partial (focal) seizures – simple or complex; (b) Generalized seizure – absence (petit mal), tonic-clonic (grand mal), myoclonic, tonic, clonic, atonic.' },
+          ],
+        },
+      ],
+    },
+    {
+      heading: 'Symptoms and Signs (Not Diagnostic Criteria)',
+      blocks: [
+        {
+          type: 'list',
+          items: [
+            { text: 'Aura' },
+            { text: 'Cyanosis' },
+            { text: 'Loss of consciousness' },
+            { text: 'Motor manifestations: generalised stiffness of body and limbs followed by jerking of limbs, tongue biting, urinary incontinence.' },
+            { text: 'Post-ictal: confusion, muscle soreness, headaches.' },
+          ],
+        },
+      ],
+    },
+    {
+      heading: 'Differential Diagnosis',
+      blocks: [
+        {
+          type: 'text',
+          content: 'With loss of consciousness: syncope, cardiac arrhythmia, TIA, hypoglycaemia, panic attacks. With abnormal movement: movement disorders during sleep and when awake, paroxysmal choreoathetosis/dystonia/tremor, drop attacks and cataplexy.',
+        },
+      ],
+    },
+    {
+      heading: 'Investigations (If Relevant)',
+      blocks: [
+        {
+          type: 'list',
+          items: [
+            { text: 'Full Blood Count' },
+            { text: 'Electrolytes, Urea, Creatinine and Glucose' },
+            { text: 'Serum calcium, magnesium' },
+            { text: 'Liver function tests' },
+            { text: 'Electrocardiogram' },
+            { text: 'Electroencephalogram (EEG)' },
+            { text: 'Imaging – CT / MRI head' },
+          ],
+        },
+        {
+          type: 'text',
+          content: 'Notes on EEG: Often useful in diagnosis, classification and prognostication of epilepsy. Performed to support a diagnosis in adults where clinical history is suggestive. Should be performed soon after the attack when a helpful result is more likely.',
+        },
+      ],
+    },
+    {
+      heading: 'Referral for Evaluation of First Seizure',
+      blocks: [
+        {
+          type: 'list',
+          items: [
+            { text: 'A neurologist should evaluate all individuals with a first-onset suspected seizure.' },
+            { text: 'This ensures accurate and early diagnosis, and initiation of appropriate therapy.' },
+            { text: 'The primary care doctor can follow up thereafter.' },
+          ],
+        },
+      ],
+    },
+    {
+      heading: 'Anti-Epileptic Drugs (AED)',
+      blocks: [
+        {
+          type: 'text',
+          content: 'At NUP, any AED should not be initiated at NUP — therapy is only stepped down from neurologists in hospital. Any patient who lost follow up and requires reinitiation of medicine should be referred back to neurologist as a rule.',
+        },
+        {
+          type: 'text',
+          content: 'Consideration for AED: (a) The risk of seizure recurrence; (b) The benefits of being on AED. Commonly used AEDs: Phenytoin, carbamazepine, sodium valproate, phenobarbitone. Newer AEDs (gabapentin, lamotrigine, topiramate, levetiracetam) can be added on by the neurologist for suboptimal control.',
+        },
+        {
+          type: 'text',
+          content: 'Changing formulation/brand of AED is not recommended — different preparations may vary in bioavailability or pharmacokinetic profiles, increasing risk of reduced effect or excessive side effects.',
+        },
+        {
+          type: 'text',
+          content: 'Monitoring AED levels in primary care is unnecessary and not cost-effective. Hospital specialists order levels for: compliance/titration, assessment of AED toxicity, titration of phenytoin dose.',
+        },
+        {
+          type: 'text',
+          content: 'Breakthrough seizures: increased risk due to non-compliance, drug interactions, alcohol abuse, sleep deprivation, concurrent illness. Patients with frequent breakthrough seizures should be referred back to a neurologist.',
+        },
+        {
+          type: 'text',
+          content: 'Withdrawal of AED can be explored: at end of at least 2-year seizure-free period, after discussion of risks and benefits, via referral to specialist. Risk of relapse after withdrawal is approximately 25% at 1 year and 29% at 2 years.',
+        },
+      ],
+    },
+    {
+      heading: 'Pharmacological Treatment',
+      blocks: [
+        {
+          type: 'table',
+          headers: ['Drug', 'Dosage (adults)', 'Max Dose', 'Adverse Drug Reactions', 'Contraindications / Precautions / Remarks'],
+          rows: [
+            { cells: ['Phenytoin (S1) (Dilantin®) — 30mg, 100mg capsules; 125mg/5ml syrup', 'Maintenance: 200–400 mg daily in 3–4 divided doses', '400 mg daily', 'CNS symptoms (drowsiness, dizziness, nystagmus, ataxia, confusion); nausea, vomiting, hepatotoxicity; gingival hyperplasia, hypertrichosis; hyperglycaemia, folic acid deficiency, peripheral neuropathy, osteomalacia; SLE, fever, rash', 'Toxicity: CNS symptoms, hyperglycaemia. Potentially fatal (rare): SJS/TEN, agranulocytosis, aplastic anaemia. Dosage adjustments needed when switching between capsules and suspension. Space at least 2 hours apart from enteral feeds.'] },
+            { cells: ['Carbamazepine (S1) (Tegretol®) — 200mg, 200mg CR tablets', 'Maintenance: 800–1200 mg daily in divided doses', '1600–2400 mg daily', 'CNS symptoms (drowsiness, dizziness, ataxia); nausea, vomiting, constipation, hepatotoxicity; hyponatraemia/SIADH; hair loss, allergic skin reactions; blood disorders, leucopenia', 'Toxicity: CNS symptoms, AV blocks, arrhythmias. Potentially fatal (rare): SJS/TEN (1–3 months after initiation; ~10x higher risk in some Asian populations); agranulocytosis, aplastic anaemia, hepatic failure. Obtain HLA-B*1502 genotyping prior to initiation.'] },
+            { cells: ['Sodium Valproate (S1) (Epilim®, Epilim Chrono®) — 200mg/5ml syrup; 200mg EC, 200/300/500mg Chrono tablets', 'Maintenance: 1000–2000 mg daily in 1–2 divided doses', '2500 mg daily', 'CNS symptoms (drowsiness, dizziness, headache, ataxia, confusion, amnesia, anxiety, depression); GI disturbances, hepatotoxicity, hyperammonaemia; transient hair loss, weight gain, amenorrhoea, gynaecomastia; vasculitis, thrombocytopenia', 'Toxicity: CNS symptoms. Potentially fatal (case reports): pancreatitis, severe hypersensitivity reactions with organ dysfunction.'] },
+            { cells: ['Phenobarbitone (S1) — 10mg, 60mg tablets', '60–250 mg daily at night', '—', 'CNS depression or paradoxical excitation, drowsiness, insomnia, nightmares, impaired judgment, hyperkinesia, ataxia, hallucinations; nausea, vomiting, constipation; hypotension, bradycardia, syncope; agranulocytosis, thrombocytopenia, megaloblastic anaemia', 'Toxicity: CNS symptoms, respiratory depression, tachycardia/bradycardia, hypotension. Potentially fatal (rare): severe cutaneous adverse reactions 1–2 months after initiation.'] },
+            { cells: ['Gabapentin (S2) — 100mg, 300mg tablets', '300–800 mg tds', '—', 'CNS depression, drowsiness, dizziness, ataxia, mood changes; peripheral oedema, weight gain', 'Exclusively (100%) cleared renally.'] },
+            { cells: ['Topiramate (S2) — 25mg, 50mg, 100mg tablets (not available at NUP)', '50–200 mg bd', '—', 'CNS symptoms (drowsiness, dizziness, cognitive dysfunction, word-finding difficulty, mood changes); metabolic acidosis, nephrolithiasis, angle-closure glaucoma, anorexia, weight loss, oligohidrosis', '—'] },
+            { cells: ['Levetiracetam (S2) — 500mg tablets', '500–1500 mg bd', '—', 'CNS symptoms (drowsiness, dizziness, fatigue, headache, irritability, aggression); increased BP', 'Potentially fatal (rare): severe cutaneous adverse reactions 1–2 months after initiation.'] },
+          ],
+        },
+      ],
+    },
+    {
+      heading: 'Advice to Patients and Care Givers',
+      blocks: [
+        {
+          type: 'text',
+          content: 'Seizure precautions — situations with increased risk: non-compliance to antiepileptic medication, drug interactions, alcohol misuse, sleep deprivation, concurrent illness.',
+        },
+        {
+          type: 'text',
+          content: 'Seizure first-aid: (1) Place patient in recovery position or on his/her side. (2) Remove surrounding objects that may harm the patient. (3) Do not place any object in the patient\'s mouth. (4) Call for an ambulance if injury occurs, seizure lasts >5 minutes, or seizures cluster without return to baseline.',
+        },
+        {
+          type: 'text',
+          content: 'Home and workplace safety: minimise exposure to open fires and sharp instruments; refrain from extended baths or locking toilet doors; refrain from swimming alone; heavy machinery operation is discouraged.',
+        },
+      ],
+    },
+    {
+      heading: 'Women, Pregnancy and Lactation',
+      blocks: [
+        {
+          type: 'list',
+          items: [
+            { text: 'Women with epilepsy should be referred to specialist care for preconception counselling and follow-up if pregnant.' },
+            { text: 'Monotherapy at the lowest AED dose to control seizures is recommended where possible.' },
+            { text: 'Folic acid 5 mg per day should be given to women on AED from pre-conception till the first trimester of pregnancy to prevent neural tube defects.' },
+            { text: 'AED is not a contraindication to breastfeeding. Women should be encouraged to breastfeed after discussion with their neurologist.' },
+          ],
+        },
+      ],
+    },
+    {
+      heading: 'Fitness Certification',
+      blocks: [
+        {
+          type: 'text',
+          content: 'Pre-employment medical examination: office-based and sedentary jobs pose no increased risk. Occupations that put the patient at risk during a seizure (e.g. operating heavy machinery, working at heights) are not suitable. Refer to neurologist, designated factory doctor (DFD), or MMed(OM) for pre-employment assessment in hazardous occupations.',
+        },
+        {
+          type: 'text',
+          content: 'Assessment for fitness for physical activities: physical activities for stable patients should not be restricted unless they pose a danger. Activities involving heights, water, or aggressive physical contact should be avoided.',
+        },
+        {
+          type: 'text',
+          content: 'Driving: the current Road Traffic Act may prohibit individuals with epilepsy from driving in Singapore. Individuals must declare epilepsy when applying for a driving licence and must inform authorities if they develop epilepsy after obtaining a licence.',
+        },
+      ],
+    },
+    {
+      heading: 'Emergency Treatment of Seizures',
+      blocks: [
+        {
+          type: 'text',
+          content: 'Protect the patient: remove hazards from immediate surroundings; protect from falling; position on their side with head in neutral inline position; protect head but do not restrain.',
+        },
+        {
+          type: 'text',
+          content: 'Initial assessment and management: establish ABC and administer high-concentration oxygen; check for hypoglycaemia; observe and record the pattern and duration of seizures; do not force anything into the person\'s mouth.',
+        },
+        {
+          type: 'text',
+          content: 'Emergency pharmacotherapy: required if seizures last ≥5 minutes or recur >3 times/hour. Initial dose: 5–10 mg diazepam IV or rectally. If no response, same dose can be repeated after 10 minutes. Monitor pulse rate, BP, respiratory rate, O₂ saturation closely.',
+        },
+        {
+          type: 'text',
+          content: 'Post-treatment: patient should be sent to the Emergency Department for further treatment and evaluation.',
+        },
+      ],
+    },
+    {
+      heading: 'Living with Epilepsy',
+      blocks: [
+        {
+          type: 'list',
+          items: [
+            { text: 'Many people diagnosed and treated for epilepsy are able to live full, active lives and many live seizure-free if they take medications on schedule.' },
+            { text: 'Even individuals with uncontrolled seizures can make lifestyle adjustments to allow a reasonable lifestyle.' },
+            { text: 'Resources: Epilepsy Foundation (epilepsy.com), Epilepsy Institute (epilepsyinstitute.org), American Academy of Neurology (aan.com).' },
+          ],
+        },
+      ],
+    },
+    {
+      heading: 'Recommended Care Components for Epilepsy',
+      blocks: [
+        {
+          type: 'table',
+          headers: ['Recommended Care Components', 'Minimum Frequency', 'Remarks'],
+          rows: [
+            { cells: ['Seizure Frequency', 'Annually', ''] },
+            { cells: ['Seizure Type', 'Annually', ''] },
+            { cells: ['Seizure Free Duration', 'Annually', ''] },
+            { cells: ['Influenza Vaccination', 'Annually or per season', 'As recommended under the National Adult Immunisation Schedule (NAIS) and National Childhood Immunisation Schedule (NCIS)'] },
+          ],
+        },
+      ],
+    },
+  ],
+};
+
+const epistaxisInChildren: CpgDocument = {
+  id: 'epistaxis-in-children',
+  condition: 'Epistaxis in Children',
+  source: 'NUP CPG',
+  reviewDate: 'April 2025',
+  advisors: 'Dr Lee Chai Peng / Dr Tan Wee Hian; Specialist: Dr Goh Xue Ying (Consultant, Department of Otolaryngology – Head & Neck Surgery, NUH)',
+  sections: [
+    {
+      heading: 'Introduction',
+      blocks: [
+        {
+          type: 'list',
+          items: [
+            { text: 'Epistaxis occurs commonly in children, especially in those between the ages of 2 and 10 years.' },
+            { text: 'In most cases, nosebleeds are secondary to local trauma and can be cared for by primary care physicians.' },
+            { text: 'In rare instances, however, a nosebleed may be difficult to control or a manifestation of a serious systemic illness.' },
+          ],
+        },
+      ],
+    },
+    {
+      heading: 'Epidemiology',
+      blocks: [
+        {
+          type: 'list',
+          items: [
+            { text: 'Estimated 30% of children have one nosebleed by the time they are 5 years of age.' },
+            { text: 'In children between the ages of 6 and 10 years, the frequency increases to 56%.' },
+            { text: 'Nosebleeds are rare in infancy and infrequent after puberty.' },
+            { text: 'Increased incidence occurs during hot or cold weather and when ambient humidity is low, making nasal septal mucosa dry and friable, predisposed to bleeding even with minor trauma.' },
+          ],
+        },
+      ],
+    },
+    {
+      heading: 'History',
+      blocks: [
+        {
+          type: 'list',
+          items: [
+            { text: 'Age: rare in children younger than 2 years (~1 per 10,000) — should prompt consideration of trauma or serious illness. Recurrent idiopathic epistaxis resolves with time and is uncommon in children older than 14 years.' },
+            { text: 'Duration of bleeding: prolonged bleeding may suggest a bleeding disorder.' },
+            { text: 'Bilateral / unilateral: unilateral may be isolated lesion/minor trauma; bilateral more suggestive of general mucosal irritation, systemic aetiology, or major nasal trauma.' },
+            { text: 'What measures were taken to stop the bleeding? Bleeding difficult to control with anterior pressure may indicate a bleeding disorder or posterior source.' },
+            { text: 'History of trauma, including nose picking.' },
+            { text: 'History of nasal congestion, discharge, or obstruction.' },
+            { text: 'History of foreign body insertion (e.g. button battery) — may present with persistent unilateral bloody/foul discharge.' },
+            { text: 'Ongoing nasal discharge — may suggest allergic rhinitis.' },
+            { text: 'Any regular medication (such as anticoagulants, long-term aspirin).' },
+          ],
+        },
+      ],
+    },
+    {
+      heading: 'Physical Findings',
+      blocks: [
+        {
+          type: 'list',
+          items: [
+            { text: 'Look for haemodynamic compromise, signs of systemic causes of bleeding, and asphyxiation: malaise (hypoxia ± acidosis), pallor (blood loss/anaemia), petechiae/bruising/gingival bleeding/haemotympanum, mucocutaneous telangiectasias/haemangiomas, enlarged lymph nodes/organomegaly (haematological disease/malignancy), icterus ± hepatomegaly (liver disease with secondary coagulopathy), visual acuity and extraocular movements (if facial trauma).' },
+            { text: 'Nasal examination (most bleeds happen anteriorly): active bleeding/scabs/ulcerations/erosions/prominent blood vessels over Little\'s area, foreign body, masses (tumours), rhinitis (infectious/allergy), signs of allergy (pale/bluish mucosa, boggy turbinates), vascular anomalies (telangiectasia, haemangioma) — telangiectasia in nose/oral cavity/lips suggests hereditary haemorrhagic telangiectasia.' },
+          ],
+        },
+      ],
+    },
+    {
+      heading: 'Red Flags',
+      blocks: [
+        {
+          type: 'list',
+          items: [
+            { text: 'Epistaxis uncontrolled (does not stop after 20 minutes) with simple first aid measures.' },
+            { text: 'Presence of systemic features such as fever, other mucocutaneous bleeding.' },
+          ],
+        },
+      ],
+    },
+    {
+      heading: 'Investigations',
+      blocks: [
+        {
+          type: 'list',
+          items: [
+            { text: 'Laboratory evaluation is not indicated in majority of children with self-limited epistaxis.' },
+            { text: 'If systemic causes are suspected, consider FBC, peripheral blood film (PBF), and coagulation screen.' },
+            { text: 'Nasal bone X-ray is indicated for suspected nasal bone fracture, or medicolegal issues (assault, RTA, suspected non-accidental injury).' },
+          ],
+        },
+      ],
+    },
+    {
+      heading: 'Differential Diagnoses',
+      blocks: [
+        {
+          type: 'text',
+          content: 'Local Causes:',
+        },
+        {
+          type: 'list',
+          items: [
+            { text: 'Trauma: from nose picking, inflammation from upper respiratory infection, foreign bodies, external trauma, non-accidental trauma (especially child <2 years).' },
+            { text: 'Allergic Rhinitis (AR): inflammation and drying of mucosa may lead to epistaxis. Airborne pollutants increase nasal inflammation. Intranasal corticosteroids (ICS) may cause epistaxis via direct drying effect or local trauma; however a 2023 trial showed ICS reduced severity and frequency of subsequent epistaxis in children with untreated AR. The dispenser tip may traumatise the dry friable mucosa.' },
+            { text: 'Neoplasms: nasal masses, haemangioma in nose, juvenile nasopharyngeal angiofibroma; rare: rhabdomyosarcomas, lymphomas, squamous cell carcinomas.' },
+          ],
+        },
+        {
+          type: 'text',
+          content: 'Systemic Causes:',
+        },
+        {
+          type: 'list',
+          items: [
+            { text: 'Bleeding disorders: thrombocytopenia (ITP, leukaemia, aplastic anaemia, HIV), inherited (von Willebrand disease, Haemophilia, Glanzmann thrombasthenia, Bernard-Soulier syndrome), acquired coagulopathy (hepatic disease, severe vitamin K deficiency, malabsorption).' },
+            { text: 'Hereditary blood vessel disorder: hereditary haemorrhagic telangiectasia (Osler-Weber-Rendu disease).' },
+            { text: 'Medications: accidental ingestion of aspirin, NSAIDs, warfarin.' },
+            { text: 'Hypertension: rare in children.' },
+            { text: 'Inflammatory diseases: Wegener granulomatosis, lethal midline granuloma (rare idiopathic inflammatory diseases causing nasal tissue destruction and bleeding).' },
+          ],
+        },
+      ],
+    },
+    {
+      heading: 'Management',
+      blocks: [
+        {
+          type: 'text',
+          content: 'First Aid for Epistaxis (Advice to Parent):',
+        },
+        {
+          type: 'list',
+          items: [
+            { text: 'Lean forward and spit out any blood: sit child upright and lean forward. Avoid lying down or tilting head backwards (swallowed blood may cause vomiting). Prepare a basin for the child to spit into.' },
+            { text: 'Pinch the soft part of the nose: tightly pinch the soft (not bony) part, just above nostrils, for 10 minutes. Nostrils should be closed firmly. Do not release pressure to check until 10 minutes is up. Child breathes through mouth. Optionally, place an ice pack over forehead or suck ice cubes.' },
+            { text: 'If bleeding does not stop after 20 minutes of direct pressure, proceed to Children\'s Emergency. Continue applying pressure in the meantime.' },
+          ],
+        },
+        {
+          type: 'text',
+          content: 'Things to Take Note:',
+        },
+        {
+          type: 'list',
+          items: [
+            { text: 'Pressing on the bony part of the nose does not stop a nose bleed.' },
+            { text: 'Avoid packing the child\'s nose with anything as bleeding usually recurs when packing is removed.' },
+            { text: 'Once bleeding has stopped, avoid picking at the nose or blowing out blood clots as this may cause bleeding to happen again.' },
+            { text: 'If needed, tell the child to blow his or her nose gently.' },
+          ],
+        },
+        {
+          type: 'text',
+          content: 'Prevention of Epistaxis:',
+        },
+        {
+          type: 'list',
+          items: [
+            { text: 'Apply a small amount of petroleum jelly twice a day to the centre wall (septum) inside the nose — helpful for relieving dryness and irritation.' },
+            { text: 'Use of air humidifier in the bedroom at night to moisten the air.' },
+            { text: 'Put two to three drops of warm water into each nostril before blowing a stuffy nose; may also use a saltwater nasal spray.' },
+            { text: 'Take antihistamines if the child has nasal allergies; consider intranasal steroids spray if allergic rhinitis is suspected. Advise not to rub or blow nose.' },
+            { text: 'Avoid aspirin — can increase bleeding tendency for up to a week and make nosebleeds last much longer.' },
+            { text: 'Consider short-term topical decongestants e.g. oxymetazoline drops for 5 days — causes vasoconstriction to alleviate or prevent recurrence in the acute phase.' },
+          ],
+        },
+      ],
+    },
+    {
+      heading: 'When to Refer',
+      blocks: [
+        {
+          type: 'text',
+          content: 'Most episodes of epistaxis resolve with compression of nasal alae for 5 to 10 minutes and do not require specialty care. Referral to emergency department or ENT specialist is indicated for:',
+        },
+        {
+          type: 'list',
+          items: [
+            { text: 'Refractory epistaxis: e.g. uncontrollable bleeding, posterior epistaxis, or haemodynamically unstable.' },
+            { text: 'Local abnormalities: e.g. tumours, telangiectasias.' },
+            { text: 'Recurrent epistaxis with no apparent cause.' },
+          ],
+        },
+      ],
+    },
+  ],
+};
+
+const erectileDysfunction: CpgDocument = {
+  id: 'erectile-dysfunction',
+  condition: 'Erectile Dysfunction',
+  source: 'NUP CPG',
+  reviewDate: 'April 2025',
+  advisors: 'Dr Sky Koh; Specialist Advisors: Adj A/Prof Benjamin Goh (Senior Consultant, NUH) / Dr Chia Jun Yang (Consultant, NUH)',
+  sections: [
+    {
+      heading: 'Introduction',
+      blocks: [
+        {
+          type: 'text',
+          content: 'Erectile dysfunction (ED) is a common condition where men struggle to achieve or maintain an erection, impacting sexual performance. It affects men of all ages, increasing with age. ED has physical (vascular, hormonal, neurological), psychological (anxiety, depression), and lifestyle-related causes. This condition significantly affects sexual and emotional well-being, self-esteem, and relationships.',
+        },
+      ],
+    },
+    {
+      heading: 'Epidemiology',
+      blocks: [
+        {
+          type: 'text',
+          content: 'ED is a growing concern worldwide, with an estimated 322 million men expected to be affected by 2025. In Singapore, approximately half of all males above 30 report some degree of erectile dysfunction. This number increases substantially with age, affecting three-quarters of men in their sixties.',
+        },
+      ],
+    },
+    {
+      heading: 'Risk Factors',
+      blocks: [
+        {
+          type: 'list',
+          items: [
+            { text: 'Endocrine: diabetes mellitus, thyroid disorders, hypogonadism, hyperprolactinemia.' },
+            { text: 'Metabolic syndrome: hypertension, hyperlipidaemia, obesity, sedentary lifestyle.' },
+            { text: 'Vascular: peripheral vascular disease.' },
+            { text: 'Substance use: smoking, alcohol, illicit drugs.' },
+            { text: 'Neurological: stroke, Parkinson\'s disease, multiple sclerosis, spinal cord injury.' },
+            { text: 'Structural: Peyronie\'s disease, phimosis, prostate cancer treatment (surgery, radiation, hormone therapy), trauma.' },
+            { text: 'Psychological: stress, marital/relationship issues, guilt, anxiety, depression, history of sexual abuse.' },
+            { text: 'Drugs: anticonvulsants (phenytoin); antidepressants (lithium, MAO inhibitors, SSRIs, SNRIs, TCAs); antihistamines (dimenhydrinate, diphenhydramine, hydroxyzine); antihypertensives (alpha blockers, beta blockers, CCBs, thiazides, spironolactone); anti-Parkinson agents (bromocriptine, levodopa, trihexyphenidyl); psychotropics (chlorpromazine, haloperidol, benzodiazepines); cardiovascular drugs (digoxin, gemfibrozil); hormonal agents (5-alpha-reductase inhibitors, androgen receptor blockers, corticosteroids, GnRH analogues).' },
+          ],
+        },
+      ],
+    },
+    {
+      heading: 'Diagnosis',
+      blocks: [
+        {
+          type: 'text',
+          content: 'History and physical examination have a reported 95% sensitivity but 50% specificity in determining cause of ED, needing further tests to assist.',
+        },
+        {
+          type: 'text',
+          content: 'History: assessment of libido, morning erections, premature ejaculation, duration of symptoms; sexual history (5Ps — Partner, Practice, Past history of STI, Protection from STI, Prevention of Pregnancy); past medical history; previous cardiovascular evaluation, exertional symptoms, concomitant use of nitrates; baseline effort tolerance (ability to climb 2 flights of stairs or walk 2 bus stops); symptoms of hypogonadism (decreased libido, fatigability, loss of lean muscle mass, mood changes); evaluation of specific causes and risk factors for ED.',
+        },
+        {
+          type: 'text',
+          content: 'Physical Examination: blood pressure, heart rate, BMI; abdomen and external genitalia (structural issues, features of hypogonadism — loss of male hair pattern, gynaecomastia, small testes); assessment of femoral and peripheral pulses; targeted neurological evaluation.',
+        },
+        {
+          type: 'table',
+          headers: ['Score', 'Severity', 'Consistency', 'Remarks'],
+          rows: [
+            { cells: ['1', 'Severe', 'Tofu', 'Penis is large but not hard'] },
+            { cells: ['2', 'Moderate', 'Peeled Banana', 'Penis is hard but not hard enough for penetration'] },
+            { cells: ['3', 'Suboptimal', 'Unpeeled Banana', 'Penis is hard enough for penetration but not completely hard'] },
+            { cells: ['4', 'Optimal', 'Cucumber', 'Penis is hard and completely rigid'] },
+          ],
+        },
+        {
+          type: 'text',
+          content: 'Simplified Index of Erectile Function (IIEF-5) Score: a widely used, self-administered questionnaire that measures and grades severity of ED.',
+        },
+      ],
+    },
+    {
+      heading: 'Investigations',
+      blocks: [
+        {
+          type: 'text',
+          content: 'Baseline investigations to identify underlying conditions (if not previously done):',
+        },
+        {
+          type: 'list',
+          items: [
+            { text: 'Serum fasting glucose or HbA1c' },
+            { text: 'Lipid panel' },
+            { text: 'ECG' },
+          ],
+        },
+        {
+          type: 'text',
+          content: 'Thyroid function tests are indicated for patients exhibiting signs or symptoms suggestive of thyroid disorders. If hypogonadism is suspected, referral to Urology is advised for morning testosterone level assessment and further management.',
+        },
+      ],
+    },
+    {
+      heading: 'Management',
+      blocks: [
+        {
+          type: 'text',
+          content: 'Non-Pharmacological Therapy: effective management involves identifying and addressing the underlying cause, followed by targeted treatment. Optimising concomitant chronic conditions (hypertension, diabetes, hyperlipidaemia) is crucial. Consider medication adjustment if ED is suspected to be drug-induced. Lifestyle modifications — regular exercise, smoking cessation, weight loss in overweight men — demonstrate significant symptom improvement.',
+        },
+        {
+          type: 'text',
+          content: 'Initiating Pharmacological Therapy: ED and cardiovascular disease share common risk factors. Cardiovascular risk stratification uses the Singapore-modified Framingham Risk Score (SG-FRS-2023): low risk <5%, intermediate risk 5–20%, high risk ≥20%. Perform an ECG to assess for undiagnosed cardiovascular conditions if not done recently. Intermediate-risk patients should undergo exercise treadmill investigation via the Open Access Exercise Treadmill Testing Workflow. High-risk patients should be referred to Cardiology for clearance prior to initiating PDE-5 inhibitor therapy.',
+        },
+        {
+          type: 'text',
+          content: 'Patients without existing cardiovascular diseases can be initiated on PDE-5 inhibitors if they fulfil ALL: low cardiovascular risk (SG-FRS-2023 <5%), normal ECG, and good effort tolerance (able to climb 2 flights of stairs or walk 2 bus stops).',
+        },
+        {
+          type: 'text',
+          content: 'Patients with existing cardiovascular conditions can be initiated on PDE-5 inhibitors if they had undergone complete revascularisation of coronary arteries (successful PCI/CABG with no angina symptoms) OR received cardiology clearance.',
+        },
+        {
+          type: 'table',
+          headers: ['Drug', 'Initial Dose', 'Maximum Dose', 'Common ADRs', 'Rare ADRs', 'Remarks / Contraindications / Precautions'],
+          rows: [
+            { cells: ['Sildenafil (NS) — 50 mg tablet', '50 mg, 1 hour before sexual intercourse', '100 mg in 24 hours', 'Headache, flushing, gastrointestinal symptoms', 'Visual disturbance, dizziness, myalgia, insomnia, anxiety, vertigo, epistaxis, priapism, hypotension; can cause potentially fatal cardiovascular events (MI, arrhythmias, unstable angina)', 'Take on empty stomach, 2 hours after low-fat diet. Manual stimulation prior to intercourse required. Contraindicated with nitrates (GTN, ISMN, ISDN), severe cardiovascular disorders (unstable angina, cardiac failure), loss of vision in 1 eye due to non-arteritic anterior ischaemic optic neuropathy, hypotension (BP <90/50 mmHg), recent stroke or MI, known hereditary degenerative retinal disorders, severe hepatic impairment. Patients on alpha-blockers, mild/moderate liver impairment, or CrCl <30ml/min should start on 25mg.'] },
+          ],
+        },
+        {
+          type: 'text',
+          content: 'Other treatments of ED include Low-intensity Extracorporeal Shockwave Therapy (LiESWT), Intracorporeal Injections, Vacuum Erection Devices, and penile prostheses.',
+        },
+      ],
+    },
+    {
+      heading: 'Referral Criteria to Urology',
+      blocks: [
+        {
+          type: 'list',
+          items: [
+            { text: 'Failed oral PDE5 inhibitor therapy with appropriate use (i.e., after 4 separate occasions of taking maximum doses on an empty stomach and with adequate stimulation).' },
+            { text: 'Suspicion of hypogonadism.' },
+            { text: 'Structural abnormalities, history of pelvic surgery, neurological disorders, complex medical conditions.' },
+          ],
+        },
+      ],
+    },
+    {
+      heading: 'Special Situations',
+      blocks: [
+        {
+          type: 'text',
+          content: 'HSG enrolled or teamlet patients demanding sildenafil based on previous use from private GP or specialist: determine probable cause, assess cardiovascular risk using SG-FRS-2023. For high-risk patients, decline and refer to cardiology. For medium-risk patients, recommend treadmill stress test. If patient insists, engage in shared decision-making, document discussion before prescribing. Escalate to senior doctor if pressured.',
+        },
+        {
+          type: 'text',
+          content: 'Non-HSG enrolled, non-teamlet patients requesting sildenafil: politely decline and advise them to consult their principal doctor. Inform that their principal physician can provide a private prescription fillable at the pharmacy at the same price, without quantity restrictions. If patient insists, explain that comprehensive cardiovascular risk assessment is required. Firmly decline if unwilling to undergo assessments.',
+        },
+        {
+          type: 'text',
+          content: 'Requests for sildenafil exceeding the monthly limit of 8 tablets: be aware that the pharmacy will restrict collection. Explain that this policy prevents potential abuse, discourages black market sales, rationalises stock, ensures equal access, and maintains a healthy drug supply. Consider asking them to revisit when their supply runs out for re-prescription.',
+        },
+      ],
+    },
+  ],
+};
+
+
+
+const heartFailure: CpgDocument = {
+  id: 'heart-failure',
+  condition: 'Heart Failure',
+  source: 'NUP CPG',
+  reviewDate: 'November 2028',
+  advisors: 'Dr Ng Li Yan / Dr Kwan Yew Seng; Specialist Advisor: Dr Lin Weiqin (Senior Consultant, Department of Cardiology, National University Heart Centre, Singapore)',
+  sections: [
+    {
+      heading: 'Heart Failure Management Tips',
+      blocks: [
+        {
+          type: 'list',
+          items: [
+            { text: 'Assess functional status (NYHA class).' },
+            { text: 'Assess volume status (symptoms and signs, including weight).' },
+            { text: 'Assess adherence to medications and fluid restriction.' },
+            { text: 'Medication review to ensure patients are on appropriate disease-modifying treatment.' },
+            { text: 'Control cardiovascular risk factors.' },
+            { text: 'Assess renal function and electrolytes regularly.' },
+            { text: 'Advise on exercise, educate patients, and screen for psychosocial issues.' },
+          ],
+        },
+        {
+          type: 'text',
+          content: 'Heart Failure with Reduced Ejection Fraction (HFrEF) (LVEF ≤ 40%): Ensure 4 pillars of HFrEF have been initiated: (1) *ARNI OR ACEI/ARB; (2) Beta blockers (bisoprolol, carvedilol); (3) MRA; (4) SGLT-2 inhibitors.',
+        },
+        {
+          type: 'text',
+          content: 'Heart Failure with Mildly Reduced and Preserved Ejection Fraction (Non-HFrEF) (LVEF >40%): Initiate SGLT-2 inhibitors. Consider other HFrEF treatment for suitable patients.',
+        },
+        {
+          type: 'text',
+          content: 'Red Flags for ED Referral / Early Cardio Review: ADHF with pulmonary oedema; Hypotension (SBP <80mmHg); Rapid worsening of renal function; Fluid overload not responding to trial of increased diuretics; First presentation of heart failure.',
+        },
+      ],
+    },
+    {
+      heading: 'Introduction',
+      blocks: [
+        {
+          type: 'text',
+          content: 'Clinical Definition: Heart failure (HF) is a clinical syndrome with symptoms and/or signs caused by a structural and/or functional cardiac abnormality and corroborated by elevated natriuretic peptide levels and/or objective evidence of pulmonary or systemic congestion (Universal Definition and Classification of Heart Failure 2021).',
+        },
+        {
+          type: 'text',
+          content: 'Epidemiology: 4.5% of the Singapore population was found to be living with heart failure. Nearly 10% of people in their 80s suffer from heart failure.',
+        },
+      ],
+    },
+    {
+      heading: 'Diagnosis, Classification, Aetiology and Severity of Heart Failure',
+      blocks: [
+        {
+          type: 'text',
+          content: 'Diagnosis (Universal Definition and Classification of Heart Failure 2021): Criteria 1 must be fulfilled and corroborated by either criterion 2 or 3. (1) Symptoms and/or signs of heart failure caused by a structural and/or functional cardiac abnormality. (2) EF <50%, abnormal cardiac chamber enlargement, elevated LV filling pressures (E/E\' >15), moderate/severe ventricular hypertrophy or valvular obstructive or regurgitant lesion. (3) Elevated natriuretic peptide levels. (4) Objective evidence of cardiogenic pulmonary or systemic congestion by diagnostic modalities.',
+        },
+        {
+          type: 'text',
+          content: 'Classification of Heart Failure: (1) HFrEF: EF ≤40%; (2) HFmEF: EF 41–49%; (3) HFpEF: EF ≥50%; (4) HFimpEF: baseline EF ≤40%, ≥10-point increase from baseline EF, and second measurement of EF >40%.',
+        },
+        {
+          type: 'text',
+          content: 'Initial Assessment — Symptoms (ask for chest pain, syncope and palpitations routinely): Breathlessness (orthopnoea, PND), pedal oedema, fatigue. Signs: Weight gain, raised JVP, displaced apical beat, peripheral oedema, lung crepitations, third heart sound, tachycardia.',
+        },
+        {
+          type: 'text',
+          content: 'Aetiology of Heart Failure: Coronary artery disease, hypertension, valvular heart disease, cardiomyopathy (familial and nonfamilial), thyroid disease, diabetes mellitus, anaemia, post-myocarditis, previous cancer treatment (chemotherapy-induced cardiomyopathy, radiation heart disease), infiltrative diseases (amyloidosis, haemachromatosis, glycogen storage diseases), toxins (alcohol, cocaine), neuromuscular diseases.',
+        },
+        {
+          type: 'text',
+          content: 'Precipitating Causes — Non-Cardiac: Non-compliance to medications/fluid/salt restriction; concomitant medications (NSAIDs, calcium channel blockers except amlodipine and felodipine, thiazolidinediones, anti-arrhythmics other than amiodarone); alcohol abuse; renal dysfunction; infection (UTI, pneumonia, sepsis); pulmonary embolism; thyroid dysfunction; anaemia. Cardiac: Arrhythmias (AF, SVT, VT); myocardial ischaemia; valve leaflet dysfunction secondary to papillary muscle rupture.',
+        },
+        {
+          type: 'text',
+          content: 'Complications of Heart Failure: Arrhythmias (AF, VT, VF, bradyarrhythmias); thromboembolism (stroke, DVT, PE); gastrointestinal (hepatic congestion/dysfunction, malabsorption); musculoskeletal (muscle wasting, cachexia); respiratory (pulmonary congestion/hypertension, respiratory muscle weakness).',
+        },
+        {
+          type: 'table',
+          headers: ['Class', 'Severity', 'Symptoms (NYHA)'],
+          rows: [
+            { cells: ['I', 'Asymptomatic', 'No symptom with ordinary physical activity'] },
+            { cells: ['II', 'Mild', 'Comfortable at rest but ordinary activity causes symptoms'] },
+            { cells: ['III', 'Moderate', 'Comfortable at rest but symptoms with less than ordinary activity'] },
+            { cells: ['IV', 'Severe', 'Symptomatic at rest and without any physical activity'] },
+          ],
+        },
+        {
+          type: 'table',
+          headers: ['Stage', 'Definition (AHA/ACC)'],
+          rows: [
+            { cells: ['A', 'At risk for HF but without current or prior symptoms or signs of HF and without structural or biomarker evidence of heart disease'] },
+            { cells: ['B', 'Structural heart disease or abnormal cardiac function, or elevated natriuretic peptide levels without current or prior symptoms or signs of HF'] },
+            { cells: ['C', 'Current or prior symptoms and/or signs of HF caused by a structural and/or functional cardiac abnormality'] },
+            { cells: ['D', 'Severe symptoms and/or signs of HF at rest, recurrent hospitalisations despite GDMT, refractory or intolerant to GDMT, requiring advanced therapies such as consideration for transplant, mechanical circulatory support, or palliative care'] },
+          ],
+        },
+      ],
+    },
+    {
+      heading: 'Investigations at Primary Care',
+      blocks: [
+        {
+          type: 'list',
+          items: [
+            { text: 'Chest X-ray: ABCDE mnemonic — A: alveolar oedema (bat wing opacities), B: Kerley B lines, C: cardiomegaly, D: dilated upper lobe vessels, E: pleural effusion. May also detect conditions mimicking heart failure.' },
+            { text: 'ECG: unlikely to be normal in chronic heart failure (20% may have a normal ECG). Commonly seen abnormalities: LVH, left axis deviation, LBBB, pathological Q-waves. Arrhythmias (sinus tachycardia, AF, acute ST changes) may be seen in decompensated HF.' },
+            { text: 'Urinalysis: screen for proteinuria and glycosuria.' },
+            { text: 'Full blood count: anaemia can precipitate acute HF; elevated WBC can indicate ongoing infection causing decompensated HF.' },
+            { text: 'Creatinine and electrolytes: identify renal impairment and electrolyte disturbances from diuretic use.' },
+            { text: 'HbA1c, lipid panel: identify cardiovascular risk factors.' },
+            { text: 'Liver function test: elevated transaminases secondary to hepatic congestion.' },
+            { text: 'Thyroid function test: especially in the presence of AF.' },
+            { text: 'Iron panel: iron deficiency (absolute and functional) can occur with or without anaemia in heart failure.' },
+          ],
+        },
+      ],
+    },
+    {
+      heading: 'Investigations at Tertiary Care',
+      blocks: [
+        {
+          type: 'list',
+          items: [
+            { text: 'Echocardiography' },
+            { text: 'Other investigations: plasma B-type natriuretic peptide, non-invasive imaging' },
+            { text: 'Coronary angiogram: current gold standard for demonstrating coronary artery disease' },
+          ],
+        },
+      ],
+    },
+    {
+      heading: 'Management and Follow-Up',
+      blocks: [
+        {
+          type: 'text',
+          content: 'Non-Pharmacological / Lifestyle — Risk Factors: Lipids: aim LDL <1.4mmol/L (history of ACS) or <1.8mmol/L (stable IHD, post-PCI/CABG). Hypertension: aim BP <130/80 mmHg. Diabetes: screen for diabetes (aim HbA1c <7%). Smoking: offer cessation. Weight reduction: consider for patients with BMI ≥23 kg/m². Alcohol: advise all patients to abstain.',
+        },
+        {
+          type: 'text',
+          content: 'Psychosocial Management: identify psychosocial problems (depression, anxiety, social isolation). SSRIs have safer cardiovascular profiles.',
+        },
+        {
+          type: 'text',
+          content: 'Physical Activity and Exercise: all HF patients should be encouraged to enrol in a multidisciplinary cardiac rehabilitation programme. General advice: moderate intensity aerobic activity 30 minutes at least 5 times a week. Stable NYHA Class II–III patients with no contraindications are encouraged to undertake exercise.',
+        },
+        {
+          type: 'text',
+          content: 'Patient Education: general information about symptoms, treatment, prognosis, stress management; self-monitoring (home BP, daily weight, fluid/salt restriction); HF patients with erectile dysfunction can be treated with PDE-5 inhibitors in the absence of significant myocardial ischaemia or concomitant nitrates; advice on travel; advice on medications to avoid; DASH diet, fluid restriction; action plan; advance care planning for end-stage HF.',
+        },
+        {
+          type: 'table',
+          headers: ['Drug Class / Drug', 'Strength per Tablet', 'Initial Dose', 'Maximum Dose', 'Indications'],
+          rows: [
+            { cells: ['ARNI — Sacubitril/Valsartan', '24mg/26mg, 49mg/51mg, 97mg/103mg', '49mg/51mg bd', '97mg/103mg bd', 'First line therapy for HFrEF to reduce morbidity and mortality. Recommended for 2DE to review EF prior to initiation. Usually started by Cardiologists. Avoid if eGFR <30ml/min. Contraindicated with history of angioedema with ACE-I/ARBs, pregnancy, or concomitant aliskiren. Requires 36-hour washout period when switching to/from ACEi.'] },
+            { cells: ['ACE Inhibitors — Captopril, Enalapril, Perindopril, Lisinopril', '12.5/25mg; 5/10/20mg; 4mg; 5/10/20mg', 'Captopril 6.25mg tds; Enalapril 2.5mg bd; Perindopril 2mg om; Lisinopril 2.5–5mg om', 'Captopril 50mg tds; Enalapril 10–20mg bd; Perindopril 8–16mg om; Lisinopril 20–40mg om', 'Beneficial to reduce morbidity and mortality in HFrEF when ARNI is not feasible. Titrate upwards to dosages shown effective in controlled trials.'] },
+            { cells: ['ARBs — Losartan, Valsartan, Candesartan', '50mg; 80mg; 4mg', 'Losartan 25–50mg om; Valsartan 20–40mg bd; Candesartan 4–8mg om', 'Losartan 50–100mg om; Valsartan 160mg bd; Candesartan 32mg om', 'Alternative therapy in patients who are ACE inhibitor intolerant and when ARNI is not feasible. Routine combination of ACE-I, ARNI and ARB not recommended.'] },
+            { cells: ['SGLT2 Inhibitors — Dapagliflozin, Empagliflozin', '10mg; 10/25mg', 'Dapagliflozin 10mg om; Empagliflozin 10mg om', 'Dapagliflozin 10mg om; Empagliflozin 10mg om', 'Reduces HF hospitalisation and cardiovascular mortality in symptomatic HF (NYHA II–IV) irrespective of EF, in both DM and non-DM patients. Dapagliflozin: not recommended at eGFR <25ml/min for new initiation; empagliflozin benefits shown in patients with eGFR ≥20ml/min.'] },
+            { cells: ['Beta-Blockers — Carvedilol, Bisoprolol', '6.25/25mg; 2.5/5mg', 'Carvedilol 3.125mg bd; Bisoprolol 1.25mg om', 'Carvedilol 25mg bd (>85kg: 50mg bd); Bisoprolol 10mg om', 'Standard therapy for clinically stable patients with LV systolic dysfunction (EF ≤40%) and mild-moderate HF (NYHA II–III). Only carvedilol, bisoprolol, and sustained-release metoprolol succinate shown effective in reducing death and hospitalisation. Cautious dose titration every 2–4 weeks. Contraindicated in hypotension, bronchospasm, pulmonary oedema, symptomatic bradycardia, 2nd/3rd degree heart block.'] },
+            { cells: ['MRA — Spironolactone', '25mg', '12.5–25mg om', '25mg om or bd', 'For symptomatic patients (NYHA II–IV) with HFrEF (EF ≤35%) already on ACE-I/ARB and beta-blocker. Can cause breast discomfort and gynaecomastia in males. Contraindicated if eGFR <30ml/min. Requires careful monitoring of renal function and serum K.'] },
+            { cells: ['Diuretics — Hydrochlorothiazide, Frusemide', '25mg; 40mg', 'HCTZ 12.5mg om; Frusemide 20mg om', 'HCTZ 50mg om; Frusemide 160–200mg as single dose', 'For all symptomatic patients to improve symptoms and relieve congestion. Continued indefinitely; dose decreased once euvolaemia is attained. HCTZ: avoid if eGFR <30–40ml/min. Concurrent use with SGLT2-I may potentiate effects.'] },
+            { cells: ['Digoxin', '0.0625/0.25mg', '0.0625mg', '0.5mg', 'Can be considered for symptomatic HF (NYHA II–IV) on standard therapy. Does not improve long-term survival but reduces rehospitalisation. Indicated for AF and CHF. Used as add-on to beta-blockers. Contraindicated in bradycardia, ventricular arrhythmia, severe renal dysfunction.'] },
+            { cells: ['Hydralazine + Isosorbide Dinitrate (ISDN) — not available in NUP', 'Hydralazine 10/25/50mg; ISDN 10mg', 'Hydralazine 10mg 6H; ISDN 20mg 3–4 times/day', 'Hydralazine 225–300mg/day; ISDN 120–160mg/day', 'Usually for those intolerant of ARNI/ACE-I/ARBs. Add-on therapy in symptomatic patients on optimal medical therapy. High incidence of side effects such as headache.'] },
+          ],
+        },
+        {
+          type: 'text',
+          content: '4 Pillars of HFrEF Management: (1) *ARNI/ARB/ACE-I; (2) SGLT2 inhibitors; (3) Beta blockers; (4) MRA.',
+        },
+        {
+          type: 'text',
+          content: 'Management of HFpEF: SGLT2 inhibitors significantly reduce combined risk of cardiovascular death or hospitalisation for HFpEF irrespective of diabetes status (EMPEROR Preserved 2021, DELIVER 2022). Few disease-modifying therapies available; aims are to identify and treat underlying risk factors, aetiology, and co-existing comorbidities; reduce symptoms of congestion with diuretics.',
+        },
+      ],
+    },
+    {
+      heading: 'Role of Health Team Members',
+      blocks: [
+        {
+          type: 'list',
+          items: [
+            { text: 'Family Physician: management of HF including health promotion and prevention/detection/treatment of complications; collaborates with other health care providers for holistic care.' },
+            { text: 'Care Coordinator: introduce OneNUHS and HealthHub Apps; enrol patient onto Teleconsult; perform general screening (fall risk, social economics, smoking/drinking history); address care gaps (vaccinations, cancer screenings); recruitment into PTEC-HT/DM.' },
+            { text: 'Care Manager: patient education on BP/LDL/glucose targets and lifestyle; teach home BP monitoring; assess treatment adherence.' },
+            { text: 'Advanced Practice Nurse: manage patients with diabetes, hypertension, dyslipidaemia within scope of practice; titrate medications; manage common acute conditions.' },
+            { text: 'Clinical Pharmacist: manage patients with diabetes, hypertension, dyslipidaemia; drug optimisation; closer monitoring for drug interactions, polypharmacy.' },
+            { text: 'Dietitian: patient education on DASH diet and weight management.' },
+            { text: 'Psychologist: psychological and behavioural interventions to manage stress, improve disease management; assessment and intervention for co-occurring psychological problems; support for carers.' },
+            { text: 'Medical Social Worker: biopsychosocial assessment; intervention for social assistance including schemes, community resources, and caregiver support.' },
+            { text: 'Financial Counsellor: financial counselling; MediSave utilisation advice; applications for MediFund, Medication Assistance Fund, Institutional Medical Fund.' },
+            { text: 'Pharmacist: smoking cessation clinic; detect/prevent drug interactions; medication reconciliation.' },
+          ],
+        },
+      ],
+    },
+    {
+      heading: 'Special Situations',
+      blocks: [
+        {
+          type: 'text',
+          content: 'Acute Decompensated Heart Failure: (1) Recognise symptoms/signs of decompensation; (2) Consider precipitating causes; (3) Investigations in primary care; (4) Primary care management — if underlying cause can be confidently elicited (most common being non-adherence to fluid restriction or medications), can treat in primary care with timely review; (5) Considerations for ED referrals — precipitating causes needing attention: Hb drop, acute coronary syndromes, new onset arrhythmias, severe infections.',
+        },
+        {
+          type: 'text',
+          content: 'Urgent and Emergency Situations — A&E Referrals: all patients with acute onset moderate-to-severe HF including acute pulmonary oedema and cardiogenic shock; patients with recurrent HF complicated by acutely threatening events (recent AMI, pulmonary/systemic embolus, symptomatic arrhythmias).',
+        },
+        {
+          type: 'text',
+          content: 'Fitness Certification (SMA guidelines 2011): NYHA Class I and II — Annual review for fitness to drive. NYHA Class III and IV — Permanently unfit.',
+        },
+      ],
+    },
+    {
+      heading: 'Referrals and Community Resources',
+      blocks: [
+        {
+          type: 'text',
+          content: 'SOC Referrals: all first-time HF patients; mild to moderate chronic HF (NYHA II–IV) with progressive/refractory symptoms; persistent symptoms (chest pain, syncope, dyspnoea, palpitations); secondary causes (thyroid disease); pre-existing or developing metabolic abnormalities (sodium <130mmol/L, renal impairment with creatinine rising ≥2-fold or >200μmol/L); abnormal weight loss due to malnutrition.',
+        },
+        {
+          type: 'text',
+          content: 'Heart Failure Shared Care Programme: Cardiology SOC may refer stable HF patients to alternate visits between Cardiology SOC and NUP. Suitable patients: at least 6 months after last ADHF admission, no need for active up-titration of disease-modifying medications, stable dose of diuretics, on maximally tolerated doses of disease-modifying therapies. Escalation criteria: worsening HF (worsening effort tolerance, volume overload signs, recurrent outpatient visits for diuretic adjustment), inability to tolerate HF therapy, syncope/dizziness, new onset AF with poor rate control. Contact: nuhcs_communitycardio@nuhs.edu.sg or hotline 8908 3194.',
+        },
+      ],
+    },
+    {
+      heading: 'Recommended Care Components',
+      blocks: [
+        {
+          type: 'table',
+          headers: ['Recommended Care Components', 'Minimum Frequency', 'Remarks'],
+          rows: [
+            { cells: ['Blood Pressure Measurement', 'Twice a year', 'Aim BP <130/80 mmHg'] },
+            { cells: ['Weight and BMI Assessment', 'Twice a year', 'Keep <23 kg/m² (non-Asian: <25 kg/m²)'] },
+            { cells: ['Lipid Profile', 'Annually', 'Risk stratify per ACG lipid 2023 (aim LDL <1.4mmol/L for ACS history; <1.8mmol/L for stable IHD, post PCI or CABG)'] },
+            { cells: ['Smoking Assessment', 'Annually for smokers; once-off for non-smokers', 'Offer smoking cessation clinic, counselling, behavioural advice'] },
+            { cells: ['Diabetes Screening', 'Annually or once every three years, as clinically indicated', 'Every 3 years for normal HbA1c or glucose tolerance; annually for IFG or IGT'] },
+            { cells: ['Kidney Function Monitoring', 'Annually', 'More frequently if titrating HF medications or diuretics'] },
+            { cells: ['Influenza Vaccination', 'Annually or per season', 'As recommended under the National Adult Immunisation Schedule (NAIS)'] },
+            { cells: ['Pneumococcal Vaccination', 'As recommended under NAIS', 'As recommended under NAIS'] },
+            { cells: ['Shingles Vaccination (Recombinant herpes zoster vaccine)', '2 doses at 2 to 6 months interval', 'As recommended under NAIS (patients aged 60 years or older)'] },
+          ],
+        },
+      ],
+    },
+  ],
+};
+
+const hypertension: CpgDocument = {
+  id: 'hypertension',
+  condition: 'Hypertension',
+  source: 'NUP CPG',
+  reviewDate: 'October 2028',
+  advisors: 'Dr Kwan Yew Seng, Dr Anand Sankar; Specialist Advisor: Dr Lim Toon Wei (Senior Consultant, Department of Cardiology, National University Heart Centre, Singapore)',
+  sections: [
+    {
+      heading: 'Introduction',
+      blocks: [
+        {
+          type: 'text',
+          content: 'Hypertension or high blood pressure is a chronic medical condition in which the arterial blood pressure is elevated. Persistent hypertension is one of the key risk factors for cardiovascular diseases such as heart attack, stroke, and heart failure as well as other diseases like kidney failure. It is often known as a silent killer as it rarely causes symptoms, and many people go undiagnosed. Ischaemic heart disease (IHD) and stroke are the third and fourth leading causes of death in Singapore in 2022. Hypertensive diseases together constitute the fifth leading cause of death.',
+        },
+        {
+          type: 'text',
+          content: 'Epidemiology: Hypertension affects an estimated 1.28 billion people worldwide. In Singapore, the 2022 National Population Health Survey reported that over one in three residents (37%) aged 18–74 had hypertension, and that more than half (53%) were previously undiagnosed. More males (44.0%) were hypertensives compared with females (30.2%) in 2021–2022. Prevalence increases with age: ~8.1% for ages 18–29 to 76.8% for ages 70–74. About two-thirds (64.8%) of known hypertensives attending health examination had poor BP control.',
+        },
+      ],
+    },
+    {
+      heading: 'Screening and Diagnosis',
+      blocks: [
+        {
+          type: 'text',
+          content: 'Recommended Screening: Any patient aged ≥18 years during any clinical visit.',
+        },
+        {
+          type: 'table',
+          headers: ['Systolic BP (mmHg)', 'Diastolic BP (mmHg)', 'Category', 'Recommended Action'],
+          rows: [
+            { cells: ['<130', '<85', 'Normal', '"Normal BP". Advise BP check biennially.'] },
+            { cells: ['130–139', '85–89', 'High-Normal BP', 'Advise lifestyle modification. Check BP annually or more frequently if cardiovascular risk factors are present.'] },
+            { cells: ['140–159', '90–99', 'Grade 1 Hypertension', 'Without CV risk factors: try lifestyle modification for 3–6 months. With high risk (established CV/renal disease, DM, or target organ damage): initiate drug treatment with lifestyle measures at the same time.'] },
+            { cells: ['160–179', '100–109', 'Grade 2 Hypertension', 'Low risk (0–2 CV risk factors): can try lifestyle modification for several weeks; otherwise initiate drug treatment with lifestyle measures.'] },
+            { cells: ['≥180', '≥110', 'Grade 3 Hypertension', 'Initiate drug treatment with lifestyle measures at the same time.'] },
+            { cells: ['≥140', '<90', 'Isolated Systolic Hypertension', 'Graded according to same ranges of systolic BP; corresponding recommendations apply.'] },
+          ],
+        },
+        {
+          type: 'text',
+          content: 'Blood Pressure Measurement: Measure at rest several times on several occasions, supine or sitting, using a non-invasive manometer. Measure BP in both arms; all subsequent readings on the arm with the higher reading. Measure sitting (or supine) and 2 minutes after standing for elderly and diabetic patients. Patient should rest 5 minutes, empty bladder if needed, refrain from smoking/caffeine/exercise/eating at least 30 minutes before. Select proper cuff size. For auscultatory method: inflate to ~30 mmHg above systolic, deflate at 2–3 mmHg per heartbeat, diastolic reading corresponds to Korotkoff phase V. For electronic method: if first BP reading is abnormal, take two additional readings with at least 1 minute between them and average the last 2.',
+        },
+        {
+          type: 'text',
+          content: 'Initial Assessment — Clinical Assessment: determine secondary cause, target organ damage (TOD), other cardiovascular risk factors. Use SG-FRS-2023 to calculate patient\'s 10-year risk.',
+        },
+      ],
+    },
+    {
+      heading: 'Management',
+      blocks: [
+        {
+          type: 'text',
+          content: 'Goals of Treatment: prevent cardiovascular and renal complications; treat the whole patient and associated conditions/risk factors; avoid drug side effects; majority may require two or more medications; aim for BP control within 3 months.',
+        },
+        {
+          type: 'text',
+          content: 'Treatment Targets (ACE Clinical Guidance Dec 2023): Special conditions: <150/100 mmHg in pregnant patients without TOD (do not decrease diastolic BP to <80 mmHg); <140/90 mmHg in pregnant patients with TOD; <220/120 mmHg during first 24 hrs of acute stroke (lower with care by 10–15%); lower by 10/5 mmHg if BP >140/90 mmHg after acute phase of stroke.',
+        },
+        {
+          type: 'table',
+          headers: ['Clinic (mmHg)', 'HBPM or Daytime ABPM (mmHg)', 'Night-time ABPM (mmHg)', '24-hour ABPM (mmHg)'],
+          rows: [
+            { cells: ['120/80', '120/80', '100/65', '115/75'] },
+            { cells: ['130/80', '130/80', '110/65', '125/75'] },
+            { cells: ['140/90', '135/85', '120/70', '130/80'] },
+            { cells: ['160/100', '145/90', '140/85', '145/90'] },
+          ],
+        },
+        {
+          type: 'table',
+          headers: ['Criteria', 'Recommended TCU Frequency', 'Alternate Dr/CM Visit'],
+          rows: [
+            { cells: ['Good BP control AND no complication', '6 months', '✓'] },
+            { cells: ['Good BP AND elderly or has complications (IHD, CVA, renal impairment)', '3–4 months', '✓'] },
+            { cells: ['Adherent to follow-up and treatment, with/without comorbidities, stable but sub-optimal control', '3–4 months', '✓'] },
+            { cells: ['ACEi/ARB initiation or up-titration (K and Cr to be done in 2 weeks)', '2–4 weeks', '✓'] },
+            { cells: ['Poor BP control AND requires titration of medication', '2–4 weeks', ''] },
+          ],
+        },
+        {
+          type: 'text',
+          content: 'Lifestyle Modification and Patient Education: lifestyle modification is an important component and should be recommended. Use a team-based approach. All newly diagnosed hypertensive patients should be referred to a care manager for education. Health education topics: target BP, benefits and side effects of treatment, risks of hypertension, importance of long-term adherence, stress reduction. Non-pharmacological: restrict salt to 5–6g/day; moderate alcohol (≤2 standard drinks/day for men, ≤1 for women); increase vegetables, fruits, low-fat dairy; decrease saturated/total fats; reduce weight to BMI <23 kg/m² and waist circumference <90cm (men)/<80cm (women) for Asians; at least 30 minutes moderate dynamic exercise 5–7 days/week; offer assistance to quit smoking.',
+        },
+        {
+          type: 'text',
+          content: 'Initial Drug Choices — Uncomplicated Hypertension: ACE-I/ARB, Calcium Channel Blocker (CCB), Diuretic. Compelling Indications: Diabetes Mellitus → ACE-I/ARB; CKD/Proteinuria → ACE-I/ARB; Heart Failure → ACE-I/ARB (preferred), Beta-blocker (preferred), Diuretic; Isolated systolic hypertension (older persons) → Diuretic, Long-acting CCB; Myocardial infarction → Beta-blocker, ACE-I/ARB (LV dysfunction). Contraindications: Asthma/Bronchospasm → Beta-blocker (caution); 2°/3° Heart Block → Beta-blocker, Verapamil; Gout → Diuretic; Bilateral Renal Artery Stenosis → ACE-I, ARB; Pregnancy → ACE-I, ARB, Diuretic. Start with a low-dose long-acting once-daily drug and titrate dose.',
+        },
+        {
+          type: 'text',
+          content: 'Drug Combinations: consider low-dose dual therapy from two different anti-hypertensive classes. Note: Beta-blocker + ACE-I/ARB does not produce synergistic BP reduction; ACE-I + ARB worsens GFR and potentiates hyperkalaemia — avoid; Beta-blocker + diuretic increases risk of developing diabetes mellitus.',
+        },
+        {
+          type: 'table',
+          headers: ['Drug (class)', 'Recommended Dose Range', 'Renal Dose Adjustment', 'Common ADR', 'Contraindications / Precautions'],
+          rows: [
+            { cells: ['Lisinopril (S1) — ACE-I, 5/10/20mg', '5mg OD (elderly 2.5mg OD) to 40mg OD', 'CrCl <10: initial 2.5mg OD; CrCl 10–30: initial 2.5–5mg OM', 'Postural hypotension, dizziness, abnormal taste, dry cough, hyperkalaemia', 'Bilateral renal artery stenosis; pregnancy (2nd/3rd trimester); idiopathic or hereditary angioedema'] },
+            { cells: ['Enalapril (S1) — ACE-I, 5/10/20mg', '5mg OM (elderly 2.5mg OD) to 20mg BD', 'CrCl 10–30: initial 2.5mg/day in 1–2 divided doses, max 20mg/day; CrCl <10: initial 1.25mg OD or 2.5mg EOD, max 10mg/day', 'Postural hypotension, dizziness, abnormal taste, dry cough, hyperkalaemia', 'Bilateral renal artery stenosis; pregnancy (2nd/3rd trimester); idiopathic or hereditary angioedema'] },
+            { cells: ['Captopril (S1) — ACE-I, 12.5/25mg', '25mg BD/TDS to 50mg TDS', 'CrCl 10–50: 75% normal dose every 12–18h, max 50mg BD; CrCl <10: initial 1.25mg OD, max 50mg OD', 'Postural hypotension, dizziness, abnormal taste, dry cough, hyperkalaemia', 'Bilateral renal artery stenosis; pregnancy (2nd/3rd trimester); idiopathic or hereditary angioedema'] },
+            { cells: ['Perindopril (NS) — ACE-I, 4mg erbumine', '4mg OD (elderly 2mg OD) to 8mg OD', 'CrCl 30–80: initial 2mg OM, max 8mg OM; CrCl <30: not recommended', 'Postural hypotension, dizziness, abnormal taste, dry cough, hyperkalaemia', 'Bilateral renal artery stenosis; pregnancy (2nd/3rd trimester); idiopathic or hereditary angioedema'] },
+            { cells: ['Losartan (S2) — ARB, 50/100mg', '25mg OD to 100mg OD', 'No dose adjustment needed', 'Postural hypotension, dizziness, fatigue, hyperkalaemia', 'Bilateral renal artery stenosis; pregnancy (2nd/3rd trimester)'] },
+            { cells: ['Valsartan (S2) — ARB, 80/160mg', '80mg OD to 320mg OD', 'No dose adjustment needed', 'Postural hypotension, dizziness, fatigue, hyperkalaemia', 'Bilateral renal artery stenosis; pregnancy (2nd/3rd trimester)'] },
+            { cells: ['Irbesartan (NS) — ARB, 150/300mg', '150mg OD (elderly 75mg OD) to 300mg OD', 'No dose adjustment needed', 'Postural hypotension, dizziness, fatigue, hyperkalaemia', 'Bilateral renal artery stenosis; pregnancy (2nd/3rd trimester)'] },
+            { cells: ['Telmisartan (S2) — ARB, 40/80mg', '40mg OD to 80mg OD', 'No dose adjustment needed', 'Postural hypotension, dizziness, fatigue, hyperkalaemia', 'Bilateral renal artery stenosis; pregnancy (2nd/3rd trimester)'] },
+            { cells: ['Candesartan (NS) — ARB, 8mg', '8mg OD to 32mg OD', 'Renal impairment: initial 4mg OM; CrCl <30: max 16mg OD', 'Postural hypotension, dizziness, fatigue, hyperkalaemia', 'Bilateral renal artery stenosis; pregnancy (2nd/3rd trimester)'] },
+            { cells: ['Amlodipine (S1) — CCB, 5/10mg', '2.5mg OD to 10mg OD', 'No dose adjustment needed', 'Peripheral oedema, dizziness, headache/flushing', 'Caution in patients with heart failure; amlodipine or felodipine preferred if CCB required in HF'] },
+            { cells: ['Nifedipine LA (S2) — CCB, 30/60mg', '30mg OD to 120mg OD', 'No dose adjustment needed', 'Peripheral oedema, dizziness, headache/flushing', 'Caution in patients with heart failure'] },
+            { cells: ['Diltiazem (S1) — CCB, 30/60mg tablets or 90/100/200mg SR capsules', '30mg TDS to 60mg TDS (or 90mg OD to 200mg OD SR)', 'Use with caution in renal impairment', 'Peripheral oedema, headache', 'Sick sinus syndrome; 2nd/3rd degree AV block; acute MI; pulmonary congestion; caution in heart failure'] },
+            { cells: ['Atenolol (S1) — Beta-blocker, 50/100mg', '25mg OD to 100mg OD', 'CrCl 15–35: max 50mg OD; CrCl <15: max 25mg OD or 50mg EOD', 'Postural hypotension, tiredness/fatigue, cold extremities', 'Asthma; sinus node dysfunction; pregnancy; uncompensated heart failure; heart block >1st degree'] },
+            { cells: ['Bisoprolol (S2) — Beta-blocker, 2.5/5mg', '1.25mg OD to 10mg OD', 'CrCl <20: lower initial dose, max 10mg/day', 'Postural hypotension, tiredness/fatigue, cold extremities', 'Asthma; sinus node dysfunction; pregnancy; uncompensated heart failure; heart block >1st degree'] },
+            { cells: ['Carvedilol (S2) — Beta-blocker, 6.25/25mg', '6.25mg BD to 25mg BD', 'No dose adjustment needed', 'Postural hypotension, tiredness/fatigue, cold extremities', 'Asthma; sinus node dysfunction; pregnancy; uncompensated heart failure; heart block >1st degree'] },
+            { cells: ['Metoprolol (NS) — Beta-blocker, 50/100mg', '50mg BD to 100mg BD', 'No dose adjustment needed', 'Postural hypotension, tiredness/fatigue, cold extremities', 'Asthma; sinus node dysfunction; pregnancy; uncompensated heart failure; heart block >1st degree'] },
+            { cells: ['Hydrochlorothiazide (S1) — Thiazide Diuretic, 25mg', '12.5mg OD to 25mg OD', 'Use with caution; CrCl <10: not recommended (lack of efficacy)', 'Postural hypotension, electrolyte disturbances (hypokalaemia more likely ≥25mg OD)', 'Pregnancy; renal decompensation; anuria; may precipitate gout; increased risk of non-melanotic skin cancer'] },
+            { cells: ['Indapamide 2.5mg (S2) / Indapamide SR 1.5mg (NS) — Thiazide Diuretic', 'Indapamide 2.5–5mg OD; SR 1.5mg OD', 'CrCl <30: not recommended', 'Postural hypotension, electrolyte disturbances', 'Sulphonamides allergy; may precipitate gout; avoid in severe renal disease'] },
+            { cells: ['Spironolactone (S1) — MRA, 25mg (for resistant hypertension or persistent albuminuria)', '25mg OD to 50mg OD/BD', 'Caution in renal impairment; CrCl <30: not recommended', 'Breast tenderness/gynaecomastia (~6%), impotence in men, menstrual irregularities in women, hyperkalaemia', 'Usually restrict to eGFR ≥45ml/min and plasma potassium ≤4.5mmol/L; monitor electrolytes and eGFR soon after initiation and at least annually'] },
+            { cells: ['Hydralazine (S1) — Vasodilator, 10/25/50mg', '10mg TDS to 50mg TDS', 'No dose adjustment needed', 'Tachycardia, flushing, peripheral oedema', 'Mitral valve rheumatic heart disease; may cause drug-induced Lupus-like syndrome (more likely with larger dose, longer duration)'] },
+            { cells: ['Prazosin (S1) — Alpha-blocker, 1mg', '0.5mg TDS to 10mg BD', 'No dose adjustment needed', 'Postural hypotension, fatigue', ''] },
+            { cells: ['Methyldopa (S1) — Centrally Acting, 250mg', '250mg BD/TDS to 500mg TDS', 'No dose adjustment needed', 'Postural hypotension', 'Current MAOI therapy; acute liver disease'] },
+            { cells: ['Hyzaar/Hyzaar Forte (S2) — Losartan/HCTZ 50/12.5mg or 100/25mg', 'Initial: Hyzaar 1 tab OD; Max: Hyzaar Forte 1 tab OD', 'No dose adjustment needed', 'Postural hypotension, dizziness, fatigue', 'Bilateral renal artery stenosis; pregnancy (2nd/3rd trimester)'] },
+            { cells: ['Co-diovan (NS) — Valsartan/HCTZ', 'Initial: 80/12.5mg OD; Max: 160/12.5mg OD', 'Use with caution; CrCl <10: not recommended', 'Postural hypotension, dizziness, fatigue', 'Bilateral renal artery stenosis; pregnancy (2nd/3rd trimester)'] },
+            { cells: ['Entresto (NS) — Sacubitril/Valsartan', 'Initial: 100mg OD; Max: 400mg OD', '—', 'Postural hypotension, dizziness, fatigue, hyperkalaemia', 'Bilateral renal artery stenosis; pregnancy (2nd/3rd trimester); history of angioedema with ACE-I or ARBs'] },
+          ],
+        },
+      ],
+    },
+    {
+      heading: 'Home Blood Pressure Monitoring',
+      blocks: [
+        {
+          type: 'text',
+          content: 'Indications for HBPM or 24-hour ABPM: diagnosis of hypertension (borderline or unusual variability); suspected white-coat hypertension or masked hypertension; monitoring of treated hypertensive patients; symptoms suggesting hypotension; elevated clinic BP or suspected pre-eclampsia in pregnancy; identification of true/false resistant hypertension. Specific indications for 24-hour ABPM: extreme discordance between clinic and home BP; assessment of intra-day BP variability; evaluation of nocturnal dipping status; suspicion of nocturnal hypertension (patients with diabetes, CKD, obstructive sleep apnoea, night-shift workers).',
+        },
+        {
+          type: 'text',
+          content: 'Advantages of HBPM: multiple measurements during the day and over extended periods; assessment of treatment effects at different times; good reproducibility, good prognostic value, relatively low cost; improvement in patient engagement; may empower patients in BP management.',
+        },
+        {
+          type: 'text',
+          content: 'Monitoring Schedule: for diagnosis, high-normal BP monitoring, and effects of treatment changes — 7-day home measurements (minimum 3 days) before each clinic/tele visit; 2 readings per day (morning before medication intake; evening before eating); 2 measurements each time (1–2 minutes apart). Long-term follow-up: less frequent measurements (once or twice per week) are acceptable.',
+        },
+        {
+          type: 'text',
+          content: 'Interpretation of HBPM Readings: compute average excluding readings from the first day. Mean home systolic ≥135 mmHg and/or diastolic ≥85 mmHg indicates hypertension. Mean home systolic <130 mmHg and diastolic <80 mmHg should be considered normal. Mean systolic 130–134 and diastolic 80–84 requires continued regular monitoring. Diagnosis thresholds and treatment targets for HBPM are generally 5 mmHg lower (systolic and diastolic) compared to office BP.',
+        },
+      ],
+    },
+    {
+      heading: 'Role of Health Team Members',
+      blocks: [
+        {
+          type: 'list',
+          items: [
+            { text: 'Family Physician: all aspects of primary medical care from screening, diagnosis and management of hypertension, including health promotion and prevention/treatment of complications; collaborates with other health care providers for holistic care.' },
+            { text: 'Care Coordinator: introduce OneNUHS and HealthHub Apps; enrol onto Teleconsult; perform general screening; address care gaps (vaccinations, cancer screenings); teach home BP monitoring; recruitment into PTEC-HT.' },
+            { text: 'Care Manager: patient education on hypertension, BP target, lifestyle measures; teach home BP monitoring and validate BP set; assess treatment adherence; alternate CM visit with Doctor for stable hypertension and/or dyslipidaemia; recruitment into PTEC-HT.' },
+            { text: 'Advanced Practice Nurse: manage patients with diabetes, hypertension, dyslipidaemia; initiate and titrate antihypertensive medications; collaborate with healthcare team.' },
+            { text: 'Clinical Pharmacist: manage patients with diabetes, hypertension, dyslipidaemia; initiate and titrate antihypertensives; drug optimisation for drug interactions, polypharmacy, non-adherence.' },
+            { text: 'Dietitian: patient education on DASH diet and weight management.' },
+            { text: 'Psychologist: psychological and behavioural interventions; assessment and intervention for co-occurring psychological problems; support for carers experiencing caregiver stress.' },
+            { text: 'Medical Social Worker: biopsychosocial assessment; intervention for social assistance, community resources, caregiver support.' },
+            { text: 'Financial Counsellor: financial counselling; MediSave utilisation advice; applications for MediFund, Medication Assistance Fund, Institutional Medical Fund.' },
+            { text: 'Pharmacist: smoking cessation clinic; detect/prevent drug interactions; medication reconciliation.' },
+          ],
+        },
+      ],
+    },
+    {
+      heading: 'Special Situations',
+      blocks: [
+        {
+          type: 'text',
+          content: 'Microscopic Haematuria or Micro-/Macro-albuminuria: please refer to the guideline on chronic kidney disease.',
+        },
+        {
+          type: 'text',
+          content: 'Secondary Hypertension: hypertension due to an identifiable cause, which may be treatable with a specific intervention. A high index of suspicion and early detection are important because interventions may be curative. Suspect secondary hypertension in: younger patients (<40 years) with grade 2 hypertension or onset in childhood; acute worsening in previously stable normotension; resistant hypertension; severe (grade 3) or hypertensive emergency; extensive HMOD; clinical/biochemical features of endocrine causes or CKD; obstructive sleep apnoea; phaeochromocytoma symptoms or family history. Causes: obstructive sleep apnoea (5–10%), renal parenchyma disease (2–10%), primary hyperaldosteronism (5–15%), atherosclerotic renal vascular disease (1–10%), thyroid disease (1–2%), phaeochromocytoma/Cushing\'s/coarctation/hyperparathyroidism (<1%). Medications raising BP: oral contraceptive pill, diet pills, nasal decongestants, stimulant drugs, immunosuppressives, anti-angiogenic cancer therapies, anabolic steroids, erythropoietin, NSAIDs, herbal remedies (ephedra, ma huang).',
+        },
+        {
+          type: 'text',
+          content: 'Hypertensive Emergencies: large elevations in BP (SBP >180 mmHg or DBP >110 mmHg) associated with impending or progressive organ damage (major neurological changes, hypertensive encephalopathy, cerebral infarction, intracranial haemorrhage, acute LV failure, acute pulmonary oedema, aortic dissection, renal failure, eclampsia). Referral to Emergency Department is indicated.',
+        },
+        {
+          type: 'text',
+          content: 'Hypertensive Urgencies: isolated large BP elevations without acute target organ damage. Exclude acute TOD through history, physical examination including fundoscopy, urinalysis, ± serum creatinine. Treat by reinstitution or intensification of drug therapy and treatment of anxiety. Once TOD excluded, consider sending home with home BP monitoring and scheduled review next day or within a few days. Patient to proceed to ED if symptomatic.',
+        },
+        {
+          type: 'text',
+          content: 'Resistant Hypertension: BP remains above goal (average >140/90 mmHg) despite concurrent use of three antihypertensive agents of different classes at optimal doses (including a diuretic). Evaluation: detailed history/exam/investigations; exclude secondary cause. Management — Non-pharmacological: check and reinforce adherence to medication and diet/lifestyle. Pharmacological: addition of low-dose spironolactone; or eplerenone/amiloride/higher-dose thiazide/loop diuretic (for eGFR ≤30ml/min) if intolerant; or bisoprolol.',
+        },
+        {
+          type: 'text',
+          content: 'White Coat Hypertension: suggested by markedly elevated clinic BP in the absence of end-organ damage, normal ambulatory BP readings at work/home, unusual variability, symptoms of hypotension, BP seemingly resistant to treatment. Ambulatory or home BP monitoring useful for identification and monitoring.',
+        },
+      ],
+    },
+    {
+      heading: 'Referrals',
+      blocks: [
+        {
+          type: 'list',
+          items: [
+            { text: 'Patients in whom secondary hypertension is suspected.' },
+            { text: 'Younger patients (<40 years) with grade 2 or more severe hypertension in whom secondary hypertension should be excluded.' },
+            { text: 'Patients with treatment-resistant hypertension.' },
+            { text: 'Patients in whom more detailed assessment of HMOD would influence treatment decisions.' },
+            { text: 'Patients with sudden onset of hypertension when BP has previously been normal.' },
+            { text: 'Other clinical circumstances where more specialist evaluation is required.' },
+            { text: 'When there is a need for 24-hour ambulatory BP monitoring.' },
+            { text: 'Hypertensive emergencies and urgencies (when not feasible to treat and monitor in clinic) — refer to hospital A&E.' },
+          ],
+        },
+      ],
+    },
+    {
+      heading: 'Recommended Care Components for Hypertension',
+      blocks: [
+        {
+          type: 'table',
+          headers: ['Recommended Care Components', 'Minimum Frequency', 'Remarks'],
+          rows: [
+            { cells: ['BP Measurement', 'Twice a year', ''] },
+            { cells: ['Weight and BMI Measurement', 'Twice a year', 'Keep <23 kg/m² (non-Asian: <25 kg/m²)'] },
+            { cells: ['Kidney Assessment (serum Cr/eGFR and uACR or uPCR)', 'Annually', 'Annual screening of serum Cr/eGFR and uACR in all patients, or uPCR if significant proteinuria'] },
+            { cells: ['Smoking Assessment', 'Annually for smokers; once-off for non-smokers', 'Assessment on smoking habits and smoking cessation counselling'] },
+            { cells: ['Lipid Profile', 'At or soon after diagnosis', 'All patients should be risk stratified (as recommended in the Lipids CPG). Targets of treatment should be personalised by levels of risk.'] },
+            { cells: ['Cardiac Assessment', 'At diagnosis before initiating medications', 'Includes baseline ECG'] },
+          ],
+        },
+      ],
+    },
+  ],
+};
+
+
 export const cpgDocuments: CpgDocument[] = [
   allergicConjunctivitis,
   allergicRhinitis,
@@ -3363,4 +5420,18 @@ export const cpgDocuments: CpgDocument[] = [
   cancerSurvivorship,
   chalazion,
   chronicHepatitisB,
+  chronicHepatitisC,
+  chronicKidneyDisease,
+  copd,
+  dementia,
+  depression,
+  diabetesMellitus,
+  dyspepsia,
+  earInfections,
+  eczema,
+  epilepsy,
+  epistaxisInChildren,
+  erectileDysfunction,
+  heartFailure,
+  hypertension,
 ];
