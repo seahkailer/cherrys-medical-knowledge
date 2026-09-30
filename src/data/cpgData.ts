@@ -103,7 +103,6 @@ const allergicConjunctivitis: CpgDocument = {
     },
   ],
 };
-export { allergicConjunctivitis };
 
 // ---------------------------------------------------------------------------
 // 03 NUP CPG — Allergic Rhinitis (Sep 2022)
@@ -366,7 +365,6 @@ const allergicRhinitis: CpgDocument = {
     },
   ],
 };
-export { allergicRhinitis };
 
 // ---------------------------------------------------------------------------
 // 04 NUP CPG — Anaemia (May 2024)
@@ -772,7 +770,6 @@ const anaemia: CpgDocument = {
     },
   ],
 };
-export { anaemia };
 
 // ---------------------------------------------------------------------------
 // 05 NUP CPG — Anxiety Disorder (Feb 2025, updated Jun 2025)
@@ -1104,7 +1101,6 @@ const anxietyDisorder: CpgDocument = {
     },
   ],
 };
-export { anxietyDisorder };
 
 // ---------------------------------------------------------------------------
 // 06 NUP CPG — Joint Pain in Primary Care (Aug 2024)
@@ -1472,7 +1468,6 @@ const jointPain: CpgDocument = {
     },
   ],
 };
-export { jointPain };
 
 // ---------------------------------------------------------------------------
 // 07 NUP CPG — Approach to Acute Red Eye (Dec 2022)
@@ -1545,7 +1540,6 @@ const acuteRedEye: CpgDocument = {
     },
   ],
 };
-export { acuteRedEye };
 
 // ---------------------------------------------------------------------------
 // 08 NUP CPG — Approach to Gastroenteritis in Primary Care (Jun 2025)
@@ -1713,7 +1707,6 @@ const gastroenteritis: CpgDocument = {
     },
   ],
 };
-export { gastroenteritis };
 
 // ---------------------------------------------------------------------------
 // 09 NUP CPG — Atrial Fibrillation (Mar 2026)
@@ -2072,7 +2065,6 @@ const atrialFibrillation: CpgDocument = {
     },
   ],
 };
-export { atrialFibrillation };
 
 // ---------------------------------------------------------------------------
 // 10 NUP CPG — Benign Prostatic Hyperplasia (Feb 2024)
@@ -2263,7 +2255,6 @@ const bph: CpgDocument = {
     },
   ],
 };
-export { bph };
 
 // ---------------------------------------------------------------------------
 // Combined export of all CPG documents

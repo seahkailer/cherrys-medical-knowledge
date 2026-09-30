@@ -103,7 +103,7 @@ function App() {
             texts.push(...flattenItems(block.items));
           } else if (block.type === 'table') {
             block.rows.forEach((row) => {
-              texts.push(Object.values(row).join(' '));
+              texts.push(row.cells.join(' '));
             });
           }
         });
