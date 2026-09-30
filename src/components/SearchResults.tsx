@@ -1,4 +1,5 @@
 import React from 'react';
+import Fuse from 'fuse.js';
 import { FlatEntry } from '../App';
 
 interface SearchResultsProps {

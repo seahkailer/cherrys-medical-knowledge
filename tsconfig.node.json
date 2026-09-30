@@ -1,7 +1,13 @@
 {
   "compilerOptions": {
-    "lib": ["systemjs", "dom"],
+    "composite": true,
+    "skipLibCheck": true,
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "lib": ["ES2020"],
     "types": ["vite/client"]
   },
-  "include": ["vite.config.*", "vite.config.*.ts"]
+  "include": ["vite.config.*"]
 }
