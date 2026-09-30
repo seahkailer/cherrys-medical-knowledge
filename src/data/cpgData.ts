@@ -2259,6 +2259,1094 @@ const bph: CpgDocument = {
 // ---------------------------------------------------------------------------
 // Combined export of all CPG documents
 // ---------------------------------------------------------------------------
+// 11 NUP CPG — Bronchial Asthma in Adults (Nov 2024)
+// ---------------------------------------------------------------------------
+const bronchialAsthmaAdults: CpgDocument = {
+  id: 'cpg-bronchial-asthma-adults',
+  condition: 'Bronchial Asthma in Adults',
+  source: '11 NUP CPG - Bronchial Asthma in Adults.pdf',
+  reviewDate: 'Reviewed November 2024. Next review date: November 2027.',
+  advisors: 'Key FPs: Dr David Tan Hsien Yung / Dr Joanne Khor. Specialist Advisor: Dr Liew Mei Fong (Senior Consultant, Alexandra Hospital). Acknowledgement: Clinical Services: Dr Jonathan Phang, Dr Tan Wee Hian, Ms Jamilah Jailani. Nursing: APN Liau Wei Fong, NC Yap Hwee Luan. Allied Health: Ms Lynette Goh (Dietetics), Ms Toh Hui Moon (Psychology), Ms Cindy Soh (Physiotherapy). NUHSP: Ms Esther Bek, Mr Woo Jia Xiang. NUH: Dr Lim Hui Fang.',
+  sections: [
+    {
+      heading: 'Introduction',
+      blocks: [
+        { type: 'text', content: 'Asthma is a chronic reversible airway disorder that is common in people of all ages. It can be severe and may be fatal. Asthma may present with cough, wheezing, and unexplained dyspnoea and chest tightness. Symptoms are often transient, may be persistent and tend to be worse at night or in the early mornings. Asthma symptoms may be precipitated or aggravated by upper respiratory tract infections, cigarette smoke, environmental haze, exercise, drugs (e.g. aspirin, NSAIDs, β-blockers, ACE inhibitors), pets and occupational exposure to triggers.' },
+        { type: 'text', content: 'A diagnosis of asthma is based on clinical presentation of characteristic symptoms and where possible, documentation of variable expiratory airflow limitation. Initiation of inhaled corticosteroids should not be delayed as these tests can be normal in mild or well controlled asthma.' },
+        { type: 'text', content: 'Epidemiology: Asthma is one of the most common chronic respiratory conditions seen in primary care in Singapore. Around 5% of residents in Singapore aged 18 to 69 years have asthma. About 1 in 3 patients with asthma aged 12 years and older in Singapore report exacerbations in the past year, and about 1 in 2 have missed work or school due to asthma in the past year. Singapore\'s asthma hospital admission rates are higher than countries in the OECD. Despite wide availability of ICS, use of preventers in Singapore is the lowest among eight countries in the Asia-Pacific region, with only 1 in 4 patients using a preventer in the past month.' },
+      ],
+    },
+    {
+      heading: 'Presentation and Diagnosis',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Symptoms: wheezing, shortness of breath, chest tightness, cough; nocturnal symptoms' },
+          { text: 'Features supportive of asthma diagnosis', children: [
+            { text: 'Frequent episodes of wheeze (more than once a month)' },
+            { text: 'Activity induced cough or wheeze' },
+            { text: 'Nocturnal cough in periods without viral infections, and not attributable to post-nasal drip and GERD' },
+          ]},
+          { text: 'Supportive evidence: Atopic features, family history of asthma/atopy' },
+          { text: 'Bronchodilator Reversibility: ≥ 12% and ≥ 200ml increase in FEV1 (or FVC) after bronchodilator inhalation. An FEV1/FVC less than LLN or < 0.75 suggests expiratory airflow limitation and should be considered supportive of an asthma diagnosis. However, a normal spirometry does not exclude asthma.' },
+          { text: 'Bronchial provocation: Methacholine or exercise challenge test, Histamine' },
+          { text: 'Home PEF Variability: > 20% diurnal variation. PEF is the least reliable as it is highly effort dependent.' },
+        ]},
+        { type: 'text', content: 'Do CXR if other diagnosis suspected or consider other diagnostic tests in the presence of: (1) Loss of weight, (2) Frequent vomiting/choking, (3) Focal lung signs, haemoptysis, (4) Vocal cord dysfunction.' },
+        { type: 'list', items: [
+          { text: 'Alternative diagnoses (adult): Ca lung, bronchiectasis, COPD/emphysema, pulmonary tuberculosis, suppurative lung disease, pulmonary oedema, upper airway obstruction/inhaled foreign body, vocal cord dysfunction' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Other Modes of Presentation',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Cough variant asthma without wheezing' },
+          { text: 'Adult onset asthma: consider referral if patients do not respond well to treatment to exclude eosinophilic granulomatosis with polyangiitis (EGPA), chronic rhinosinusitis and nasal polyps, allergic bronchopulmonary aspergillosis (ABPA). Obesity may also be associated with higher risk of developing adult-onset asthma.' },
+          { text: '\'First acute wheeze\' — Exclude infections, foreign body aspiration, endobronchial lesions (unilateral wheezing)' },
+          { text: 'In cigarette smokers, consider COPD with asthma' },
+          { text: 'Exercise-induced bronchoconstriction' },
+          { text: 'Asthma in pregnancy (1/3 of patients have deterioration of asthma during pregnancy due to hormonal changes)' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Investigations',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Chest X-ray: To exclude foreign body or chronic chest infection (e.g. pulmonary TB for chronic cough) or to exclude complications in severe acute episodes.' },
+          { text: 'Pulmonary Function Tests (PEFR/Spirometry): Diurnal variation of PEFR ≥ 20% or positive bronchodilator response (post bronchodilator increase in FEV1 by ≥ 12% and ≥ 200 ml). Do NOT delay initiation of ICS if clinical suspicion is high.' },
+          { text: 'Allergy Tests: Atopic status can be identified by skin prick testing or measuring specific immunoglobulin E (sIgE). Other allergy tests (antigen specific IgG, IgG4, intradermal skin tests) are not useful. Food allergy testing is not useful for evaluation of asthma per se.' },
+          { text: 'Airway Challenge Tests (Methacholine/Histamine/Exercise): Methacholine challenge is a sensitive test to exclude asthma. Exercise challenge is reserved for evaluation of exercise-induced asthma.' },
+          { text: 'FeNO: Has not been established as useful for ruling in or ruling out asthma.' },
+          { text: 'Other tests: CT thorax, induced sputum for AFB smear and culture, nasoendoscopy/CT sinuses, OGD/pH manometry to exclude GERD, bronchoscopy, immunological investigations (HIV, serum immunoglobulin titres).' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Asthma Control Goals and Management Components',
+      blocks: [
+        { type: 'text', content: 'Asthma Control Goals:' },
+        { type: 'list', items: [
+          { text: 'No limitation of daily activities, including exercise' },
+          { text: 'No (twice or less/week) daytime symptoms' },
+          { text: 'No nocturnal symptoms or awakening because of asthma' },
+          { text: 'No (twice or less/week) need for reliever treatment' },
+          { text: 'No exacerbations' },
+          { text: 'Normal or near-normal lung function results' },
+        ]},
+        { type: 'text', content: 'Components of Asthma Management: (1) Good doctor-patient relationship; (2) Identification and reduction of exposure to risk factors; (3) Assessment, treatment and monitoring; (4) Management of asthma exacerbations; (5) Patient education including Written Asthma Action Plan.' },
+        { type: 'text', content: 'Follow-Up Interval: Asthma control review can vary from once in 2 weeks (poor control, medication adjustment) to once in 6 months (very well controlled). Annual review of asthma action plan. Annual smoking assessment.' },
+      ],
+    },
+    {
+      heading: 'Monitoring in Primary Care',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Asthma control using GINA assessment, Asthma Control Test (ACT)' },
+          { text: 'High risk for severe attacks: ≥ 3 attacks or prednisolone bursts in last 12 months; ≥ 3 canisters of SABA used in last 12 months' },
+          { text: 'High risk for life-threatening attack: previous ICU admission/intubation for status asthmaticus; ≥ 1 canister of SABA every month' },
+          { text: 'Other risk factors: chronic airflow limitation (baseline FEV1 < 50%), persistent poor ICS adherence and smoking, psychosocial factors' },
+          { text: 'Adherence to asthma medication' },
+          { text: 'Inhaler technique' },
+          { text: 'Aerochamber/spacer care (clean every month, change every 6–12 months)' },
+          { text: 'Check and address causes of poor asthma control: refer asthma nurse to cross-check adherence and technique (50% of patients are not adherent); check for triggers (aeroallergens, irritants, haze, cigarette smoke); check for drugs that can aggravate asthma (aspirin, NSAIDS, non-cardioselective β-blockers); confirm diagnosis with CXR and spirometry' },
+          { text: 'Understand use of self-management plan/written personalised asthma action plan' },
+        ]},
+      ],
+    },
+    {
+      heading: 'GINA Assessment of Asthma Control',
+      blocks: [
+        { type: 'text', content: 'Asthma control is assessed in two domains: symptom control and future risk of adverse outcomes. Poor symptom control reduces productivity and quality of life and increases the risk of exacerbations. Asthma severity is assessed after at least 2–3 months of adequate treatment.' },
+        { type: 'text', content: 'Asthma Control Test (ACT©): A 5-item, patient-administered questionnaire for adults and children aged 12 and above. Based on a five-point scoring system: Score 25 = total control; Score 20–24 = well controlled; Score < 20 = poor control.' },
+        { type: 'list', items: [
+          { text: 'Q1: In the past 4 weeks, how much of the time did your asthma keep you from getting as much done at work, school or at home?' },
+          { text: 'Q2: During the past 4 weeks, how often have you had shortness of breath?' },
+          { text: 'Q3: During the past 4 weeks, how often did your asthma symptoms (wheezing, coughing, shortness of breath, chest tightness or pain) wake you up at night or earlier than usual in the morning?' },
+          { text: 'Q4: During the past 4 weeks, how often have you used your rescue inhaler or nebulizer medication (such as albuterol or salbutamol)?' },
+          { text: 'Q5: How would you rate your asthma control during the past 4 weeks?' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Lifestyle Modification and Non-Pharmacological Treatment',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Self-monitoring and regular review' },
+          { text: 'Written action plan' },
+          { text: 'Modifiable risk factors and comorbidities (e.g. smoking, obesity, anxiety)' },
+          { text: 'Smoking cessation' },
+          { text: 'Physical activity for weight loss' },
+          { text: 'Avoidance of sensitizers where appropriate' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Pharmacological Treatment — Stepwise Approach',
+      blocks: [
+        { type: 'text', content: 'The patient\'s current treatment and level of control determine the selection of pharmacologic treatment. If asthma is not controlled on the current treatment, treatment should be stepped up until control is achieved. Control is usually maintained for at least 3 months before an attempt is made to step down the treatment.' },
+        { type: 'list', items: [
+          { text: 'Step 1: For safety, GINA and local guidelines no longer recommend SABA-only treatment. Regular low dose ICS, low dose ICS taken whenever SABA is taken, or as-needed low dose ICS-formoterol. Reserved for patients with infrequent symptoms (less than twice a month) of short duration with no risk factors for exacerbations.' },
+          { text: 'Step 2: Regular low dose ICS, or as-needed low dose ICS-formoterol' },
+          { text: 'Step 3: Low dose ICS-LABA, or medium dose ICS. As needed low dose ICS-formoterol for patients prescribed maintenance and reliever therapy.' },
+          { text: 'Step 4: Medium dose ICS-LABA, or high dose ICS. As needed low dose ICS-formoterol for patients prescribed maintenance and reliever therapy.' },
+          { text: 'Step 5: Refer for specialist investigation and consideration of add-on treatment. Management should be supervised directly by specialists.' },
+          { text: 'RELIEVER: As-needed ICS-SABA, or as-needed SABA' },
+        ]},
+        { type: 'text', content: 'NOTE: LABAs should NOT be used without concomitant inhaled corticosteroids in asthma.' },
+        { type: 'table', headers: ['Drug', 'Low Daily Dose (mcg)', 'Medium Daily Dose (mcg)', 'High Daily Dose (mcg)'], rows: [
+          { cells: ['Beclomethasone Dipropionate (HFA)', '100–200', '> 200–400', '> 400'] },
+          { cells: ['Budesonide (DPI)', '200–400', '> 400–800', '> 800'] },
+          { cells: ['Fluticasone Propionate (DPI)', '100–250', '> 250–500', '> 500'] },
+          { cells: ['Fluticasone Propionate (HFA)', '100–250', '> 250–500', '> 500'] },
+          { cells: ['Fluticasone Furoate (DPI)', '100', '100', '200'] },
+        ]},
+        { type: 'text', content: 'REMEMBER TO: Provide guided self-management education. Treat modifiable risk factors and comorbidities. Advise about non-pharmacological therapies. Consider stepping up if symptoms uncontrolled. Consider referring to specialist if not well controlled on STEP 4. Consider stepping down if symptoms controlled for 3 months and low risk for exacerbations. Ceasing ICS is not advised. For list of medications available in NUP formulary, refer to NUP Intranet Asthma/COPD Medication Chart.' },
+      ],
+    },
+    {
+      heading: 'Role of Health Team Members',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Family Physician: Provides all aspects of primary medical care from screening, diagnosis and management of asthma, including health promotion and prevention/treatment of complications.' },
+          { text: 'Care Coordinator: Perform general screening (fall risk, social economics, smoking & drinking history); address care gaps under Health Maintenance Topics (vaccinations); perform GINA assessment of asthma control.' },
+          { text: 'Care Manager: Evaluate understanding and provide education on asthma, good asthma control and lifestyle measures; assess and identify reasons for suboptimal/poor adherence; provide education on preventer and reliever inhalers, inhaler technique and use of asthma action plan.' },
+          { text: 'Advanced Practice Nurse: Manage patients with asthma within scope of practice; initiate and titrate medication according to stepwise approach; initiate and educate patient on Written Asthma Action Plan; offer timely influenza and pneumococcal vaccinations; encourage smoking cessation.' },
+          { text: 'Dietitian: Patient education on weight management.' },
+          { text: 'Psychologist: Psychological and behavioural interventions to manage psychological stress, improve disease management and quality of life; assessment and intervention for co-occurring psychological problems (depression, anxiety disorders).' },
+          { text: 'Physiotherapist: Assess and provide intervention for MSK conditions; prescribe exercise and provide patient education on appropriate exercises for weight loss; patient education on bronchial hygiene and positions to ease shortness of breath.' },
+          { text: 'Pharmacist: Assess and teach use of various inhalers and delivery devices; smoking cessation clinic; detect, prevent and address drug-drug/drug-disease interactions; perform medication reconciliation.' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Asthma Exacerbations — Severity Assessment',
+      blocks: [
+        { type: 'table', headers: ['Parameter', 'Mild', 'Moderate', 'Severe', 'Respiratory Arrest Imminent'], rows: [
+          { cells: ['Breathless', 'While walking; can lie down', 'While talking; prefer sitting', 'While at rest; hunched forward', ''] },
+          { cells: ['Talks in', 'Sentences', 'Phrases', 'Words', ''] },
+          { cells: ['Alertness', 'May be agitated', 'Usually agitated', 'Usually agitated', 'Drowsy or confused'] },
+          { cells: ['Respiratory rate', 'Increased', 'Increased', 'Often > 30/min', ''] },
+          { cells: ['Accessory muscles/suprasternal retractions', 'Usually not', 'Usually', 'Usually', ''] },
+          { cells: ['Wheeze', 'Moderate, often only end expiratory', 'Loud', 'Usually loud; throughout inhalation and exhalation', 'Absence of wheeze'] },
+          { cells: ['Pulse rate', '< 100/min', '100–200/min', '> 120/min', 'Bradycardia'] },
+          { cells: ['PEF', '> 80%', 'Approx. 60–80%', '< 60% predicted or personal best', ''] },
+          { cells: ['SpO₂ (on air)', '> 95%', '91–95%', '< 90%', ''] },
+        ]},
+      ],
+    },
+    {
+      heading: 'Management of Acute Exacerbation in Adults',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Mild/Moderate Exacerbation (Mild/mod tachypnea, no/minimum use of accessory muscles, SpO₂ 91–95%)', children: [
+            { text: '1. MDI bronchodilator via Spacer: 10 puffs Salbutamol over 20 mins. Patient to inhale 5x via mouth/lips after every 1 puff.' },
+            { text: '2. Oxygen via nasal prongs if necessary (keep SpO₂ > 95%)' },
+            { text: '3. Oral prednisolone 30–60 mg stat' },
+            { text: '4. Doctor to review after 1 cycle. Repeat another cycle if indicated.' },
+            { text: '5. Refer to hospital A&E if no improvement after 2 cycles' },
+            { text: '*Convert to nebuliser if patient is fatigued: Neb Salbutamol 1ml : Ipratropium 2ml : Normal Saline 1ml' },
+          ]},
+          { text: 'Severe Exacerbation (Can\'t complete sentences, tachypneic, Pulse > 110/min, Resp Rate > 25/min, PEF < 50% predicted or best, SpO₂ < 91%)', children: [
+            { text: '1. High flow O₂ via mask 6–10 L/min to achieve SpO₂ > 95%' },
+            { text: '2. IV access' },
+            { text: '3. IV hydrocortisone 200 mg stat' },
+            { text: '4. Nebulise: Salbutamol 1ml : Ipratropium 2ml : Normal Saline 1ml' },
+            { text: '5. Repeat nebulisation if indicated. Review after 30 minutes.' },
+            { text: '6. Refer to A&E if no improvement after 2 rounds of nebulisation.' },
+          ]},
+          { text: 'Life-Threatening Exacerbation (Cyanosis/tachypnea, exhaustion, silent chest, SpO₂ < 91%, PEF < 33%; confusion/drowsiness; pulsus paradoxus/bradycardia; deterioration despite maximal therapy)', children: [
+            { text: 'Arrange transfer to Hospital immediately' },
+            { text: '1. High flow O₂ via mask 6–10 L/min to achieve SpO₂ > 95%' },
+            { text: '2. IV access' },
+            { text: '3. IV hydrocortisone 200 mg stat' },
+            { text: '4. Nebulised salbutamol with ipratropium every 15–20 minutes while awaiting transfer' },
+            { text: '5. Consider s/c adrenaline 1:1000 0.5ml (0.01 ml/kg)' },
+          ]},
+        ]},
+        { type: 'text', content: 'MDI + Spacer Method: (a) Prime the spacer with 10 puffs of Salbutamol. (b) Load spacer with 1 puff each time; patient to inhale 5 times (tidal breaths) after every 1 puff. (c) Oxygen can be administered concurrently via nasal prongs if required — maintain SpO₂ > 95%. (d) Nurse to administer puffs, ensure inhalation via the mouth/lips. (e) Patient can self-administer bronchodilator treatment with supervision by medical staff.' },
+      ],
+    },
+    {
+      heading: 'Post-Exacerbation Response Assessment',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Good Response (Response sustained 60 minutes after last treatment; physical examination normal; PEF > 70% predicted; no stress; O₂ saturation > 90%)', children: [
+            { text: 'Discharge' },
+            { text: 'Continue treatment with inhaled β₂-agonist' },
+            { text: 'Consider course of prednisolone 30 mg om for 5–7 days in most cases' },
+            { text: 'Initiate or continue inhaled glucocorticosteroids' },
+            { text: 'Reinforce patient education, action plan and close follow-up' },
+          ]},
+          { text: 'Incomplete Response (History of high-risk patient; mild to moderate symptoms; PEF > 50–70%; O₂ saturation not improving)', children: [
+            { text: 'Refer to Hospital A&E' },
+            { text: 'O₂ via mask 6–10 L/min to achieve SpO₂ > 95%' },
+            { text: 'Nebulised salbutamol with ipratropium every 15–20 minutes while awaiting transfer' },
+            { text: 'IV hydrocortisone 200 mg stat if not already administered' },
+          ]},
+          { text: 'Poor Response (History of high-risk patient; symptoms severe, drowsiness, confusion; PEF < 30%; O₂ saturation < 90%)', children: [
+            { text: 'ARRANGE URGENT TRANSFER TO HOSPITAL via ambulance immediately' },
+            { text: 'High flow O₂ via mask 6–10 L/min to achieve SpO₂ > 95%' },
+            { text: 'Nebulised salbutamol with ipratropium every 15–20 minutes while awaiting transfer' },
+            { text: 'IV hydrocortisone 200 mg if not already administered' },
+            { text: 'Consider s/c adrenaline 1:1000 0.5ml (0.01 ml/kg)' },
+            { text: 'Possible intubation & mechanical ventilation' },
+          ]},
+        ]},
+      ],
+    },
+    {
+      heading: 'Emergency Drug List',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Salbutamol Inhaler / neb' },
+          { text: 'Prednisolone tab' },
+          { text: 'Hydrocortisone IV' },
+          { text: 'Ipratropium bromide nebuliser' },
+          { text: 'Adrenaline IM' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Referrals — When to Refer to Respiratory Specialist',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Presence of Risk Factors for Death from Asthma', children: [
+            { text: 'Prior intubation and mechanical ventilation for asthma' },
+            { text: 'Hospitalisation or emergency care visit for asthma in the past year' },
+            { text: 'Current use of systemic corticosteroids or recent withdrawal from systemic corticosteroids' },
+            { text: 'Not currently using inhaled corticosteroids' },
+            { text: 'Use of > 1 canister of inhaled short-acting β₂-agonist within 1–2 months' },
+            { text: 'History of psychiatric disease or psychosocial problems' },
+          ]},
+          { text: 'Acute Asthma — Severe or Frequent Exacerbations', children: [
+            { text: 'A life-threatening asthma exacerbation' },
+            { text: 'Frequent exacerbations: acute exacerbations 2–3 times a year, or more than once every six months, despite compliance with medications and good inhaler technique' },
+            { text: 'Need for continuous oral corticosteroid therapy or not well-controlled on Step 4 therapy' },
+          ]},
+          { text: 'Chronic Asthma — Difficult or Poor Control', children: [
+            { text: 'Failing goals of therapy after 3 to 6 months of treatment' },
+            { text: 'Uncontrolled Asthma' },
+            { text: 'Continuous oral corticosteroid therapy, or require more than two bursts of oral corticosteroids in 1 year, or high-dose inhaled corticosteroids' },
+          ]},
+          { text: 'Diagnosis', children: [
+            { text: 'Atypical signs and symptoms' },
+            { text: 'Other conditions complicate asthma or its diagnosis, e.g. heart failure, COPD, unsure of diagnosis' },
+            { text: 'Additional diagnostic testing is indicated' },
+            { text: 'Suspicion of occupational asthma' },
+          ]},
+        ]},
+      ],
+    },
+    {
+      heading: 'Recommended Care Components',
+      blocks: [
+        { type: 'table', headers: ['Care Component', 'Minimum Frequency', 'Remarks'], rows: [
+          { cells: ['Asthma Control Assessment (GINA Score, ACT)', 'At least twice a year', ''] },
+          { cells: ['Smoking Assessment', 'Annually for smokers; once-off for non-smokers unless change in smoking habit', 'Assessment on smoking habits and provide smoking cessation counselling'] },
+          { cells: ['Written Asthma Action Plan', 'Upon diagnosis, recommended annually', ''] },
+          { cells: ['Spirometry', 'Recommended at or soon after diagnosis, or when clinically indicated', ''] },
+          { cells: ['Influenza and Pneumococcal Vaccination', 'As recommended under the National Adult Immunisation Schedule', ''] },
+        ]},
+      ],
+    },
+  ],
+};
+
+// ---------------------------------------------------------------------------
+// 12 NUP CPG — Bronchial Asthma in Children (Aug 2023)
+// ---------------------------------------------------------------------------
+const bronchialAsthmaChildren: CpgDocument = {
+  id: 'cpg-bronchial-asthma-children',
+  condition: 'Bronchial Asthma in Children',
+  source: '12 NUP CPG - Bronchial Asthma in Children.pdf',
+  reviewDate: 'Reviewed August 2023 by Dr Wong Yi Lian & Dr Joanne Khor.',
+  advisors: 'Key FPs: Dr Wong Yi Lian / Dr David Tan Hsien Yung. Specialist Advisor: Dr Mahesh Babu Ramamurthy (NUH Paediatrics). Acknowledgement: Clinical Services: Dr Jonathan Phang, Dr Tan Wee Hian. Nursing: APN Liau Wei Fong, SNC Alice Goh Khoon Chin, NC Yap Hwee Luan. NUHSP: Ms Esther Bek, Mr Woo Jia Xiang.',
+  sections: [
+    {
+      heading: 'Introduction',
+      blocks: [
+        { type: 'text', content: 'Asthma is a chronic reversible airway disorder that is common in people of all ages. It can be severe and may be fatal. Asthma may present with cough, wheezing, and unexplained dyspnoea and chest tightness. Symptoms are often transient, may be persistent and tend to be worse at night or in the early mornings.' },
+        { type: 'text', content: 'Management of asthma in children, particularly in children in the first five years of life, is often a challenge. Difficulties with diagnosis, efficacy and safety of drugs and drug delivery are common issues faced by the practitioner. Definition of asthma is the same in children as in adults. A detailed medical history and clinical examination is mandatory.' },
+      ],
+    },
+    {
+      heading: 'Presentation and Diagnosis',
+      blocks: [
+        { type: 'text', content: 'Asthma should be considered if any of the following is present: cough, recurrent wheeze/breathing difficulty or chest tightness. Symptoms often occur or worsen at night, with exercise, or on exposure to various triggers (e.g. dust mite allergens). Asthma exacerbations in children are often triggered by respiratory viral and mycoplasma infections. The presence of atopy or a family history of atopy supports the diagnosis of asthma.' },
+        { type: 'table', headers: ['Feature', 'Characteristics Suggesting Asthma'], rows: [
+          { cells: ['Cough', 'Recurrent or persistent non-productive cough that may be worse in the middle of the night. Cough occurring with exercise, laughing, crying or exposure to tobacco smoke (particularly in absence of respiratory infection).'] },
+          { cells: ['Wheezing', 'Recurrent wheezing, including during sleep, or with triggers such as activity, laughing, crying or exposure to tobacco smoke or air pollution.'] },
+          { cells: ['Difficult or heavy breathing / shortness of breath', 'Occurring with exercise, laughing, or crying.'] },
+          { cells: ['Activity limitation', 'Not running, playing, or laughing at the same intensity as other children, tires earlier during walks.'] },
+          { cells: ['Family or past personal history', 'Atopic dermatitis, allergic rhinitis, food allergy. Asthma in first-degree relative(s).'] },
+        ]},
+        { type: 'list', items: [
+          { text: 'Red Flags — Consider investigations in the presence of', children: [
+            { text: 'Neonatal / early onset' },
+            { text: 'Failure to thrive, loss of weight' },
+            { text: 'Frequent vomiting / choking' },
+            { text: 'Focal lung or cardiovascular signs' },
+            { text: 'Continuous wheezing' },
+            { text: 'No association of symptoms with typical triggers' },
+            { text: 'Hypoxemia outside context of viral illness' },
+          ]},
+          { text: 'Beware of alternative diagnosis', children: [
+            { text: 'Recurrent viral infections with wheezing' },
+            { text: 'Chronic rhino-sinusitis' },
+            { text: 'Gastro-oesophageal reflux' },
+            { text: 'Bronchopulmonary dysplasia / Chronic lung disease of prematurity' },
+            { text: 'Aspiration syndromes including foreign body aspiration / recurrent silent aspiration' },
+            { text: 'Congenital malformations of lung' },
+            { text: 'Congenital heart disease' },
+            { text: 'Tuberculosis' },
+          ]},
+          { text: 'For ≥ 5 years: Spirometry — Reduced FEV1 with reduced FEV1/FVC ratio; Bronchodilator response: Increase FEV1 > 12% predicted after bronchodilator challenge; Positive exercise challenge test: Fall in FEV1 of > 12% from pre-exercise values, or PEF > 15%' },
+          { text: 'For < 5 years: Consider referral to a Paediatrician. Commence on trial of asthma therapy for 8–12 weeks; Review diagnosis if response is poor.' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Other Modes of Presentation',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Cough variant asthma without wheezing — May be the group over-diagnosed as asthma; rule out rhinitis and sinusitis' },
+          { text: 'Recurrent viral wheezing in children aged 5 years or younger without atopy may not respond to asthma treatment' },
+          { text: 'Exercise-induced bronchoconstriction' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Investigations',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Chest X-Ray: To exclude foreign body, structural abnormalities, chronic chest infection or to exclude complications in severe acute episodes.' },
+          { text: 'Pulmonary Function Tests (Spirometry): Many children by 5 years old are capable of performing spirometry if coached by experienced technician with visual incentives. Children under 8 years of age are deemed to have completed the test if they have sustained expiratory effort for 3 seconds (as opposed to 6 seconds in adults).' },
+          { text: 'Allergy Tests: Skin prick testing or specific immunoglobulin E (sIgE) in serum. Other allergy tests (antigen specific IgG, IgG4, intradermal skin tests) are not useful. Food allergy testing is not useful for evaluation of asthma per se.' },
+          { text: 'Airway Challenge Tests: Methacholine or Histamine challenge tests are not routinely performed in children. Exercise challenge is useful for evaluation of exercise-induced asthma in children.' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Asthma Control Goals and Initial Management',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Asthma Control Goals', children: [
+            { text: 'No limitation of daily activities, including exercise' },
+            { text: 'No or minimal daytime symptoms (≤ once/week for ≤5 years; ≤ twice/week for 6–11 years)' },
+            { text: 'No nocturnal symptoms or awakening because of asthma' },
+            { text: 'No or minimal need for reliever treatment (same frequency thresholds as above)' },
+            { text: 'No exacerbations' },
+            { text: 'Normal or near-normal lung function results' },
+          ]},
+          { text: 'Initial Management After Diagnosis', children: [
+            { text: 'Good doctor-patient relationship' },
+            { text: 'Explanation about asthma and factors that influence it' },
+            { text: 'Starting appropriate medication' },
+            { text: 'Training about correct inhalation technique' },
+            { text: 'Reinforcement on importance of child\'s adherence to medication and avoidance of trigger factors' },
+            { text: 'Written Asthma Action Plan (WAAP)' },
+            { text: 'Follow up appointment in 4–12 weeks' },
+          ]},
+        ]},
+      ],
+    },
+    {
+      heading: 'Follow-Up Visit — Ask for SPICE',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'S — Symptoms' },
+          { text: 'P — Parental concerns' },
+          { text: 'I — Inhaler techniques' },
+          { text: 'C — Compliance / Adherence' },
+          { text: 'E — Environmental triggers avoidance' },
+          { text: 'Symptom control assessment with GINA symptoms control tool or Asthma Control Test' },
+          { text: 'Review growth chart' },
+        ]},
+      ],
+    },
+    {
+      heading: 'GINA Symptom Control Tool for Children',
+      blocks: [
+        { type: 'text', content: 'GINA Assessment of Asthma Symptom Control in Children 5 Years and Younger — In the past 4 weeks, has the child had: (1) Daytime asthma symptoms for more than a few minutes, more than once a week? (2) Any activity limitation due to asthma? (3) Reliever medication needed more than once a week? (4) Any night waking or night coughing due to asthma?' },
+        { type: 'text', content: 'GINA Assessment for Children 6–11 Years — In the past 4 weeks, has the child had: (1) Daytime asthma symptoms for more than twice a week? (2) Any activity limitation due to asthma? (3) Reliever medication needed more than twice a week? (4) Any night waking due to asthma?' },
+        { type: 'text', content: 'Interpretation: Well controlled = none of these; Partly controlled = 1–2 of these; Uncontrolled = 3–4 of these.' },
+        { type: 'text', content: 'Asthma Control Test (ACT©) for children aged 4–11 years: 7-item questionnaire. Score ≤ 19 = poor asthma control; Score ≥ 20 = asthma may be under control; Score 27 = total control. For children aged 12 and above: same 5-item ACT as adults. Score ≤ 19 = poor control; 20–24 = well controlled; 25 = total control.' },
+      ],
+    },
+    {
+      heading: 'Titrating Inhaled Corticosteroid',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'If child is well controlled and maintained for at least 3 months', children: [
+            { text: 'Consider tapering ICS treatment gradually to lowest effective dose' },
+            { text: 'Children with high risk of poor asthma outcomes should be tapered cautiously' },
+            { text: 'If ICS is tapered down or stopped, schedule follow-up in 3–6 weeks to review symptoms' },
+          ]},
+          { text: 'If child is partly controlled or uncontrolled, check the following', children: [
+            { text: 'Verify diagnosis' },
+            { text: 'Assess inhaler technique' },
+            { text: 'Check adherence to medication and avoidance of trigger factors' },
+            { text: 'Management of co-morbid conditions (allergic rhinitis, GERD, etc.)' },
+            { text: 'Review medication dose' },
+          ]},
+          { text: 'Most children will respond to first line of low dose ICS if above factors are corrected. If all above factors have been corrected, consider stepping up treatment.' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Assessment of Risk Factors for Poor Asthma Outcomes',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Features of patients at increased risk of adverse events', children: [
+            { text: 'History of severe asthma exacerbations requiring intubation or HDU/ICU care' },
+            { text: '≥ 1 severe exacerbation in last 12 months' },
+            { text: 'High SABA use (> 1 canister of SABA per month)' },
+            { text: 'Inadequate ICS, poor adherence, or incorrect inhaler technique' },
+            { text: 'Comorbidities: Obesity, chronic rhino-sinusitis, GERD, confirmed food allergy' },
+            { text: 'Exposures: Smoking, air pollution, allergens (dust mites, cockroach, pets, mould)' },
+            { text: 'Major psychological or socioeconomic problems for child or family' },
+            { text: 'Low initial FEV1, high BD reversibility; Blood eosinophilia' },
+          ]},
+          { text: 'Risk factors for persistent airflow limitation', children: [
+            { text: 'Severe asthma with several hospitalisations' },
+            { text: 'History of bronchiolitis in the first 3 months of age' },
+            { text: 'History of maternal smoking in pregnancy, preterm birth, low birth weight and neonatal ventilation' },
+          ]},
+          { text: 'Risk factors for medication side-effects', children: [
+            { text: 'Systemic: Chronic use of moderate to high dose ICS may reduce growth velocity in pre-pubertal children and slight reduction in adult final height. However, poorly controlled asthma itself may have much greater impact on a child\'s growth.' },
+            { text: 'Local: With good inhaler technique using spacers, local side-effects are not common in children. When ICS is used without spacer, local side effects such as oral thrush should be looked for.' },
+          ]},
+        ]},
+      ],
+    },
+    {
+      heading: 'Pharmacological Treatment — Children ≤ 5 Years',
+      blocks: [
+        { type: 'text', content: 'In children aged 0 to 5 years, long-term treatment with SABA alone (without preventer) for asthma could be used ONLY if the child fulfils ALL of the following criteria: No history of ICU admission or intubation for asthma; No more than 3 exacerbations over the past year; Normal lung function test over the past year (if available); No night awakening due to asthma over the past 4 weeks; No exercise limitations due to asthma over the past 4 weeks; Asthma symptoms no more than once over the past 4 weeks; SABA used no more than once over the past 4 weeks.' },
+        { type: 'list', items: [
+          { text: 'Step 1–2: Low-dose ICS, plus as-needed inhaled SABA. Consider specialist referral. Other option: Daily LTRA or intermittent short course of ICS at onset of respiratory distress. *Blackbox Warning for Montelukast: Risk of neuropsychiatric effects including suicidal thoughts, depression, sleep and behaviour changes. Counsel parents.' },
+          { text: 'Step 3: Double low-dose ICS, plus as-needed SABA. Consider specialist referral. (Insufficient data on ICS-LABA in children < 4 years; not approved for this age group.)' },
+          { text: 'Step 4 & 5: Continue controller treatment and refer to a specialist.' },
+        ]},
+        { type: 'table', headers: ['Drug (≤ 5 years)', 'Low Total Daily Dose (mcg)'], rows: [
+          { cells: ['Beclomethasone Dipropionate (pMDI, extrafine particle, HFA)', '50 (ages 5 years and older)'] },
+          { cells: ['Fluticasone Propionate (pMDI, standard particle, HFA)', '50 (ages 4 years and older)'] },
+        ]},
+      ],
+    },
+    {
+      heading: 'Pharmacological Treatment — Children 6–11 Years',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Step 1–2: Daily low dose ICS, plus as-needed SABA. Other options: ICS whenever SABA is taken; Daily LTRA with as needed SABA. *Blackbox Warning for Montelukast (see above).' },
+          { text: 'Step 3: Low dose ICS-LABA plus as needed SABA; or medium dose ICS plus as needed SABA. Other option: Low dose ICS with daily LTRA with as needed SABA. MART: Daily low-dose ICS-formoterol plus as needed low-dose ICS-formoterol. *Blackbox Warning for Montelukast (see above).' },
+          { text: 'Step 4: Medium dose ICS-LABA, plus as needed SABA. Consider specialist referral. Patients not achieving good control despite Step 4 treatment may have refractory asthma and should be reviewed by a specialist.' },
+          { text: 'Step 5: Refer specialist for phenotypic assessment and consideration of add-on treatment. Management should be supervised directly by specialist.' },
+        ]},
+        { type: 'table', headers: ['Drug (6–11 years)', 'Low Daily Dose (mcg)', 'Medium Daily Dose (mcg)', 'High Daily Dose (mcg)'], rows: [
+          { cells: ['Beclomethasone Dipropionate (pMDI, extrafine particle, HFA)', '50–100', '> 100–200', '> 200'] },
+          { cells: ['Budesonide (DPI)', '100–200', '> 200–400', '> 400'] },
+          { cells: ['Fluticasone Propionate (DPI)', '50–100', '> 100–200', '> 200'] },
+          { cells: ['Fluticasone Propionate (pMDI, standard particle, HFA)', '50–100', '> 100–200', '> 200'] },
+        ]},
+        { type: 'table', headers: ['Combination ICS/LABA Drug', 'Dosage'], rows: [
+          { cells: ['Seretide 25/50® Evohaler (Fluticasone 50mcg/Salmeterol 25mcg) — ≥ 4 years', 'Usual: 1–2 puffs once to twice daily. Maximum: 2 puffs twice daily.'] },
+          { cells: ['Seretide 50/100® Accuhaler (Fluticasone 50mcg/Salmeterol 50mcg) — ≥ 4 years', 'Usual: 1 puff once or twice daily. Maximum: 1 puff twice daily.'] },
+          { cells: ['Symbicort® Rapihaler (Budesonide 80mcg/Formoterol 2.25mcg) — 6–11 years', 'Recommended dose: 2 puffs BD. When control achieved with BD regimen, tapering to ICS only can be offered.'] },
+        ]},
+        { type: 'text', content: 'NOTE: LABAs should NOT be used without concomitant inhaled corticosteroids in asthma. Recommended inhaler devices: < 4 years — pMDI plus spacer with face mask; ≥ 4 years — pMDI plus spacer with mouthpiece.' },
+      ],
+    },
+    {
+      heading: 'Asthma Exacerbations in Children — Severity Assessment',
+      blocks: [
+        { type: 'table', headers: ['Parameter', 'Mild', 'Moderate', 'Severe', 'Respiratory Arrest Imminent'], rows: [
+          { cells: ['Breathlessness', 'While walking; can lie down', 'While at rest (infant – softer, shorter cry); prefer sitting', 'While at rest; hunched forward', ''] },
+          { cells: ['Feeding (infant)', 'Feeds normally', 'Difficulty feeding', 'Stops feeding', ''] },
+          { cells: ['Talks in', 'Sentences', 'Phrases', 'Words', ''] },
+          { cells: ['Alertness', 'May be agitated', 'Usually agitated', 'Usually agitated', 'Drowsy or confused'] },
+          { cells: ['Respiratory rate', 'Increased', 'Increased', 'Increased', ''] },
+          { cells: ['Accessory muscles', 'Usually not', 'Usually', 'Usually', ''] },
+          { cells: ['Central cyanosis', 'Absent', 'Absent', 'May be present', ''] },
+          { cells: ['Wheeze', 'Moderate, often only end expiratory', 'Loud', 'Chest may be quiet', 'Absence of wheeze'] },
+          { cells: ['Pulse rate', '< 100 beats/min', 'Increased', '> 180 beats/min (0–3 yrs); > 150 beats/min (4–5 yrs)', 'Bradycardia'] },
+          { cells: ['SaO₂ (on air)', '> 92%', '> 92%', '< 92%', ''] },
+        ]},
+        { type: 'table', headers: ['Age', 'Normal Resp Rate (per min)', 'Age', 'Normal Pulse Rate (per min)'], rows: [
+          { cells: ['< 2 months', '< 60', '2–12 months', '< 160'] },
+          { cells: ['2–12 months', '< 50', '1–2 years', '< 120'] },
+          { cells: ['1–5 years', '< 40', '2–8 years', '< 110'] },
+          { cells: ['6–8 years', '< 30', '', ''] },
+        ]},
+      ],
+    },
+    {
+      heading: 'Management of Acute Asthma Exacerbation in Children',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Mild/Moderate Exacerbation (Mild/mod tachypnea, no/minimum chest retractions, SaO₂ > 92%)', children: [
+            { text: 'Mild: Weight ≤ 10kg: Salbutamol 4 puffs by pMDI + spacer; Weight > 10kg: Salbutamol 8 puffs by pMDI + spacer. Repeat every 20 minutes for the first hour if needed.' },
+            { text: 'Moderate: Add Oral prednisolone 1–2 mg/kg (max 20mg for < 2 yrs; max 30mg for 2–5 yrs; max 40mg for 6–11 yrs). Add Ipratropium MDI: Weight ≤ 10kg: 2 puffs; Weight > 10kg: 4 puffs.' },
+            { text: 'Keep SaO₂ > 94–98%; add O₂ via face mask if necessary' },
+            { text: 'Convert to Nebuliser if child is fatigued or hypoxic: Weight ≤ 10kg: Salbutamol 0.5ml / Ipratropium 0.5ml / Normal Saline 3ml; Weight > 10kg: Salbutamol 1ml / Ipratropium 1ml / Normal Saline 2ml' },
+          ]},
+          { text: 'Severe Exacerbation (Tachypnoeic+, chest retractions, accessory muscles++, SaO₂ < 92%)', children: [
+            { text: 'Nebulise (same doses as above)' },
+            { text: 'Oral prednisolone 1–2 mg/kg (same doses as above)' },
+            { text: 'High flow O₂ via mask (6–10 L/min) to achieve SaO₂ ≥ 94%' },
+            { text: 'Review after 1 cycle; refer to hospital A&E if no improvement/deterioration' },
+          ]},
+          { text: 'Life-Threatening Exacerbation — Arrange transfer to hospital immediately', children: [
+            { text: 'High flow O₂ via mask (6–10 L/min) to achieve SaO₂ 94–98%' },
+            { text: 'IV access' },
+            { text: 'Oral prednisolone 1–2 mg/kg OR IV hydrocortisone 4 mg/kg stat (max 100mg)' },
+            { text: 'Nebulised salbutamol with ipratropium every 15–20 minutes while awaiting transfer' },
+            { text: 's/c adrenaline 1:1000 0.1–0.3 ml (0.01 ml/kg) only for those above 2 years old' },
+          ]},
+        ]},
+        { type: 'text', content: 'Discharge criteria after mild/moderate exacerbation: Continue SABA-PRN; Start or step up controller, check inhaler technique and adherence; Continue oral prednisolone usually 3–5 days; Follow up within 1–2 days; WAAP. A short course of oral steroids should be considered if: (1) requires frequent β₂-agonists therapy (more frequently than 4 hourly); (2) has a past history of life-threatening asthma exacerbation; (3) is on high dose inhaled steroid or low dose oral maintenance steroid therapy. For moderate to severe exacerbations, prednisolone 1–2 mg/kg/day can be given for 3 to 5 days without need to taper.' },
+      ],
+    },
+    {
+      heading: 'Referrals',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Presence of Risk Factors for Death from Asthma', children: [
+            { text: 'Prior intubation and mechanical ventilation for asthma' },
+            { text: 'Hospitalisation or emergency care visit for asthma in the past year' },
+            { text: 'Current use of systemic corticosteroids or recent withdrawal' },
+            { text: 'Not currently using inhaled corticosteroids' },
+            { text: 'Use of > 1 canister of inhaled short-acting β₂-agonist within 1 month' },
+            { text: 'History of psychiatric disease or psychosocial problems' },
+          ]},
+          { text: 'Indications for Referral to Paediatric Specialist', children: [
+            { text: 'Patients with high risk asthma with poor control' },
+            { text: 'Patient aged 5 years old and younger (referral should be considered)' },
+            { text: 'Patients who remain symptomatic, show suboptimal response to therapy' },
+            { text: 'Patients requiring high doses of inhaled steroids (BDP or Budesonide ≥ 400 mcg/day)' },
+          ]},
+        ]},
+      ],
+    },
+    {
+      heading: 'Recommended Care Components',
+      blocks: [
+        { type: 'table', headers: ['Care Component', 'Minimum Frequency', 'Remarks'], rows: [
+          { cells: ['Asthma Control Assessment (GINA Score, ACT)', 'At least twice a year', ''] },
+          { cells: ['Smoking Assessment', 'Annually for smokers; once-off for non-smokers unless change in smoking habit', 'Assessment on smoking habits and provide smoking cessation counselling'] },
+          { cells: ['Written Asthma Action Plan', 'Upon diagnosis, recommended annually', ''] },
+          { cells: ['Spirometry', 'Recommended at or soon after diagnosis, or when clinically indicated (if age appropriate)', ''] },
+          { cells: ['Influenza and Pneumococcal Vaccination', 'As recommended under the National Childhood Immunisation Schedule', ''] },
+        ]},
+      ],
+    },
+  ],
+};
+
+// ---------------------------------------------------------------------------
+// 13 NUP CPG — Cancer Screening (Nov 2025)
+// ---------------------------------------------------------------------------
+const cancerScreening: CpgDocument = {
+  id: 'cpg-cancer-screening',
+  condition: 'Cancer Screening',
+  source: '13 NUP CPG - Cancer Screening.pdf',
+  reviewDate: 'Updated November 2025. Next review date: November 2028.',
+  advisors: 'Key FPs: Dr Alicia Ong / Dr Chua Ying Xian / Dr Lau Yen Ning / Dr Tan Chun Jek. Specialist Advisor: Dr Gloria Chan (Consultant, National University Cancer Institute, Singapore).',
+  sections: [
+    {
+      heading: 'Introduction',
+      blocks: [
+        { type: 'text', content: 'Cancer is currently the leading cause of death in Singapore, accounting for 24.6% of deaths in 2023. Lifestyle and behavioural factors such as obesity, physical inactivity, and smoking increase an individual\'s risk of developing cancer. It is important to encourage healthful behaviour to minimise the impact of these risk factors.' },
+        { type: 'text', content: 'Principles of Screening: Health screening is conducted to facilitate early diagnosis of diseases that have yet to manifest (asymptomatic), so that treatment and intervention can be instituted promptly to achieve good health outcomes. The Screening Test Review Committee (STRC) tiers its recommendations into 3 categories:' },
+        { type: 'table', headers: ['Category', 'Definition'], rows: [
+          { cells: ['1. Population-level screening', 'Good robust evidence that the screening test is both clinically effective and cost effective for use to screen the population (for the specified age range).'] },
+          { cells: ['2. Individual-level decision', 'The net benefit does not outweigh the risk in general populations, but the screening may be useful for high-risk populations. OR there is some evidence of effectiveness but cost-effectiveness is unfavourable.'] },
+          { cells: ['3. Not recommended', 'Insufficient evidence to make a decision. OR good evidence that the screening test is not effective, or that the net harm outweighs benefits.'] },
+        ]},
+      ],
+    },
+    {
+      heading: 'Screening for Colorectal Cancer',
+      blocks: [
+        { type: 'text', content: 'How to Screen: (1) Stool-based tests: Faecal Immunochemical Test (FIT) — preferred; Guaiac Faecal Occult Blood Test (FOBT) — no longer used for asymptomatic screening; Stool DNA test (not available in NUP). (2) Direct visualisation/imaging: Colonoscopy, Flexible sigmoidoscopy, CT colonography. Note: Carcinoembryonic antigen (CEA) is NOT recommended for screening.' },
+        { type: 'text', content: 'Colorectal Cancer Screening in NUP: (1) Colonoscopy — refer open access colonoscopy (if fulfils criteria) or refer to SOC routine for screening colonoscopy. (2) FIT — HSG enrollee: send to Care Coordinator (CC) for FIT test; Non-HSG enrollee: Provider to order "FECAL IMMUNOCHEMICAL TEST (FIT) PANEL". For patients at increased risk, CCs will refer to clinician for colonoscopy discussion. FIT to be done only if patient declines colonoscopy.' },
+        { type: 'table', headers: ['Risk Group', 'Screening Tool', 'Onset (Age)', 'Frequency'], rows: [
+          { cells: ['A. Average Risk (Asymptomatic or family history limited to non-first degree relatives)', 'Faecal Immunochemical Testing (FIT)', '50', 'Annually'] },
+          { cells: ['A. Average Risk', 'Colonoscopy', '50', 'Every 5–10 years'] },
+          { cells: ['A. Average Risk', 'CT Colonography', '50', 'Every 5 years'] },
+          { cells: ['B1. CRC in first degree relative aged ≤ 60 years or ≥ 2 first degree relatives', 'Colonoscopy', '10 years prior to youngest case or by age 40, whichever earlier', 'Every 5 years'] },
+          { cells: ['B2. CRC in first degree relative aged > 60 years', 'Colonoscopy', '10 years prior to youngest case or by age 50, whichever earlier', 'Every 5–10 years'] },
+          { cells: ['B3. Personal history of colorectal polyps', 'Colonoscopy', '1–3 years after polypectomy if high-risk features (> 1cm, multiple, villous); 3–5 years if low risk', '—'] },
+          { cells: ['B4. Personal history of colorectal malignancy', 'Colonoscopy', 'One year after resection', 'Every 1–3 years'] },
+          { cells: ['B5. Personal history of ovarian or endometrial cancer', 'Colonoscopy', 'One year after resection', ''] },
+          { cells: ['C1. Family history of familial adenomatous polyposis', 'Flexible sigmoidoscopy (switch to colonoscopy if adenomas identified); consider referral for cancer genetic risk assessment', '10–12 years (from puberty)', 'Annually'] },
+          { cells: ['C2. Family history of hereditary non-polyposis colorectal cancer (Lynch syndrome)', 'Colonoscopy; consider referral for cancer genetic risk assessment', '20–25 years', 'Every 1–2 years'] },
+          { cells: ['C3a. Inflammatory bowel disease — left-sided colitis', 'Colonoscopy', 'From 15th year of diagnosis onwards', 'Every 1–2 years'] },
+          { cells: ['C3b. Inflammatory bowel disease — pan-colitis', 'Colonoscopy', 'From 8th year of diagnosis onwards', 'Every 1–2 years'] },
+        ]},
+        { type: 'text', content: 'Management of CRC Screening: FIT Positive → Referral to Colorectal Surgery Service for Colonoscopy. Normal colonoscopy → Repeat FIT in 5 years. Abnormal colonoscopy → Follow up with Colorectal Surgery Service; not for further FIT.' },
+      ],
+    },
+    {
+      heading: 'Screening for Breast Cancer',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Mammogram', children: [
+            { text: '40–49 years old: Shared decision making after discussion of potential benefits, limitations, and harms (higher false positive rates, false negative results). If mammogram is performed, it should be done annually.' },
+            { text: '50–69 years old: Mammogram every 2 years' },
+            { text: '> 69 years old: Individualised decision considering benefits, risks and estimated life expectancy. If screening is performed, 2-yearly.' },
+          ]},
+          { text: 'Breast self-examination (a week after menses) is not used for screening. BSE can be encouraged for women from the age of 30 to improve awareness.' },
+          { text: 'Breast MRI should not be used for screening of women at normal risk. It may be used as an adjunct to mammogram for high-risk groups, or for women with diffuse breast injection augmentation.' },
+          { text: 'Ultrasound breast, tumour markers (CEA, CA15-3) and clinical breast examination are NOT routinely recommended for screening.' },
+        ]},
+        { type: 'text', content: 'Special Populations: (1) Refer to breast clinic for high-risk groups: received radiation treatment to the chest (e.g. for Hodgkin disease); women with gene mutations conferring high risk of breast cancer; strong family history of breast cancer but no proven mutation (screening recommended as early as 5–10 years prior to the age of onset in youngest family member, but not earlier than age 25–30 years). (2) Previous breast cancer or pre-malignant conditions: annual screening mammography of remnant and contralateral breasts.' },
+        { type: 'text', content: 'To Arrange Mammogram at NUP: Patients can self-book by calling 6370 6556, NUHS or HealthHub App, or at https://for.sg/booknuhsdmammogram. Services at: Bukit Batok, Bukit Panjang, Choa Chu Kang, Clementi, Pioneer Polyclinics.' },
+        { type: 'table', headers: ['Medical Institution', 'Contact for Abnormal Mammogram Referral'], rows: [
+          { cells: ['Changi General Hospital (CGH)', '8127 7900'] },
+          { cells: ['Khoo Teck Puat Hospital (KTPH)', '6602 1665'] },
+          { cells: ['National Cancer Centre (NCC)', '6436 8415'] },
+          { cells: ['National University Hospital (NUH)', '6772 2263'] },
+          { cells: ['Tan Tock Seng Hospital (TTSH)', '6357 8177'] },
+          { cells: ['Sengkang General Hospital (SKGH)', '6930 3220 / 6930 3990'] },
+        ]},
+      ],
+    },
+    {
+      heading: 'Screening for Cervical Cancer',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Who and How to Screen (all females who have ever had sexual intercourse)', children: [
+            { text: '25–29 years: Cervical cytology (Pap smear), once every 3 years' },
+            { text: '30–69 years: Human Papilloma Virus (HPV) DNA test, every 5 years (National Cervical Cancer Screening Programme)' },
+            { text: 'Women who have never had sexual intercourse need not have screening. NUP does not screen patients with no previous sexual intercourse.' },
+            { text: 'Ultrasound and CT pelvis is NOT recommended as screening tests.' },
+          ]},
+          { text: 'When to Stop Screening', children: [
+            { text: 'A woman can be discharged from screening at 69 years of age if she has: 3 consecutive negative cervical cytology tests; OR 2 consecutive negative HPV tests in the last 10 years, with the most recent test occurring within the last 5 years.' },
+            { text: 'For women who had history of CIN2, CIN3 or AIS, routine screening should continue for at least 20 years, even if it extends beyond 69 years of age.' },
+          ]},
+          { text: 'Special Populations — Immunocompromised women (HIV positive, undergone solid organ transplant, or clinical conditions requiring ≥ 2 immunosuppressive agents)', children: [
+            { text: 'Annual cervical cytology for women aged 25–29 years old' },
+            { text: '3-yearly HPV primary screening for women ≥ 30 years old. Those tested with any high-risk HPV strains should be sent for colposcopy instead of cytology triage.' },
+            { text: 'Lifetime screening' },
+          ]},
+        ]},
+        { type: 'text', content: 'Cervical Cancer Screening in NUP: Order "TCU NUR Cervical Cancer screening (First Visit)" on NGEMR, patient to book appointment at kiosks as per usual appointments.' },
+        { type: 'table', headers: ['Hysterectomy Status', 'Action'], rows: [
+          { cells: ['Subtotal hysterectomy', 'Routine cervical cancer screening'] },
+          { cells: ['Hysterectomy for benign disease, no known cervical cancer precursors/cancer', 'Stop screening'] },
+          { cells: ['Hysterectomy for unknown histology', 'Do 1 baseline vault smear, stop screening if negative'] },
+          { cells: ['Immunosuppressed', 'Vault smears yearly'] },
+          { cells: ['Past history of CIN — excision margin involved or not adequately assessed', 'Vault smear at least yearly'] },
+          { cells: ['Past history of CIN 1/2/3 completely excised', 'Vault smear for 5 years yearly, then 2-yearly subsequently'] },
+          { cells: ['Past history of invasive gynaecological cancer, or previously treated for vaginal intra-epithelial neoplasia', 'Follow up with gynaecologist'] },
+        ]},
+        { type: 'text', content: 'HPV Vaccination: Offer HPV vaccination for females aged 9–26 years to reduce risk of cervical cancer. School-based programme since April 2019: Dose 1 — HPV2-valent at 12–13 years (Secondary 1); Dose 2 — HPV2 at 13–14 years (Secondary 2). Dose 3 only recommended if dose 1 was given at 15 years of age or older. HPV testing should NOT be used for screening before deciding on HPV vaccination.' },
+      ],
+    },
+    {
+      heading: 'Screening for Endometrial, Ovarian and Prostate Cancer',
+      blocks: [
+        { type: 'text', content: 'Endometrial Cancer: Women with HNPCC or Lynch Syndrome may consider annual screening starting between ages 30 and 35. Routine screening is NOT recommended for women with average risk or those with increased risk (obesity, diabetes, hypertension, nulliparity, infertility, ovulation failure, late menopause, tamoxifen therapy or history of unopposed oestrogen therapy). Early evaluation of postmenopausal bleeding with referral to gynaecologist is important for early detection.' },
+        { type: 'text', content: 'Ovarian Cancer: Insufficient supporting evidence for routine screening of asymptomatic women at increased risk. Known BRCA-carriers should be on follow up with an oncologist. Present evidence does NOT support routine screening with serum markers (e.g. CA 125) and/or ultrasound as it is ineffective and tends to lead to unnecessary interventions.' },
+        { type: 'text', content: 'Prostate Cancer: Current evidence does not support population-based screening. May offer screening to men aged 50–70 years with estimated further life expectancy > 10 years — discuss potential benefits and risks (shared decision). Can consider SmartPhrase .INPSA to document discussion in NGEMR. High risk groups (one or more first-degree relatives diagnosed before age 65 years) may be offered screening 5–10 years younger than youngest prostate cancer in the family.' },
+        { type: 'text', content: 'How to Screen for Prostate Cancer: Serum PSA recommended. PSA > 4 ng/ml requires further follow-up with urologist. Benign causes of elevated PSA include BPH, prostatitis, recent prostate biopsy/TURP/cystoscopy, ejaculation, urinary retention, perineal trauma or prostatic infarction. DRE does not cause clinically significant rise in PSA. PSA is lowered by 5ARI by about 50% after 6–12 months. Screening interval of 2 years or more preferred over annual screening.' },
+      ],
+    },
+    {
+      heading: 'Screening for Other Cancers',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Gastric Cancer: Current evidence does not support population-based screening. High risk groups: Individuals with HNPCC or Lynch Syndrome may benefit from screening with OGD, starting from age 30–35 years. Individual-level screening: refer to GASTROClear section under Gastro SAG for eligibility and workflow information.' },
+          { text: 'Liver Cancer: No need to screen general population. Offer screening to high-risk groups (Hepatitis B carriers or individuals with cirrhosis): 6-monthly alpha-fetoprotein and 6–12 monthly ultrasound HBS (refer to Hepatitis B CPG for more details). Liver function test is NOT recommended as a screening test for liver cancer.' },
+          { text: 'Lung Cancer: Current evidence does not support population-based screening. Annual Low-dose CT (LDCT) screening may be offered (individual level decision) to: Individuals aged 55–74 who have smoked ≥ 30 pack years and are continuing to smoke; Individuals aged 55–74 who have smoked ≥ 30 pack years but quit < 15 years ago. If patient agreeable, refer Respiratory medicine (routine) and indicate: Others (High risk group for discussion for Lung Ca screening). CXR or tumour markers for lung cancer are NOT recommended as screening tools.' },
+          { text: 'Nasopharyngeal Carcinoma (NPC): No need to screen general population. May offer screening to high-risk groups: Individuals with a first-degree relative (parent, sibling) with NPC. How to Screen: Anti-EBV EA IgA and nasoendoscopy. Refer to ENT specialist for screening.' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Guidelines for Genetic Testing Referral to Medical Oncology (Cancer Genetics Clinic)',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Hereditary Breast and Ovarian Cancer Syndrome', children: [
+            { text: 'Personal or family history of: breast cancer diagnosed < 40 years; male breast cancer, any age; epithelial ovarian cancer, any age; triple negative breast cancer diagnosed < 50 years; ≥ 2 breast cancers, at least one aged < 50 years; both breast and epithelial ovarian cancers; Two or more breast/ovarian cancers in the same patient.' },
+            { text: 'Individual from a family with a known BRCA1/2 mutation or other rare gene mutations in the family. BRCA1/2 carriers are also at risk for pancreatic and prostate cancer.' },
+            { text: 'Consider referring families with breast cancer and young onset pancreatic or prostate cancer diagnosed before age 50.' },
+          ]},
+          { text: 'Lynch Syndrome (LS)', children: [
+            { text: 'Patient with CRC diagnosed < 50 years' },
+            { text: '≥ 1 primary CRC or other LS-related tumours (endometrium, stomach, pancreas, small intestine, ovary, kidney, brain, ureters, bile duct) diagnosed at any age, AND who has at least 1 first-degree relative diagnosed with CRC or LS-related tumour diagnosed < 50 years, AND who has 2 or more first- or second-degree relatives with CRC or LS-related tumour at any age' },
+            { text: 'Meets Amsterdam criteria (At least 3 family members affected, spanning 2 generations, at least 1 affected family member diagnosed below age 50 years, all 3 are first-degree relatives of each other)' },
+            { text: 'Endometrial cancer < 50 years' },
+            { text: 'Known LS mutation in family' },
+          ]},
+          { text: 'Familial Adenomatosis Polyposis (FAP)' },
+        ]},
+      ],
+    },
+  ],
+};
+
+// ---------------------------------------------------------------------------
+// 14 NUP CPG — Cancer Survivorship Care (Nov 2025)
+// ---------------------------------------------------------------------------
+const cancerSurvivorship: CpgDocument = {
+  id: 'cpg-cancer-survivorship',
+  condition: 'Cancer Survivorship Care',
+  source: '14 NUP CPG - Cancer Survivorship Care.pdf',
+  reviewDate: 'Updated November 2025. Next review date: November 2028.',
+  advisors: 'Key FP: Dr Alicia Ong. Specialist Advisor: Dr Gloria Chan (Consultant, Department of Haematology-Oncology, National University Cancer Institute, Singapore).',
+  sections: [
+    {
+      heading: 'National Cancer Survivorship Programme',
+      blocks: [
+        { type: 'text', content: 'Background: This programme is for patients who have completed their 5-year cancer surveillance at any public tertiary oncology department and are cancer free. Wellness-focused care: to keep cancer survivors as well as possible from the diagnosis of cancer until the end of life. Two groups: breast cancer and colorectal cancer patients.' },
+        { type: 'text', content: 'These patients will be discharged from SOC under the cancer survivorship programme to the patient\'s primary care provider (enrolled HSG clinic). In NUP, patients will be empanelled to teamlet.' },
+        { type: 'text', content: 'Role of NUP Clinician — First step down visit: (1) Review the cancer survivorship care plan (hard copy with patient or soft copy uploaded to Epic → Media tab); (2) Review the patient care coordination notes updated by the SOC on cancer surveillance plans; (3) Add visit diagnosis of "Carcinoma of breast" or "Carcinoma of colon" and add (+) to Epic problem list.' },
+        { type: 'list', items: [
+          { text: 'Review following areas of care for cancer survivors yearly', children: [
+            { text: 'Look out for symptoms associated with cancer disease recurrence/metastasis. If present, refer back to relevant oncology/surgery specialists via survivorship direct access referral pathway.' },
+            { text: 'Be aware of long-term treatment side effects and its management' },
+            { text: 'Ensure cancer surveillance is performed at appropriate intervals and update patient care coordination notes' },
+            { text: 'Provide screening and preventive care as per HPB guidelines: Cardiovascular risk factor screening (DM, Hyperlipidaemia, Hypertension); Age-appropriate cancer screening; Bone health; Immunisations' },
+            { text: 'Promote the benefits of healthy living, including diet & exercise, for patients following cancer treatment' },
+          ]},
+        ]},
+      ],
+    },
+    {
+      heading: 'Colorectal Cancer Survivorship',
+      blocks: [
+        { type: 'text', content: 'SmartPhrase for documentation: .NUPDRONCOCOLORECTALCASURVIVOR' },
+        { type: 'list', items: [
+          { text: '1. History and Physical Exam', children: [
+            { text: 'Symptoms that may be associated with disease recurrence/metastasis: Weight loss, abdominal pain, changes in bowel habits from baseline, haematochezia, changes in stool caliber from baseline, symptoms associated with bowel obstruction, jaundice, back/bone pain, persistent cough/dyspnoea, persistent headaches.' },
+            { text: 'If symptomatic, perform exam: look out for lymphadenopathy (neck, axilla, inguinal), abdominal masses, ascites, hepatomegaly, jaundice, leg swelling.' },
+            { text: 'Symptomatic for possible recurrence: Refer back Direct Access to Colorectal Surgery (Indicate: Cancer survivor) if haemodynamically stable, otherwise to ED.' },
+          ]},
+          { text: '2. Look out for late or long-term side effects: e.g. Chronic diarrhoea, bowel/bladder control issues, ostomy issues, neuropathy. Refer back Direct Access to Colorectal Surgery for suspected surgery complications; Medical Oncology for suspected chemotherapy side effects.' },
+          { text: '3. Is the colonoscopy up-to-date?', children: [
+            { text: 'Check last colonoscopy report.' },
+            { text: 'If last colonoscopy is normal, refer for colonoscopy every 3–5 years until age 75, or until life expectancy < 10 years. (Note: Refer to Colorectal Surgery; do not use open access colonoscopy pathway.)' },
+            { text: 'If last colonoscopy is abnormal, check specialist\'s notes/handover for plans on further management.' },
+            { text: 'Note: some patients may opt for no further colonoscopy surveillance or other surveillance methods (e.g. CT scan). Check cancer survivorship plan.' },
+          ]},
+          { text: '4. No need for routine CEA or CT scans.' },
+          { text: '5. Screening and preventive care as per HPB guidelines: e.g. CVRF screening, cancer screening (mammogram or HPV testing), bone health, immunisations.' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Breast Cancer Survivorship',
+      blocks: [
+        { type: 'text', content: 'SmartPhrase for documentation: .NUPDRONCOBREASTCASURVIVOR' },
+        { type: 'list', items: [
+          { text: '1. Annual History', children: [
+            { text: 'Symptoms associated with disease recurrence/metastases: new breast symptom, pathological bone pain, increasing shortness of breath, jaundice, headaches with red flags.' },
+            { text: 'Late or long-term side effects: e.g. fatigue, menopausal symptoms, numbness, pain.' },
+            { text: 'Check on psychosocial health and physical function.' },
+          ]},
+          { text: '2. Annual physical examination: Breast Exam, Lymphadenopathy (supraclavicular, axilla). If symptomatic and as clinically indicated: Abdominal masses, ascites, hepatomegaly, Jaundice, Pleural effusion.' },
+          { text: '3. Annual mammogram surveillance till 75 years old or life expectancy < 10 years. Check when patient\'s last mammogram was. Update care coordination notes.' },
+          { text: '4. Refer back Direct Access to Breast Surgery (Indicate: Cancer survivor) for recurrence/suspected surgery complications or Medical Oncology for suspected chemotherapy side effects.' },
+          { text: '5. No need for any regular blood tests or other investigations such as metastatic screen/tumour markers.' },
+          { text: '6. Screening and preventive care as per HPB guidelines: e.g. CVRF screening, cancer screening (FIT/colonoscopy or HPV testing), bone health, immunisations.' },
+        ]},
+        { type: 'text', content: 'Booking Mammogram under Breast Screen Singapore (BSS): NUHSD will help to book for the following year. Patient to self-book annual BSS mammogram 2–3 months before doctor appointment if not yet booked: (1) NUHS Diagnostics hotline at 6370 6556; (2) Email NUHSD at nuhsd_contact@nuhs.edu.sg; (3) Approach NUHS Diagnostics counter staff at NUP; (4) HealthHub App. Patient will receive BSS results letter within 3–4 weeks, up to 6 weeks.' },
+        { type: 'text', content: 'Viewing last mammogram report: BSS mammogram reports can be found in NEHR under "Screening/Indicators → Medical Screening". Mammograms done in hospitals can be found in NEHR under "Investigations → Radiology/Nuclear med". If latest BSS mammogram is abnormal, ensure patient has been recalled by BSS for further evaluation. If not, refer to NUH Breast Clinic direct access.' },
+      ],
+    },
+    {
+      heading: 'Contact Resources at NUHS',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Cancer Appointment-Related Enquiries: Phone: (+65) 6773 7888 | Email: CancerApptLine@nuhs.edu.sg' },
+          { text: 'Questions for Oncology Nurse: Phone: (+65) 9722 0569 | Email: CancerLineNurse@nuhs.edu.sg' },
+          { text: 'Questions for Stoma Care Nurse: Phone: (+65) 8781 2378' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Cancer Rehabilitation and Community Services',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'NUH / NTFGH Rehabilitation Medicine (Referral via Epic)' },
+          { text: 'Singapore Cancer Society Rehabilitation Centre or Cancer 365 (refer to MSW)' },
+          { text: 'St. Luke\'s Hospital Outpatient Rehabilitation Service / Epic referral (Applicable to BBK only)' },
+        ]},
+      ],
+    },
+  ],
+};
+
+// ---------------------------------------------------------------------------
+// 15 NUP CPG — Chalazion (Feb 2026)
+// ---------------------------------------------------------------------------
+const chalazion: CpgDocument = {
+  id: 'cpg-chalazion',
+  condition: 'Chalazion',
+  source: '15 NUP CPG - Chalazion.pdf',
+  reviewDate: '02/2026. Next review date: 02/2029.',
+  advisors: 'Dr Yuen Yew Sen (NUH Eye)',
+  sections: [
+    {
+      heading: 'Management — Rule Out',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Orbital cellulitis', children: [
+            { text: 'Limitation in ocular motility' },
+            { text: 'Severe drop in vision' },
+          ]},
+        ]},
+      ],
+    },
+    {
+      heading: 'Prescribe',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Stop contact lens use, if any' },
+          { text: 'Warm compresses to eyelids BD' },
+          { text: 'Eyelid scrubs — Lid Care, Blephagel (Discontinued in NUP)' },
+          { text: 'Antibiotic ointment to lid margins', children: [
+            { text: 'Chlortetracycline 1% eye ointment BD, OR' },
+            { text: 'Fucithalmic (Fusidic acid 1%) eye ointment BD' },
+          ]},
+          { text: '(If preseptal cellulitis present) PO Augmentin 625mg Q8h x 7 days' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Patient Advice',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Return if drop in vision or red eye develops' },
+          { text: 'Problem may recur in the future' },
+          { text: 'May drain externally' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Documentation',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Stop contact lens use, if any' },
+          { text: 'Warm compress to eyelids twice daily (long term therapy)' },
+          { text: 'Eyelid scrubs' },
+          { text: 'Antibiotic ointment to lid margins as prescribed' },
+          { text: 'Patient counselling done', children: [
+            { text: 'Return if drop in vision or red eye develops' },
+            { text: 'May drain externally' },
+            { text: 'Problem may recur in the future' },
+          ]},
+        ]},
+      ],
+    },
+    {
+      heading: 'Drug Prices',
+      blocks: [
+        { type: 'table', headers: ['Drug Name', 'Drug Price (Outpatient Subsidized Adult)', 'Subsidy Status'], rows: [
+          { cells: ['I-Defence Daily Eyelid Wipes (20s)', '$$', 'NS'] },
+          { cells: ['Chlortetracycline 1% Eye ointment 3.5G', '$', 'S1'] },
+          { cells: ['Augmentin 625mg (Oral)', '$', 'S2'] },
+        ]},
+        { type: 'text', content: 'Cost: $ = < $10 per unit; $$ = $10–<$20 per unit; $$$ = $20–<$30 per unit. Amount payable depends on patient subsidy level and drug subsidy class (Standard Drug List S1 and S2, Non-Standard Drug NS). Prices shown are an estimate. Please contact pharmacy for accurate pricing.' },
+      ],
+    },
+  ],
+};
+
+// ---------------------------------------------------------------------------
+// 16 NUP CPG — Chronic Hepatitis B Carriers (Nov 2025)
+// ---------------------------------------------------------------------------
+const chronicHepatitisB: CpgDocument = {
+  id: 'cpg-chronic-hepatitis-b',
+  condition: 'Chronic Hepatitis B Carriers',
+  source: '16 NUP CPG - Chronic Hepatitis B Carriers.pdf',
+  reviewDate: 'Updated November 2025. Next review date: November 2028.',
+  advisors: 'Key FP: Dr Phua Yiyong. Specialist Advisors: Dr Mark Muthiah (Senior Consultant, NUH) / Dr Daniel Huang (Consultant, NUH).',
+  sections: [
+    {
+      heading: 'Introduction',
+      blocks: [
+        { type: 'text', content: 'Hepatitis B essentially means an infection of the liver with the Hepatitis B Virus (HBV). The HBV is transmitted by blood or body fluids of an infected person to another who does not have immunity against it. A HBV infection can be cleared by the body especially in a healthy adult (acute Hepatitis B) but in some cases the infection progresses to become a long term infection (chronic Hepatitis B) as the body is not able to clear it.' },
+        { type: 'text', content: 'Most patients who contracted acute Hepatitis B might not develop any symptoms or only develop non-specific symptoms. Patients with chronic Hepatitis B infection (Hepatitis B carriers) are usually well looking and can unknowingly transmit the virus to others. The complication of damage includes liver scarring (fibrosis), liver failure and liver cancer. Liver cancer is known as a silent killer because the majority of patients do not have symptoms in the early stages.' },
+        { type: 'text', content: 'There are drug treatments for Hepatitis B but no cure. Fortunately, there is a vaccine. The Hepatitis B vaccine is 95% effective in preventing children and adults from developing chronic Hepatitis B infection if they have not yet been infected. The vaccine is easily administered in a series of 3 intramuscular doses for adults.' },
+        { type: 'text', content: 'Epidemiology: Up to 2 billion people have been infected with Hepatitis B world-wide and 300 million are chronically infected. In Singapore about 4% (1 in 25 persons) of the population are chronic Hepatitis B carriers. Hepatitis B is estimated to cause 60 to 80 per cent of primary liver cancers worldwide. Key findings from the National Sero-prevalence Survey 2005 showed that 59.3% of the population aged 30 to 74 years and 57.2% aged 30 to 44 years were not immune to the HBV.' },
+      ],
+    },
+    {
+      heading: 'Natural History of Chronic Hepatitis B',
+      blocks: [
+        { type: 'text', content: 'The likelihood of developing chronic hepatitis B is higher in those infected perinatally (90%) compared to those infected in adulthood (1%). Most infections acquired in Singapore are perinatal or during early childhood. The natural history of perinatal and childhood-acquired infection is generally described in three phases:' },
+        { type: 'list', items: [
+          { text: 'Phase 1 — Immune Tolerance Phase (can persist 10–30 years): Characterised by presence of HBeAg and high HBV-DNA levels with persistently normal ALT levels. Usually minimal histological changes in the liver. Rate of spontaneous HBeAg seroconversion is very low; 90% of children remain HBeAg-positive by age 10–15 years.' },
+          { text: 'Phase 2 — Immune Clearance Phase (usually during late adolescence or young adulthood): Characterised by elevated ALT levels, lower HBV-DNA levels and increased histological activity. Spontaneous HBeAg seroconversion occurs at annual rate of 10–20%. Mean age of spontaneous HBeAg seroconversion is about 31–35 years. Persistence of HBeAg and high HBV-DNA levels beyond this age implies poor prognosis with worsening histology and higher incidence of hepatocellular carcinoma.' },
+          { text: 'Phase 3 — Non-Replicative Phase: Usually asymptomatic; disease progression to cirrhosis is low. Characterised by low HBV-DNA levels, absence of HBeAg (HBeAg negative) and presence of anti-HBe antibodies, with absence of hepatic inflammation histologically.' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Screening & Diagnosis — Who to Screen',
+      blocks: [
+        { type: 'text', content: 'As recommended by the Screening Test Review Committee (STRC), hepatitis B screening is recommended in:' },
+        { type: 'list', items: [
+          { text: 'Asymptomatic Singapore residents with no known hepatitis B carrier status born before 1st September 1987 (when Hepatitis B vaccination was mandatory for all newborns) and who did not undergo the local catch-up immunisation programmes from 2001 to 2004.' },
+          { text: 'Pregnant women' },
+          { text: 'Healthcare workers' },
+          { text: 'Foreigners and immigrants from countries where HBV is endemic' },
+          { text: 'At risk groups including but not limited to', children: [
+            { text: 'Chronic haemodialysis patients' },
+            { text: 'Past or present injection drug users' },
+            { text: 'Individuals who underwent invasive procedures in health-care facilities with inadequate infection control practices' },
+            { text: 'Individuals with known exposures to HBV (e.g. healthcare workers following needle stick injury involving HBV-positive blood, or recipients of blood or organs from a donor who tested HBV-positive)' },
+            { text: 'Individuals whose past or present sex partners were/are HBV-infected or injection drug users or HIV patients' },
+            { text: 'Other at risk groups at the discretion of the clinician' },
+          ]},
+        ]},
+        { type: 'text', content: 'NUP Hep A/B Screening and Vaccination Workflow: (1) Before screening for hepatitis A/B, check medical records that patient had not received hepatitis A/B vaccination before. (2) Arrange appropriate screening tests: Hepatitis A — Anti-HAV IgG; Hepatitis B — HBsAg, anti-HBs. (3) Clinician will arrange for review when results are ready and offer appropriate management. (4) If screening results were done more than 6 months ago, manage according to risk profile. (5) To repeat Hep B screening with both HBsAg and anti-HBs post-vaccination.' },
+      ],
+    },
+    {
+      heading: 'Hepatitis B Screening Results and Clinical Interpretation',
+      blocks: [
+        { type: 'table', headers: ['HBsAg', 'Anti-HBs', 'Vaccination Status', 'Interpretation', 'Recommended Action'], rows: [
+          { cells: ['Negative', '< 10 IU/L', 'No', 'Not immune to HBV', 'Administer hepatitis B vaccination.'] },
+          { cells: ['Negative', '< 10 IU/L', 'Completed recently within last few months', 'Not immune to HBV', 'Repeat hepatitis B course of 3 doses and recheck serology 6–8 weeks later. If no antibody response, consider referral to Infectious Diseases or Hepatology.'] },
+          { cells: ['Negative', '< 10 IU/L', 'Completed many years ago', 'Antibody levels may have waned', 'Administer 1 dose and recheck Anti-HBs 6–8 weeks later. High titres > 100 convey immunity for life. If no antibody response, complete course of 3 doses and recheck.'] },
+          { cells: ['Negative', '> 10 IU/L', 'Regardless', 'Immune to HBV', 'No vaccination required.'] },
+          { cells: ['Positive', '—', 'Regardless', 'HBV infection — either acute or chronic (carrier)', 'Look for signs and symptoms of acute hepatitis. Repeat HBsAg in 6 months to check for Chronic Hep B infection. Screen for HIV and HCV.'] },
+          { cells: ['Positive', '> 10 IU/L', 'Regardless', 'HBV infection — either acute or chronic (carrier); possibly mutant variant', 'Look for signs and symptoms of acute hepatitis. Refer to hepatology for further management.'] },
+        ]},
+      ],
+    },
+    {
+      heading: 'Hepatitis B Infection Diagnosis and Clinical Presentation',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Hepatitis B infection is diagnosed based on the presence of Hepatitis B Surface Antigen (HBsAg).' },
+          { text: 'Chronic HBV infection is defined as having two HBsAg positive results taken at least 6 months apart.' },
+        ]},
+        { type: 'text', content: 'Acute hepatitis B is often asymptomatic or mild, especially in children under 5 years of age. In adults the onset of illness is usually abrupt and can last for weeks to months. Symptoms of acute hepatitis include:' },
+        { type: 'list', items: [
+          { text: 'Jaundice' },
+          { text: 'Fever' },
+          { text: 'Dark coloured urine with pale stools' },
+          { text: 'Prolonged tiredness or malaise' },
+          { text: 'Poor appetite' },
+          { text: 'Abdominal pain' },
+          { text: 'Nausea and vomiting' },
+        ]},
+        { type: 'text', content: 'Patients with acute hepatitis B need to be treated urgently as it can lead to acute liver failure and even death. 1 in 10 patients may develop Chronic Hepatitis B Infection (Hepatitis B carriers). Patients with Chronic Hepatitis B Infection are usually asymptomatic unless they develop acute hepatitis or complications (liver cirrhosis, hepatocellular carcinoma, liver failure).' },
+      ],
+    },
+    {
+      heading: 'Hepatitis B Viral Protein Tests and Clinical Significance',
+      blocks: [
+        { type: 'table', headers: ['Viral Protein Test', 'Clinical Significance'], rows: [
+          { cells: ['HBsAg (Hepatitis B surface antigen)', 'Detected in high levels in serum during acute infection and persists for an average of 4 weeks after exposure. Persistence beyond 6 months indicates chronic HBV infection.'] },
+          { cells: ['Anti-HBs (Hepatitis B surface antibody)', 'Indicates recovery and immunity from HBV infection. Also develops in a person successfully vaccinated against HBV.'] },
+          { cells: ['IgM anti-HBc (IgM class antibody to core antigen)', 'Indicates recent infection with HBV (< 6 months) or acute flare of chronic Hepatitis B.'] },
+          { cells: ['HBeAg (Hepatitis B envelope antigen)', 'Those positive for HBeAg circulate HBV at very high titres in their blood — indicates high infectivity. Persistence of HBeAg beyond 40 years old is associated with poorer prognosis.'] },
+          { cells: ['Anti-HBe (Antibody to HBeAg)', 'Anti-HBe becomes detectable when HBeAg is lost.'] },
+        ]},
+      ],
+    },
+    {
+      heading: 'Management & Follow-Up of Chronic Hepatitis B',
+      blocks: [
+        { type: 'text', content: 'Initial Management (for 16 years old and above):' },
+        { type: 'list', items: [
+          { text: 'Family history of HBV infection, HBV vaccinations, HCC and cirrhosis' },
+          { text: 'Risk factors: Smoking history, alcohol consumption, occupational history, medication history, history of jaundice and quality of life' },
+          { text: 'Physical examination — Stigmata of chronic liver disease — refer to GE SOC immediately if present' },
+          { text: 'Investigations: Viral markers (HBeAg, anti-HBe antibody), LFT, AFP, U/S HBS, FBC' },
+        ]},
+        { type: 'text', content: 'If physical examination and investigations are normal — Continue 6 monthly follow-up:' },
+        { type: 'list', items: [
+          { text: '1. ALT, Bilirubin, Albumin, AFP, platelets — 6 monthly' },
+          { text: '2. U/S HBS — 6–12 monthly' },
+          { text: '3. HBeAg — check once at age 40 or 35 years if high-risk factors present. No need to repeat yearly subsequently.' },
+          { text: '4. Offer repeat Hep B serology (HBsAg + Anti-HBs) every 2 years — to check for spontaneous seroconversion. Consider continuing with regular surveillance even if there is HBsAg seroconversion as risk of HCC is still present.' },
+          { text: '5. Consider FIB-4 or APRI score for fibrosis assessment every 2 years.' },
+        ]},
+        { type: 'text', content: 'High-risk factors: family history of HCC, regular alcohol consumption or immunocompromised state (prolonged steroids, chemo/immunotherapy).' },
+        { type: 'text', content: 'Refer to Gastroenterologist if any of the following: (1) Clinical signs of liver disease — hepatomegaly, splenomegaly, ascites, jaundice, spider naevi, leukonychia, asterixis, pedal oedema, palmar erythema. (2) Abnormal laboratory results — ALT/AST persistently raised over 3 months; AFP raised, rising trend, or HBeAg positive > age 40 (or > age 35 if high-risk factors); Low albumin, raised bilirubin, low platelet. (3) U/S HBS suspicious for cirrhosis, HCC or abnormal lesions for which CT is recommended.' },
+      ],
+    },
+    {
+      heading: 'Management of Chronic Hepatitis B — Ongoing Care',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Monitor for acute flare and complications — All patients should have a 6 monthly review to:', children: [
+            { text: 'Review for clinical symptoms and signs' },
+            { text: 'Liver Function Test — to look for acute liver inflammation or liver failure' },
+            { text: 'Alpha-Fetoprotein (AFP) — Liver cancer marker' },
+            { text: 'Full Blood Count and Platelet — to evaluate liver function; to calculate APRI or FIB-4 score as marker of liver fibrosis where indicated' },
+            { text: 'Ultrasound Hepatobiliary system — to evaluate for abnormal changes such as fatty liver, fibrosis and growth' },
+            { text: 'Frequency of review can be earlier according to clinician\'s assessment' },
+          ]},
+          { text: 'Specialist Referral — Gastroenterology referral recommended in patients with', children: [
+            { text: 'Persistently elevated ALT' },
+            { text: 'Abnormal Alpha-Fetoprotein level' },
+            { text: 'Other abnormal lab results: low albumin, raised bilirubin, low platelets' },
+            { text: 'Signs of liver cirrhosis, HCC or other abnormal lesions on U/S HBS' },
+            { text: 'Positive HBeAg at 40 years old or 35 years old (for high-risk population) and beyond' },
+            { text: 'Clinical signs of chronic liver disease' },
+            { text: 'HIV or hepatitis C co-infection' },
+          ]},
+          { text: 'Emergency Department referral recommended for: Clinical signs suggestive of acute liver injury or hepatic decompensation (new onset clinical jaundice, acute or overt gastrointestinal bleeding or ALT ≥ 1000 U/L).' },
+          { text: 'Special situations', children: [
+            { text: 'Offer repeat Hep B serology every 2 years to check for seroconversion (HBsAg negative and anti-HBs positive)' },
+            { text: 'Sero-converted patients: Discuss with patient to continue regular surveillance as risk of HCC is still present (although lower risk). Carry out fibrosis risk assessment with FIB-4 score every 2 years. Refer if FIB-4 score > 1.3.' },
+            { text: 'Patients with acute flare where ALT is raised — see NUP Metabolic Dysfunction-Associated Steatotic Liver Disease CPG' },
+            { text: 'Fatty liver — manage as per fatty liver workflow (see NUP Metabolic Dysfunction-Associated Steatotic Liver Disease CPG)' },
+          ]},
+        ]},
+      ],
+    },
+    {
+      heading: 'Non-Pharmacological / Lifestyle Management',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Encourage screening for metabolic risk factors and optimise cardiovascular risk factors as per population guidelines.' },
+          { text: 'Stop smoking and stop intake of alcohol.' },
+          { text: 'Advise to avoid use of Traditional Chinese Medication.' },
+          { text: 'If patient is on prolonged immunosuppression medication (e.g. steroids, methotrexate), refer to a gastroenterologist for co-management as patient is at increased risk of chronic Hepatitis B flare.' },
+          { text: 'Advise family members & especially the sexual partner for hepatitis B screening. Advise Hepatitis B vaccination for those who are not immune to Hepatitis B.' },
+          { text: 'Reinforce on the usage of barrier contraception (e.g. condoms) during sexual intercourse with partner unless the partner is Hepatitis B immunised.' },
+          { text: 'Reassure that Hepatitis B cannot be contracted by casual contact, sharing of utensils and sharing of common living space.' },
+          { text: 'Where patient is high risk, assess for other sexually transmitted diseases such as Hepatitis C and HIV.' },
+        ]},
+        { type: 'text', content: 'Self-Monitoring — Advise patients on signs and symptoms of acute flare and complications: (1) Jaundice; (2) Abdomen pain; (3) Weight loss or weight gain; (4) Abdomen swelling; (5) Loss of appetite; (6) Pale stools with tea-coloured urine.' },
+      ],
+    },
+    {
+      heading: 'Recommended Care Components',
+      blocks: [
+        { type: 'table', headers: ['Care Component', 'Minimum Frequency', 'Remarks'], rows: [
+          { cells: ['HBeAg', 'At first visit', 'If positive at first visit, to recheck at age 40 years, or age 35 years if high-risk factors present; if still positive, consider specialist referral.'] },
+          { cells: ['Anti-HBe antibody', 'At first visit', ''] },
+          { cells: ['Liver Function Test (LFT)', 'At first visit, and minimally ALT once every 6 monthly', 'Frequency of monitoring and specialist referral to be tailored based on previous ALT values and trends as well as HBeAg status.'] },
+          { cells: ['Alpha-fetoprotein (AFP)', 'At first visit and once every 6 monthly', 'AFP is a tumour marker used for HCC surveillance.'] },
+          { cells: ['Full Blood Count (FBC)', 'Consider at first visit and once every 6 monthly', 'To monitor for thrombocytopenia associated with liver disease.'] },
+          { cells: ['Ultrasound Hepatobiliary System', 'At first visit and annually', 'Frequency of imaging is based on HCC risk.'] },
+          { cells: ['Hepatitis A Screening / Vaccination', 'Consider anti-HAV screening and vaccination', 'Unless contraindicated, hepatitis A vaccination should be given to prevent superimposed acute hepatitis A in patients with chronic hepatitis B virus infection.'] },
+          { cells: ['Influenza Vaccination', 'Annually or per season', 'As recommended under the National Adult Immunisation Schedule (NAIS) and National Childhood Immunisation Schedule (NCIS).'] },
+          { cells: ['Pneumococcal Vaccination (PCV13 or PPSV23)', 'As per guidelines depending on age and other medical conditions', 'As recommended under NAIS and NCIS.'] },
+          { cells: ['Sexually transmitted diseases and Hepatitis C screening', 'Screening in patients with high-risk behaviours', 'High-risk behaviours include MSM, unprotected sex with multiple sexual partners, injection drug users, tattoos, sharing of household articles contaminated with blood.'] },
+          { cells: ['Metabolic disease screening (BP, lipid profile, weight/BMI, Diabetes)', 'As per guidelines', 'Development of fatty liver and metabolic risk factors further increases risk of liver cirrhosis and HCC.'] },
+        ]},
+      ],
+    },
+  ],
+};
+
+// ---------------------------------------------------------------------------
+// Combined export of all CPG documents (15 total)
+// ---------------------------------------------------------------------------
 export const cpgDocuments: CpgDocument[] = [
   allergicConjunctivitis,
   allergicRhinitis,
@@ -2269,4 +3357,10 @@ export const cpgDocuments: CpgDocument[] = [
   gastroenteritis,
   atrialFibrillation,
   bph,
+  bronchialAsthmaAdults,
+  bronchialAsthmaChildren,
+  cancerScreening,
+  cancerSurvivorship,
+  chalazion,
+  chronicHepatitisB,
 ];
