@@ -1483,4 +1483,799 @@ export const cpgDocuments: CpgDocument[] = [
   anaemia,
   anxietyDisorder,
   jointPain,
+  acuteRedEye,
+  gastroenteritis,
+  atrialFibrillation,
+  bph,
 ];
+
+// ---------------------------------------------------------------------------
+// 07 NUP CPG — Approach to Acute Red Eye (Dec 2022)
+// ---------------------------------------------------------------------------
+const acuteRedEye: CpgDocument = {
+  id: 'cpg-acute-red-eye',
+  condition: 'Approach to Acute Red Eye',
+  source: '07 NUP CPG - Approach to Acute Red Eye.pdf',
+  reviewDate: '12/2022. Next review date: 6/2024.',
+  advisors: 'Dr Yuen Yew Sen (NUH Ophthalmology)',
+  sections: [
+    {
+      heading: 'Suggested Protocol',
+      blocks: [
+        { type: 'text', content: 'Based on need to rule out etiologies that may cause early, rapid visual loss if undiagnosed.' },
+        { type: 'list', items: [
+          { text: 'Torchlight exam of cornea — Cornea opacity (*Especially in contact lens users) → Infective Bacterial Keratitis; Hypopyon → Endophthalmitis' },
+          { text: 'Pupil exam with torchlight — Fixed, mid-dilated pupil (unresponsive to light) + Absence of previous cataract surgery → Acute Angle Closure Glaucoma; Irregular pupil → Likely Anterior Uveitis' },
+          { text: 'Check ocular motility — Ocular mobility limited → suspect Orbital Cellulitis' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Red Flags',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'SUDDEN VISUAL LOSS' },
+          { text: 'NEUROLOGICAL SYMPTOMS (Diplopia, acute ptosis, visual field deficits)' },
+          { text: 'TRAUMA (eye injury, foreign body entry)' },
+          { text: 'POSTERIOR SEGMENT SYMPTOMS (Acute floaters/photopsia)' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Step 1 — Refer Stat / Same Day',
+      blocks: [
+        { type: 'text', content: 'Refer Stat to Emergency Department or to Ophthalmology Clinic (same day) if:' },
+        { type: 'list', items: [
+          { text: 'Any positive findings from the suggested protocol above, OR' },
+          { text: 'Any cases with recent ocular intervention (surgery, intravitreal injections), OR' },
+          { text: 'Any Red Flags (sudden visual loss, neurological symptoms, trauma, posterior segment symptoms)' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Step 2 — Treatment (in absence of all red flags)',
+      blocks: [
+        { type: 'text', content: 'In the absence of all of the above, one or more of the treatment options below can be instituted where appropriate:' },
+        { type: 'list', items: [
+          { text: 'Preservative-Free Lubricating eye drops 1 drop 3 HOURLY PRN', children: [
+            { text: 'Refresh ($9.39 per box of 30 single-use vials of 0.4ml)' },
+            { text: 'Tears Naturale Free (Available in NUP retail pharmacy but not in formulary)' },
+          ]},
+          { text: 'Topical antibiotic eye drops 1 drop QDS', children: [
+            { text: 'Chloramphenicol for 5 days ($1.10 per bot for SC, $2.20 per bot for Non-SC) — first line for adult age group' },
+            { text: 'Tobramycin for 7 days (Non-Std $4.00 per bot for SC/Non-SC) — first line for paediatric age group' },
+            { text: 'Ciprofloxacin for 5 days ($5.27 per bot for SC, $10.54 per bot for Non-SC)' },
+          ]},
+        ]},
+      ],
+    },
+    {
+      heading: 'Step 3 & 4 — Follow-Up and Documentation',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Instruct the patient to return in a few days if not getting better or if getting worse.' },
+          { text: 'Document: Clear cornea, no opacity seen. Pupils round, reactive to light. No hypopyon. EOM (extraocular movement) full.' },
+        ]},
+      ],
+    },
+  ],
+};
+export { acuteRedEye };
+
+// ---------------------------------------------------------------------------
+// 08 NUP CPG — Approach to Gastroenteritis in Primary Care (Jun 2025)
+// ---------------------------------------------------------------------------
+const gastroenteritis: CpgDocument = {
+  id: 'cpg-gastroenteritis',
+  condition: 'Approach to Gastroenteritis in Primary Care',
+  source: '08 NUP CPG - Approach to Gastroenteritis in Primary Care.pdf',
+  reviewDate: 'Updated June 2025. Next review date: June 2028.',
+  advisors: 'Key FPs: Dr Vivien Lee / Dr Franco Wong. Specialist Advisors: Dr Louisa Sun Jin (Consultant, Division of Infectious Diseases, NUH) / Prof Paul Anantharajah Tambyah (Senior Consultant, Division of Infectious Diseases, NUH)',
+  sections: [
+    {
+      heading: 'Definition',
+      blocks: [
+        { type: 'text', content: 'Gastroenteritis refers to inflammation in the stomach and intestines, most often resulting in diarrhoea with or without vomiting. Diarrhoea is usually defined as passage of abnormally liquid or unformed stools at an increased amount and frequency. An increase in frequency of bowel movement of 3 or more stools per day is generally used as a definition of diarrhoea for epidemiological studies. Diarrhoea is defined as acute if it lasts for 14 days or less. Chronic diarrhoea is diarrhoea that has lasted more than 30 days.' },
+        { type: 'table', headers: ['Severity', 'Definition'], rows: [
+          { cells: ['Mild diarrhoea', '≤ 3 stool movements/day; Diarrhoea is bearable, and the patient is capable of traveling or other activities as planned'] },
+          { cells: ['Moderate diarrhoea', '≥ 4–6 stool movements/day; Diarrhoea interferes with planned travels or other activities'] },
+          { cells: ['Severe diarrhoea', '> 6 bowel movements/day or bloody diarrhoea; Diarrhoea interferes with daily activities and prevents planned travels or other activities'] },
+        ]},
+      ],
+    },
+    {
+      heading: 'Diagnosis',
+      blocks: [
+        { type: 'text', content: 'The diagnosis of gastroenteritis is clinical. The aim of evaluation is to distinguish patients with mild, self-limiting diarrhoea from those requiring further investigations, empirical antibiotic therapy or admission. For diagnostic and management purposes, it is useful to classify acute diarrhoeas into "non-inflammatory" and "inflammatory" syndromes.' },
+        { type: 'table', headers: ['Diarrhoeal syndrome', 'Organisms commonly implicated'], rows: [
+          { cells: ['Non-inflammatory', 'Viruses: Norovirus, rotavirus. Bacteria: Clostridium perfringens, Staphylococcus aureus, Vibrio cholerae. Parasites: Giardia lamblia, Entamoeba histolytica'] },
+          { cells: ['Inflammatory', 'Shigella, Salmonella, entero-haemorrhagic Escherichia coli (EHEC), enteroinvasive Escherichia coli (EIEC), Campylobacter, Clostridium difficile'] },
+        ]},
+        { type: 'list', items: [
+          { text: 'Non-inflammatory diarrhoea syndrome: Characterised by watery stools of large volume without blood. Patient can have nausea and vomiting, abdominal colic and low-grade fever. In most cases, self-limiting and benign. Investigations are generally unnecessary unless cholera is suspected. Antibiotics are usually not required.' },
+          { text: 'Inflammatory diarrhoea syndrome: Characterised by frequent, small volume stools which may be bloody. Often accompanied by fever, tenesmus and severe abdominal pain. Implies invasion or mucosal damage by the microbe or cytotoxins. Investigations and antibiotics may be required.' },
+        ]},
+      ],
+    },
+    {
+      heading: 'History',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Age — Young children and elderly are more likely to suffer complications of dehydration and sepsis. The majority of mortality from gastroenteritis occurs in these extremes of age.' },
+          { text: 'Characterise the symptoms — number of diarrhoea or vomiting, presence of watery or bloody stools' },
+          { text: 'Ability to tolerate orally — Patients who are unable to keep fluids will be at higher risk of dehydration' },
+          { text: 'Past medical history — Immunocompromised patients (long-term steroids, immunosuppressive or chemotherapy, HIV, or chronic organ failure) are at higher risk of sepsis' },
+          { text: 'Travel history — Diarrhoea during travel classified as traveller\'s diarrhoea; expected causative organisms are those prevalent in the visited country' },
+          { text: 'Contact history — Important from a public health point of view; be on high alert if there is a common source of infection' },
+          { text: 'Previous use of antibiotics — Investigate for nosocomial infections, especially Clostridium difficile' },
+          { text: 'Occupation — Food handlers should be advised to only return to work 48 hours after last diarrhoea or vomiting' },
+        ]},
+        { type: 'text', content: 'Other differentials should be considered when a patient presents with vomiting only without diarrhoea.' },
+      ],
+    },
+    {
+      heading: 'Examination',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Vital signs: Record temperature, blood pressure (including postural BP if needed), heart rate' },
+          { text: 'Signs of dehydration: postural drop, hypotension, tachycardia, sunken fontanelles (for infants), loss of skin turgor, increased cap refill time, dry mucous membranes' },
+          { text: 'Examine the abdomen for tenderness, distension, rigidity or guarding' },
+          { text: 'Perform a per rectal examination to look for the presence of blood in stools if history is suggestive' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Investigations',
+      blocks: [
+        { type: 'text', content: 'Most cases of gastroenteritis in the community do not require further evaluation and are self-limiting. A careful evaluation of a patient with a good history and physical examination can save unnecessary investigations and use of antibiotics.' },
+        { type: 'list', items: [
+          { text: 'Investigations are only required if the diarrhoea is prolonged or there is bloody diarrhoea. Stool culture for Salmonella, Shigella and Campylobacter etc. can be sent.' },
+          { text: 'For patients who develop diarrhoea after hospitalisation or recently received antibiotics, patients should be referred to tertiary settings for evaluation of Clostridium difficile.' },
+          { text: 'Protozoal parasites are uncommon causes of traveller\'s diarrhoea but should be considered when diarrhoea lasts beyond a week or bacterial causes have been treated. Stool culture for ova, cysts and parasites (OCP) can be sent.' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Treatment — Rehydration',
+      blocks: [
+        { type: 'text', content: 'Most cases of gastroenteritis in the community only require supportive treatment. Fluid and electrolyte replacement is essential in the management of all patients with acute gastroenteritis. Oral rehydration is the treatment of choice. If a patient can take orally, isotonic drinks or oral rehydration salts will suffice. Patients who are unable to tolerate orally may require intravenous hydration in the tertiary setting.' },
+      ],
+    },
+    {
+      heading: 'Treatment — Anti-diarrhoea Agents',
+      blocks: [
+        { type: 'text', content: 'Antidiarrheal agents include intestinal motility inhibitors, intestinal secretion inhibitors and absorbents. Intestinal secretion or motility inhibitors may be helpful in decreasing the frequency or duration of diarrhoea for symptomatic improvement of acute infectious diarrhoea patients with moderate symptoms. Antimotility agents are NOT recommended in the management of acute gastroenteritis in infants and children as they have a risk of serious adverse events.' },
+        { type: 'table', headers: ['Drug', 'Notes', 'Dose'], rows: [
+          { cells: ['Loperamide (Intestinal motility inhibitor)', 'Inhibits intestinal motility; shortens duration by 1 day, decreases amount and frequency of watery diarrhoea in otherwise healthy adults', 'Adult: 2 mg TDS'] },
+          { cells: ['Lomotil (diphenoxylate 2.5mg/atropine 25mcg)', 'Watch for opiate-induced ileus, drowsiness, and nausea caused by atropine effects', 'Adult: 2 tablets TDS'] },
+          { cells: ['Kaolin mixture (Absorbent)', 'Does NOT decrease frequency or duration; not recommended in infectious diarrhoea', 'Child 3–5 yrs: 5–10 ml TDS; 6–12 yrs: 10–20 ml TDS; >12 yrs: 20–40 ml TDS. Adult: 20–40 ml TDS'] },
+          { cells: ['Dioctahedral Smectite (Smecta)', 'Absorbent', 'Child >2 yrs: 1 sachet BD–TDS'] },
+          { cells: ['Charcoal', 'Absorbent', 'Adult: 400 mg TDS'] },
+          { cells: ['Simethicone drops (100mg/ml) (Anti-spasmodic)', 'Relieve abdominal colic', 'Child <2 yrs or <11 kg: 0.2 ml QDS; ≥2 yrs or ≥11 kg: 0.4 ml QDS'] },
+          { cells: ['Colimix (Dicyclomine 5mg, Simethicone 50mg per 5ml)', 'Relieve abdominal colic', 'Child 6 months–4 yrs: 5 ml QDS; 4–12 yrs: 5–10 ml QDS'] },
+          { cells: ['Buscopan (Anti-spasmodic)', 'Effective for abdominal cramps. Watch for anticholinergic, CNS, psychiatric side effects especially in older patients', 'Adult: 10–20 mg TDS'] },
+          { cells: ['Bismuth subsalicylate (Not available in NUP)', 'Decreases frequency of diarrhoea and improves nausea and abdominal pain within 24 hours', 'Adult: 2 tablets (262mg/tab) or 30ml (regular strength) ½–1hr. Max daily dose: 8 regular-strength doses'] },
+          { cells: ['Racecadotril / Hidrasec (Not available in NUP)', 'Effective in paediatric diarrhoea; similar effects as loperamide in adults', 'Child: <9kg: 10mg TDS; 9–<13kg: 20mg TDS; ≥13–27kg: 30mg TDS; ≥27kg: 60mg TDS. Not recommended <3 months'] },
+          { cells: ['Lactoguard (Probiotic)', 'Limited evidence; more positive studies in children than adults; known to be safe with very little side effects', 'Child: <1yr: 1 sachet BD; 1–10 yrs: 1 sachet TDS; >10 yrs: 2 sachets TDS. Adult: 2 sachets TDS'] },
+        ]},
+      ],
+    },
+    {
+      heading: 'Treatment — Antimicrobial Therapy',
+      blocks: [
+        { type: 'text', content: 'Most patients with acute gastroenteritis need not be treated with antimicrobial drugs. Acute watery diarrhoea is often viral in aetiology (norovirus, rotavirus, adenovirus). Even when bacterial, symptoms often improve spontaneously without treatment. Considering side effects, cost of antibiotics, and antibiotic resistance, antibiotic treatment does not offer much benefit.' },
+        { type: 'text', content: 'Antimicrobial therapy can be considered in the following cases:' },
+        { type: 'list', items: [
+          { text: 'Blood or mucoid stools and fever' },
+          { text: 'Shigellosis symptoms (frequent scant bloody stools, fever, cramping abdominal pain, tenesmus)' },
+          { text: 'Traveller\'s diarrhoea with high fever >38.5°C or sepsis — antimicrobial therapy shortens the course and alleviates symptoms by 1.5 days' },
+          { text: 'Bloody diarrhoea in immunocompromised patients' },
+        ]},
+        { type: 'table', headers: ['First Line Therapy', 'Alternative Therapy'], rows: [
+          { cells: ['Azithromycin 1000mg Q24H 1 day, OR 500mg Q24H 3 days', 'Ciprofloxacin 500mg Q12H 3 days'] },
+          { cells: ['Use empirically as first-line for traveller\'s diarrhoea in Southeast Asia or if fluoroquinolone-resistant bacteria are suspected. 24-hour dosing may be preferable to 12-hourly dosing of ciprofloxacin. Side effects (mainly nausea) can limit acceptability of single dose of 1,000 mg; alternatively use 500mg/day for 3 days.', 'Increasing microbial resistance to fluoroquinolones among Campylobacter isolates. Fluoroquinolones carry a black box warning from the FDA regarding aortic tears, hypoglycaemia, mental health side effects, and tendinitis and tendon rupture. Increasing resistance also reported for Salmonella and Shigella.'] },
+        ]},
+      ],
+    },
+    {
+      heading: 'Special Situations — Specific Antimicrobial Therapy',
+      blocks: [
+        { type: 'text', content: 'Specific antimicrobial therapy is given when a treatable pathogen is identified in stool cultures.' },
+        { type: 'table', headers: ['Pathogen', 'First-line antibiotics', 'Second-line antibiotics'], rows: [
+          { cells: ['Campylobacter', 'Azithromycin', 'Ciprofloxacin'] },
+          { cells: ['Non typhoidal Salmonella', 'Usually not indicated', 'NA'] },
+          { cells: ['Salmonella enterica Typhi or Paratyphi', 'Ceftriaxone or ciprofloxacin', 'Ampicillin, TMP/SMX, Azithromycin'] },
+          { cells: ['Shigella', 'Azithromycin, ciprofloxacin', 'TMP/SMX or ampicillin'] },
+          { cells: ['Vibrio cholerae', 'Doxycycline', 'Ciprofloxacin, azithromycin'] },
+          { cells: ['Giardia lamblia', 'Metronidazole', 'Tinidazole'] },
+        ]},
+      ],
+    },
+    {
+      heading: 'Red Flags / Indications for Referral',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Lethargy or confusion' },
+          { text: 'Postural hypotension and tachycardia' },
+          { text: 'Dehydration and inability to tolerate orally' },
+          { text: 'Bloody stools' },
+          { text: 'Temperature ≥ 38.5°C' },
+          { text: 'Passage of ≥ 6 stools in 24 hours' },
+          { text: 'Duration of illness > 72 hours' },
+          { text: 'Severe abdominal pain in a patient > 50 years old' },
+          { text: 'Diarrhoea in the elderly (≥ 70 years old)' },
+          { text: 'Diarrhoea in the immunocompromised' },
+          { text: 'Chronic diarrhoea' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Public Health',
+      blocks: [
+        { type: 'text', content: 'All suspected food poisoning outbreaks should be notified to the Ministry of Health to facilitate investigations (MD 131 or electronically via CD-LENS).' },
+      ],
+    },
+    {
+      heading: 'Key Recommendations',
+      blocks: [
+        { type: 'table', headers: ['Clinical Recommendation', 'Evidence Rating'], rows: [
+          { cells: ['The first step to treating acute diarrhoea is rehydration, preferably oral rehydration.', 'C'] },
+          { cells: ['In patients with acute diarrhoea, stool cultures should be reserved for grossly bloody stool, severe dehydration, signs of inflammatory disease, symptoms lasting more than 3–7 days, immunosuppression, and suspected nosocomial infections.', 'C'] },
+          { cells: ['Antibiotics (usually a quinolone) reduce the duration and severity of traveller\'s diarrhoea.', 'A'] },
+        ]},
+        { type: 'text', content: 'A = consistent, good-quality patient-oriented evidence; B = inconsistent or limited-quality patient-oriented evidence; C = consensus, disease-oriented evidence, usual practice, expert opinion, or case series.' },
+      ],
+    },
+  ],
+};
+export { gastroenteritis };
+
+// ---------------------------------------------------------------------------
+// 09 NUP CPG — Atrial Fibrillation (Mar 2026)
+// ---------------------------------------------------------------------------
+const atrialFibrillation: CpgDocument = {
+  id: 'cpg-atrial-fibrillation',
+  condition: 'Atrial Fibrillation',
+  source: '09 NUP CPG - Atrial Fibrillation.pdf',
+  reviewDate: 'Reviewed March 2026. Next review date: March 2029.',
+  advisors: 'Key FPs: Dr Chen Jiawei / Dr Kwan Yew Seng. Specialist Advisor: Dr Lim Toon Wei (Senior Consultant, Department of Cardiology, NUHCS). Acknowledgement: NUHSP: Mr Marvin Sim',
+  sections: [
+    {
+      heading: 'Introduction',
+      blocks: [
+        { type: 'text', content: 'The estimated incidence of atrial fibrillation worldwide for men and women is 20.9 million and 12.6 million respectively, with a higher incidence in developed countries. Atrial fibrillation is independently associated with a two-fold increased all-cause mortality risk in women and 1.5-fold increase in men. Atrial fibrillation increases the risk of stroke by 3 to 5 times. In Singapore, 17% of strokes occurred in patients with atrial fibrillation. Non-valvular atrial fibrillation forms the majority of AF cases seen in NUP and is the focus of this guideline. AF associated with significant mitral stenosis or mechanical heart valves is associated with higher stroke risk and is not included.' },
+        { type: 'text', content: 'The 3 pillars of AF prevention and treatment are: (1) lifestyle and risk-factor modification, (2) stroke prevention, and (3) symptom management.' },
+      ],
+    },
+    {
+      heading: 'Stages of Atrial Fibrillation',
+      blocks: [
+        { type: 'table', headers: ['Stage', 'Description', 'Explanation'], rows: [
+          { cells: ['1', 'At risk of atrial fibrillation', 'Modifiable risk factors: obesity, lack of fitness, hypertension, sleep apnoea, excessive alcohol consumption, diabetes mellitus. Non-modifiable: genetic factors (TTN, MYH7, MYH6, LMNA, KCNQ1 variants), male sex, old age'] },
+          { cells: ['2', 'Pre–atrial fibrillation', 'Structural or electrical conditions that can lead to AF (e.g., atrial enlargement, frequent atrial ectopy, short bursts of atrial tachycardia, atrial flutter, heart failure, valve disease, coronary artery disease, hypertrophic cardiomyopathy, neuromuscular disorders, thyroid disease)'] },
+          { cells: ['3A', 'Paroxysmal atrial fibrillation', 'Intermittent and terminating within 7 days of onset'] },
+          { cells: ['3B', 'Persistent atrial fibrillation', 'Continuous and lasting longer than 7 days'] },
+          { cells: ['3C', 'Long-standing persistent atrial fibrillation', 'Continuous and lasting longer than 12 months'] },
+          { cells: ['3D', 'Successful atrial fibrillation ablation', 'Freedom from atrial fibrillation after ablation'] },
+          { cells: ['4', 'Permanent atrial fibrillation', 'Not pursuing further attempts at rhythm control'] },
+        ]},
+      ],
+    },
+    {
+      heading: 'Primary & Secondary Prevention',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Primary Prevention', children: [
+            { text: 'Maintain or achieve a healthy weight' },
+            { text: 'Engage in physical activity' },
+            { text: 'Moderate alcohol consumption or abstain; avoid binge drinking' },
+            { text: 'Stop smoking' },
+            { text: 'Control hypertension' },
+            { text: 'Control hyperglycaemia in diabetes' },
+          ]},
+          { text: 'Secondary Prevention (for those who already have AF)', children: [
+            { text: 'Lose weight if overweight or obese (BMI > 27 kg/m²)' },
+            { text: 'Start a standardised exercise program' },
+            { text: 'Stop smoking' },
+            { text: 'Minimise alcohol consumption or abstain entirely' },
+            { text: 'Optimally control comorbidities including hypertension and diabetes' },
+          ]},
+        ]},
+      ],
+    },
+    {
+      heading: 'Approach — History',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Asymptomatic' },
+          { text: 'Palpitations' },
+          { text: 'Chest Pain or discomfort' },
+          { text: 'Shortness of Breath' },
+          { text: 'Giddiness, Syncope' },
+          { text: 'Decreased effort tolerance, Fatigue' },
+          { text: 'Anxiety' },
+          { text: 'Transient Ischemic Attack / Stroke' },
+          { text: 'Evaluation of associated co-morbidities', children: [
+            { text: 'Genetic Predisposition' },
+            { text: 'Older Age (biggest risk factor for AF)' },
+            { text: 'Hypertension' },
+            { text: 'Heart Failure' },
+            { text: 'Valvular Heart Disease' },
+            { text: 'Myocardial Infarction' },
+            { text: 'Thyroid Dysfunction' },
+            { text: 'Obesity' },
+            { text: 'Diabetes Mellitus' },
+            { text: 'Chronic Obstructive Pulmonary Disease' },
+            { text: 'Obstructive Sleep Apnoea' },
+            { text: 'Chronic Kidney Disease' },
+            { text: 'Smoking' },
+            { text: 'Alcohol Consumption' },
+          ]},
+        ]},
+      ],
+    },
+    {
+      heading: 'Approach — Physical Examination & Investigations',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Physical Examination', children: [
+            { text: 'Blood Pressure, Heart Rate' },
+            { text: 'Cardiovascular Examination: presence of cardiac murmurs, features of cardiac failure' },
+            { text: 'Neurological Examination' },
+            { text: 'Thyroid Dysfunction' },
+          ]},
+          { text: 'Basic Investigations (for all patients)', children: [
+            { text: 'Electrocardiogram (ECG) — Absence of P waves, irregular undulating baseline, irregularly irregular R-R intervals' },
+            { text: 'Full blood count (FBC)' },
+            { text: 'Serum electrolytes' },
+            { text: 'Thyroid function test (TFT)' },
+            { text: 'Liver function test (LFT)' },
+            { text: 'Coagulation profile' },
+            { text: 'Transthoracic echocardiogram' },
+          ]},
+          { text: 'Additional Investigations (for selected patients)', children: [
+            { text: 'Ambulatory ECG' },
+            { text: 'Transoesophageal echocardiogram' },
+            { text: 'Coronary angiography or cardiac stress testing' },
+          ]},
+        ]},
+      ],
+    },
+    {
+      heading: 'Principles of Management — Red Flags for Urgent Referral to ED',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Haemodynamically unstable' },
+          { text: 'Features of myocardial ischaemia' },
+          { text: 'Features of congestive cardiac failure' },
+          { text: 'New onset focal neurological deficit' },
+          { text: 'Severe symptoms' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Rate Control Therapy',
+      blocks: [
+        { type: 'text', content: 'Target a resting heart rate of < 110 bpm.' },
+        { type: 'list', items: [
+          { text: 'Beta-blockers (e.g., bisoprolol, carvedilol, propranolol, metoprolol, atenolol) — First-line option unless contraindicated (severe asthma)' },
+          { text: 'Non-dihydropyridine calcium-channel blockers (e.g., diltiazem, verapamil) — When beta-blockers are not tolerated or contraindicated' },
+          { text: 'Digoxin — In patients with heart failure with reduced ejection fraction. Has a narrow therapeutic window; kidney function and electrolytes should be monitored' },
+          { text: 'Amiodarone' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Monitoring of Patients on Long-Term Amiodarone',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Long-term amiodarone use is associated with thyroid dysfunction, lung toxicity, liver toxicity, ophthalmologic and cardiovascular adverse effects' },
+          { text: 'Patients should be monitored with 6 monthly LFT, TFT and ECG' },
+          { text: 'Direct access referral to SOC is indicated for', children: [
+            { text: 'Referral to Endocrinology for abnormal thyroid function test (hypo- or hyperthyroidism)' },
+            { text: 'Referral to Respiratory medicine for pneumonitis on CXR in patients with new onset or worsening cough or dyspnoea' },
+            { text: 'Referral to Cardiology for transaminitis (> 3x ULN) or abnormal ECG (other significant arrhythmia, bradycardia < 50/min, QTc interval > 600ms)' },
+          ]},
+          { text: 'Avoid concomitant use of other drugs that prolong QTc interval' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Rhythm Control Therapy',
+      blocks: [
+        { type: 'text', content: 'Sinus rhythm should be achieved early in the disease course with antiarrhythmic drugs or catheter ablation. Rhythm control in general is recommended to reduce the risk of progression and the risk of dementia or worsening cardiac structural abnormalities, and in patients with the following specific conditions:' },
+        { type: 'list', items: [
+          { text: 'Reduced left ventricular function and persistent or high burden of atrial fibrillation' },
+          { text: 'Symptomatic atrial fibrillation' },
+          { text: 'Recently diagnosed symptomatic AF (< 1 year)' },
+          { text: 'Atrial fibrillation and heart failure' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Stroke Prevention — CHA₂DS₂-VASc Score',
+      blocks: [
+        { type: 'text', content: 'Prophylaxis against thromboembolism is the cornerstone of therapy for atrial fibrillation and should be considered regardless of whether a rate control or rhythm control therapy is chosen. Paroxysmal AF should be treated as for patients with persistent or longstanding persistent AF. Anticoagulation with DOACs is preferred over warfarin in patients without contraindication as DOACs have a better safety profile and fewer food/drug interactions.' },
+        { type: 'table', headers: ['Factor', 'Condition', 'Points', 'Score', 'Adjusted Stroke Risk (%/yr)'], rows: [
+          { cells: ['C', 'Congestive Heart Failure', '1', '0', '0'] },
+          { cells: ['H', 'Hypertension (or treated hypertension)', '1', '1', '1.3'] },
+          { cells: ['A₂', 'Age ≥ 75 years', '2', '2', '2.2'] },
+          { cells: ['D', 'Diabetes', '1', '3', '3.2'] },
+          { cells: ['S₂', 'Prior stroke or TIA', '2', '4', '4.0'] },
+          { cells: ['V', 'Vascular disease', '1', '5', '6.7'] },
+          { cells: ['A', 'Age 65 to 74', '1', '6', '9.8'] },
+          { cells: ['Sc', 'Sex category (female)', '1', '7', '9.6'] },
+          { cells: ['', '', '', '8', '6.7'] },
+          { cells: ['', '', '', '9', '15.2'] },
+        ]},
+        { type: 'text', content: 'Modified CHA₂DS₂-VASc (mCHA₂DS₂-VASc): In the absence of other risk factors, female gender alone may not increase stroke risk. Local guidelines recommend the use of mCHA₂DS₂-VASc whereby gender does not contribute to the score.' },
+        { type: 'table', headers: ['mCHA₂DS₂-VASc Score', 'Recommendation'], rows: [
+          { cells: ['= 0', 'No anticoagulation or antiplatelet recommended'] },
+          { cells: ['= 1', 'Anticoagulation with Apixaban should be considered'] },
+          { cells: ['≥ 2', 'Anticoagulation recommended with DOAC (preferred) or Warfarin'] },
+        ]},
+        { type: 'text', content: 'When mCHA₂DS₂-VASc = 1, the decision to start OAC should consider patient-specific factors. Stroke risk is higher for: Age 65–74 years; Heart failure and age ≥ 35 years; Hypertension and age ≥ 50 years; Diabetes mellitus and age ≥ 50 years; Vascular diseases and age ≥ 55 years.' },
+      ],
+    },
+    {
+      heading: 'HAS-BLED Risk Score',
+      blocks: [
+        { type: 'table', headers: ['Letter', 'Condition', 'Points', 'Score', 'Bleeds per 100 patient-years'], rows: [
+          { cells: ['H', 'Hypertension (systolic BP > 160mmHg)', '1', '0', '1.13'] },
+          { cells: ['A', 'Abnormal renal and liver function (1 point each)', '1 or 2', '1', '1.02'] },
+          { cells: ['S', 'Stroke', '1', '2', '1.88'] },
+          { cells: ['B', 'Bleeding tendency or predisposition', '1', '3', '3.74'] },
+          { cells: ['L', 'Labile INRs (for patients taking warfarin)', '1', '4', '8.70'] },
+          { cells: ['E', 'Elderly (Age > 65)', '1', '5 to 9', 'Insufficient data'] },
+          { cells: ['D', 'Drugs (concomitant aspirin or NSAIDS) or alcohol abuse (1 point each)', '1 or 2', '', ''] },
+        ]},
+        { type: 'text', content: 'The HAS-BLED risk score poorly predicts bleeding events but is a useful tool for identifying modifiable risk factors. A high HAS-BLED score (≥ 3) indicates high bleeding risk but is NOT a contraindication for anticoagulation. Consider aspirin or clopidogrel only when anticoagulation is contraindicated in patients with mCHA₂DS₂-VASc ≥ 2, especially those with a history of ischaemic stroke or TIA.' },
+      ],
+    },
+    {
+      heading: 'DOAC Protocol in NUP',
+      blocks: [
+        { type: 'text', content: 'Rivaroxaban and Apixaban are factor Xa inhibitors available in the NUP formulary. DOACs are as effective as warfarin in reducing AF-related strokes and systemic embolisms in patients with non-valvular heart disease. The use of DOAC in mechanical heart valves or moderate to severe mitral stenosis is NOT recommended — these patients should be treated with warfarin.' },
+        { type: 'text', content: 'Contraindications to DOACs:' },
+        { type: 'list', items: [
+          { text: 'Hypersensitivity' },
+          { text: 'Clinically significant active bleeding' },
+          { text: 'Hepatic disease with coagulopathy and clinically relevant bleeding risk' },
+          { text: 'Pregnancy and lactation' },
+          { text: 'Lesion or condition considered to be a significant risk of major bleeding (recent GI ulceration, pregnancy, malignant neoplasm at high risk of bleed, etc.)' },
+          { text: 'Concomitant treatment with any other anticoagulant agent' },
+          { text: 'History of intracranial bleed' },
+          { text: 'Renal impairment with creatinine clearance (Cockcroft-Gault) < 15 ml/min for Rivaroxaban and Apixaban' },
+          { text: 'Mechanical heart valves' },
+          { text: 'Moderate – Severe Mitral Stenosis' },
+        ]},
+        { type: 'text', content: 'Laboratory investigations prior to DOAC initiation: (1) Full Blood Count, (2) Liver Function Test, (3) Renal Panel, (4) PT/APTT, (5) Thyroid Function Test.' },
+        { type: 'text', content: 'Criteria for initiating DOAC in polyclinic (while awaiting echocardiography or cardiology review): No contraindications; No features of mitral stenosis on clinical exam; Normal FBC, renal panel, LFT, PT/APTT; AND any of: history of stroke/TIA, age ≥ 75 years, or mCHA₂DS₂-VASc ≥ 2.' },
+        { type: 'text', content: 'Dose Adjustments for Apixaban: 5mg BD standard. Reduce to 2.5mg BD if patient fulfils ≥ 2 of ABC Criteria (Age ≥ 80 years; Body Weight ≤ 60 kg; Serum Creatinine ≥ 133 umol/L) OR CrCl 15–29 ml/min. Avoid if CrCl < 15 ml/min.' },
+        { type: 'text', content: 'Dose Adjustments for Rivaroxaban: CrCl > 50 ml/min → 20 mg OD; CrCl 15–50 ml/min → 15 mg OD; CrCl < 15 ml/min → Avoid.' },
+        { type: 'text', content: 'Recommended follow-up after DOAC initiation: Review 1–3 months with FBC and Renal Panel. Monitor symptoms of stroke, TIA, thromboembolism and bleeding events. Consider 6-monthly reviews subsequently. Monitor age, body weight, frailty, fall risk and concomitant medications at every visit. Monitor FBC, Renal Panel, LFT annually.' },
+      ],
+    },
+    {
+      heading: 'Drug Cost',
+      blocks: [
+        { type: 'table', headers: ['Drug', 'Subsidy Status', 'Cost per tablet', 'Cost per week (Adult)', 'Cost per week (Elderly)'], rows: [
+          { cells: ['Warfarin', 'SDL 1', '$0.20', '$1.40 (capped)', '$0.70 (capped)'] },
+          { cells: ['Apixaban', 'SDL 2', '$0.77', '$5.39', '$2.70'] },
+          { cells: ['Rivaroxaban', 'SDL 2 (change effective 1st April 2026)', '$1.54', '$5.39', '$2.70'] },
+        ]},
+        { type: 'text', content: 'Cost does not include additional MG/PG subsidy. Rivaroxaban cost does not take into account MAF subsidy which is determined through means testing.' },
+      ],
+    },
+    {
+      heading: 'Switching Warfarin to DOACs',
+      blocks: [
+        { type: 'text', content: 'Patients with existing non-valvular AF on warfarin may be offered conversion to a DOAC if they: (1) are unable to maintain therapeutic INR, (2) have difficulty attending clinic frequently for INR monitoring, (3) have problematic drug interactions, or (4) find dietary restrictions interfere excessively with a healthy, balanced diet.' },
+        { type: 'table', headers: ['INR', 'Action'], rows: [
+          { cells: ['INR < 2.5', 'Stop warfarin and start DOAC on the same day'] },
+          { cells: ['INR 2.5–3', 'Stop warfarin and start DOAC the next day'] },
+          { cells: ['INR > 3', 'Repeat INR and start DOAC as per above recommendations once INR has fallen below 3'] },
+        ]},
+      ],
+    },
+    {
+      heading: 'Warfarin Protocol in NUP',
+      blocks: [
+        { type: 'text', content: 'Medical Officers (MOs) and Resident Physicians (RPs) may provide follow-up care for patients on warfarin and repeat prescriptions where INRs are within range and no titration is required. Where titration is indicated, MOs/RPs need to seek approval from FPs or designated RPs. Pharmacy staff will ensure any change in warfarin dosage is countersigned before dispensing.' },
+        { type: 'list', items: [
+          { text: 'Observe for bleeding: haematuria, melena, gingival bleeding, excessive bleeding from cuts, epistaxis, bruising, dizziness, hypotension, weakness' },
+          { text: 'Observe for thromboembolic event: DVT, pulmonary embolism, CVA, AMI' },
+          { text: 'Exclude any dietary or drug interaction that may affect patient\'s INR' },
+          { text: 'Check haemoglobin and haematocrit annually' },
+        ]},
+        { type: 'text', content: 'Initiation/Re-Initiation of Warfarin: Check baseline INR before initiation. For initiation, a fixed dose of 2–5 mg/day (2–3 mg for Chinese/Malays; 4–5 mg for Indians) is recommended. For re-initiation, restart on last known dose that maintained therapeutic range. Check INR on day 3 after initiation/re-initiation and every 1–2 days till 2 consecutive readings of target INR achieved. Steady state expected after at least 5 days. Thereafter check INR weekly for first month, then 4 weekly and finally 8–12 weekly once stable.' },
+        { type: 'text', content: 'INR Targets: Target INR for most patients: 2.0–3.0. In elderly > 75 years or those at higher bleeding risk, a lower INR target of 1.6–2.5 may be chosen. Patients with higher thrombotic risk may have target INR 2.5–3.5.' },
+      ],
+    },
+    {
+      heading: 'Warfarin Initiation Guide',
+      blocks: [
+        { type: 'table', headers: ['Day', 'INR', 'Dose (mg) Chinese/Malay', 'Dose (mg) Indian'], rows: [
+          { cells: ['1', 'Baseline', '3', '5'] },
+          { cells: ['3', '< 1.2', '3', '5'] },
+          { cells: ['3', '1.2–< 1.5', '3', '5'] },
+          { cells: ['3', '1.5–< 2.0', '3', '5'] },
+          { cells: ['3', '2.0–< 3.0', '2', '3'] },
+          { cells: ['3', '≥ 3.0', 'Nil', 'Nil'] },
+          { cells: ['4', '< 1.3', '5', '8'] },
+          { cells: ['4', '1.3–< 1.5', '4', '6.5'] },
+          { cells: ['4', '1.5–< 1.7', '3', '5'] },
+          { cells: ['4', '1.7–< 2.0', '2.5', '4'] },
+          { cells: ['4', '2.0–< 2.5', '2.0', '3'] },
+          { cells: ['4', '2.5–< 3.0', '1.5', '2.5'] },
+          { cells: ['4', '3.0–< 3.5', 'Omit 1 day, then 1 mg', 'Omit 1 day, then 2 mg'] },
+          { cells: ['4', '3.5–< 4.0', 'Omit 1 day, then 1 mg', 'Omit 1 day, then 2 mg'] },
+          { cells: ['4', '≥ 4.0', 'Omit 2 days, then 0.5 mg', 'Omit 2 days, then 1 mg'] },
+        ]},
+      ],
+    },
+    {
+      heading: 'Contraindications to Warfarin',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Aneurysm (cerebral or dissecting)' },
+          { text: 'Active bleeding disorder or unexplained anaemia' },
+          { text: 'Cerebral vascular haemorrhage (confirmed or suspected), unless cleared by neurologist or neurosurgeon' },
+          { text: 'Blood dyscrasias associated with haemorrhage or thrombocytopenia' },
+          { text: 'Severe uncontrolled hypertension' },
+          { text: 'Recent (2–3 weeks) trauma (especially to the CNS)' },
+          { text: 'Neurosurgery unless cleared by neurosurgeon' },
+          { text: 'Ulceration or active lesions of the GIT, respiratory or urinary tracts' },
+          { text: 'Severe vasculitis' },
+          { text: 'Pregnancy (1st trimester and before delivery)' },
+          { text: 'Other factors making warfarin therapy unsuitable: alcohol abuse, high fall risk, poor family support/inability to return for INR monitoring, non-compliance, mentally unstable patient' },
+          { text: 'Exercise caution in: Age > 75 years, clinical congestive cardiac failure, drug interactions, elevated baseline INR, hypermetabolic states, liver or renal impairment, malnutrition/low vitamin K intake, thyrotoxicosis' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Drugs with Major Interactions with Warfarin',
+      blocks: [
+        { type: 'table', headers: ['↑ Increase Effect of Warfarin', '↓ Decrease Effect of Warfarin'], rows: [
+          { cells: ['Aspirin, Clopidogrel, Dipyridamole, Ticlopidine, Apixaban, Dabigatran, Rivaroxaban (Antiplatelet/Anticoagulants)', 'Carbamazepine, Phenobarbital, Phenytoin (Anticonvulsants)'] },
+          { cells: ['Levothyroxine; Androgens, Estrogens, Progestins; Sulphonylureas (Endocrine)', 'Anti-thyroid agents e.g. Carbimazole, Propylthiouracil (Endocrine)'] },
+          { cells: ['Amiodarone, Diltiazem, Verapamil, Propranolol, Simvastatin, Lovastatin, Fenofibrate, Gemfibrozil (Cardiovascular)', 'Cholestyramine (Cardiovascular)'] },
+          { cells: ['SSRIs (Escitalopram, Fluoxetine, Fluvoxamine, Sertraline), TCAs (Amitriptyline, Doxepin), Mirtazapine, Venlafaxine, Quetiapine (Psychiatric)', 'Azathioprine, Sulphasalazine (Immunosuppression)'] },
+          { cells: ['Valproic acid, Phenytoin (Anticonvulsants)', 'Rifampicin (Antibiotic)'] },
+          { cells: ['Methotrexate, Tamoxifen (Malignant disease)', ''] },
+          { cells: ['Allopurinol, Corticosteroid, Prednisolone (Musculoskeletal)', ''] },
+          { cells: ['Cimetidine, Ranitidine, Omeprazole (GI)', ''] },
+          { cells: ['NSAIDs, COX-II inhibitors, Paracetamol, Tramadol (Analgesics — ACUTE)', ''] },
+          { cells: ['Azithromycin, Clarithromycin, Ciprofloxacin, Erythromycin, Metronidazole, Trimethoprim-Sulfamethoxazole, Itraconazole (Antibiotics — ACUTE)', ''] },
+        ]},
+      ],
+    },
+    {
+      heading: 'Warfarin-Food Interactions',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Foods Rich in Vitamin K (decrease warfarin effect): Green leafy vegetables (spinach, broccoli, lettuce, Brussels sprouts), certain legumes, some vegetable oils (e.g. soybean oil), animal livers, some fermented foods (e.g. cheese), green tea. Chronic alcohol intake can increase metabolism of oral anticoagulants.' },
+          { text: 'Foods with Anti-Platelet Effect: Garlic, foods containing salicylates (fruits, vegetables, spices, teas, certain flavoured candies)' },
+          { text: 'Others: Avocado (decrease effect), Vitamin E (potentiate effect), dietary supplements [arnica, bilberry, butchers broom, cat\'s claw, dong quai, feverfew, forskolin, garlic, ginger, ginkgo, horse chestnut, inositol hexaphosphate, licorice, melilot (sweet clover), pau d\'arco, red clover, St John\'s wort, sweet woodruff, turmeric, willow bark, wheat grass, alcohol (continuous heavy drinking stimulates hepatic enzymes, increasing metabolism of warfarin)]' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Management of Supratherapeutic INR',
+      blocks: [
+        { type: 'table', headers: ['INR', 'Management'], rows: [
+          { cells: ['Greater than therapeutic range but < 4.5', 'Decrease or withhold dosage. Monitor INR more frequently and restart warfarin at a lower dose when INR is within therapeutic range.'] },
+          { cells: ['4.5–9.0', 'Withhold warfarin, consider referral to Emergency Department for oral Vitamin K. If managed in primary care, recheck INR within 24–28 hours. If within therapeutic range, resume warfarin at a lower dose.'] },
+          { cells: ['> 9.0', 'Referral to Emergency Department for oral Vitamin K'] },
+        ]},
+        { type: 'text', content: 'Monitoring Using INR: Repeat INR every 1–2 weeks for every dose adjustment. When target INR achieved, next INR may be checked after 4 weeks and subsequently 8–12 weekly.' },
+      ],
+    },
+    {
+      heading: 'Summary of Oral Anticoagulants',
+      blocks: [
+        { type: 'table', headers: ['Property', 'Warfarin', 'Rivaroxaban', 'Apixaban'], rows: [
+          { cells: ['Mechanism of Action', 'Vitamin K Antagonist', 'Oral anti-Xa inhibitor', 'Oral anti-Xa inhibitor'] },
+          { cells: ['Metabolism', 'Major CYP2C9, CYP450, CYP1A2, CYP3A4 substrate', 'CYP3A3 substrate, P-glycoprotein substrate', 'CYP3A3 substrate, P-glycoprotein substrate'] },
+          { cells: ['Tmax (hours)', '4', '3–4', '3'] },
+          { cells: ['Half-Life (hours)', '36', '5–13', '9–14'] },
+          { cells: ['Elimination', 'Hepatic (cytochrome P450)', 'Liver (66%) Renal (33%)', 'Renal (27%)'] },
+          { cells: ['Special Precautions', 'Ensure consistent Vitamin K intake in diet. Avoid supplements.', 'Take with food to increase bioavailability', 'With or without food'] },
+          { cells: ['Laboratory Tests', 'PT/INR every 2–3 monthly; FBC at least annually', 'FBC, Renal Panel at least annually', 'FBC, Renal Panel at least annually'] },
+        ]},
+      ],
+    },
+  ],
+};
+export { atrialFibrillation };
+
+// ---------------------------------------------------------------------------
+// 10 NUP CPG — Benign Prostatic Hyperplasia (Feb 2024)
+// ---------------------------------------------------------------------------
+const bph: CpgDocument = {
+  id: 'cpg-bph',
+  condition: 'Benign Prostatic Hyperplasia (BPH)',
+  source: '10 NUP CPG - Benign Prostatic Hyperplasia (BPH).pdf',
+  reviewDate: 'Reviewed February 2024. Next review date: February 2027.',
+  advisors: 'Key FP: Dr Sky Koh Wei Chee. Specialist Advisor: Asst Prof Benjamin Goh (Consultant, Department of Urology, NUH). Acknowledgement: NUHSP: Ms Neo Ying Fang',
+  sections: [
+    {
+      heading: 'History',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Voiding Symptoms', children: [
+            { text: 'Hesitancy' },
+            { text: 'Straining' },
+            { text: 'Double voiding' },
+            { text: 'Sensation of incomplete emptying' },
+            { text: 'Weak flow' },
+            { text: 'Terminal dribbling' },
+          ]},
+          { text: 'Storage Symptoms', children: [
+            { text: 'Frequency' },
+            { text: 'Urgency' },
+            { text: 'Nocturia' },
+          ]},
+          { text: 'Duration of Symptoms' },
+          { text: 'Other Associated Symptoms: Gross haematuria, urinary incontinence (any need for diapers?), dysuria, symptoms of UTI' },
+          { text: 'Medication List: Diuretics, SGLT2-inhibitors, anti-psychotics, traditional medications, supplements' },
+          { text: 'Past Surgical History: Procedures like indwelling catheter, cystoscopy, bladder stones, TURP' },
+          { text: 'Past Medical History: DM, CCF, Parkinson\'s, spinal injuries' },
+          { text: 'Social History: Coffee, tea, alcohol drinking, smoking' },
+          { text: 'Red Flags from History: Haematuria, acute retention of urine, fever with loin pain' },
+        ]},
+        { type: 'text', content: 'Differentials for LUTS in males: UTI, Prostatitis, Distal ureteral stone, Ureteral stricture, Bladder tumour, Neurogenic bladder dysfunction, Over Active Bladder (OAB) - Detrusor over-activity / under-activity, Nocturnal polyuria, Foreign body.' },
+      ],
+    },
+    {
+      heading: 'Physical Examination',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'BP and hydration status' },
+          { text: 'Abdominal: Mass, palpable or percussable bladder, inguinal hernia, ballotable kidney' },
+          { text: 'Any signs of ESRF' },
+          { text: 'Digital Rectal Examination (DRE)', children: [
+            { text: 'Prostate: Size, consistency, median sulcus, tenderness' },
+            { text: '**Red flags: Irregular, hard, nodules' },
+            { text: 'Rectal mass' },
+            { text: 'Assess anal tone — Poor anal tone and sacral anaesthesia suggest possible neurogenic voiding dysfunction' },
+            { text: 'Penis: Phimosis, hypospadias' },
+          ]},
+        ]},
+      ],
+    },
+    {
+      heading: 'Investigation',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'UFEME to screen for pyuria, haematuria, proteinuria or other pathology. Urine culture if UFEME abnormal.' },
+          { text: 'Baseline PSA: Levels of PSA proposed as a good surrogate for estimating prostate volume. For prostate volume > 30 g, PSA would be > 1.5 μg/L. PSA testing helps to detect prostate cancer and prostatitis, especially when DRE reveals an abnormal prostate.' },
+        ]},
+        { type: 'text', content: 'PSA Screening (Singapore Urological Association, 2017): Population screening for prostate cancer with PSA is controversial and not recommended. For men between 50–70 years of age with a life expectancy of more than 10 years, PSA screening may be offered after an informed discussion on potential benefits and harms including possibilities of false positive and false negative results, complications of subsequent TRUS guided biopsy and false negative biopsies. Men with a strong family history (one or more first-degree relatives diagnosed before age 65 years) may be offered screening 5–10 years younger than the youngest prostate cancer in the family. Routine screening in men younger than 50 years old without a strong family history is not recommended. Men with life expectancy less than 10–15 years should be informed that testing and treatment is unlikely to be beneficial. A PSA value of > 4 μg/L needs referral to urology for further evaluation. A routine screening interval of two years or more may be preferred over annual screening in asymptomatic men.' },
+        { type: 'text', content: 'Voiding Diary: Should be used when frequency, urgency or nocturia is the dominant symptom. Helps to identify patients with isolated nocturnal polyuria, excessive fluid intake or overactive bladder.' },
+      ],
+    },
+    {
+      heading: 'International Prostate Symptoms Score (IPSS) and Quality of Life Score (QOL)',
+      blocks: [
+        { type: 'table', headers: ['Question', '0', '1', '2', '3', '4', '5'], rows: [
+          { cells: ['Incomplete Emptying: Over the past month, how often have you had a sensation of not emptying your bladder completely after you finished urinating?', 'Not at all', 'Less than 1 time in 5', 'Less than half the time', 'About half the time', 'More than half the time', 'Almost always'] },
+          { cells: ['Frequency: Over the past month, how often have you had to urinate again less than 2 hours after you finished urinating?', 'Not at all', 'Less than 1 time in 5', 'Less than half the time', 'About half the time', 'More than half the time', 'Almost always'] },
+          { cells: ['Intermittency: Over the past month, how often have you found you stopped and started again several times when you urinated?', 'Not at all', 'Less than 1 time in 5', 'Less than half the time', 'About half the time', 'More than half the time', 'Almost always'] },
+          { cells: ['Urgency: Over the past month, how often have you found it difficult to postpone urination?', 'Not at all', 'Less than 1 time in 5', 'Less than half the time', 'About half the time', 'More than half the time', 'Almost always'] },
+          { cells: ['Weak Stream: Over the past month, how often have you had a weak urinary stream?', 'Not at all', 'Less than 1 time in 5', 'Less than half the time', 'About half the time', 'More than half the time', 'Almost always'] },
+          { cells: ['Straining: Over the past month, how often have you had to push or strain to begin urination?', 'Not at all', 'Less than 1 time in 5', 'Less than half the time', 'About half the time', 'More than half the time', 'Almost always'] },
+          { cells: ['Nocturia: Over the past month, how many times did you most typically get up to urinate from the time you went to bed until the time you got up in the morning?', 'None', '1 time', '2 times', '3 times', '4 times', '5 or more times'] },
+        ]},
+        { type: 'text', content: 'IPSS Scoring: 0–7 = Mild; 8–19 = Moderate; 20–35 = Severe. QOL Score: < 3 not bothered; ≥ 3 bothered.' },
+        { type: 'table', headers: ['QOL Question', '0', '1', '2', '3', '4', '5', '6'], rows: [
+          { cells: ['If you were to spend the rest of your life with your urinary condition just the way it is now, how would you feel about that?', 'Delighted', 'Pleased', 'Mostly satisfied', 'Mixed mostly', 'Mostly dissatisfied', 'Unhappy', 'Terrible'] },
+        ]},
+      ],
+    },
+    {
+      heading: 'Further Investigation',
+      blocks: [
+        { type: 'text', content: 'These investigations may be required in patients with a definite indication, such as gross haematuria, uncertain diagnosis, DRE abnormalities, poor response to medical therapy or for surgical planning.' },
+        { type: 'list', items: [
+          { text: 'Urine cytology' },
+          { text: 'Uroflowmetry' },
+          { text: 'Urodynamics' },
+          { text: 'Cystoscopy' },
+          { text: 'Radiological evaluation of upper urinary tract (e.g. IVU, CT KUB, Urogram)' },
+          { text: 'Prostate ultrasound' },
+          { text: 'MRI prostate and prostate biopsy are indicated when the PSA is elevated' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Management — Medical Therapy',
+      blocks: [
+        { type: 'text', content: 'Cost guide: $ = <$10/month; $$ = $10–<$20/month; $$$ = $20–<$30/month; $$$$ = $30–<$60/month. Amount payable depends on patient subsidy level and drug subsidy class. Unit prices before GST and accurate as of Jan 2024.' },
+        { type: 'text', content: 'Alpha-1 blockers: Act by relaxation of smooth muscle in prostatic urethra, bladder neck and blood vessels. IPSS decreases by about 35–40% and the flow rate by 20–25%. However, they do not prevent progression of BPH. Patients usually experience full therapeutic effect within one week. Recommended for patients whose urinary symptoms affect and limit their function.' },
+        { type: 'table', headers: ['Drug', 'Dose', 'Subsidy', 'Cost', 'Risk of Postural Hypotension', 'Risk of Retrograde Ejaculation', 'Risk of Floppy Iris Syndrome', 'Remarks'], rows: [
+          { cells: ['Alfuzosin XL (Xatral XL)', '10 mg ON', 'SDL2', '$', 'Medium', 'Low', 'Medium', 'Recommended for younger patients'] },
+          { cells: ['Tamsulosin (Harnal)', '0.4 mg ON', 'NS', '$$', 'Low', 'Medium', 'High', 'Recommended in elderly with high falls risk'] },
+          { cells: ['Terazosin (Hytrin)', '1–10 mg ON', 'SDL2', '2mg: $; 5mg: $$$', 'High', 'Low', 'Low', 'Suitable as an anti-hypertensive. Can be increased up to 20mg if inadequate response after 4–6 weeks'] },
+        ]},
+        { type: 'text', content: '5-Alpha-reductase inhibitors (5ARI): Indicated for prostate volumes > 30 g and significant obstruction. Efficacy is more pronounced in those with larger prostatic volumes. Efficacy is minimal for prostatic volume < 30 g. Decreases prostate volume by about 18–28% after 6–12 months; IPSS decreases by about 20–30%; reduces PSA by 50% after 6–12 months. Patients usually experience full therapeutic effects after six months of treatment.' },
+        { type: 'list', items: [
+          { text: 'Finasteride (Proscar): 5 mg OD' },
+          { text: 'Dutasteride (Avodart): 0.5 mg OD' },
+          { text: 'ADR: Decreased libido, erectile dysfunction, ejaculatory disorders, mastalgia, gynaecomastia' },
+          { text: 'PSA guidance: The PSA value should reduce by 50% after at least 6 months of 5ARI therapy. A red flag is a patient\'s PSA that reduces by approximately half but then begins to rise for an unexplained reason, assuming medication compliance.' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Management — Lifestyle Modifications',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Modify drinking habits, cut down fluid intake at night' },
+          { text: 'Restriction of caffeine and alcohol intake' },
+          { text: 'Avoidance/monitoring usage of some drugs (diuretics, antihistamines, antidepressants)' },
+          { text: 'Stop smoking' },
+          { text: 'Regular exercise' },
+          { text: 'Lose weight if BMI is high' },
+          { text: 'Timed or organised voiding (Bladder retraining)' },
+          { text: 'Keep other medical conditions well managed' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Surgical Therapy Options',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Bipolar Transurethral Resection of Prostate (TURP)' },
+          { text: 'Enucleation of obstructing prostatic adenoma' },
+          { text: 'Transurethral Laser prostatectomy' },
+          { text: 'Transurethral Incision of Prostate (TUIP) / Open prostatectomy' },
+          { text: 'UroLift and Rezum water vapour treatments' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Referral to Urologist',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Persistent LUTS (based on moderate–severe IPSS or QOL score ≥ 3)' },
+          { text: 'Gross haematuria' },
+          { text: 'Urinary incontinence' },
+          { text: 'Palpable bladder' },
+          { text: 'DRE suspicious of prostate cancer' },
+          { text: 'Abnormal PSA levels (> 4.0 ng/ml)' },
+          { text: 'A rise in PSA while on 5-alpha reductase inhibitors' },
+          { text: 'Recurrent infection' },
+          { text: 'Complications arising from obstruction like hydronephrosis, renal failure' },
+          { text: 'History/risk of urethral stricture' },
+          { text: 'Neurological disease raising the likelihood of a primary bladder disorder' },
+          { text: 'Failure of medical treatment at primary care level' },
+          { text: 'Note: Post catheterised patients presenting with ARU — Consider A&E referral (if gross haematuria or signs of urosepsis) or Direct Access referral to Urology (within 1 week, if patient is assessed to be able to take care of urinary catheter/bag)' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Follow Up in Primary Care',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Assess treatment success or failure and possible adverse events' },
+          { text: 'Assessment of treatment success varies: usually 2–4 weeks for alpha blocker therapy and at least 3 months for a 5α-reductase inhibitor' },
+          { text: 'If treatment is successful and patient is satisfied, annual PSA for patients below age 70 years is generally recommended for those on 5-alpha reductase inhibitors' },
+          { text: 'Follow-up strategy allows the physician to detect any changes in the last year, specifically if symptoms have progressed or become more bothersome, or if a complication has developed creating an indication for surgery' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Recommended Care Components',
+      blocks: [
+        { type: 'table', headers: ['Care Component', 'Minimum Frequency', 'Remarks'], rows: [
+          { cells: ['Review of Lower Urinary Tract Symptoms', 'Annually', 'Recommended tool: International Prostate Symptom / Quality of Life Score'] },
+          { cells: ['Clinical Examination — Abdominal and Digital Rectal Exam', 'Initial assessment', 'Abdominal examination includes assessment for a palpable bladder. Rectal examination to assess size, consistency and regularity of prostate'] },
+          { cells: ['Co-Morbidity Assessment (includes medication review)', 'Initial assessment', ''] },
+          { cells: ['Urine Dipstick or Microscopy', 'Initial assessment', 'Screen for haematuria, pyuria and glycosuria'] },
+        ]},
+      ],
+    },
+  ],
+};
+export { bph };
