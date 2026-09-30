@@ -4,13 +4,14 @@ import { CpgDocument } from '../types';
 // 48 NUP CPG — Obsessive Compulsive Disorder (Jun 2024)
 // ---------------------------------------------------------------------------
 export const ocd: CpgDocument = {
-  id: 'ocd',
-  title: 'Obsessive Compulsive Disorder (OCD)',
-  category: 'Mental Health',
-  lastReviewed: 'June 2024',
+  id: 'cpg-ocd',
+  condition: 'Obsessive Compulsive Disorder (OCD)',
+  source: '48 NUP CPG - Obsessive Compulsive Disorder.pdf',
+  reviewDate: 'Jun 2024. Next review: Jun 2027.',
+  advisors: 'Dr Soo Shuenn Chiang',
   sections: [
     {
-      title: 'Introduction',
+      heading: 'Introduction',
       blocks: [
         {
           type: 'text',
@@ -30,7 +31,7 @@ export const ocd: CpgDocument = {
       ],
     },
     {
-      title: 'Screening and Diagnosis (DSM-5)',
+      heading: 'Screening and Diagnosis (DSM-5)',
       blocks: [
         {
           type: 'text',
@@ -55,7 +56,7 @@ export const ocd: CpgDocument = {
       ],
     },
     {
-      title: 'When It Is Significant — YBOCS',
+      heading: 'When It Is Significant — YBOCS',
       blocks: [
         {
           type: 'text',
@@ -80,7 +81,7 @@ export const ocd: CpgDocument = {
       ],
     },
     {
-      title: 'Non-Pharmacological Management — CBT/ERP',
+      heading: 'Non-Pharmacological Management — CBT/ERP',
       blocks: [
         {
           type: 'text',
@@ -90,17 +91,17 @@ export const ocd: CpgDocument = {
         {
           type: 'list',
           items: [
-            'ERP: therapist-guided repeated and prolonged exposure to situations that provoke obsessional fear, along with abstinence from compulsive behaviours.',
-            'ERP requires the patient to remain in the exposure situation until the obsessional distress decreases spontaneously, without withdrawing or performing compulsions. The goal is to challenge how a patient responds to distress and to learn that feared stimuli are safe.',
-            'Patients can be exposed to actual situations (in vivo exposure), imagined situations (imaginal exposure), or physical sensations associated with anxiety (interoceptive exposure).',
-            'Example: a patient who fears accidentally hitting pedestrians will practice driving on streets with pedestrians, without getting out of the car to check for victims.',
-            'The frequency of CBT with ERP varies depending on severity, ranging from once a week to even daily outpatient psychology appointments. An example of daily treatment is the Bergen 4 Day Treatment (B4DT), available at certain centres.',
+            { text: 'ERP: therapist-guided repeated and prolonged exposure to situations that provoke obsessional fear, along with abstinence from compulsive behaviours.' },
+            { text: 'ERP requires the patient to remain in the exposure situation until the obsessional distress decreases spontaneously, without withdrawing or performing compulsions. The goal is to challenge how a patient responds to distress and to learn that feared stimuli are safe.' },
+            { text: 'Patients can be exposed to actual situations (in vivo exposure), imagined situations (imaginal exposure), or physical sensations associated with anxiety (interoceptive exposure).' },
+            { text: 'Example: a patient who fears accidentally hitting pedestrians will practice driving on streets with pedestrians, without getting out of the car to check for victims.' },
+            { text: 'The frequency of CBT with ERP varies depending on severity, ranging from once a week to even daily outpatient psychology appointments. An example of daily treatment is the Bergen 4 Day Treatment (B4DT), available at certain centres.' },
           ],
         },
       ],
     },
     {
-      title: 'Pharmacological Management',
+      heading: 'Pharmacological Management',
       blocks: [
         {
           type: 'text',
@@ -125,7 +126,7 @@ export const ocd: CpgDocument = {
       ],
     },
     {
-      title: 'De-Escalation of Therapy',
+      heading: 'De-Escalation of Therapy',
       blocks: [
         {
           type: 'text',
@@ -146,7 +147,7 @@ export const ocd: CpgDocument = {
       ],
     },
     {
-      title: 'Management of Step-Down Patients from NUHS/IMH Psychiatry SOC',
+      heading: 'Management of Step-Down Patients from NUHS/IMH Psychiatry SOC',
       blocks: [
         {
           type: 'text',
@@ -170,7 +171,7 @@ export const ocd: CpgDocument = {
       ],
     },
     {
-      title: 'Referrals',
+      heading: 'Referrals',
       blocks: [
         {
           type: 'text',
@@ -179,12 +180,12 @@ export const ocd: CpgDocument = {
         {
           type: 'list',
           items: [
-            '1. Severe OCD or if there is a risk of self-harm / harm to others',
-            '2. OCD not responding to optimal treatment with combination of ERP and an optimized dose of psychotropics',
-            '3. OCD requiring escalating doses of benzodiazepines (follow latest benzodiazepine prescription guidelines for primary care)',
-            '4. Patient assessed by NUP psychologist to require intensive ERP such that NUP psychology is not able to support',
-            '5. Patients with concomitant drug or substance abuse',
-            '6. All newly diagnosed patients with OCD',
+            { text: '1. Severe OCD or if there is a risk of self-harm / harm to others' },
+            { text: '2. OCD not responding to optimal treatment with combination of ERP and an optimized dose of psychotropics' },
+            { text: '3. OCD requiring escalating doses of benzodiazepines (follow latest benzodiazepine prescription guidelines for primary care)' },
+            { text: '4. Patient assessed by NUP psychologist to require intensive ERP such that NUP psychology is not able to support' },
+            { text: '5. Patients with concomitant drug or substance abuse' },
+            { text: '6. All newly diagnosed patients with OCD' },
           ],
         },
       ],

@@ -4,13 +4,14 @@ import { CpgDocument } from '../types';
 // 50 NUP CPG — Parkinson's Disease (May 2024)
 // ---------------------------------------------------------------------------
 export const parkinsonDisease: CpgDocument = {
-  id: 'parkinson-disease',
-  title: "Parkinson's Disease",
-  category: 'Neurology',
-  lastReviewed: 'May 2024',
+  id: 'cpg-parkinson-disease',
+  condition: "Parkinson's Disease",
+  source: "50 NUP CPG - Parkinson's Disease.pdf",
+  reviewDate: 'May 2024. Next review: May 2027.',
+  advisors: 'Dr Jonathan Ong / Dr June Tan (Senior Consultants, NUH)',
   sections: [
     {
-      title: 'Introduction',
+      heading: 'Introduction',
       blocks: [
         {
           type: 'text',
@@ -35,7 +36,7 @@ export const parkinsonDisease: CpgDocument = {
       ],
     },
     {
-      title: 'Epidemiology',
+      heading: 'Epidemiology',
       blocks: [
         {
           type: 'text',
@@ -45,7 +46,7 @@ export const parkinsonDisease: CpgDocument = {
       ],
     },
     {
-      title: 'Features and Diagnosis',
+      heading: 'Features and Diagnosis',
       blocks: [
         {
           type: 'text',
@@ -59,9 +60,9 @@ export const parkinsonDisease: CpgDocument = {
         {
           type: 'list',
           items: [
-            '1. Bradykinesia (mandatory feature): Slowed movements plus decrement in amplitude/speed or progressive hesitation/halts as movements are continued. Tested by repetitive movements: finger tapping, alternating pronation & supination of forearm, opening & closing of fists.',
-            '2. Rest tremor: Distal "pill-rolling", 3–5 Hz. Present in 50–70% of PD patients (no tremor does not mean no PD). Best detected with limb fully supported against gravity.',
-            '3. Rigidity (present in 89–99% of PD): Increased resistance noted uniformly during range of passive joint movement. Can be enhanced by contralateral motor activity or mental task performance.',
+            { text: '1. Bradykinesia (mandatory feature): Slowed movements plus decrement in amplitude/speed or progressive hesitation/halts as movements are continued. Tested by repetitive movements: finger tapping, alternating pronation & supination of forearm, opening & closing of fists.' },
+            { text: '2. Rest tremor: Distal "pill-rolling", 3–5 Hz. Present in 50–70% of PD patients (no tremor does not mean no PD). Best detected with limb fully supported against gravity.' },
+            { text: '3. Rigidity (present in 89–99% of PD): Increased resistance noted uniformly during range of passive joint movement. Can be enhanced by contralateral motor activity or mental task performance.' },
           ],
         },
         {
@@ -116,7 +117,7 @@ export const parkinsonDisease: CpgDocument = {
       ],
     },
     {
-      title: 'Course of Parkinson\'s Disease',
+      heading: "Course of Parkinson's Disease",
       blocks: [
         {
           type: 'text',
@@ -137,21 +138,21 @@ export const parkinsonDisease: CpgDocument = {
       ],
     },
     {
-      title: 'Goals of Treatment',
+      heading: 'Goals of Treatment',
       blocks: [
         {
           type: 'list',
           items: [
-            '1. To control symptoms and to improve function and quality of life.',
-            '2. Balance between improving symptoms but potentially inducing drug side effects.',
-            '3. Seldom possible to abolish symptoms.',
-            'PD is a chronic disease covered under CDMP/CHAS.',
+            { text: '1. To control symptoms and to improve function and quality of life.' },
+            { text: '2. Balance between improving symptoms but potentially inducing drug side effects.' },
+            { text: '3. Seldom possible to abolish symptoms.' },
+            { text: 'PD is a chronic disease covered under CDMP/CHAS.' },
           ],
         },
       ],
     },
     {
-      title: 'Pharmacotherapeutic Management — Motor Symptoms',
+      heading: 'Pharmacotherapeutic Management — Motor Symptoms',
       blocks: [
         {
           type: 'table',
@@ -168,23 +169,23 @@ export const parkinsonDisease: CpgDocument = {
       ],
     },
     {
-      title: 'Pharmacotherapeutic Management — Non-Motor Symptoms',
+      heading: 'Pharmacotherapeutic Management — Non-Motor Symptoms',
       blocks: [
         {
           type: 'list',
           items: [
-            'Neuropsychiatric — Depression: Pramipexole has antidepressant effects. SSRIs may be considered for depression in PD without dementia. (Stop Selegiline when SSRI started — risk of serotonergic crisis.)',
-            'Neuropsychiatric — Dementia: Donepezil or rivastigmine may be considered for PD patients with dementia.',
-            'Neuropsychiatric — Psychosis: PD patients with severe psychosis should be referred to a psychiatrist; clozapine may be required (needs strict investigations/monitoring for leucopaenia). For milder cases, quetiapine is commonly used (not olanzapine).',
-            'Autonomic — Orthostatic hypotension: Increase fluid and salt intake. Midodrine and fludrocortisone may be used. (Fludrocortisone side effects: hypertension, hypokalaemia, ankle oedema.) Midodrine is short-acting and may be better in patients with supine hypertension.',
-            'Autonomic — GI: Constipation and reduced gastric motility — regular pre- and probiotics, lactulose or forlax is effective. Avoid prolonged use of senna, bisacodyl and fleet enema. Anorexia, nausea and vomiting from dopamine agonist therapy — domperidone may be considered with caution per MOH guidelines.',
-            'Autonomic — Erectile dysfunction: May be treated with sildenafil (warn about side effects: headaches, transient visual effects, flushing, cardiac arrest and hypotension risk, priapism).',
+            { text: 'Neuropsychiatric — Depression: Pramipexole has antidepressant effects. SSRIs may be considered for depression in PD without dementia. (Stop Selegiline when SSRI started — risk of serotonergic crisis.)' },
+            { text: 'Neuropsychiatric — Dementia: Donepezil or rivastigmine may be considered for PD patients with dementia.' },
+            { text: 'Neuropsychiatric — Psychosis: PD patients with severe psychosis should be referred to a psychiatrist; clozapine may be required (needs strict investigations/monitoring for leucopaenia). For milder cases, quetiapine is commonly used (not olanzapine).' },
+            { text: 'Autonomic — Orthostatic hypotension: Increase fluid and salt intake. Midodrine and fludrocortisone may be used. (Fludrocortisone side effects: hypertension, hypokalaemia, ankle oedema.) Midodrine is short-acting and may be better in patients with supine hypertension.' },
+            { text: 'Autonomic — GI: Constipation and reduced gastric motility — regular pre- and probiotics, lactulose or forlax is effective. Avoid prolonged use of senna, bisacodyl and fleet enema. Anorexia, nausea and vomiting from dopamine agonist therapy — domperidone may be considered with caution per MOH guidelines.' },
+            { text: 'Autonomic — Erectile dysfunction: May be treated with sildenafil (warn about side effects: headaches, transient visual effects, flushing, cardiac arrest and hypotension risk, priapism).' },
           ],
         },
       ],
     },
     {
-      title: 'Surgical Management',
+      heading: 'Surgical Management',
       blocks: [
         {
           type: 'text',
@@ -194,7 +195,7 @@ export const parkinsonDisease: CpgDocument = {
       ],
     },
     {
-      title: 'Ancillary Management',
+      heading: 'Ancillary Management',
       blocks: [
         {
           type: 'text',
@@ -219,53 +220,53 @@ export const parkinsonDisease: CpgDocument = {
       ],
     },
     {
-      title: 'Clinical Quality — Good Practices',
+      heading: 'Clinical Quality — Good Practices',
       blocks: [
         {
           type: 'list',
           items: [
-            '1. For every new drug prescribed for treatment of PD, check and document response to the therapy and occurrence of side effects.',
-            '2. Antiparkinsonian medication should not be withdrawn abruptly or allowed to fail suddenly owing to poor absorption (e.g., gastroenteritis, abdominal surgery), to avoid the potential for neuroleptic malignant-like syndrome (Parkinsonism hyperpyrexia syndrome).',
-            '3. Ask about activity level and recent falls. Promote physical activity.',
-            '4. Look out for neuropsychiatric symptoms — depression, psychosis, dementia.',
-            '5. Look out for autonomic dysfunction — orthostatic dizziness/hypotension; constipation, anorexia, nausea, vomiting; erectile dysfunction.',
-            '6. For patients on clozapine for psychosis, monitor for leukopaenia.',
-            '7. Look out for caregiver stress.',
+            { text: '1. For every new drug prescribed for treatment of PD, check and document response to the therapy and occurrence of side effects.' },
+            { text: '2. Antiparkinsonian medication should not be withdrawn abruptly or allowed to fail suddenly owing to poor absorption (e.g., gastroenteritis, abdominal surgery), to avoid the potential for neuroleptic malignant-like syndrome (Parkinsonism hyperpyrexia syndrome).' },
+            { text: '3. Ask about activity level and recent falls. Promote physical activity.' },
+            { text: '4. Look out for neuropsychiatric symptoms — depression, psychosis, dementia.' },
+            { text: '5. Look out for autonomic dysfunction — orthostatic dizziness/hypotension; constipation, anorexia, nausea, vomiting; erectile dysfunction.' },
+            { text: '6. For patients on clozapine for psychosis, monitor for leukopaenia.' },
+            { text: '7. Look out for caregiver stress.' },
           ],
         },
       ],
     },
     {
-      title: 'Referral to Specialist',
+      heading: 'Referral to Specialist',
       blocks: [
         {
           type: 'list',
           items: [
-            '1. New diagnosis of PD — refer to neurologist if unsure of diagnosis or starting medication.',
-            '2. Young-onset PD.',
-            '3. Atypical Parkinsonian disorders.',
-            '4. Patients with family history of PD.',
-            '5. Patients who do not respond to levodopa or dopamine agonists.',
-            '6. Patients with cognitive impairment or neuropsychiatric dysfunction.',
-            '7. Motor complications (motor fluctuations and dyskinesias) not responding to medication adjustments.',
+            { text: '1. New diagnosis of PD — refer to neurologist if unsure of diagnosis or starting medication.' },
+            { text: '2. Young-onset PD.' },
+            { text: '3. Atypical Parkinsonian disorders.' },
+            { text: '4. Patients with family history of PD.' },
+            { text: '5. Patients who do not respond to levodopa or dopamine agonists.' },
+            { text: '6. Patients with cognitive impairment or neuropsychiatric dysfunction.' },
+            { text: '7. Motor complications (motor fluctuations and dyskinesias) not responding to medication adjustments.' },
           ],
         },
       ],
     },
     {
-      title: 'Special Situations — Fitness to Drive',
+      heading: 'Special Situations — Fitness to Drive',
       blocks: [
         {
           type: 'list',
           items: [
-            '1. If a medical concern is raised regarding the patient\'s fitness to drive, advise to stop driving and refer to neurologist for further assessment and a driving test.',
-            '2. The patient is deemed unfit to drive if any of the following are of sufficient degree to interfere with safe driving: significant weakness; lack of coordination; involuntary movements; visual impairment.',
+            { text: '1. If a medical concern is raised regarding the patient\'s fitness to drive, advise to stop driving and refer to neurologist for further assessment and a driving test.' },
+            { text: '2. The patient is deemed unfit to drive if any of the following are of sufficient degree to interfere with safe driving: significant weakness; lack of coordination; involuntary movements; visual impairment.' },
           ],
         },
       ],
     },
     {
-      title: 'Recommended Care Components',
+      heading: 'Recommended Care Components',
       blocks: [
         {
           type: 'table',
@@ -280,14 +281,14 @@ export const parkinsonDisease: CpgDocument = {
       ],
     },
     {
-      title: 'Useful Links for Patients and Caregivers',
+      heading: 'Useful Links for Patients and Caregivers',
       blocks: [
         {
           type: 'list',
           items: [
-            "The Parkinson's Disease Society (Singapore): www.parkinsonsingapore.com",
-            'WE MOVE™ (Worldwide Education and Awareness Movement Disorders): www.wemove.org',
-            'U.S. National Parkinson Foundation: www.parkinson.org',
+            { text: "The Parkinson's Disease Society (Singapore): www.parkinsonsingapore.com" },
+            { text: 'WE MOVE™ (Worldwide Education and Awareness Movement Disorders): www.wemove.org' },
+            { text: 'U.S. National Parkinson Foundation: www.parkinson.org' },
           ],
         },
       ],

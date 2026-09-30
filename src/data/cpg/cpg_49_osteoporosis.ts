@@ -4,13 +4,14 @@ import { CpgDocument } from '../types';
 // 49 NUP CPG — Osteoporosis (Oct 2025)
 // ---------------------------------------------------------------------------
 export const osteoporosis: CpgDocument = {
-  id: 'osteoporosis',
-  title: 'Osteoporosis',
-  category: 'Endocrine / Musculoskeletal',
-  lastReviewed: 'October 2025',
+  id: 'cpg-osteoporosis',
+  condition: 'Osteoporosis',
+  source: '49 NUP CPG - Osteoporosis.pdf',
+  reviewDate: 'Oct 2025. Next review: Oct 2028.',
+  advisors: 'Dr Chionh Siok Bee (Senior Consultant, NUH Endocrine)',
   sections: [
     {
-      title: 'Overview',
+      heading: 'Overview',
       blocks: [
         {
           type: 'text',
@@ -20,7 +21,7 @@ export const osteoporosis: CpgDocument = {
       ],
     },
     {
-      title: 'Screening and Diagnosis',
+      heading: 'Screening and Diagnosis',
       blocks: [
         {
           type: 'text',
@@ -29,10 +30,10 @@ export const osteoporosis: CpgDocument = {
         {
           type: 'list',
           items: [
-            'All post-menopausal females with OSTA (Age minus weight) > 20',
-            'Post-menopausal females and males ≥ 65 years old with risk factors:',
-            'Non-modifiable: family history of osteoporosis or fragility fractures, history of falls, prolonged immobility, height loss (>2cm within 3 years), early menopause (≤45 years old), presence of diseases that can lower bone density (e.g. prolonged untreated hyperthyroidism, inflammatory rheumatic disease, diabetes mellitus)',
-            'Modifiable: low elemental calcium intake (<800mg/day for adults ≤50 years, <1000mg/day for adults >50 years), excessive alcohol (>2 units/day men, >1 unit/day women), smoking (any), low BMI, certain medications (≥5mg prednisolone/day, androgen deprivation therapy, tamoxifen in premenopausal women, proton pump inhibitors)',
+            { text: 'All post-menopausal females with OSTA (Age minus weight) > 20' },
+            { text: 'Post-menopausal females and males ≥ 65 years old with risk factors:' },
+            { text: 'Non-modifiable: family history of osteoporosis or fragility fractures, history of falls, prolonged immobility, height loss (>2cm within 3 years), early menopause (≤45 years old), presence of diseases that can lower bone density (e.g. prolonged untreated hyperthyroidism, inflammatory rheumatic disease, diabetes mellitus)' },
+            { text: 'Modifiable: low elemental calcium intake (<800mg/day for adults ≤50 years, <1000mg/day for adults >50 years), excessive alcohol (>2 units/day men, >1 unit/day women), smoking (any), low BMI, certain medications (≥5mg prednisolone/day, androgen deprivation therapy, tamoxifen in premenopausal women, proton pump inhibitors)' },
           ],
         },
         {
@@ -53,22 +54,22 @@ export const osteoporosis: CpgDocument = {
       ],
     },
     {
-      title: 'Initial Assessment and General Management',
+      heading: 'Initial Assessment and General Management',
       blocks: [
         {
           type: 'list',
           items: [
-            '1. Educate patient about osteoporosis and fragility fractures and their implications.',
-            '2. Refer to Care Manager for assessment and education regarding: fall risk, home safety and footwear; appropriate weight bearing and muscle strengthening exercises (e.g., walking, elastic band exercises); calcium/vitamin D diet advice. A 2nd visit is recommended to review fall risk and diet history.',
-            '3. Advise smoking cessation, reduce alcohol intake.',
-            '4. Calcium and Vitamin D supplements if not meeting recommended dietary allowance.',
-            '5. Pharmacotherapy where indicated.',
+            { text: '1. Educate patient about osteoporosis and fragility fractures and their implications.' },
+            { text: '2. Refer to Care Manager for assessment and education regarding: fall risk, home safety and footwear; appropriate weight bearing and muscle strengthening exercises (e.g., walking, elastic band exercises); calcium/vitamin D diet advice. A 2nd visit is recommended to review fall risk and diet history.' },
+            { text: '3. Advise smoking cessation, reduce alcohol intake.' },
+            { text: '4. Calcium and Vitamin D supplements if not meeting recommended dietary allowance.' },
+            { text: '5. Pharmacotherapy where indicated.' },
           ],
         },
       ],
     },
     {
-      title: 'FRAX® Tool',
+      heading: 'FRAX® Tool',
       blocks: [
         {
           type: 'text',
@@ -78,18 +79,18 @@ export const osteoporosis: CpgDocument = {
         {
           type: 'list',
           items: [
-            'Select the correct country and race.',
-            'Select "yes" for glucocorticoids if patient has at least 5mg of daily prednisolone for at least 3 months.',
-            'Select "yes" for rheumatoid arthritis if patient has Diabetes mellitus (DM is associated with increased fracture risk).',
-            'For femoral neck BMD, select "Hologic" for the DXA equipment and enter the actual femoral neck BMD (in g/cm²) instead of T-score.',
-            'FRAX score may also be calculated without a BMD (leave the field blank).',
-            'Available at www.shef.ac.uk/FRAX. Also found on intranet under Doctors → Clinical Guidelines & Protocol → Endocrine: Charts & Calculators.',
+            { text: 'Select the correct country and race.' },
+            { text: 'Select "yes" for glucocorticoids if patient has at least 5mg of daily prednisolone for at least 3 months.' },
+            { text: 'Select "yes" for rheumatoid arthritis if patient has Diabetes mellitus (DM is associated with increased fracture risk).' },
+            { text: 'For femoral neck BMD, select "Hologic" for the DXA equipment and enter the actual femoral neck BMD (in g/cm²) instead of T-score.' },
+            { text: 'FRAX score may also be calculated without a BMD (leave the field blank).' },
+            { text: 'Available at www.shef.ac.uk/FRAX. Also found on intranet under Doctors → Clinical Guidelines & Protocol → Endocrine: Charts & Calculators.' },
           ],
         },
       ],
     },
     {
-      title: 'Pharmacological Treatment',
+      heading: 'Pharmacological Treatment',
       blocks: [
         {
           type: 'text',
@@ -103,11 +104,11 @@ export const osteoporosis: CpgDocument = {
         {
           type: 'list',
           items: [
-            '1. Secondary causes for osteoporosis: Hypogonadism, Hyperthyroidism, Hyperparathyroidism, Cushing\'s syndrome, Chronic Liver Disease, Chronic Renal Failure, Malabsorption, Rheumatoid Arthritis, Chronic Obstructive Lung disease, Anorexia Nervosa.',
-            '2. Screen baseline labs: FBC, Creatinine, Calcium, Phosphate, LFT, thyroid panel, 25(OH)D.',
-            '3. Assess dental condition. Inform of risks of medication-related osteonecrosis of the jaw (MRONJ) and atypical fractures. Dental clearance is not routinely necessary in patients with good dentition. Offer dental clearance for: patients at higher risk of MRONJ (cancer treatment, immunosuppression, choosing parenteral treatment); patients with concomitant periodontal disease or poor dentition requiring invasive dental procedures.',
-            '4. Ensure adequate serum levels of Vitamin D (≥ 30 ng/mL) and Calcium. Treatment can be initiated concurrently with vitamin D replacement for levels ≥ 20 ng/mL.',
-            '5. Ensure no contraindications to pharmacological agents.',
+            { text: '1. Secondary causes for osteoporosis: Hypogonadism, Hyperthyroidism, Hyperparathyroidism, Cushing\'s syndrome, Chronic Liver Disease, Chronic Renal Failure, Malabsorption, Rheumatoid Arthritis, Chronic Obstructive Lung disease, Anorexia Nervosa.' },
+            { text: '2. Screen baseline labs: FBC, Creatinine, Calcium, Phosphate, LFT, thyroid panel, 25(OH)D.' },
+            { text: '3. Assess dental condition. Inform of risks of medication-related osteonecrosis of the jaw (MRONJ) and atypical fractures. Dental clearance is not routinely necessary in patients with good dentition. Offer dental clearance for: patients at higher risk of MRONJ (cancer treatment, immunosuppression, choosing parenteral treatment); patients with concomitant periodontal disease or poor dentition requiring invasive dental procedures.' },
+            { text: '4. Ensure adequate serum levels of Vitamin D (≥ 30 ng/mL) and Calcium. Treatment can be initiated concurrently with vitamin D replacement for levels ≥ 20 ng/mL.' },
+            { text: '5. Ensure no contraindications to pharmacological agents.' },
           ],
         },
         {
@@ -122,22 +123,22 @@ export const osteoporosis: CpgDocument = {
       ],
     },
     {
-      title: 'Monitoring and Long-Term Follow-Up',
+      heading: 'Monitoring and Long-Term Follow-Up',
       blocks: [
         {
           type: 'list',
           items: [
-            '1. DXA-BMD at baseline. In patients with fragility fractures, do not delay pharmacological treatment while awaiting BMD results. Repeat BMD should be considered 2 years after initiation of treatment; subsequently every 2 years to assess for deterioration (decline exceeding least significant change or >4–5%).',
-            '2. Assess Creatinine and Calcium levels annually.',
-            '3. Assess for any fracture occurring whilst on medication.',
-            '4. Assess for adverse effects of prolonged bisphosphonate treatment: non-specific GI symptoms (nausea, dyspepsia, abdominal pain, reflux) — trial bisphosphonate with PPI (omeprazole 20 mg) taken the night before; osteonecrosis of jaw (rare — encourage routine dental visits); atypical femoral fractures (vigilant if patient complains of thigh pain).',
-            '5. Dental procedures while on treatment: temporary discontinuation of bisphosphonates before invasive dental procedures is generally not required. For patients on denosumab, invasive dental procedures may be timed at least 2–4 weeks before the next scheduled 6-monthly injection.',
+            { text: '1. DXA-BMD at baseline. In patients with fragility fractures, do not delay pharmacological treatment while awaiting BMD results. Repeat BMD should be considered 2 years after initiation of treatment; subsequently every 2 years to assess for deterioration (decline exceeding least significant change or >4–5%).' },
+            { text: '2. Assess Creatinine and Calcium levels annually.' },
+            { text: '3. Assess for any fracture occurring whilst on medication.' },
+            { text: '4. Assess for adverse effects of prolonged bisphosphonate treatment: non-specific GI symptoms (nausea, dyspepsia, abdominal pain, reflux) — trial bisphosphonate with PPI (omeprazole 20 mg) taken the night before; osteonecrosis of jaw (rare — encourage routine dental visits); atypical femoral fractures (vigilant if patient complains of thigh pain).' },
+            { text: '5. Dental procedures while on treatment: temporary discontinuation of bisphosphonates before invasive dental procedures is generally not required. For patients on denosumab, invasive dental procedures may be timed at least 2–4 weeks before the next scheduled 6-monthly injection.' },
           ],
         },
       ],
     },
     {
-      title: 'Drug Holiday',
+      heading: 'Drug Holiday',
       blocks: [
         {
           type: 'text',
@@ -157,7 +158,7 @@ export const osteoporosis: CpgDocument = {
       ],
     },
     {
-      title: 'Calcium and Vitamin D — Diet and Supplements',
+      heading: 'Calcium and Vitamin D — Diet and Supplements',
       blocks: [
         {
           type: 'table',
@@ -190,7 +191,7 @@ export const osteoporosis: CpgDocument = {
       ],
     },
     {
-      title: 'Calcium Formulations',
+      heading: 'Calcium Formulations',
       blocks: [
         {
           type: 'table',
@@ -208,7 +209,7 @@ export const osteoporosis: CpgDocument = {
       ],
     },
     {
-      title: 'Vitamin D Formulations',
+      heading: 'Vitamin D Formulations',
       blocks: [
         {
           type: 'table',
@@ -224,7 +225,7 @@ export const osteoporosis: CpgDocument = {
       ],
     },
     {
-      title: 'Criteria for Referral to Tertiary Care',
+      heading: 'Criteria for Referral to Tertiary Care',
       blocks: [
         {
           type: 'text',
@@ -233,13 +234,13 @@ export const osteoporosis: CpgDocument = {
         {
           type: 'list',
           items: [
-            '1. Male with fragility fracture < 65 years old',
-            '2. Pre-menopausal with fragility fractures or Z-score < −2.0',
-            '3. Very high risk of fractures (multiple fragility fractures and T-score < −3.0 — may be considered for anabolic agents)',
-            '4. Poor response to bisphosphonates despite compliance for at least 1 year (new fractures or decreasing BMD trend > 4–5%)',
-            '5. Unable to tolerate oral bisphosphonate therapy: renal impairment (CrCl < 30 ml/min, or CrCl 30–60 ml/min with abnormal calcium/phosphate levels → refer renal); gastrointestinal side effects (gastritis/reflux/PUD); atypical fractures or osteonecrosis of jaw whilst on bisphosphonates',
-            '6. Suspected complex secondary causes due to endocrine disorders: hyperparathyroidism, Cushing\'s syndrome, hypophosphataemia, male hypogonadism, prolactinoma, hypopituitarism',
-            '7. Women with pregnancy- and lactation-associated osteoporosis',
+            { text: '1. Male with fragility fracture < 65 years old' },
+            { text: '2. Pre-menopausal with fragility fractures or Z-score < −2.0' },
+            { text: '3. Very high risk of fractures (multiple fragility fractures and T-score < −3.0 — may be considered for anabolic agents)' },
+            { text: '4. Poor response to bisphosphonates despite compliance for at least 1 year (new fractures or decreasing BMD trend > 4–5%)' },
+            { text: '5. Unable to tolerate oral bisphosphonate therapy: renal impairment (CrCl < 30 ml/min, or CrCl 30–60 ml/min with abnormal calcium/phosphate levels → refer renal); gastrointestinal side effects (gastritis/reflux/PUD); atypical fractures or osteonecrosis of jaw whilst on bisphosphonates' },
+            { text: '6. Suspected complex secondary causes due to endocrine disorders: hyperparathyroidism, Cushing\'s syndrome, hypophosphataemia, male hypogonadism, prolactinoma, hypopituitarism' },
+            { text: '7. Women with pregnancy- and lactation-associated osteoporosis' },
           ],
         },
         {
@@ -253,7 +254,7 @@ export const osteoporosis: CpgDocument = {
       ],
     },
     {
-      title: 'Recommended Care Components',
+      heading: 'Recommended Care Components',
       blocks: [
         {
           type: 'table',
@@ -266,7 +267,7 @@ export const osteoporosis: CpgDocument = {
       ],
     },
     {
-      title: 'Right Siting of Denosumab to NUP',
+      heading: 'Right Siting of Denosumab to NUP',
       blocks: [
         {
           type: 'text',
@@ -296,7 +297,7 @@ export const osteoporosis: CpgDocument = {
       ],
     },
     {
-      title: 'Hypercalcaemia',
+      heading: 'Hypercalcaemia',
       blocks: [
         {
           type: 'table',
@@ -343,7 +344,7 @@ export const osteoporosis: CpgDocument = {
       ],
     },
     {
-      title: 'Hypocalcaemia',
+      heading: 'Hypocalcaemia',
       blocks: [
         {
           type: 'text',
@@ -369,7 +370,7 @@ export const osteoporosis: CpgDocument = {
       ],
     },
     {
-      title: 'Vitamin D Deficiency — Screening and Replacement',
+      heading: 'Vitamin D Deficiency — Screening and Replacement',
       blocks: [
         {
           type: 'table',
@@ -397,9 +398,9 @@ export const osteoporosis: CpgDocument = {
         {
           type: 'list',
           items: [
-            'Replacement: Cholecalciferol (D3) oral D-cure 50,000 IU per week for 6–8 weeks for Vit D < 25 µg/L.',
-            'Followed by maintenance dose: Cholecalciferol (D3) oral liquid D-cure 25,000 IU per month OR oral tablets 1,000 IU per day.',
-            'Vitamin D levels should be rechecked about 3 months later to ensure adequate replacement (≥ 20 µg/L for general population, ≥ 30 µg/L if osteoporotic).',
+            { text: 'Replacement: Cholecalciferol (D3) oral D-cure 50,000 IU per week for 6–8 weeks for Vit D < 25 µg/L.' },
+            { text: 'Followed by maintenance dose: Cholecalciferol (D3) oral liquid D-cure 25,000 IU per month OR oral tablets 1,000 IU per day.' },
+            { text: 'Vitamin D levels should be rechecked about 3 months later to ensure adequate replacement (≥ 20 µg/L for general population, ≥ 30 µg/L if osteoporotic).' },
           ],
         },
         {

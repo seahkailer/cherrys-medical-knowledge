@@ -4,13 +4,14 @@ import { CpgDocument } from '../types';
 // 46 NUP CPG — Neonatal Jaundice (Nov 2025)
 // ---------------------------------------------------------------------------
 export const neonatalJaundice: CpgDocument = {
-  id: 'neonatal-jaundice',
-  title: 'Neonatal Jaundice',
-  category: 'Paediatrics',
-  lastReviewed: 'November 2025',
+  id: 'cpg-neonatal-jaundice',
+  condition: 'Neonatal Jaundice',
+  source: '46 NUP CPG - Neonatal Jaundice.pdf',
+  reviewDate: 'Nov 2025. Next review: Nov 2028.',
+  advisors: 'Dr Amutha Chinnadurai (Senior Consultant, NUH Paediatric Medicine)',
   sections: [
     {
-      title: 'Overview',
+      heading: 'Overview',
       blocks: [
         {
           type: 'text',
@@ -20,7 +21,7 @@ export const neonatalJaundice: CpgDocument = {
       ],
     },
     {
-      title: 'NNJ Phototherapy SB Thresholds',
+      heading: 'NNJ Phototherapy SB Thresholds',
       blocks: [
         {
           type: 'text',
@@ -49,7 +50,7 @@ export const neonatalJaundice: CpgDocument = {
       ],
     },
     {
-      title: 'Normal Risk vs High Risk Factors',
+      heading: 'Normal Risk vs High Risk Factors',
       blocks: [
         {
           type: 'text',
@@ -58,17 +59,17 @@ export const neonatalJaundice: CpgDocument = {
         {
           type: 'list',
           items: [
-            'High Risk Factors:',
-            '1. Jaundice observed in first 24 hrs',
-            '2. Late Prematurity (35 to 36+6 weeks)',
-            '3. Asphyxia (Apgar ≤ 5 at 1 and 5 min)',
-            '4. Term IUGR with birth weight 2000–2500g',
-            '5. Family history of severe NNJ in siblings needing exchange transfusion',
-            '6. G6PD deficiency and other haemolytic conditions',
-            '7. ABO incompatibility: Mother\'s blood group O, baby\'s blood group A/B AND DCT positive OR maternal Anti-A/Anti-B IgG antibodies titre ≥ 128',
-            '8. Rhesus incompatibility',
-            '9. Rapid rate of rise of SB > 103 µmol/L in 24 hours',
-            '10. Exclusive breastfeeding AND weight loss ≥ 10% of birth weight',
+            { text: 'High Risk Factors:' },
+            { text: '1. Jaundice observed in first 24 hrs' },
+            { text: '2. Late Prematurity (35 to 36+6 weeks)' },
+            { text: '3. Asphyxia (Apgar ≤ 5 at 1 and 5 min)' },
+            { text: '4. Term IUGR with birth weight 2000–2500g' },
+            { text: '5. Family history of severe NNJ in siblings needing exchange transfusion' },
+            { text: '6. G6PD deficiency and other haemolytic conditions' },
+            { text: '7. ABO incompatibility: Mother\'s blood group O, baby\'s blood group A/B AND DCT positive OR maternal Anti-A/Anti-B IgG antibodies titre ≥ 128' },
+            { text: '8. Rhesus incompatibility' },
+            { text: '9. Rapid rate of rise of SB > 103 µmol/L in 24 hours' },
+            { text: '10. Exclusive breastfeeding AND weight loss ≥ 10% of birth weight' },
           ],
         },
         {
@@ -78,7 +79,7 @@ export const neonatalJaundice: CpgDocument = {
       ],
     },
     {
-      title: 'Approach to a Jaundiced Neonate — Age up to 14 Days',
+      heading: 'Approach to a Jaundiced Neonate — Age up to 14 Days',
       blocks: [
         {
           type: 'text',
@@ -113,7 +114,7 @@ export const neonatalJaundice: CpgDocument = {
       ],
     },
     {
-      title: 'Approach — Age > 14 Days',
+      heading: 'Approach — Age > 14 Days',
       blocks: [
         {
           type: 'text',
@@ -122,17 +123,17 @@ export const neonatalJaundice: CpgDocument = {
         {
           type: 'list',
           items: [
-            'After 14 days old: order "Bilirubin, Paeds" (uses heel prick).',
-            'Reassess clinical status: feeding type, pale stools, hydration, current weight, birth weight regained, level of jaundice.',
-            'Doctor management: Any unwell/sick baby → refer to CE immediately.',
-            'If SB > 325 µmol/L for Normal Risk, or > 300 µmol/L for High-Risk → refer to CE (not for direct admission).',
-            'Order "Bilirubin, Direct" from Day 21 onwards if SB still > 100 µmol/L.',
+            { text: 'After 14 days old: order "Bilirubin, Paeds" (uses heel prick).' },
+            { text: 'Reassess clinical status: feeding type, pale stools, hydration, current weight, birth weight regained, level of jaundice.' },
+            { text: 'Doctor management: Any unwell/sick baby → refer to CE immediately.' },
+            { text: 'If SB > 325 µmol/L for Normal Risk, or > 300 µmol/L for High-Risk → refer to CE (not for direct admission).' },
+            { text: 'Order "Bilirubin, Direct" from Day 21 onwards if SB still > 100 µmol/L.' },
           ],
         },
       ],
     },
     {
-      title: 'Approach — Age > 30 Days',
+      heading: 'Approach — Age > 30 Days',
       blocks: [
         {
           type: 'text',
@@ -141,22 +142,22 @@ export const neonatalJaundice: CpgDocument = {
         {
           type: 'list',
           items: [
-            'After 30 days old: order "Bilirubin, Total" (TB). SB not validated for use in babies > 30 days old.',
-            'Reassess: feeding, stool colour, current weight, ensure weight gain, inspect stool specimen, note level of jaundice.',
-            'If TB still > 100 µmol/L and clinically still jaundiced: ensure Direct bilirubin done and < 20 µmol/L, no acholic stools.',
-            'Refer to Paeds Med after 4 weeks old.',
+            { text: 'After 30 days old: order "Bilirubin, Total" (TB). SB not validated for use in babies > 30 days old.' },
+            { text: 'Reassess: feeding, stool colour, current weight, ensure weight gain, inspect stool specimen, note level of jaundice.' },
+            { text: 'If TB still > 100 µmol/L and clinically still jaundiced: ensure Direct bilirubin done and < 20 µmol/L, no acholic stools.' },
+            { text: 'Refer to Paeds Med after 4 weeks old.' },
           ],
         },
       ],
     },
     {
-      title: 'Indications for Referral to Paeds Medicine',
+      heading: 'Indications for Referral to Paeds Medicine',
       blocks: [
         {
           type: 'list',
           items: [
-            '1. Urgent referral (within one week) if any evidence of conjugated hyperbilirubinaemia: pale stools OR direct bilirubin ≥ 20 µmol/L.',
-            '2. Prolonged jaundice after 4 weeks old.',
+            { text: '1. Urgent referral (within one week) if any evidence of conjugated hyperbilirubinaemia: pale stools OR direct bilirubin ≥ 20 µmol/L.' },
+            { text: '2. Prolonged jaundice after 4 weeks old.' },
           ],
         },
         {
@@ -166,23 +167,23 @@ export const neonatalJaundice: CpgDocument = {
       ],
     },
     {
-      title: 'Advice to Parents',
+      heading: 'Advice to Parents',
       blocks: [
         {
           type: 'list',
           items: [
-            '1. Explain why baby is jaundiced. Stress importance of close monitoring. If jaundice too severe, it can damage baby\'s brain.',
-            '2. Sunning the baby is ineffective and may cause sunburn/dehydration.',
-            '3. There is usually no indication to stop breast-feeding. Breast milk is best. Ensure adequate breastfeeding to keep baby well hydrated.',
-            '4. Some herbs increase risk of neurotoxicity and should be avoided during pregnancy/first month of breastfeeding: (1) Chuen-Lin (Chuan Lian), (2) Ngan-Huang (Niu Huang), (3) Yin-Chen.',
-            '5. When ordering direct bilirubin, explain that extra blood will be drawn to distinguish the TYPE of jaundice — it is NOT a "liver test".',
-            '6. Continue to monitor jaundice and stool colour on discharge. Bring baby back if yellowing recurs/persists or stools turn pale.',
+            { text: '1. Explain why baby is jaundiced. Stress importance of close monitoring. If jaundice too severe, it can damage baby\'s brain.' },
+            { text: '2. Sunning the baby is ineffective and may cause sunburn/dehydration.' },
+            { text: '3. There is usually no indication to stop breast-feeding. Breast milk is best. Ensure adequate breastfeeding to keep baby well hydrated.' },
+            { text: '4. Some herbs increase risk of neurotoxicity and should be avoided during pregnancy/first month of breastfeeding: (1) Chuen-Lin (Chuan Lian), (2) Ngan-Huang (Niu Huang), (3) Yin-Chen.' },
+            { text: '5. When ordering direct bilirubin, explain that extra blood will be drawn to distinguish the TYPE of jaundice — it is NOT a "liver test".' },
+            { text: '6. Continue to monitor jaundice and stool colour on discharge. Bring baby back if yellowing recurs/persists or stools turn pale.' },
           ],
         },
       ],
     },
     {
-      title: 'Nurse TCU Orders for Repeat NNJ Visits',
+      heading: 'Nurse TCU Orders for Repeat NNJ Visits',
       blocks: [
         {
           type: 'table',

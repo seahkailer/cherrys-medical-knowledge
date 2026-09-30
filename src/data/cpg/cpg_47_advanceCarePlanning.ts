@@ -4,13 +4,14 @@ import { CpgDocument } from '../types';
 // 47 NUP CPG — Advance Care Planning (Nov 2024)
 // ---------------------------------------------------------------------------
 export const advanceCarePlanning: CpgDocument = {
-  id: 'advance-care-planning',
-  title: 'Advance Care Planning',
-  category: 'Palliative / End of Life',
-  lastReviewed: 'November 2024',
+  id: 'cpg-advance-care-planning',
+  condition: 'Advance Care Planning',
+  source: '47 NUP CPG - NUP Guide on Advance Care Planning.pdf',
+  reviewDate: 'Nov 2024. Next review: Nov 2027.',
+  advisors: 'Dr Lim Lee Yen (Consultant, Division of Supportive Care & Palliative Medicine, NTFGH)',
   sections: [
     {
-      title: 'Introduction',
+      heading: 'Introduction',
       blocks: [
         {
           type: 'text',
@@ -25,7 +26,7 @@ export const advanceCarePlanning: CpgDocument = {
       ],
     },
     {
-      title: 'Types of ACP',
+      heading: 'Types of ACP',
       blocks: [
         {
           type: 'table',
@@ -39,27 +40,27 @@ export const advanceCarePlanning: CpgDocument = {
       ],
     },
     {
-      title: 'Benefits of ACP',
+      heading: 'Benefits of ACP',
       blocks: [
         {
           type: 'list',
           items: [
-            'Provides opportunity to make choices about future healthcare preferences and personal care (strengthens patient autonomy)',
-            'Reduces uncertainties regarding preferences of care',
-            'Prepares caregivers for times of crisis',
-            'Decreases caregiver\'s burden in decision-making',
-            'Reduces family conflicts',
-            'Reduces hospitalisation and intensive treatments at the end of life which may cause more harm and unnecessary suffering',
-            'Enhances mutual understanding and relationships between patients, their loved ones and their healthcare providers',
-            'Facilitates right siting of care and concordance of care',
-            'Increases earlier utilisation of palliative services to improve symptom control',
-            'Facilitates patient-centred care and improves quality of life',
+            { text: 'Provides opportunity to make choices about future healthcare preferences and personal care (strengthens patient autonomy)' },
+            { text: 'Reduces uncertainties regarding preferences of care' },
+            { text: 'Prepares caregivers for times of crisis' },
+            { text: 'Decreases caregiver\'s burden in decision-making' },
+            { text: 'Reduces family conflicts' },
+            { text: 'Reduces hospitalisation and intensive treatments at the end of life which may cause more harm and unnecessary suffering' },
+            { text: 'Enhances mutual understanding and relationships between patients, their loved ones and their healthcare providers' },
+            { text: 'Facilitates right siting of care and concordance of care' },
+            { text: 'Increases earlier utilisation of palliative services to improve symptom control' },
+            { text: 'Facilitates patient-centred care and improves quality of life' },
           ],
         },
       ],
     },
     {
-      title: 'Barriers to ACP',
+      heading: 'Barriers to ACP',
       blocks: [
         {
           type: 'table',
@@ -73,81 +74,81 @@ export const advanceCarePlanning: CpgDocument = {
       ],
     },
     {
-      title: 'Key Components About ACP',
+      heading: 'Key Components About ACP',
       blocks: [
         {
           type: 'list',
           items: [
-            'Family physicians are well-placed in being ACP advocates to their patients.',
-            'Patients look to physicians to initiate ACP conversations.',
-            'ACP is relational, not transactional; not a form-filling exercise.',
-            'ACP is not a one-off event. It is an on-going iterative process, concerning patients\' values, beliefs and goals of care.',
-            'ACP is voluntary. Pace with patients if they are not ready.',
-            'Focus on patients with most needs, who benefit most from ACP conversations.',
-            'Move ACP conversations upstream and earlier in the disease trajectory when patients are not so seriously ill.',
-            'Normalise ACP as part of standard patient care.',
+            { text: 'Family physicians are well-placed in being ACP advocates to their patients.' },
+            { text: 'Patients look to physicians to initiate ACP conversations.' },
+            { text: 'ACP is relational, not transactional; not a form-filling exercise.' },
+            { text: 'ACP is not a one-off event. It is an on-going iterative process, concerning patients\' values, beliefs and goals of care.' },
+            { text: 'ACP is voluntary. Pace with patients if they are not ready.' },
+            { text: 'Focus on patients with most needs, who benefit most from ACP conversations.' },
+            { text: 'Move ACP conversations upstream and earlier in the disease trajectory when patients are not so seriously ill.' },
+            { text: 'Normalise ACP as part of standard patient care.' },
           ],
         },
       ],
     },
     {
-      title: 'Focus on Patients with Most Needs',
+      heading: 'Focus on Patients with Most Needs',
       blocks: [
         {
           type: 'list',
           items: [
-            'Diagnosis of a serious, life-limiting illness e.g., cancer',
-            'Recurring hospitalisations e.g., end-stage organ failure',
-            'Worsening symptoms e.g., progression of disease',
-            'Deterioration or long-standing impairment in functional status e.g., ADL dependent, bedbound, multiple falls',
-            'Frail, elderly',
-            'Major surgery',
-            'Decline hospital referral for further assessment or invasive interventions',
-            'Illness / death involving significant others',
-            'Enquire about AMD / LPA or express a desire to discuss end-of-life wishes',
+            { text: 'Diagnosis of a serious, life-limiting illness e.g., cancer' },
+            { text: 'Recurring hospitalisations e.g., end-stage organ failure' },
+            { text: 'Worsening symptoms e.g., progression of disease' },
+            { text: 'Deterioration or long-standing impairment in functional status e.g., ADL dependent, bedbound, multiple falls' },
+            { text: 'Frail, elderly' },
+            { text: 'Major surgery' },
+            { text: 'Decline hospital referral for further assessment or invasive interventions' },
+            { text: 'Illness / death involving significant others' },
+            { text: 'Enquire about AMD / LPA or express a desire to discuss end-of-life wishes' },
           ],
         },
       ],
     },
     {
-      title: 'Verbal Cues from Patients',
+      heading: 'Verbal Cues from Patients',
       blocks: [
         {
           type: 'list',
           items: [
-            '"I\'m already so old, just let it be. Just live day by day."',
-            '"I can live until 80 quite good already. It is already enough."',
-            '"Die then die. No need to think so much."',
-            '"I don\'t want to be a burden to my family."',
-            '"I\'ve had enough; I do not want to continue treatment."',
-            '"I have thought about stopping dialysis."',
-            '"I don\'t want any more medicines."',
-            '"What if my condition gets worse?"',
-            '"I\'m scared I would have cancer."',
+            { text: '"I\'m already so old, just let it be. Just live day by day."' },
+            { text: '"I can live until 80 quite good already. It is already enough."' },
+            { text: '"Die then die. No need to think so much."' },
+            { text: '"I don\'t want to be a burden to my family."' },
+            { text: '"I\'ve had enough; I do not want to continue treatment."' },
+            { text: '"I have thought about stopping dialysis."' },
+            { text: '"I don\'t want any more medicines."' },
+            { text: '"What if my condition gets worse?"' },
+            { text: '"I\'m scared I would have cancer."' },
           ],
         },
       ],
     },
     {
-      title: 'Useful Opening Statements',
+      heading: 'Useful Opening Statements',
       blocks: [
         {
           type: 'list',
           items: [
-            '"How are you coping with your current medical condition?"',
-            '"What is important for you at this point in time?"',
-            '"What are your fears and worries about the future?"',
-            '"Have you heard about Advance Care Planning?"',
-            '"What is important for you to live well?"',
-            '"What gives you joy and meaning?"',
-            '"What gives you strength when you face an illness?"',
-            '"Has the thought of your condition deteriorating ever cross your mind?"',
+            { text: '"How are you coping with your current medical condition?"' },
+            { text: '"What is important for you at this point in time?"' },
+            { text: '"What are your fears and worries about the future?"' },
+            { text: '"Have you heard about Advance Care Planning?"' },
+            { text: '"What is important for you to live well?"' },
+            { text: '"What gives you joy and meaning?"' },
+            { text: '"What gives you strength when you face an illness?"' },
+            { text: '"Has the thought of your condition deteriorating ever cross your mind?"' },
           ],
         },
       ],
     },
     {
-      title: 'Referral Process',
+      heading: 'Referral Process',
       blocks: [
         {
           type: 'text',
@@ -156,15 +157,15 @@ export const advanceCarePlanning: CpgDocument = {
         {
           type: 'list',
           items: [
-            'Option 1 (Preferred): Launch a "TCU ADVANCE CARE PLANNING FACILITATION (ACP)" order via Epic and direct patients to the check-out kiosk to book an appointment. The "TCU TELE-ADVANCE CARE PLANNING (ACP)" order is only reserved for those who prefer ACP discussions over the phone rather than in person.',
-            'Option 2: Create a "TCU MEDICAL SOCIAL SERVICE (MSW)" order via Epic and select ACP under "Reason for Referral".',
-            'Option 3: Patient to self-book MSW appointment via OneNUHS app.',
+            { text: 'Option 1 (Preferred): Launch a "TCU ADVANCE CARE PLANNING FACILITATION (ACP)" order via Epic and direct patients to the check-out kiosk to book an appointment. The "TCU TELE-ADVANCE CARE PLANNING (ACP)" order is only reserved for those who prefer ACP discussions over the phone rather than in person.' },
+            { text: 'Option 2: Create a "TCU MEDICAL SOCIAL SERVICE (MSW)" order via Epic and select ACP under "Reason for Referral".' },
+            { text: 'Option 3: Patient to self-book MSW appointment via OneNUHS app.' },
           ],
         },
       ],
     },
     {
-      title: 'Uploading and Reviewing ACP',
+      heading: 'Uploading and Reviewing ACP',
       blocks: [
         {
           type: 'text',
@@ -177,7 +178,7 @@ export const advanceCarePlanning: CpgDocument = {
       ],
     },
     {
-      title: 'REDMAP Communication Framework',
+      heading: 'REDMAP Communication Framework',
       blocks: [
         {
           type: 'text',
