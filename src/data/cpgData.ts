@@ -6193,6 +6193,598 @@ const acneSkinInfections: CpgDocument = {
   ],
 };
 
+// ---------------------------------------------------------------------------
+// 36 NUP CPG — Acute and Recurrent Back Pain (Mar 2025)
+// ---------------------------------------------------------------------------
+const backPain: CpgDocument = {
+  id: 'cpg-back-pain',
+  condition: 'Acute and Recurrent Back Pain',
+  source: '36 NUP CPG - Management of Acute and Recurrent Back Pain in Primary Care.pdf',
+  reviewDate: 'Reviewed March 2025 by Dr Teo Hon Wei / Dr Ma Yueyun / Dr Zhang Zhi Peng. Next review: March 2028.',
+  advisors: 'Key FPs: Dr Teo Hon Wei, Dr Ma Yueyun. Specialist: Dr Muhammad Nazrul (Consultant, Orthopaedic Surgery, NUH). Input: Dr Tan Jun Hao (Assoc Consultant, Orthopaedic Surgery, NUH).',
+  sections: [
+    {
+      heading: 'Background and Key Messages',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Acute back pain is common and lasts less than 3 months.' },
+          { text: 'Pain is generally non-specific; precise and exact diagnosis is often not possible or necessary.' },
+          { text: 'After acute episodes, there may be persistent or fluctuating pain for a few weeks to months.' },
+          { text: 'Even in the presence of severe pain that limits activities initially, this tends to improve, with possible recurring episodes.' },
+          { text: 'Acute back pain does not cause prolonged loss of function unlike chronic back pain.' },
+          { text: 'Chronic back pain = persistent pain >3 months (different from recurrent: episodic acute <3 months with symptom-free periods in between).' },
+          { text: 'Patients with chronic back pain are more likely to report loss of function or activity restrictions.' },
+          { text: 'Consider specialist review for chronic back pain despite adequate education, reassurance, analgesia and trial of physiotherapy.' },
+        ]},
+        { type: 'text', content: 'Key Messages: (1) Episodes mostly short-lived (improve within 4 weeks) — reassurance is very helpful. (2) In the absence of red flags, investigations in the first 4–6 weeks do not provide clinical benefit. (3) Encourage patients to remain active: resume usual activities including work as soon as possible. (4) Analgesia and physiotherapy may provide short-term symptom control. (5) Some interventions may be harmful: extended bed rest, extended use of opiates, NSAIDs or benzodiazepines.' },
+      ],
+    },
+    {
+      heading: 'Clinical Assessment',
+      blocks: [
+        { type: 'text', content: 'Rule out red flags first. If present, early investigations, urgent referrals to A&E or spine specialist need to be considered.' },
+        { type: 'list', items: [
+          { text: 'RED FLAGS: Features of cauda equina syndrome (new-onset incontinence, saddle anaesthesia, lax anal tone, progressively worsening lower limb neurological symptoms)' },
+          { text: 'RED FLAGS: Weight loss, current or history of cancers' },
+          { text: 'RED FLAGS: Significant trauma or history of osteoporosis' },
+          { text: 'RED FLAGS: Fever, long-term steroids use, or other forms of immunosuppressant' },
+          { text: 'RED FLAGS: Severe, unremitting night pain' },
+        ]},
+        { type: 'text', content: 'History: Duration, pain score, trigger, relieving factors, response to previous therapy; previous similar symptoms; activities associated with pain; presence of radiculopathy or claudication; early morning stiffness ≥1 hour; impairment on occupation and ADL; mood disorder (depression/anxiety) especially in chronic LBP.' },
+        { type: 'text', content: 'Physical Examination: Focused and targeted. Always consider: (1) Inspection of back and posture (scoliosis, hyperkyphosis, loss of lumbar lordosis); (2) Palpation of spine for localised vertebral tenderness; (3) Lower limb neurological exam (strength, reflexes, sensation and gait).' },
+        {
+          type: 'table',
+          headers: ['Nerve Root', 'Action'],
+          rows: [
+            { cells: ['L2', 'Hip Flexion'] },
+            { cells: ['L3', 'Knee Extension'] },
+            { cells: ['L4', 'Ankle Dorsiflexion'] },
+            { cells: ['L5', 'Big toe Extension'] },
+            { cells: ['S1', 'Ankle Plantarflexion'] },
+          ],
+        },
+        { type: 'text', content: 'Special manoeuvres (if relevant): (1) Straight Leg Raise (SLR / Lasègue\'s sign) — positive when radicular pain (beyond ipsilateral knee, not just back or hamstring) occurs between 30–70° hip flexion. (2) Patrick\'s (FABER) test — positive when hip or buttock pain is elicited with ipsilateral leg flexed at knee, hip abducted and externally rotated; raises suspicion of hip or sacroiliac joint pathology. (3) Schober\'s test (when indicated) — mark 10cm above and 5cm below L5. On forward flexion, distance should increase ≥5cm (to total ≥20cm); if not, restriction in lumbar flexion suspected.' },
+      ],
+    },
+    {
+      heading: 'Investigations',
+      blocks: [
+        { type: 'text', content: 'Laboratory: Most patients with acute LBP do not require investigations. Consider etiologies outside the spine (pancreatitis, pyelonephritis, nephrolithiasis, aortic aneurysm, herpes zoster). If suspicion of systemic illness (connective tissue disorder, inflammatory spondyloarthropathy, infection), consider ESR — a normal ESR can help exclude suspected inflammatory arthritis/infection but is non-specific if elevated.' },
+        { type: 'text', content: 'Radiological: Earlier use (within first 4–6 weeks without red flags) is not associated with improved outcomes. Radiological findings are often abnormal in asymptomatic patients. Inappropriate imaging can trigger additional costly studies, unneeded treatments, and unwarranted surgery. Only plain X-rays available in NUP (AP and Lateral views; X-ray of SI joint if sacroiliitis suspected).' },
+        { type: 'text', content: 'Indications for early radiological investigations: (1) Significant trauma (high energy injury) or low energy trauma in elderly. (2) Current/previous history of cancers. (3) Risk factors for spinal infections (fever, IV drug use, immunosuppression, recent sepsis, recent spine procedure). (4) High risk for vertebral compression fractures (advanced age, prolonged steroids, known osteoporosis).' },
+        { type: 'text', content: 'Limitations of plain X-rays: May not be sensitive enough in certain scenarios. Some patients require urgent advanced imaging (MRI): cauda equina syndrome or significant progressive neurological deficits; very high suspicion of spinal infection or malignancy. These patients should be referred to A&E if clinically indicated or given urgent specialist appointments.' },
+      ],
+    },
+    {
+      heading: 'Treatment — Non-Specific Low Back Pain',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Non-pharmacological: Patient education and reassurance (prognosis often good, most cases resolve with little intervention; use NUP MSK brochure). Encourage staying active and returning to usual activities as soon as possible. Avoid bed rest. Lifestyle modification (avoid twisting and bending, avoid heavy contact sports and strenuous activities). Physiotherapy — consider if symptoms last >2 weeks despite adequate analgesia trial.' },
+          { text: 'NSAIDs: Strongest evidence for symptom relief in acute back pain. Use with caution/avoid in CKD 3 or worse, patients on antiplatelet/anticoagulant, elderly (use extreme caution even if Cr normal). No clear evidence any NSAID is superior; consider switching if first is ineffective. Prescribe at lowest dose, shortest duration possible (avoid >2 weeks continuous use).' },
+          { text: 'Paracetamol ± Orphenadrine: Safer first line for patients with NSAID contraindications (asthmatics, CKD). Beware of sedation risks with Orphenadrine and adverse effects in elderly. Evidence weaker than NSAIDs.' },
+          { text: 'Opioids/Tramadol: Only as alternative when other medications are contraindicated. Limit to a few days (not more than 2 weeks). Be aware of potential for abuse.' },
+          { text: 'Antiepileptics: Usually for radicular pain. Gabapentin/Pregabalin have very low-level evidence for chronic radicular pain.' },
+          { text: 'Topical analgesia: Low-level evidence for topical capsaicin; very little evidence for other topical analgesics.' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Recommended Management Algorithm for Acute Back Pain',
+      blocks: [
+        { type: 'text', content: 'Initial presentation: Check for red flags. If red flags present → investigate and consider referral to A&E or Orthopaedics. If no red flags → give patient the "green light": advise to stay active and continue to work; explain and reassure (use MSK brochures); agree on a management plan; control symptoms; arrange review if needed; consider physio if appropriate (recurrent back pain without prior trial of physio; acute back pain with pain score ≥7 with functional impairment).' },
+        { type: 'text', content: 'Initial 1–4 weeks: Expect improvements. Review if necessary. Consider physiotherapy (Physiofirst clinic if appropriate; back care education and advice; up to 3 sessions).' },
+        { type: 'text', content: '4–6 weeks follow-up (if necessary): Recheck for red flags. If symptoms improving → reinforce green light advice. If not improving → consider investigations (X-rays); consider specialist referral if no improvement after >6–8 weeks.' },
+      ],
+    },
+    {
+      heading: 'Recurrent and Chronic Back Pain',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'For recurrent back pain, revisit history and physical examination to ensure no new symptoms or findings suggesting more serious aetiology (including red flags).' },
+          { text: 'Management of a recurring episode (<3 months, no worsening/new worrying symptoms) is similar to acute back pain with conservative management.' },
+          { text: 'Consider offering physiotherapy if not already done.' },
+          { text: 'Consider referring to spine specialist if: chronic back pain >3 months despite appropriate conservative management; worsening symptoms or red flags; significant functional impairment (frequent work absence, ADL affected); recurrent back pain not well controlled with conservative management.' },
+          { text: 'Patients with chronic pain are more likely to have underlying mood disorders (anxiety, depression) — consider screening.' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Referral to Spine Specialist',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Refer immediately to A&E: New-onset cauda equina syndrome symptoms; high suspicion of spinal infection (febrile, septic, significant rest pain, spinal tenderness, risk factors); high energy injury with spinal fractures (RTA, fall from height).' },
+          { text: 'Refer urgently to spine specialist: High suspicion of primary spinal malignancy or metastatic disease (including pathological fractures); compression fractures with persistent significant pain; severe unremitting or worsening radicular symptoms with PID features especially with neurological deficit. (Milder, stable symptoms may have a trial of conservative management first.)' },
+          { text: 'Recurrent or chronic back pain not responding to adequate conservative management (should have trial of physiotherapy first after excluding red flags).' },
+        ]},
+      ],
+    },
+  ],
+};
+
+// ---------------------------------------------------------------------------
+// 37 NUP CPG — Acute Coronary Syndrome (Jul 2025)
+// ---------------------------------------------------------------------------
+const acuteCoronarySyndrome: CpgDocument = {
+  id: 'cpg-acs',
+  condition: 'Acute Coronary Syndrome (ACS)',
+  source: '37 NUP CPG - Management of Acute Coronary Syndrome.pdf',
+  reviewDate: 'Published July 2025.',
+  advisors: 'Key FP: Dr Kwan Yew Seng. Specialist: Dr Lim Toon Wei (Senior Consultant, Cardiology, National University Heart Centre, Singapore). Input: Emergency Medicine SAG Dr Anandan Gerard Thiagarajah; NUHSP: Mr Marvin Sim; Nursing: APN Liau Wei Fong.',
+  sections: [
+    {
+      heading: 'Introduction and Classification',
+      blocks: [
+        { type: 'text', content: 'Cardiovascular disease (CVD) is the most common cause of mortality and morbidity worldwide. ACS is often the first clinical manifestation of CVD.' },
+        { type: 'text', content: 'ACS is caused by disruption (rupture or erosion) of an unstable coronary artery atherosclerotic plaque with associated partial or complete coronary artery thrombosis and/or microemboli, resulting in diminished blood flow to the myocardium.' },
+        { type: 'text', content: 'ACS includes 3 related clinical conditions: (1) Unstable angina; (2) NSTEMI; (3) STEMI.' },
+        { type: 'text', content: 'Initial diagnosis and classification of ACS is based on: (1) Clinical history and symptomatology; (2) ECG interpretation; (3) Assessment of cardiac troponin.' },
+        { type: 'text', content: 'Unstable angina: Transient myocardial ischaemia in the absence of significant myonecrosis (troponin not elevated). Characterised by prolonged (>20 min) rest angina; new onset severe angina; angina increasing in frequency, longer in duration, or lower in threshold; or angina after recent MI.' },
+        { type: 'text', content: 'NSTEMI: Partially occluded artery → subendocardial ischaemia. STEMI: Completely occluded vessel → transmural ischaemia and infarction. ACS can be dynamic and patients may progress rapidly between types.' },
+      ],
+    },
+    {
+      heading: 'Diagnosis — Clinical Presentation',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Acute chest discomfort (pain, pressure, tightness, heaviness, or burning) is the leading presenting symptom.' },
+          { text: 'Chest pain descriptors should be classified as cardiac, possibly cardiac, and likely non-cardiac. (Avoid term "atypical" though cardio e-referral still uses it.)' },
+          { text: 'Chest pain-equivalent symptoms: dyspnoea, epigastric pain, pain in left or right arm or neck/jaw.' },
+        ]},
+      ],
+    },
+    {
+      heading: 'History Taking and Physical Examination',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Focused history and accurate characterisation of presenting symptoms as soon as possible.' },
+          { text: 'Vital signs promptly assessed, initial ECG ordered (may have been done by nursing in triage).' },
+          { text: 'Physical examination to eliminate differential diagnoses and identify very high-risk/high-risk ACS features.' },
+          { text: 'Focused PE: check all major pulses; measure BP in both arms; auscultate heart and lungs; assess for HF or circulatory compromise. Pulse and BP discrepancy = physical sign of aortic dissection.' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Differential Diagnoses of Acute Chest Pain',
+      blocks: [
+        {
+          type: 'table',
+          headers: ['Clinical Syndrome', 'Findings'],
+          rows: [
+            { cells: ['Pulmonary Embolism (Emergency)', 'Tachycardia + dyspnoea; pain with inspiration'] },
+            { cells: ['Aortic Dissection (Emergency)', 'Connective tissue disorders (e.g. Marfan); extremity pulse differential; severe abrupt-onset pain + pulse differential + widened mediastinum on CXR; syncope'] },
+            { cells: ['Oesophageal Rupture (Emergency)', 'Emesis, subcutaneous emphysema, pneumothorax with unilateral decreased/absent breath sounds'] },
+            { cells: ['Noncoronary cardiac: Aortic Stenosis', 'Characteristic systolic murmur, tardus or parvus carotid pulse'] },
+            { cells: ['Noncoronary cardiac: Aortic Regurgitation', 'Diastolic murmur at right of sternum, rapid carotid upstroke'] },
+            { cells: ['Noncoronary cardiac: HCM', 'Increased or displaced LV impulse, prominent a wave in JVP, systolic murmur'] },
+            { cells: ['Pericarditis', 'Fever, pleuritic chest pain, increased in supine position, friction rub'] },
+            { cells: ['Myocarditis', 'Fever, chest pain, heart failure, S3'] },
+            { cells: ['Oesophagitis, peptic ulcer, gallbladder disease', 'Epigastric tenderness; right upper quadrant tenderness, Murphy sign'] },
+            { cells: ['Pneumonia', 'Fever, localised chest pain, may be pleuritic, friction rub'] },
+            { cells: ['Pneumothorax', 'Dyspnoea and pain on inspiration, unilateral absence of breath sounds'] },
+            { cells: ['Costochondritis / Tietze syndrome', 'Tenderness of costochondral junctions'] },
+            { cells: ['Herpes Zoster', 'Pain in dermatomal distribution, triggered by touch; characteristic unilateral dermatomal rash'] },
+          ],
+        },
+      ],
+    },
+    {
+      heading: 'ECG Interpretation for Suspected ACS',
+      blocks: [
+        {
+          type: 'table',
+          headers: ['', 'NSTE-ACS', 'STEMI'],
+          rows: [
+            { cells: ['Electrocardiographic evidence', 'New/presumed new dynamic horizontal or down-sloping ST depression ≥0.5mm in ≥2 contiguous leads; and/or T-wave inversion >1mm in ≥2 contiguous leads with prominent R wave or R/S >1; or transient ST elevation', 'New/presumed new ST elevation ≥1mm in ≥2 anatomically contiguous leads (J-point) in all leads except V2–V3 (which require ≥2mm in men ≥40y, ≥2.5mm in men <40y, ≥1.5mm in women)'] },
+            { cells: ['Other changes', 'Many have nonspecific ST/T changes or normal ECG. Absence of ECG evidence does not exclude ACS.', 'Posterior leads (V7–V9) should be obtained for suspected left circumflex occlusion (isolated ST depression ≥0.5mm in V1–V3). *ST changes may be seen in pericarditis, LVH, LBBB, Brugada, RV pacing, Takotsubo, early repolarisation — clinical correlation required.'] },
+          ],
+        },
+      ],
+    },
+    {
+      heading: 'Management in the Polyclinic',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Antiplatelet: Give aspirin loading dose 300mg orally if not contraindicated. Should be chewed (nonenteric coated) for faster onset. Loading dose applies even if already on aspirin.' },
+          { text: 'Transfer patient to triage/treatment room. Inform nursing staff to call ambulance.' },
+          { text: 'Oxygen: Supplement if SpO₂ <90%. Not recommended if SpO₂ >90% (not associated with clinical benefit).' },
+          { text: 'Analgesia: Rapid and effective pain relief is important to prevent sympathetic activation. Sublingual GTN may be given ONLY in haemodynamically stable patients with SBP ≥90mmHg. Nitrates MUST NOT be given after recent PDE5 inhibitor use — avoid within 12 hours of avanafil, 24 hours of sildenafil/vardenafil, or 48 hours of tadalafil.' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Referrals — Rapid Access Chest Pain Clinic (RACPC)',
+      blocks: [
+        { type: 'text', content: 'For patients with chest pain suggestive of ischaemia, assessed as stable, and without ACS. Open to all NUP clinics. Clinic runs Mon–Fri at NTFGH. Appointments generally within 2–3 working days (Thursday/Friday referrals may be seen early the following week). Appointment paired with Treadmill Exercise ECG (TMX) test — patient must be able to do TMX. A blood test appointment may also be made.' },
+        {
+          type: 'table',
+          headers: ['Inclusion Criteria', 'Exclusion Criteria'],
+          rows: [
+            { cells: ['Age ≥18 years', 'Suspected cardiac emergencies (suspected acute MI, severe/acute HF, unstable angina) — refer ED'] },
+            { cells: ['Episode(s) of chest pain (unlikely to be musculoskeletal, pleuritic or gastric)', 'ECG abnormality: complete LBBB, >1mm resting ST depression, tachy/bradyarrhythmias — refer ED or Gen Cardio SOC'] },
+            { cells: ['Baseline ECG done on referral day', 'Severe arterial hypertension (SBP >200 or DBP >110mmHg)'] },
+            { cells: ['CV risk factors based on age/gender/DM/HT/HPL/smoking/ethnicity', 'On digoxin'] },
+            { cells: ['No known CAD history OR CAD history >1 year prior with no existing Cardiology SOC', 'Existing/upcoming Cardiology SOC appointment in any PHI; normal CTCA/invasive angiogram in past 1 year'] },
+          ],
+        },
+        { type: 'text', content: 'RACPC workflow for doctors: Order ECG for every referred patient. Ensure ECG is uploaded in Epic. Place correct referral order (Referral to Cardiology — Rapid Access Chest Pain Clinic — NTFGH). Order TCU in 2 weeks (to review RACPC results and chest pain symptoms). Send patient to NUP referral counter for RACPC appointment.' },
+      ],
+    },
+  ],
+};
+
+// ---------------------------------------------------------------------------
+// 38 NUP CPG — Acute and Chronic Gout (Nov 2025)
+// ---------------------------------------------------------------------------
+const gout: CpgDocument = {
+  id: 'cpg-gout',
+  condition: 'Acute and Chronic Gout',
+  source: '38 NUP CPG - Management of Acute Gout and Chronic Gout in Primary Care.pdf',
+  reviewDate: 'Updated November 2025 by Dr Zhang Zhi Peng. Next review: February 2028.',
+  advisors: 'Key FP: Dr Zhang Zhi Peng. Specialists: Dr Amelia Santosa (Consultant, Rheumatology, NUH) and Dr Anita Lim (Senior Consultant, Rheumatology, NUH).',
+  sections: [
+    {
+      heading: 'Key Take-Home Messages',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Gout is a chronic condition — appropriate long-term ongoing treatment should be instituted if indicated.' },
+          { text: 'Provide lifestyle management to all patients with gout.' },
+          { text: 'Do not delay ULT for patients who meet ULT treatment criteria.' },
+          { text: '"Start low, go slow" with ULT.' },
+          { text: 'Treatment targets: <360 μmol/L for non-tophaceous gout; <300 μmol/L for tophaceous gout.' },
+          { text: 'For patients on ULT: DO NOT stop ULT during an acute flare.' },
+          { text: 'ULT can be initiated during acute flare — no need to wait until acute flare has resolved if adequate treatment is provided.' },
+          { text: 'Monitor serum uric acid at least every 6 months (more frequently if on active titration of ULT).' },
+        ]},
+        { type: 'text', content: 'ULT Treatment Criteria (Table 1): (1) Frequent acute gout flares (≥2 per year); (2) Tophaceous gout; (3) Clinical or radiological findings of gouty arthropathy; (4) History of urolithiasis (urate calculi); (5) Urate nephropathy or any renal insufficiency (CKD 3 and above).' },
+      ],
+    },
+    {
+      heading: 'History, Presentation and Risk Factors',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Acute onset of severe pain (maximum within 6–12 hours, up to 24 hours) and asymmetrical swelling affecting 1st MTPJ, ankle joints, and occasionally knees and small joints of hands (PIP joints).' },
+          { text: 'Erythema of affected joints with warmth.' },
+          { text: 'Recurrent 1st MTP joint symptoms (most common).' },
+          { text: 'Strong family history of gout.' },
+          { text: 'Remission within a few days to 1 week even without active treatment.' },
+          { text: 'Beware of "grumbling gout" — uncontrolled and untreated gout attack.' },
+          { text: 'Men > women (post-menopausal).' },
+          { text: 'May present with symmetrical polyarthritis and fever — must exclude infection/septic arthritis.' },
+        ]},
+        { type: 'text', content: 'Co-morbidities/Risk Factors to Exclude: Diabetes, Hypertension, Hyperlipidaemia, Chronic kidney disease, Excessive alcohol, Purine-rich foods (animal organs, red meat), Excessive fructose (corn syrup, sweetened beverages), Smoking, Obesity, Diuretic use (increases uric acid by increasing reabsorption and decreasing secretion; prophylactic allopurinol not necessary unless symptomatic), Cyclosporine, and other drugs.' },
+      ],
+    },
+    {
+      heading: 'Physical Examination',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Body temperature, obesity (BMI), blood pressure.' },
+          { text: 'Tender and swollen joints (monoarticular or asymmetric polyarticular) — commonly 1st MTPJ (Podagra), small finger joints (PIPJs), tarsal joints, ankle, elbow, and occasionally knee.' },
+          { text: 'Deformity of affected joints in chronic gout.' },
+          { text: 'Abdominal exam if history suggests alcoholic liver disease, PUD.' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Investigations',
+      blocks: [
+        { type: 'text', content: 'Gold standard: Presence of characteristic negatively birefringent needle-shaped urate crystals in joint aspiration fluid or tophus (not done in polyclinic).' },
+        { type: 'list', items: [
+          { text: 'FBC: Exclude infection, haematological disorder, anaemia from prolonged NSAIDs. Be aware TW and polymorphs can be high in acute attacks. Consider repeating 2–8 weeks after starting allopurinol.' },
+          { text: 'Creatinine: Exclude renal disease causing hyperuricaemia and urate nephropathy.' },
+          { text: 'Uric Acid: Baseline and treatment target. Do NOT use to confirm or exclude gout. Monitor minimally every 6 months. HYPERURICEMIA ≠ GOUT.' },
+          { text: 'ALT and AST: Baseline to exclude hepatic impairment. Repeat 2–8 weeks after starting allopurinol.' },
+          { text: 'Plasma Glucose: Detect DM, insulin resistance (metabolic syndrome).' },
+          { text: 'Fasting Lipids: High TG and low HDL (metabolic syndrome).' },
+          { text: 'ESR: Can help exclude other inflammatory arthritis. Non-specific if elevated. Corrected reference range: Male = Age/2; Female = (Age+10)/2. Repeat or trend if persistently raised without specific symptoms.' },
+          { text: 'CK: Consider at baseline or if concern about colchicine-related myopathy.' },
+          { text: 'X-Ray of relevant joints (not routine): Periarticular erosions ("punched-out" lesions), interosseous tophi, joint space narrowing, deformity/subluxation in late chronic tophaceous gout. Also look for soft tissue swelling and oedema in acute presentations.' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Gout Diagnosis and Differential Diagnoses',
+      blocks: [
+        { type: 'list', items: [
+          { text: '1st episode of acute gout; 1st episode of acute onset periarticular gout (bursae at knee & olecranon, tendon sheaths); frequent gout flares (≥2/year); chronic tophaceous gout.' },
+          { text: 'Inter-critical gout = symptom-free period between attacks. Important to recognise and start ULT if indicated. Untreated: time between attacks shortens, symptoms worsen.' },
+        ]},
+        { type: 'text', content: 'Differential diagnoses: Septic arthritis (may be difficult to distinguish, can co-exist with gout); Trauma (can trigger acute gout); Pseudogout (calcium pyrophosphate — more commonly knees, wrists, hips); Cellulitis (inflammatory signs extend to non-articular area with fever/chills); Pes planus with hallux valgus (especially in females).' },
+        { type: 'text', content: 'Asymptomatic hyperuricaemia: Do not diagnose gout based solely on elevated uric acid. Avoid routine/screening serum uric acid without clinical findings. Non-pharmacological advice can be provided. No further workup or pharmacological treatment usually required.' },
+      ],
+    },
+    {
+      heading: 'Treatment Goals and Non-Pharmacological Management',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Lower serum uric acid, decrease acute flare frequency, promote crystal dissolution, prevent crystal/tophi formation.' },
+          { text: 'Target: <360 μmol/L for non-tophaceous gout; <300 μmol/L for tophaceous gout.' },
+          { text: 'Non-pharmacological: Low purine diet (refer dietician); lifestyle modification (reduce weight, avoid smoking and alcohol); adequate fluid intake (if not contraindicated); review and reduce diuretics if possible (e.g., in stable CHF or hypertensive patients — as first-line management).' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Acute Management — Pharmacological',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Colchicine 500 mcg BD/TDS (3–5 days) ± NSAIDs. Side effects: gastritis, diarrhoea.' },
+          { text: 'NSAIDs (Indomethacin, Naproxen, Ibuprofen, Diclofenac): Use with caution/avoid in CKD 3+, patients on antiplatelet/anticoagulant, elderly. Exclude contraindications: poorly controlled asthma, aspirin-intolerant asthma, uncontrolled hypertension, established CVD. Consider prophylactic PPI. Lowest dose and shortest duration. Avoid >2 weeks continuous use.' },
+          { text: 'Colchicine dose in renal impairment: Reduce dose in renal impairment, avoid in moderate/severe. If eGFR ≤30mL/min and severe hepatic impairment: 0.5mg 2–3 times/week. CAUTION: Increased myopathy risk with concomitant statins metabolised by CYP3A4 (less likely with fluvastatin or rosuvastatin) — consider temporarily withholding statins during colchicine course.' },
+          { text: 'Prednisolone ≤30mg/day (0.5mg/kg, whichever lower) in divided doses ± colchicine 500mcg TDS (3–5 days). Recommended for elderly, renal insufficiency, hepatic dysfunction, cardiac failure, PUD, NSAIDs hypersensitivity.' },
+          { text: 'Joint aspiration and intra-articular triamcinolone injection (by qualified doctors; beware septic joints).' },
+          { text: 'Other alternatives: Anarex, Panadeine, Tramadol, Paracetamol.' },
+          { text: 'If already on allopurinol: DO NOT STOP ALLOPURINOL DURING ACUTE FLARE. Use colchicine 500mcg OM/BD as prophylaxis whenever initiating or adjusting allopurinol (until target uric acid achieved, up to 6 months). If flare occurs during prophylaxis: use higher acute treatment dose and reinstate prophylactic dose once flare resolves.' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Maintenance — Urate Lowering Therapy (ULT)',
+      blocks: [
+        { type: 'text', content: 'ULT Indications: (1) ≥2 acute gout attacks/year; (2) Tophaceous gout; (3) Clinical/radiological changes of gouty arthropathy; (4) Urate nephropathy/calculi; (5) Significant renal insufficiency (CKD 3+). Also consider: 1st flare with very high uric acid (>535 μmol/L) or 1st flare with history of urolithiasis.' },
+        { type: 'text', content: 'Allopurinol (Xanthine Oxidase Inhibitor): Start 50–100mg/day, increase every 2–8 weeks guided by serum uric acid until target achieved. Max dose 800–900mg/day for normal renal function. "Start low, go slow."' },
+        {
+          type: 'table',
+          headers: ['eGFR (ml/min/1.73m²)', 'Starting Dose of Allopurinol', 'Remarks'],
+          rows: [
+            { cells: ['<5', '50mg/week', 'CKD 4/5: consider referral to RAI SOC'] },
+            { cells: ['5–15', '50mg twice a week', 'CKD 4/5: consider referral to RAI SOC'] },
+            { cells: ['16–30', '50mg EOD', ''] },
+            { cells: ['31–45', '50mg OM', ''] },
+            { cells: ['46–60', '50–100mg OM', ''] },
+            { cells: ['>60', '100mg OM', ''] },
+          ],
+        },
+        { type: 'text', content: 'Allopurinol SCAR (Severe Cutaneous Adverse Reaction) risk factors — mnemonic RASHES: Renal impairment; Agent (concomitant diuretics); Starting dose (high); HLA-B*5801 positive; Escalation (rapid dose increase); Seniority (elderly). Monitor closely for early signs: fever, rashes, oral ulcers/severe sore throat, red or sore eyes. Repeat FBC, ALT, AST 2–8 weeks after starting/escalating allopurinol. SCARs include SJS, TEN, DRESS. Increase dose by 50–100mg at each review. In patients with CKD, caution with doses >300mg daily (uptitrate slowly). Max 100mg/day if CrCl <10mL/min.' },
+        { type: 'text', content: 'Probenecid (Uricosuric): Not for CrCl <50mL/min (ineffective). Contraindicated in renal stones. May cause haemolytic anaemia in G6PD deficiency. Start 250mg BD × 2–4 weeks; increase 250mg every 4–6 weeks to max 2g/day in divided doses. Adequate hydration. Decreases tubular excretion of salicylate and penicillin; increases serum frusemide and augments diuretic action.' },
+        { type: 'text', content: 'Febuxostat (Not in NUP): More effective in reducing uric acid than allopurinol 100–300mg daily. Costlier; restricted to rheumatologists. Reserve for failure of max allopurinol ± probenecid, or severe allopurinol allergy.' },
+        { type: 'text', content: 'Others with modest uricosuric effect: Losartan, Fenofibrate, Atorvastatin.' },
+        { type: 'text', content: 'Prophylaxis: Colchicine 0.5mg OD or BD at initiation of ULT until target uric acid achieved (up to 6 months). Reduce dose in renal impairment. CAUTION: Use colchicine with caution with concomitant statins, macrolides, or other CYP3A4-metabolised drugs (risk of colchicine toxicity: pancytopenia and myopathy).' },
+      ],
+    },
+    {
+      heading: 'HLA-B*5801 Testing',
+      blocks: [
+        { type: 'text', content: 'HLA-B*5801 testing prevents SCARs in allopurinol use. Not offered as standard screening in Singapore (overall value of routine genotyping is limited).' },
+        { type: 'list', items: [
+          { text: 'If HLA-B*5801 positive AND uric acid at target, no recent flares, tolerating allopurinol for >3 months → continue allopurinol with close monitoring; no need to refer specialist.' },
+          { text: 'If HLA-B*5801 positive AND uric acid not at target/recent flare but tolerating allopurinol ≥3 months, OR newly initiated (<3 months) and tolerating well → discuss risks/benefits/alternatives; Option 1: Continue allopurinol with close monitoring ≥3 months; Option 2: Alternatives — Probenecid (if no contraindications) OR Febuxostat (increased CV risk in heart disease; refer Rheum if switching to febuxostat).' },
+          { text: 'If HLA-B*5801 positive AND patient has not been started on allopurinol → Routine referral to Rheumatology.' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Referral to Rheumatologist',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'HLA-B*5801 positive AND not started on allopurinol, OR prefers alternatives with allopurinol <3 months, OR prefers alternatives with allopurinol >3 months but targets not met.' },
+          { text: 'Significant CKD (CKD 4/5).' },
+          { text: 'Tophaceous gout despite adherence to ULT.' },
+          { text: 'Hypersensitivity or serious adverse effects to ULT.' },
+          { text: '≥4 attacks/year despite reaching target serum uric acid.' },
+          { text: 'Uric acid not at target despite allopurinol ≥500mg/day + triggers minimised.' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Recommended Care Components for Gout',
+      blocks: [
+        {
+          type: 'table',
+          headers: ['Recommended Care Component', 'Minimum Frequency', 'Remarks'],
+          rows: [
+            { cells: ['Serum Uric Acid', 'At baseline; ≥6 monthly thereafter', 'Target <360 μmol/L (non-tophaceous) or <300 μmol/L (tophaceous). Tailor to clinical indication.'] },
+            { cells: ['Renal Function (Creatinine/eGFR)', 'At baseline', 'Exclude renal disease. Consider yearly if on periodic NSAIDs.'] },
+            { cells: ['ALT, AST', 'At baseline; 2–8 weeks after starting allopurinol', 'Baseline to exclude hepatic impairment. Monitor for SCAR.'] },
+            { cells: ['FBC', 'At baseline; 2–8 weeks after starting allopurinol', 'Exclude infection, haematological disorders. Monitor for leukocytosis and eosinophilia in SCAR.'] },
+            { cells: ['ESR', 'At baseline (where applicable)', 'Consider to exclude other inflammatory arthritis.'] },
+            { cells: ['Creatine Kinase (CK)', 'At baseline; 2–8 weeks after starting Colchicine; 3–6 monthly thereafter', 'Baseline before colchicine; exclude muscle pathology; monitor for colchicine myopathy.'] },
+            { cells: ['Plasma Glucose', 'At baseline; consider yearly', 'Detect insulin resistance and DM (metabolic syndrome).'] },
+            { cells: ['Fasting Lipids', 'At baseline; consider yearly', 'Detect dyslipidaemia (metabolic syndrome). Personalise targets.'] },
+            { cells: ['X-ray of Relevant Joints', 'If clinically indicated', 'Consider to differentiate from other inflammatory arthritides.'] },
+            { cells: ['Blood Pressure', 'Twice a year', 'Personalise target based on patient risk factors.'] },
+            { cells: ['Weight and BMI', 'Twice a year', 'Keep BMI <23 kg/m² (non-Asian: <25 kg/m²).'] },
+            { cells: ['Assessment of Diet and Lifestyle', 'Annually', 'Advise low purine diet, lifestyle modification, alcohol avoidance, smoking cessation.'] },
+          ],
+        },
+      ],
+    },
+  ],
+};
+
+// ---------------------------------------------------------------------------
+// 39 NUP CPG — Chronic Coronary Syndrome (Jul 2025)
+// ---------------------------------------------------------------------------
+const chronicCoronarySyndrome: CpgDocument = {
+  id: 'cpg-ccs',
+  condition: 'Chronic Coronary Syndrome (CCS)',
+  source: '39 NUP CPG - Management of Chronic Coronary Syndrome.pdf',
+  reviewDate: 'Published July 2025.',
+  advisors: 'Key FP: Dr Kwan Yew Seng. Specialist: Dr Lim Toon Wei (Senior Consultant, Cardiology, National University Heart Centre, Singapore). Input: NUHSP: Mr Marvin Sim; Nursing: APN Liau Wei Fong.',
+  sections: [
+    {
+      heading: 'Introduction',
+      blocks: [
+        { type: 'text', content: 'Chronic Coronary Syndrome (CCS), also known as chronic/stable ischaemic heart disease or stable coronary artery disease. Refers to clinical presentations arising from structural or functional alterations related to chronic diseases of the coronary arteries or microcirculation.' },
+        { type: 'text', content: 'CCS encompasses six clinical presentations: (1) Stable angina with suspected CAD ± dyspnoea*; (2) Stabilised symptom(s) after ACS or revascularisation*; (3) Asymptomatic CAD*; (4) New-onset HF with suspected CAD; (5) Vasospastic angina; (6) Microvascular angina. (*Covered in this CPG)' },
+        { type: 'text', content: 'Primary goals of CCS management: Reduce incidence of first acute MI in patients with screening-detected CAD; alleviate symptoms; reduce recurrence of MI; prevent complications (HF, AF); improve quality of life. Achieved through pharmacological and non-pharmacological treatment including lifestyle interventions.' },
+      ],
+    },
+    {
+      heading: 'Pharmacological Treatment',
+      blocks: [
+        { type: 'list', items: [
+          { text: '(A) Anti-Platelet Therapy: Use long-term low-dose aspirin monotherapy for secondary prevention. Long-term clopidogrel can be alternative to aspirin (not recommended if known CYP2C19 decrease/poor metaboliser). Low-dose aspirin associated with minimal bleeding risk; PPI may be required for high GI bleeding risk patients. Use PPI if gastric protection needed for clopidogrel or ticagrelor patients (note: omeprazole/esomeprazole reduce clopidogrel active metabolite — discuss with cardiologist via VPC if concerned). DAPT (aspirin + clopidogrel or ticagrelor) for patients after PCI — duration typically determined by cardiologist and communicated to PC.' },
+          { text: '(B) Medications for Prevention of Angina: Beta-blockers first line unless contraindicated. CCB when beta-blockers contraindicated or unacceptable side effects. Combination dihydropyridine CCB + beta-blocker if initial beta-blocker unsuccessful. AVOID concurrent non-dihydropyridine CCB + beta-blocker (risk of heart block/bradycardia). Additional options: long-acting nitrates, ivabradine (not in NUP), ranolazine (not in NUP), trimetazidine — added to beta-blocker and/or CCB if additional anti-anginal therapy needed. AVOID nitrates + PDE-5 inhibitors (severe hypotension). Do not combine ivabradine with non-dihydropyridine CCB. Follow recommended dosing for long-acting nitrates to minimise nitrate tolerance.' },
+          { text: '(C) Management of Co-morbidities: T2DM — consider SGLT2 inhibitor or GLP-1 RA with proven CV benefits regardless of HbA1c; target HbA1c ≤7% (less stringent ≤8% for frail/older/short life expectancy). Hypertension — use ACE inhibitor, ARB, or CCB as first-line; thiazide/thiazide-like diuretics as alternative; target BP <130/80 mmHg (less stringent <140/90 for elderly ≥85 years or symptomatic orthostatic hypotension). Dyslipidaemia — maximally tolerated statin ± ezetimibe; PCSK9i if needed; target LDL-C <1.8 mmol/L (most CCS); <1.4 mmol/L for history of ACS, recurrent events or additional CV risk factors; if target not feasible, aim for ≥50% reduction from baseline. CKD — ACE inhibitor or ARB titrated to max tolerated; add SGLT2 inhibitor for CKD with persistent albuminuria regardless of DM. Chronic HF — treatment based on HF type, fluid management, prognostic interventions; for reduced LVEF (≤40%): SGLT2 inhibitors, ARNI, MRA, and beta-blockers. AF — OAC monotherapy based on modified CHA₂DS₂-VASc score for new-onset AF without recent stent; refer cardiologist for new-onset AF with stent within past 12 months.' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Non-Pharmacological Treatment and Lifestyle',
+      blocks: [
+        {
+          type: 'table',
+          headers: ['Aspect', 'Advice'],
+          rows: [
+            { cells: ['BMI and Weight Management', 'Achieve and maintain healthy weight (BMI <23 kg/m²). Lose weight if required through recommended energy intake and increased physical activity (± pharmacological management).'] },
+            { cells: ['Psychosocial', 'Avoid situations inducing psychosocial stress. Treat depression and anxiety through psychological or pharmacological interventions.'] },
+            { cells: ['Sexual Activity', 'Sexual activity associated with low CV risk if CCS is stable and asymptomatic at low-to-moderate activity. PDE-5 inhibitors generally safe but NOT to be taken with nitrates (severe hypotension risk).'] },
+            { cells: ['Patient Education', 'Educate on condition, importance of pharmacological and non-pharmacological interventions, self-care, medication adherence.'] },
+          ],
+        },
+        { type: 'text', content: 'Exercise for CCS: Regular physical activity is associated with reduced cardiovascular and all-cause mortality. All individuals with established (long-standing) CCS should perform minimal physical activity recommendations. Applies to stable angina, asymptomatic/symptomatic stabilised <1 year after ACS or revascularisation, and asymptomatic/symptomatic >1 year after diagnosis or revascularisation. Asymptomatic patients with long-standing CCS intending intensive/competitive sports → refer cardiologist (may need exercise stress testing, functional imaging, echo). Inform patients that symptoms during exercise should prompt reassessment. Patients on dual antiplatelet should avoid bodily collision sports (especially with OAC due to haemorrhage risk). Exercise CONTRAINDICATED in: unstable conditions (uncontrolled HT or DM); anginal symptoms; high-grade arrhythmias (VF); decompensated HF; severe aortic dilatation; active thromboembolic disease.' },
+      ],
+    },
+    {
+      heading: 'Follow-Up and Monitoring',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Schedule regular follow-up for all patients with CCS.' },
+          { text: 'During follow-up: assess overall CV risk factors (especially dyslipidaemia, T2DM); review exertional and rest symptoms and their impact on daily activities; assess adherence to non-pharmacological advice and medications; remind about vaccinations (influenza, pneumococcal, COVID-19); refer to tertiary centre/specialist if required (HF, poorly controlled angina).' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Assessment of Acute Exacerbation of Chest Pain in CCS',
+      blocks: [
+        { type: 'text', content: '"Typical" chest pain (more likely cardiac): all three of — (1) Constricting/compressive discomfort front of chest radiating to neck/shoulders/jaw/arms; (2) Precipitated by physical exertion; (3) Relieved by rest or short-acting GTN within ~5 minutes. When only two of three features present: less likely cardiac.' },
+        { type: 'text', content: 'For suspected cardiac chest pain in CCS: order resting 12-lead ECG as baseline. All patients with CCS and suspected cardiac chest pain should be offered referral to ED for further assessment or urgent cardiologist review depending on clinical picture.' },
+      ],
+    },
+    {
+      heading: 'Fitness Certification',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Class 1, 2 and 3 licences: Angina — not fit until satisfactorily controlled. MI/CABG/unstable angina — not fit for at least 1 month. Coronary angioplasty — at least 1 week off driving; resume if recovery satisfactory.' },
+          { text: 'Class 4, 5 and Vocational Licences: Completion of exercise stress test required — will need cardiologist certification.' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Referral Back to Cardiology SOC',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Urgent review: New onset chest pain suspected to be ischaemic; exacerbation or recurrence of stable angina.' },
+          { text: 'Urgent review: New onset or exacerbation of heart failure.' },
+          { text: 'Urgent review: New onset AF that is highly symptomatic or with poor rate control (HR <40 or >110 bpm at rest).' },
+          { text: 'Urgent review: Syncope.' },
+          { text: 'Routine referral: Problems with employment, life insurance, or unacceptable lifestyle interference. Patient wishes to see cardiologist.' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Recommended Care Components',
+      blocks: [
+        {
+          type: 'table',
+          headers: ['Care Component', 'Minimum Frequency', 'Remarks'],
+          rows: [
+            { cells: ['Blood Pressure Measurement', 'Twice a year', ''] },
+            { cells: ['Weight and BMI', 'Twice a year', 'Keep <23 kg/m² (non-Asian: <25 kg/m²)'] },
+            { cells: ['Lipid Profile', 'Annually', 'Target LDL <1.8 mmol/L; <1.4 mmol/L for ACS history'] },
+            { cells: ['Smoking Assessment', 'Annually for smokers; once-off for non-smokers', 'Smoking habit assessment and cessation counselling'] },
+            { cells: ['Diabetes Screening', 'Annually (IFG/IGT) or every 3 years (normal glucose tolerance)', ''] },
+            { cells: ['Kidney Function', 'Annually', 'More frequent if on ACE inhibitors. uACR annually or more frequently if abnormal.'] },
+            { cells: ['Influenza Vaccination', 'Annually or per season', 'As per NAIS'] },
+            { cells: ['Pneumococcal Vaccination', 'As per NAIS', ''] },
+            { cells: ['Shingles Vaccination (Recombinant herpes zoster)', '2 doses at 2–6 month interval', 'Per NAIS and NCIS for patients ≥60 years'] },
+          ],
+        },
+      ],
+    },
+  ],
+};
+
+// ---------------------------------------------------------------------------
+// 40 NUP CPG — Minor Fractures, Sprain and Strain in Upper Limbs (Nov 2025)
+// ---------------------------------------------------------------------------
+const upperLimbFractures: CpgDocument = {
+  id: 'cpg-upper-limb-fractures',
+  condition: 'Minor Fractures, Sprain and Strain — Upper Limbs',
+  source: '40 NUP CPG - Management of Minor Fractures Sprain and Strain in Upper Limbs.pdf',
+  reviewDate: 'Updated November 2025. Next review: March 2027.',
+  advisors: 'Key FPs: Dr Teo Hon Wei, Dr Tan Juanmin, Dr Zhang Zhi Peng. Specialists: Dr Renita Sirisena (Consultant, Hand & Reconstructive Microsurgery, NUHS) and Dr Wang Mingchang (Visiting Consultant, Orthopaedic Surgery, NUHS).',
+  sections: [
+    {
+      heading: 'Introduction and Principles',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Strain: Tearing injury to muscle fibres from excessive tension or overuse.' },
+          { text: 'Sprain: Tearing injury to one or more ligaments of a joint when joint is forced beyond limits of normal motion.' },
+          { text: 'Fracture: Disruption in bone tissue from force exceeding bone strength, repetitive stress, or an invasive process.' },
+        ]},
+        { type: 'text', content: 'Acute management principles (PRICE): P — Protect from further damage (support/splint). R — Rest, avoid excessive weight bearing on injured side. I — Ice for 15 min every 2–3 hours (do not apply ice directly to skin). C — Compress with elastic bandage (not when sleeping). E — Elevate and support to reduce swelling/bruising. Avoid ice beyond first 24 hours (may impair healing by inhibiting inflammation). For strains/sprains, avoid prolonged rest. When pain improves, encourage gentle range-of-movement exercises. Always evaluate the joint above and below the site of injury.' },
+        { type: 'text', content: 'RED FLAGS (refer ALL to ED): Unstable fractures requiring backslab/cast immobilisation or intra-articular fractures; fractures involving weight-bearing or long bones (exception: small avulsion/chip fractures without significant pain not involving a joint); open fractures or significant soft tissue injuries; acute dislocations; any injury with neurovascular compromise. Fracture lines may not be visible in acute fractures — if high clinical suspicion (severe pain, significant swelling, immobility, functional impairment), manage as possible fracture or review in 1–2 weeks.' },
+      ],
+    },
+    {
+      heading: 'Finger Sprains',
+      blocks: [
+        { type: 'text', content: 'Suggested investigation: XR Fingers AP and Lateral views.' },
+        { type: 'list', items: [
+          { text: 'Volar (Palmar) plate sprain (hyperextension injury, PIPJ or DIPJ pain): Treat with buddy splint to adjacent finger × 1–2 weeks. If avulsion fractures: splint and refer to hand surgery direct access.' },
+          { text: 'Collateral ligament injury: Most managed conservatively with buddy splint and early mobilisation (within 2 weeks). EXCEPT: Ulnar collateral ligament injury of 1st MCP joint (hyperextension/hyperabduction; pain, swelling, ecchymosis over thenar eminence + instability) — refer to hand surgery direct access.' },
+          { text: 'Traumatic flexor tendon avulsion (Jersey finger — FDP from distal phalanx): Inability to actively flex DIPJ. XR finger AP and Lateral. Splint PIPJ and DIPJ in slight flexion. ALL jersey finger injuries: refer hand surgeon urgently (within 1 week preferably).' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Fractures',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Distal phalanx fractures: Tuft fractures and mallet finger (extensor terminal tendon ± avulsion) can be managed conservatively. Mallet finger requires extension splint. Refer mallet finger to hand surgery direct access. Refer acutely displaced, shortened, or angulated fractures to A&E.' },
+          { text: 'Middle phalanx fractures: Assess for rotation, shortening, or angulation. Immobilise in gutter splint. Refer to hand surgery direct access. Displaced/shortened/angulated → A&E.' },
+          { text: 'Proximal phalanx fractures: Often unstable → refer to A&E for immobilisation.' },
+          { text: 'Metacarpal fractures (XR Hand PA and Oblique): 1st metacarpal — intra-articular (Bennett\'s & Rolando\'s) often require surgery; extra-articular can be managed conservatively with long thumb spica splint. 2nd–5th metacarpal — assess for angulation and scissoring; non-displaced require splint. Refer acute metacarpal fractures to ED. Small avulsion/chip fractures without significant pain may not need ED but need early hand surgery review (direct access).' },
+          { text: 'Carpal bone fractures (XR Wrist AP and Lateral): All require immobilisation with backslab before HRM review for surgery. Refer acute carpal bone fractures to ED. Special attention to scaphoid fracture (XR Scaphoid view): Plain radiograph may miss early fractures; always request scaphoid view. Prevalence of occult fracture with negative plain radiograph ~25%. If high clinical suspicion (snuffbox tenderness), assume fracture until proven otherwise. Requires thumb spica slab.' },
+          { text: 'Distal radius fractures (XR Wrist AP and Lateral): Colles\' fracture (dorsal angulation); Smith\'s fracture (volar angulation). Require splint/arm cast and early HRM review. Refer to ED for immobilisation (reduction if required). Small avulsion/chip fractures may not need ED — suggest firm wrist guard, HRM review.' },
+        ]},
+        { type: 'text', content: 'Follow-ups for fractures: Follow up with acute fractures within 1–2 weeks (repeat X-ray to ensure no significant displacement; ensure adequate pain control). Typical healing: 8–12 weeks. Consider specialist referral for: worsening/persistent pain, swelling, or loss of function; malunion, nonunion, or delayed union; injuries requiring claim/compensation or legal input.' },
+      ],
+    },
+    {
+      heading: 'Adhesive Capsulitis (Frozen Shoulder)',
+      blocks: [
+        { type: 'text', content: 'Common shoulder condition with pain, stiffness, and loss of function. Idiopathic; increased prevalence in hypothyroidism, diabetes, and women aged 40–60. Commonly resolves within 1–2 years but some patients may never fully regain function.' },
+        { type: 'text', content: 'Clinical pearls: Dull, poorly localised pain, may radiate to biceps. Elevated arm or reaching behind back elicits pain and stiffness. Red flags: fever, malaise, weight loss, night sweats. Cardinal findings: reduced active and passive motion in all planes (primarily external rotation); in advanced stages, loss of natural arm swing with muscular atrophy. Diagnosed clinically; radiography to exclude other shoulder pathologies. Consider DM and hypothyroidism screening for at-risk patients.' },
+        { type: 'text', content: 'Management: Analgesia; Physiotherapy (manual mobilisation); Intra-articular corticosteroid injection; Hydrodilatation (arthroscopic distension — high-volume local anaesthetic + corticosteroids + normal saline); Surgery (manipulation under anaesthesia and arthroscopic capsule release). Consider referral to orthopaedic surgeon if minimal improvement after 6–12 weeks of conservative management.' },
+      ],
+    },
+    {
+      heading: 'Common Upper Limb Tendinopathy',
+      blocks: [
+        { type: 'text', content: 'Terminology: Tendinopathy = continuum of tendon injuries. Tendinitis = acute inflammatory response. Tendinosis = non-healing, degenerative; largely devoid of inflammatory cells. Acute tendinitis can occur on a background of chronic tendinosis. Tendon pathology typically develops in hypovascular/watershed areas.' },
+        { type: 'text', content: 'Management mainstays: Activity modification with relative rest (pain score ≤3 on VAS); Analgesia; Physiotherapy with rehabilitative exercises to gradually increase load-bearing capacity (for both acute and chronic).' },
+        { type: 'text', content: 'Analgesia options: Short-term oral or topical NSAIDs/COX-2 inhibitors in acute tendinopathy; peritendinous corticosteroid injection ± fenestration (repeated injections may exacerbate chronic pain, lead to tendon rupture — NEVER inject into/around weight-bearing tendons e.g. Achilles); dry needling; extracorporeal shock wave therapy for treatment-refractory tendinopathy. Early isometric, concentric, and eccentric exercises are advantageous. Specialist referral if conservative therapy proves ineffective after 3–6 months.' },
+        { type: 'list', items: [
+          { text: 'Rotator Cuff Tendinopathy: Most common cause of shoulder pain. Rotator cuff = subscapularis, supraspinatus, infraspinatus, teres minor. Common presentations: pain/weakness with overhead movement, reaching behind back, lying on affected side. Treatment: Analgesia; rehabilitative exercise (rotator cuff + scapular stabiliser strengthening); subacromial corticosteroid injections for short-term pain relief when initiating physio. Specialist referral if symptomatic after 6 months of physiotherapy.' },
+          { text: 'Epicondylitis: Lateral (tennis elbow) — overuse → tendinosis of extensor carpi radialis brevis; lateral elbow pain with gripping, reduced grip strength; tenderness ~1cm distal to lateral epicondyle with resisted wrist extension. Medial (golfer\'s elbow) — less common; flexor-pronator tendon origin at medial epicondyle; medial epicondyle tenderness with resisted forearm pronation/wrist flexion. Management: Analgesia; eccentric strengthening exercises; cock-up wrist braces (lateral) or counterforce straps; corticosteroid injection or shockwave therapy if conservative measures ineffective.' },
+          { text: 'De Quervain\'s Tenosynovitis: Tendons of extensor pollicis brevis and abductor pollicis longus in 1st extensor compartment. Gradual onset radial-sided wrist pain worsened by gripping/lifting. Tenderness and swelling over first dorsal wrist extensor compartment at radial styloid. Provocative tests: Finkelstein manoeuvre (pain over first extensor compartment when passively adducting the hand ulnarward while maintaining thumb traction); Eichhoff manoeuvre (pain with ulnar deviation while clenching thumb in fist). Negative grind test (positive in 1st CMC osteoarthritis). Management pathway: Most — Analgesia (NSAIDs) + orthoses (long thumb spica); Some — OT/corticosteroid injections; Selected — Surgery if conservative fails. Review escalation if pain and function persistently affected after 4–6 weeks.' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Carpal Tunnel Syndrome',
+      blocks: [
+        { type: 'text', content: 'Common entrapment neuropathy — compression of median nerve under transverse carpal ligament. Characteristic: night awakening with symptoms, relieved by shaking hands (flick sign). Paraesthesia and pain in median nerve distribution. Late-stage: weakness in thumb abduction and opposition.' },
+        { type: 'text', content: 'Causes: Mostly idiopathic. Predisposing conditions: rheumatoid arthritis, DM, pregnancy, hypothyroidism, obesity, acromegaly, previous wrist fractures. Occupational: repetitive forceful activities, vibratory tools.' },
+        { type: 'text', content: 'Examination: Paraesthesia in palmar aspect of thumb, index, middle, and radial half of ring finger. Thenar eminence wasting (severe). Weakness of thumb abduction/opposition (severe). Provocative tests: Tinel\'s, Phalen\'s, Duran\'s. Complete upper extremity exam (neck, shoulder, elbow, wrist) to exclude other causes.' },
+        { type: 'text', content: 'Management: Conservative — splinting to keep wrist in neutral position (usually nocturnal but can be continuous); corticosteroid injection; oral prednisolone 20mg daily × 10–14 days (less effective than injection). OT, nerve gliding exercises, activity modification. Referral to Hand Surgery: electrodiagnostic tests for atypical cases; surgical decompression for persistent/severe cases.' },
+        { type: 'text', content: 'Wrist Splint (available in NUP treatment rooms for BBK and PIO): Maintains neutral wrist positioning; alleviates numbness and pain. Worn daily (even at night). Remove for hand washing, showering, home exercises. Recommended wearing time ≥3 weeks; overall treatment duration 6–8 weeks. Management pathway: Most — NSAIDs + wrist splint (refer to Nur for splint, BBK/PIO only; also available OTC); Some — OT (direct OT referral workflow, BBK/PIO only); Selected — Surgery if conservative fails.' },
+      ],
+    },
+    {
+      heading: 'Trigger Finger',
+      blocks: [
+        { type: 'text', content: 'Stenosing tenosynovitis preventing smooth motion of the gliding tendon, usually at the level of A1 pulley. Common in >50 years, especially females and diabetics. Commonly affects thumb, middle and ring fingers.' },
+        { type: 'text', content: 'Symptoms: Pain and stiffness at volar aspect of MCPJ; snapping or popping sensation with digital flexion/extension; locking of finger in flexed position at PIPJ. Risk factors: repetitive forceful gripping.' },
+        { type: 'text', content: 'Examination: Tenderness at volar MCPJ over A1 pulley; palpable nodule at flexor tendon. Green\'s Classification: Grade I — pain/history of catching, not demonstrable; Grade II — demonstrable catching with intact active extension; Grade IIIA — demonstrable catching requiring passive extension; Grade IIIB — catching with loss of active flexion; Grade IV — fixed flexion contracture of PIPJ.' },
+        { type: 'text', content: 'Management: Conservative — Oval 8 splint; Corticosteroid injection; NSAIDs; OT and activity modification. Referral to Hand Surgery for persistent cases. Oval 8 Splint (available in NUP treatment rooms for BBK and PIO): Limits full finger flexion at PIP joint; reduces stress on inflamed tendons and pulleys. Available in 14 sizes (sizes 2–15). Recommended wearing time ≥3 weeks; overall treatment duration 6–8 weeks. Management pathway: Most — NSAIDs + Oval 8 splint; Some — OT; Selected — Surgery if conservative fails.' },
+      ],
+    },
+  ],
+};
+
 export const cpgDocuments: CpgDocument[] = [
   allergicConjunctivitis,
   allergicRhinitis,
@@ -6228,4 +6820,9 @@ export const cpgDocuments: CpgDocument[] = [
   lipids,
   thrombocytosisErythrocytosis,
   acneSkinInfections,
+  backPain,
+  acuteCoronarySyndrome,
+  gout,
+  chronicCoronarySyndrome,
+  upperLimbFractures,
 ];
