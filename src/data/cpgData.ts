@@ -1475,21 +1475,6 @@ const jointPain: CpgDocument = {
 export { jointPain };
 
 // ---------------------------------------------------------------------------
-// Combined export of all CPG documents
-// ---------------------------------------------------------------------------
-export const cpgDocuments: CpgDocument[] = [
-  allergicConjunctivitis,
-  allergicRhinitis,
-  anaemia,
-  anxietyDisorder,
-  jointPain,
-  acuteRedEye,
-  gastroenteritis,
-  atrialFibrillation,
-  bph,
-];
-
-// ---------------------------------------------------------------------------
 // 07 NUP CPG — Approach to Acute Red Eye (Dec 2022)
 // ---------------------------------------------------------------------------
 const acuteRedEye: CpgDocument = {
@@ -2279,3 +2264,18 @@ const bph: CpgDocument = {
   ],
 };
 export { bph };
+
+// ---------------------------------------------------------------------------
+// Combined export of all CPG documents
+// ---------------------------------------------------------------------------
+export const cpgDocuments: CpgDocument[] = [
+  allergicConjunctivitis,
+  allergicRhinitis,
+  anaemia,
+  anxietyDisorder,
+  jointPain,
+  acuteRedEye,
+  gastroenteritis,
+  atrialFibrillation,
+  bph,
+];
