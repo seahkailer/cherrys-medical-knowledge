@@ -34,10 +34,13 @@
 .app-main {
   display: flex;
   flex: 1;
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 1.5rem;
   gap: 1.5rem;
+  /* fill the viewport height so sidebar columns can scroll independently */
+  height: calc(100vh - 120px);
+  overflow: hidden;
 }
 
 .app-footer {
@@ -50,8 +53,46 @@
 
 /* ===== Sidebar ===== */
 .sidebar {
-  width: 260px;
+  display: flex;
+  flex-direction: row;
+  gap: 0.75rem;
   flex-shrink: 0;
+  width: 520px;
+  /* sidebar itself doesn't scroll — each column does */
+  overflow: hidden;
+}
+
+.sidebar-col {
+  flex: 1;
+  overflow-y: auto;
+  /* smooth scroll on iOS */
+  -webkit-overflow-scrolling: touch;
+  /* subtle scrollbar */
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 transparent;
+}
+
+.sidebar-col::-webkit-scrollbar {
+  width: 4px;
+}
+.sidebar-col::-webkit-scrollbar-track {
+  background: transparent;
+}
+.sidebar-col::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1;
+  border-radius: 2px;
+}
+
+/* CPG column heading matches the drug column style but purple */
+.cpg-sidebar-heading {
+  font-size: 0.85rem !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+  color: #7c3aed !important;
+  margin-bottom: 0.75rem !important;
+  border-bottom: 2px solid #ede9fe !important;
+  padding-bottom: 0.5rem !important;
 }
 
 .category-section {
@@ -183,6 +224,7 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  min-width: 0;
 }
 
 .results-container {
@@ -425,18 +467,39 @@
 }
 
 /* ===== Responsive ===== */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .app-main {
     flex-direction: column;
+    height: auto;
+    overflow: visible;
     padding: 1rem;
   }
 
   .sidebar {
     width: 100%;
+    flex-direction: row;
+    overflow: visible;
+    max-height: none;
+  }
+
+  .sidebar-col {
+    overflow-y: visible;
+    max-height: 300px;
+    overflow-y: auto;
   }
 
   .result-dosage {
     font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .sidebar {
+    flex-direction: column;
+  }
+
+  .sidebar-col {
+    max-height: 250px;
   }
 }
 
@@ -667,20 +730,9 @@
   background-color: #eff6ff !important;
 }
 
-/* ===== CPG Sidebar Section ===== */
+/* ===== CPG Sidebar Section (legacy — kept for safety) ===== */
 .cpg-sidebar-section {
-  margin-top: 1.5rem;
-  border-top: 2px solid #e2e8f0;
-  padding-top: 1rem;
-}
-
-.cpg-sidebar-section h2 {
-  font-size: 0.75rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: #7c3aed;
-  margin-bottom: 0.5rem;
+  margin-top: 0;
 }
 
 /* ===== CPG Detail View ===== */

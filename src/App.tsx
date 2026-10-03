@@ -237,47 +237,51 @@ function App() {
 
       <main className="app-main">
         <aside className="sidebar">
-          {/* Locum Guide categories */}
-          <CategoryFilter
-            categories={filteredCategories}
-            selectedCategory={selectedCategory}
-            selectedSubCategory={selectedSubCategory}
-            onCategoryChange={handleCategoryChange}
-            onSubCategoryChange={handleSubCategoryChange}
-            categoryCounts={categoryCounts}
-            totalEntries={totalEntries}
-          />
+          {/* Sickness Categories column */}
+          <div className="sidebar-col sidebar-col-drugs">
+            <CategoryFilter
+              categories={filteredCategories}
+              selectedCategory={selectedCategory}
+              selectedSubCategory={selectedSubCategory}
+              onCategoryChange={handleCategoryChange}
+              onSubCategoryChange={handleSubCategoryChange}
+              categoryCounts={categoryCounts}
+              totalEntries={totalEntries}
+            />
+          </div>
 
-          {/* NUP CPG section */}
-          <div className="cpg-sidebar-section">
-            <h2>NUP Clinical Practice Guidelines</h2>
-            <ul className="category-list">
-              {cpgDocuments.map((doc) => (
-                <li key={doc.id}>
-                  <button
-                    className={`category-button ${selectedCategory === doc.id ? 'active' : ''}`}
-                    onClick={() => handleCategoryChange(doc.id)}
-                  >
-                    {doc.condition}
-                    <span className="count">{doc.sections.length} sections</span>
-                  </button>
-                  {selectedCategory === doc.id && (
-                    <ul className="subcategory-list">
-                      {doc.sections.map((section, i) => (
-                        <li key={i}>
-                          <button
-                            className="subcategory-button"
-                            onClick={() => handleCategoryChange(doc.id)}
-                          >
-                            {section.heading}
-                          </button>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                </li>
-              ))}
-            </ul>
+          {/* NUP CPG column */}
+          <div className="sidebar-col sidebar-col-cpg">
+            <div className="category-section">
+              <h2 className="cpg-sidebar-heading">NUP Clinical Practice Guidelines</h2>
+              <ul className="category-list">
+                {cpgDocuments.map((doc) => (
+                  <li key={doc.id}>
+                    <button
+                      className={`category-button ${selectedCategory === doc.id ? 'active' : ''}`}
+                      onClick={() => handleCategoryChange(doc.id)}
+                    >
+                      {doc.condition}
+                      <span className="count">{doc.sections.length}</span>
+                    </button>
+                    {selectedCategory === doc.id && (
+                      <ul className="subcategory-list">
+                        {doc.sections.map((section, i) => (
+                          <li key={i}>
+                            <button
+                              className="subcategory-button"
+                              onClick={() => handleCategoryChange(doc.id)}
+                            >
+                              {section.heading}
+                            </button>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </aside>
 
