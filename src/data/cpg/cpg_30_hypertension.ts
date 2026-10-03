@@ -3,7 +3,7 @@ import { CpgDocument } from '../types';
 export const hypertension: CpgDocument = {
   id: 'hypertension',
   condition: 'Hypertension',
-  source: 'NUP CPG',
+  source: '30 NUP CPG - Hypertension.pdf',
   reviewDate: 'October 2028',
   advisors: 'Dr Kwan Yew Seng, Dr Anand Sankar; Specialist Advisor: Dr Lim Toon Wei (Senior Consultant, Department of Cardiology, National University Heart Centre, Singapore)',
   sections: [

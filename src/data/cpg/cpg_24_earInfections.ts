@@ -3,7 +3,7 @@ import { CpgDocument } from '../types';
 export const earInfections: CpgDocument = {
   id: 'ear-infections',
   condition: 'Ear Infections',
-  source: 'NUP CPG',
+  source: '24 NUP CPG - Ear Infections.pdf',
   reviewDate: 'July 2025',
   advisors: 'Dr Goh Xue Ying (Consultant, Department of Otolaryngology – Head & Neck Surgery, NUH)',
   sections: [

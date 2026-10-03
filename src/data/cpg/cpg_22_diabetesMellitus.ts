@@ -3,7 +3,7 @@ import { CpgDocument } from '../types';
 export const diabetesMellitus: CpgDocument = {
   id: 'diabetes-mellitus',
   condition: 'Diabetes Mellitus',
-  source: 'NUP CPG',
+  source: '22 NUP CPG - Diabetes Mellitus.pdf',
   reviewDate: 'January 2026',
   advisors: 'Dr Khoo Chin Meng (Senior Consultant, Department of Medicine, NUH)',
   sections: [

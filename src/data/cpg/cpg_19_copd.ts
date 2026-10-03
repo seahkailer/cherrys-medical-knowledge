@@ -3,7 +3,7 @@ import { CpgDocument } from '../types';
 export const copd: CpgDocument = {
   id: 'copd',
   condition: 'Chronic Obstructive Pulmonary Disease (COPD)',
-  source: 'NUP CPG',
+  source: '19 NUP CPG - Chronic Obstructive Pulmonary Disease.pdf',
   reviewDate: 'October 2025',
   advisors: 'Dr See Kay Choong (Senior Consultant, NUH)',
   sections: [
@@ -102,7 +102,23 @@ export const copd: CpgDocument = {
       ],
     },
     {
-      heading: 'Referrals',
+      heading: 'Role of Health Team Members',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Family Physician: Able to provide all aspects of primary medical care from screening, diagnosis and management of COPD, including health promotion and prevention/treatment of complications. Collaborates with other health care providers in the health team to provide holistic and patient-centred care.' },
+          { text: 'Care Coordinator: Perform general screening (fall risk, social economics, smoking & drinking history) and offer smoking cessation clinic. Address care gaps under Health Maintenance Topics, such as vaccinations (influenza/pneumococcal).' },
+          { text: 'Care Manager: Assess the learning needs and barriers of the patient and caregiver. Evaluate the level of understanding on chronic obstructive lung disease and lifestyle measures. Identify reasons for suboptimal/poor adherence to treatment plans and devise strategies to motivate the patients. Can do CAT score to assess severity of COPD. Provide education on medications (inhalers) and inhaler technique. Make referral to MSW, pharmacist and psychologist if needed.' },
+          { text: 'Advanced Practice Nurse: Manage patients with COPD within scope of practice. Initiate and titrate medication within the scope of APN practice. Offer timely influenza and pneumococcal vaccinations. Encourage smoking cessation.' },
+          { text: 'Dietitian: Dietary management for patients with malnutrition/underweight, or poor appetite/oral intake, for oral supplementation. Dietary management for patients who are overweight/obese.' },
+          { text: 'Medical Social Worker: Advance Care Planning for patients with severe COPD. Psychosocial assessment, consideration, and support.' },
+          { text: 'Physiotherapist: To assess patient\'s physical fitness for appropriate exercise prescription. To educate, motivate and provide advice on appropriate physical activities. To teach positions to ease shortness of breath and secretion clearance techniques if indicated.' },
+          { text: 'Psychologist: Psychological and behavioural interventions to manage psychological stress, improve disease management and quality of life. Psychological assessment and intervention to manage co-occurring psychological problems (depression, anxiety disorders).' },
+          { text: 'Pharmacist: Smoking cessation clinic. Detect, prevent and address drug-drug/drug-disease interactions. Perform medication reconciliation.' },
+        ]},
+      ],
+    },
+    {
+      heading: 'Referrals and Community Resources',
       blocks: [
         { type: 'list', items: [
           { text: 'Indication for Respiratory Medicine Referral', children: [
@@ -112,7 +128,7 @@ export const copd: CpgDocument = {
             { text: 'Rapid decline in FEV1 (>60 mL/year)' },
             { text: 'Development of new symptoms such as haemoptysis' },
           ]},
-          { text: 'Palliative treatment options to reduce dyspnoea include opioids, pulmonary rehabilitation, patient self-management education, neuromuscular electrical stimulation, chest wall vibration, and blowing air onto the face.' },
+          { text: 'Palliative treatment options to reduce dyspnoea include opioids, pulmonary rehabilitation, patient self-management education, neuromuscular electrical stimulation, chest wall vibration, and blowing air onto the face. Consider referral to palliative care services to aid in managing refractory dyspnoea. Consider performing Advance Care Planning (ACP) early: recent hospitalisation is a good opportunity to start the discussion.' },
         ]},
       ],
     },

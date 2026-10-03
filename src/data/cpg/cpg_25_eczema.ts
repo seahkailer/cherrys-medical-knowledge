@@ -3,7 +3,7 @@ import { CpgDocument } from '../types';
 export const eczema: CpgDocument = {
   id: 'eczema',
   condition: 'Eczema',
-  source: 'NUP CPG',
+  source: '25 NUP CPG - Eczema.pdf',
   reviewDate: 'March 2025',
   advisors: 'Adj A/Prof Nisha Suyien Chandran (Senior Consultant, NUH)',
   sections: [

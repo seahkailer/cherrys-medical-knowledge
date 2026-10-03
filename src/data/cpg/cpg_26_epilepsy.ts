@@ -3,7 +3,7 @@ import { CpgDocument } from '../types';
 export const epilepsy: CpgDocument = {
   id: 'epilepsy',
   condition: 'Epilepsy',
-  source: 'NUP CPG',
+  source: '26 NUP CPG - Epilepsy.pdf',
   reviewDate: 'October 2027',
   advisors: 'Dr Tan Wei Beng / Dr Ang Lai Lai; Specialist: Dr Rahul Rathakrishnan (Senior Consultant, Division of Neurology, NUH)',
   sections: [

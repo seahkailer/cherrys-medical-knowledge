@@ -3,7 +3,7 @@ import { CpgDocument } from '../types';
 export const epistaxisInChildren: CpgDocument = {
   id: 'epistaxis-in-children',
   condition: 'Epistaxis in Children',
-  source: 'NUP CPG',
+  source: '27 NUP CPG - Epistaxis in Children.pdf',
   reviewDate: 'April 2025',
   advisors: 'Dr Lee Chai Peng / Dr Tan Wee Hian; Specialist: Dr Goh Xue Ying (Consultant, Department of Otolaryngology – Head & Neck Surgery, NUH)',
   sections: [

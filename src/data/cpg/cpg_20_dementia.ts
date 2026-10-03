@@ -3,7 +3,7 @@ import { CpgDocument } from '../types';
 export const dementia: CpgDocument = {
   id: 'dementia',
   condition: 'Dementia',
-  source: 'NUP CPG',
+  source: '20 NUP CPG - Dementia.pdf',
   reviewDate: 'September 2024',
   advisors: 'Dr Tsoi Tung (Senior Consultant, Psycho-Geriatrician, Department of Psychological Medicine, NUH)',
   sections: [
@@ -70,6 +70,23 @@ export const dementia: CpgDocument = {
           { cells: ['Mirtazapine (S2) (Remeron) 15mg tablets', '15 mg; titrate 7.5–15 mg every 1–2 weeks; usual 15–30 mg/day', '30 mg/day (combination max Fluvoxamine 50mg + Mirtazapine 15mg)', 'Dry mouth, constipation, sedation (more sedating at lower doses), increased appetite, orthostatic hypotension, headache', 'Sedating, improves appetite. Useful for patients with poor appetite. Contraindicated: MAOI concurrent or within 14 days. Check FBC before starting.'] },
           { cells: ['Zopiclone (NS) 7.5mg tablets', '3.75 mg ON/PRN for sleep', '7.5 mg ON PRN', 'Sedation, nausea, vomiting, dry mouth, dizziness, headache', 'Short course ≤2 weeks. Contraindicated: severe respiratory impairment, myasthenia gravis, severe hepatic insufficiency, history of complex sleep behaviours.'] },
           { cells: ['Quetiapine (S2) (Seroquel) 25/100mg tablets', '12.5–25 mg/day; titrate 6.25–12.5 mg every 1 week', '75 mg BD', 'Sedation, nausea, constipation, dry mouth, orthostatic hypotension, headache, weight gain', 'FDA black box warning for antipsychotics and adverse cardiovascular events. Use beyond 12 weeks not recommended. Preferred atypical antipsychotic if high risk of extrapyramidal symptoms.'] },
+        ]},
+      ],
+    },
+    {
+      heading: 'Role of Health Team Members',
+      blocks: [
+        { type: 'list', items: [
+          { text: 'Family Physician: Able to provide all aspects of primary medical care from screening, diagnosis and management of dementia, including health promotion and prevention/treatment of complications. Collaborates with other health care providers in the health team to provide holistic and patient-centred care.' },
+          { text: 'Care Manager: Provide basic education and materials on dementia for patients and caregivers. Dementia assessment: mcMMSE, modified Barthel Index (ADLs), Lawton Instrumental Activity of Daily Living (iADLs). Screen for caregiver burden via the Zarit Burden Interview Scale. Provide functional assessment when necessary.' },
+          { text: 'Advanced Practice Nurse: Co-manage patients diagnosed with mild cognitive impairment (MCI) and stable dementia, including pre-existing chronic conditions with collaborating physicians and health team. Liaise with other healthcare personnel to close care gaps and provide holistic and patient-centred care.' },
+          { text: 'Medical Social Worker: Conduct biopsychosocial assessment. Provide intervention for social assistance including application of schemes and services, and referral for community resource and caregiver support. Consider alternative financial support when necessary. Referrals to dementia-related care in the community when needed, e.g. Day Care Centre and Nursing Home.' },
+          { text: 'Pharmacist: Monitoring of Memory Clinic patients who have started on new medications and/or have medication dose changes. Provide patient education and counselling. Smoking cessation clinic. Detect, prevent and address drug-drug/drug-disease interactions. Perform medication reconciliation.' },
+          { text: 'Care Coordinator: Introduce OneNUHS and HealthHub Apps to patient. Introduce and enrol patient onto Teleconsult. Perform PHQ2, frailty and functional screenings, abbreviated mental test (AMT) and comprehensive geriatric assessment (CGA) when indicated. Address care gaps under Health Maintenance Topics, such as vaccinations (influenza/pneumococcal), cancer screenings (FIT kit, mammogram, PAP smear/HPV), DRP and DFS.' },
+          { text: 'Financial Counsellor: Financial counselling for patients with issues on payment of medical bills. Advised on MediSave utilisation for chronic disease medical bills. Application on government endowment fund — MediFund and Medication Assistance Fund for subsidies on high cost drugs. Application on Institutional Medical Fund — Remission for eligible non-residents.' },
+          { text: 'Psychologist: Psychological assessment and intervention to manage mood challenges (depression, anxiety) and behavioural issues associated with dementia. Support patient and caregiver in developing strategies to improve daily functioning and quality of life. Psychological support for carers experiencing caregiver stress, depression and anxiety.' },
+          { text: 'Dietitian: Dietary management for patients with malnutrition or poor appetite/oral intake.' },
+          { text: 'Physiotherapist: Strengthening exercises as falls are common in elderly patients with dementia.' },
         ]},
       ],
     },

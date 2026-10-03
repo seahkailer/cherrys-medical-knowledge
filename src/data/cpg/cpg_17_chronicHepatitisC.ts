@@ -3,7 +3,7 @@ import { CpgDocument } from '../types';
 export const chronicHepatitisC: CpgDocument = {
   id: 'chronic-hepatitis-c',
   condition: 'Chronic Hepatitis C',
-  source: 'NUP CPG',
+  source: '17 NUP CPG - Chronic Hepatitis C.pdf',
   reviewDate: 'October 2024',
   advisors: 'Dr Mark Muthiah (Senior Consultant, NUH) / Dr Alexander Yip (Consultant, Alexandra Hospital) / Dr Alex Soh (Consultant, Alexandra Hospital)',
   sections: [

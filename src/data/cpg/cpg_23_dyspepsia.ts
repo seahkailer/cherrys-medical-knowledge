@@ -3,7 +3,7 @@ import { CpgDocument } from '../types';
 export const dyspepsia: CpgDocument = {
   id: 'dyspepsia',
   condition: 'Dyspepsia',
-  source: 'NUP CPG',
+  source: '23 NUP CPG - Dyspepsia.pdf',
   reviewDate: 'August 2025',
   advisors: 'Dr Tang Si Ying (Consultant, Alexandra Hospital) / Dr Alexander Yip (Consultant, Alexandra Hospital)',
   sections: [

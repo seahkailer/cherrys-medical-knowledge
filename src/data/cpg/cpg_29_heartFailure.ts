@@ -3,7 +3,7 @@ import { CpgDocument } from '../types';
 export const heartFailure: CpgDocument = {
   id: 'heart-failure',
   condition: 'Heart Failure',
-  source: 'NUP CPG',
+  source: '29 NUP CPG - Heart Failure.pdf',
   reviewDate: 'November 2028',
   advisors: 'Dr Ng Li Yan / Dr Kwan Yew Seng; Specialist Advisor: Dr Lin Weiqin (Senior Consultant, Department of Cardiology, National University Heart Centre, Singapore)',
   sections: [

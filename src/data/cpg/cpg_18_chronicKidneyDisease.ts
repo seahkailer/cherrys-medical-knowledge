@@ -3,7 +3,7 @@ import { CpgDocument } from '../types';
 export const chronicKidneyDisease: CpgDocument = {
   id: 'chronic-kidney-disease',
   condition: 'Chronic Kidney Disease',
-  source: 'NUP CPG',
+  source: '18 NUP CPG - Chronic Kidney Disease.pdf',
   reviewDate: 'December 2025',
   advisors: 'Dr Chua Horng Ruey (Senior Consultant, NUH) / Dr Clara Ngoh (Consultant, NUH) / Dr Chua Yan Ting (Associate Consultant, NUH)',
   sections: [

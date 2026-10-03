@@ -3,7 +3,7 @@ import { CpgDocument } from '../types';
 export const depression: CpgDocument = {
   id: 'depression',
   condition: 'Depression',
-  source: 'NUP CPG',
+  source: '21 NUP CPG - Depression.pdf',
   reviewDate: 'June 2025',
   advisors: 'Dr Soo Shuenn Chiang (Senior Consultant, Department of Psychological Medicine, NUH) / Dr Wan Yi Min (Consultant, Department of Psychiatry, NTFGH)',
   sections: [

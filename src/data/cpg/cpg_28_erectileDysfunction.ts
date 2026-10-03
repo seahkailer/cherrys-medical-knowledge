@@ -3,7 +3,7 @@ import { CpgDocument } from '../types';
 export const erectileDysfunction: CpgDocument = {
   id: 'erectile-dysfunction',
   condition: 'Erectile Dysfunction',
-  source: 'NUP CPG',
+  source: '28 NUP CPG - Erectile Dysfunction.pdf',
   reviewDate: 'April 2025',
   advisors: 'Dr Sky Koh; Specialist Advisors: Adj A/Prof Benjamin Goh (Senior Consultant, NUH) / Dr Chia Jun Yang (Consultant, NUH)',
   sections: [
