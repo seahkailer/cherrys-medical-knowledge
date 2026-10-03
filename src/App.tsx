@@ -59,6 +59,8 @@ function App() {
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [selectedEntry, setSelectedEntry] = useState<FlatEntry | null>(null);
   const [selectedCpg, setSelectedCpg] = useState<CpgDocument | null>(null);
+  // Which section index to open+scroll to (set by sidebar section button clicks)
+  const [scrollToSection, setScrollToSection] = useState<number | null>(null);
 
   // Flatten all medication entries
   const allEntries: FlatEntry[] = useMemo(() => {
@@ -271,7 +273,10 @@ function App() {
                           <li key={i}>
                             <button
                               className="subcategory-button"
-                              onClick={() => handleCategoryChange(doc.id)}
+                              onClick={() => {
+                                handleCategoryChange(doc.id);
+                                setScrollToSection(i);
+                              }}
                             >
                               {section.heading}
                             </button>
@@ -333,7 +338,12 @@ function App() {
               />
             ) : isCpgCategory && selectedCpg ? (
               /* Full CPG document view */
-              <CpgDetail doc={selectedCpg} containerRef={resultsContainerRef} />
+              <CpgDetail
+                doc={selectedCpg}
+                containerRef={resultsContainerRef}
+                scrollToIndex={scrollToSection}
+                onScrollHandled={() => setScrollToSection(null)}
+              />
             ) : selectedCategory === 'paediatric-drugs' && !searchQuery.trim() ? (
               <PaediatricDrugTable />
             ) : selectedSubCategory ? (

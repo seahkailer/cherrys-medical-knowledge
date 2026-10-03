@@ -1,31 +1,51 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { CpgDocument, CpgBlock, CpgListItem } from '../types';
 
 interface CpgDetailProps {
   doc: CpgDocument;
   containerRef: React.RefObject<HTMLDivElement>;
+  // When set, open this section index and scroll to it
+  scrollToIndex?: number | null;
+  onScrollHandled?: () => void;
 }
 
-const CpgDetail: React.FC<CpgDetailProps> = ({ doc, containerRef }) => {
+const CpgDetail: React.FC<CpgDetailProps> = ({
+  doc,
+  containerRef,
+  scrollToIndex,
+  onScrollHandled,
+}) => {
   const [openSection, setOpenSection] = useState<number | null>(null);
   const sectionRefs = useRef<(HTMLDivElement | null)[]>([]);
 
-  const toggle = (i: number) => {
-    const opening = openSection !== i;
-    setOpenSection(opening ? i : null);
-    if (opening) {
-      // Wait for the DOM to paint the expanded content, then scroll
-      // the scrollable results-container so the heading sits at the top.
-      requestAnimationFrame(() => {
-        const container = containerRef.current;
-        const section = sectionRefs.current[i];
-        if (!container || !section) return;
-        const containerTop = container.getBoundingClientRect().top;
-        const sectionTop = section.getBoundingClientRect().top;
-        const offset = sectionTop - containerTop;
-        container.scrollBy({ top: offset, behavior: 'smooth' });
-      });
+  // Track a pending scroll target separately from openSection so we can
+  // scroll AFTER the newly-opened section body has been painted.
+  const [pendingScroll, setPendingScroll] = useState<number | null>(null);
+
+  // Phase 1: when parent requests a section, open it and queue a scroll.
+  useEffect(() => {
+    if (scrollToIndex == null) return;
+    setOpenSection(scrollToIndex);
+    setPendingScroll(scrollToIndex);
+    onScrollHandled?.();
+  }, [scrollToIndex]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  // Phase 2: after the section body is in the DOM, perform the scroll.
+  useEffect(() => {
+    if (pendingScroll == null) return;
+    const container = containerRef.current;
+    const section = sectionRefs.current[pendingScroll];
+    if (container && section) {
+      const containerRect = container.getBoundingClientRect();
+      const sectionRect = section.getBoundingClientRect();
+      const offset = sectionRect.top - containerRect.top + container.scrollTop;
+      container.scrollTo({ top: offset, behavior: 'smooth' });
     }
+    setPendingScroll(null);
+  }, [pendingScroll]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  const toggle = (i: number) => {
+    setOpenSection(openSection === i ? null : i);
   };
 
   return (
