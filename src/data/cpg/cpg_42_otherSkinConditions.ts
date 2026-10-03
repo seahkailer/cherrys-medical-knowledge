@@ -72,9 +72,3 @@ export const otherSkinConditions: CpgDocument = {
     },
   ],
 };
-
-// ---------------------------------------------------------------------------
-// 43 NUP CPG — Management of Psoriasis (Mar 2025)
-// ---------------------------------------------------------------------------
-const psoriasis: CpgDocument = {
-};

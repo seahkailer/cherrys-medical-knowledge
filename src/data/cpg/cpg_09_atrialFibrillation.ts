@@ -354,9 +354,3 @@ export const atrialFibrillation: CpgDocument = {
     },
   ],
 };
-
-// ---------------------------------------------------------------------------
-// 10 NUP CPG — Benign Prostatic Hyperplasia (Feb 2024)
-// ---------------------------------------------------------------------------
-const bph: CpgDocument = {
-};

@@ -401,9 +401,3 @@ export const anaemia: CpgDocument = {
     },
   ],
 };
-
-// ---------------------------------------------------------------------------
-// 05 NUP CPG — Anxiety Disorder (Feb 2025, updated Jun 2025)
-// ---------------------------------------------------------------------------
-const anxietyDisorder: CpgDocument = {
-};

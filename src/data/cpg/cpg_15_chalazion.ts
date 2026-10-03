@@ -72,9 +72,3 @@ export const chalazion: CpgDocument = {
     },
   ],
 };
-
-// ---------------------------------------------------------------------------
-// 16 NUP CPG — Chronic Hepatitis B Carriers (Nov 2025)
-// ---------------------------------------------------------------------------
-const chronicHepatitisB: CpgDocument = {
-};

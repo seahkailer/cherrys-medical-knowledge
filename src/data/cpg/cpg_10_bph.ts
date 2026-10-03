@@ -186,11 +186,3 @@ export const bph: CpgDocument = {
     },
   ],
 };
-
-// ---------------------------------------------------------------------------
-// Combined export of all CPG documents
-// ---------------------------------------------------------------------------
-// 11 NUP CPG — Bronchial Asthma in Adults (Nov 2024)
-// ---------------------------------------------------------------------------
-const bronchialAsthmaAdults: CpgDocument = {
-};

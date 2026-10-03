@@ -292,9 +292,3 @@ export const bronchialAsthmaAdults: CpgDocument = {
     },
   ],
 };
-
-// ---------------------------------------------------------------------------
-// 12 NUP CPG — Bronchial Asthma in Children (Aug 2023)
-// ---------------------------------------------------------------------------
-const bronchialAsthmaChildren: CpgDocument = {
-};

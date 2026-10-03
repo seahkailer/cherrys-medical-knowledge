@@ -86,9 +86,3 @@ export const footAnkleFractures: CpgDocument = {
     },
   ],
 };
-
-// ---------------------------------------------------------------------------
-// 42 NUP CPG — Other Common Skin Conditions (Jan 2026)
-// ---------------------------------------------------------------------------
-const otherSkinConditions: CpgDocument = {
-};

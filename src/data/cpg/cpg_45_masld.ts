@@ -114,6 +114,3 @@ export const masld: CpgDocument = {
     },
   ],
 };
-
-export const cpgDocuments: CpgDocument[] = [
-};

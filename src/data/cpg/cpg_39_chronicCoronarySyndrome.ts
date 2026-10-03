@@ -100,9 +100,3 @@ export const chronicCoronarySyndrome: CpgDocument = {
     },
   ],
 };
-
-// ---------------------------------------------------------------------------
-// 40 NUP CPG — Minor Fractures, Sprain and Strain in Upper Limbs (Nov 2025)
-// ---------------------------------------------------------------------------
-const upperLimbFractures: CpgDocument = {
-};

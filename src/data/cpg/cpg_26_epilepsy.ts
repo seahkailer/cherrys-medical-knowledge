@@ -252,6 +252,3 @@ export const epilepsy: CpgDocument = {
     },
   ],
 };
-
-const epistaxisInChildren: CpgDocument = {
-};

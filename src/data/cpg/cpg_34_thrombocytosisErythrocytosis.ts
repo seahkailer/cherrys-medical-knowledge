@@ -69,9 +69,3 @@ export const thrombocytosisErythrocytosis: CpgDocument = {
     },
   ],
 };
-
-// ---------------------------------------------------------------------------
-// 35 NUP CPG — Management of Acne and Skin Infections (Jan 2026)
-// ---------------------------------------------------------------------------
-const acneSkinInfections: CpgDocument = {
-};

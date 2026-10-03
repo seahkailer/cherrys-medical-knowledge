@@ -104,9 +104,3 @@ export const backPain: CpgDocument = {
     },
   ],
 };
-
-// ---------------------------------------------------------------------------
-// 37 NUP CPG — Acute Coronary Syndrome (Jul 2025)
-// ---------------------------------------------------------------------------
-const acuteCoronarySyndrome: CpgDocument = {
-};

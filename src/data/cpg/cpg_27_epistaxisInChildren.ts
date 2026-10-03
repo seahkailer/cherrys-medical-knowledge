@@ -185,6 +185,3 @@ export const epistaxisInChildren: CpgDocument = {
     },
   ],
 };
-
-const erectileDysfunction: CpgDocument = {
-};

@@ -246,6 +246,3 @@ export const heartFailure: CpgDocument = {
     },
   ],
 };
-
-const hypertension: CpgDocument = {
-};

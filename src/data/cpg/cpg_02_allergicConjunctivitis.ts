@@ -100,9 +100,3 @@ export const allergicConjunctivitis: CpgDocument = {
     },
   ],
 };
-
-// ---------------------------------------------------------------------------
-// 03 NUP CPG — Allergic Rhinitis (Sep 2022)
-// ---------------------------------------------------------------------------
-const allergicRhinitis: CpgDocument = {
-};

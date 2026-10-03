@@ -175,9 +175,3 @@ export const gout: CpgDocument = {
     },
   ],
 };
-
-// ---------------------------------------------------------------------------
-// 39 NUP CPG — Chronic Coronary Syndrome (Jul 2025)
-// ---------------------------------------------------------------------------
-const chronicCoronarySyndrome: CpgDocument = {
-};

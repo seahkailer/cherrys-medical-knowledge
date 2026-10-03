@@ -327,9 +327,3 @@ export const anxietyDisorder: CpgDocument = {
     },
   ],
 };
-
-// ---------------------------------------------------------------------------
-// 06 NUP CPG — Joint Pain in Primary Care (Aug 2024)
-// ---------------------------------------------------------------------------
-const jointPain: CpgDocument = {
-};

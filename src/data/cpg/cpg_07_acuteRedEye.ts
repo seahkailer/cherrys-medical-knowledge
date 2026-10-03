@@ -68,9 +68,3 @@ export const acuteRedEye: CpgDocument = {
     },
   ],
 };
-
-// ---------------------------------------------------------------------------
-// 08 NUP CPG — Approach to Gastroenteritis in Primary Care (Jun 2025)
-// ---------------------------------------------------------------------------
-const gastroenteritis: CpgDocument = {
-};

@@ -107,9 +107,3 @@ export const acuteCoronarySyndrome: CpgDocument = {
     },
   ],
 };
-
-// ---------------------------------------------------------------------------
-// 38 NUP CPG — Acute and Chronic Gout (Nov 2025)
-// ---------------------------------------------------------------------------
-const gout: CpgDocument = {
-};

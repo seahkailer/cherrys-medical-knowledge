@@ -141,9 +141,3 @@ export const cancerScreening: CpgDocument = {
     },
   ],
 };
-
-// ---------------------------------------------------------------------------
-// 14 NUP CPG — Cancer Survivorship Care (Nov 2025)
-// ---------------------------------------------------------------------------
-const cancerSurvivorship: CpgDocument = {
-};

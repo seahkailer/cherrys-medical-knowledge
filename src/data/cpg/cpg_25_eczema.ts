@@ -103,8 +103,3 @@ export const eczema: CpgDocument = {
     },
   ],
 };
-
-
-
-const epilepsy: CpgDocument = {
-};

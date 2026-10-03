@@ -163,9 +163,3 @@ export const gastroenteritis: CpgDocument = {
     },
   ],
 };
-
-// ---------------------------------------------------------------------------
-// 09 NUP CPG — Atrial Fibrillation (Mar 2026)
-// ---------------------------------------------------------------------------
-const atrialFibrillation: CpgDocument = {
-};

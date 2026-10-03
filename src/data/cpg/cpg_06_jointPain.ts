@@ -363,9 +363,3 @@ export const jointPain: CpgDocument = {
     },
   ],
 };
-
-// ---------------------------------------------------------------------------
-// 07 NUP CPG — Approach to Acute Red Eye (Dec 2022)
-// ---------------------------------------------------------------------------
-const acuteRedEye: CpgDocument = {
-};

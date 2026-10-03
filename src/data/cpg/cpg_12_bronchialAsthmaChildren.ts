@@ -287,9 +287,3 @@ export const bronchialAsthmaChildren: CpgDocument = {
     },
   ],
 };
-
-// ---------------------------------------------------------------------------
-// 13 NUP CPG — Cancer Screening (Nov 2025)
-// ---------------------------------------------------------------------------
-const cancerScreening: CpgDocument = {
-};

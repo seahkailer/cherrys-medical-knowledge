@@ -112,9 +112,3 @@ export const chronicKidneyDisease: CpgDocument = {
     },
   ],
 };
-
-// ---------------------------------------------------------------------------
-// 19. Chronic Obstructive Pulmonary Disease
-// ---------------------------------------------------------------------------
-const copd: CpgDocument = {
-};

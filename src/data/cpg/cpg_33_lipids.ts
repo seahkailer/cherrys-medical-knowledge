@@ -350,9 +350,3 @@ export const lipids: CpgDocument = {
     },
   ],
 };
-
-// ---------------------------------------------------------------------------
-// 34 NUP CPG — Thrombocytosis and Erythrocytosis (Apr 2023)
-// ---------------------------------------------------------------------------
-const thrombocytosisErythrocytosis: CpgDocument = {
-};

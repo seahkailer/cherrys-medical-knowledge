@@ -86,9 +86,3 @@ export const upperLimbFractures: CpgDocument = {
     },
   ],
 };
-
-// ---------------------------------------------------------------------------
-// 41 NUP CPG — Minor Fractures, Sprains and Strains — Foot and Ankle (Dec 2023)
-// ---------------------------------------------------------------------------
-const footAnkleFractures: CpgDocument = {
-};

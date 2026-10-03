@@ -86,9 +86,3 @@ export const chronicHepatitisC: CpgDocument = {
     },
   ],
 };
-
-// ---------------------------------------------------------------------------
-// 18. Chronic Kidney Disease
-// ---------------------------------------------------------------------------
-const chronicKidneyDisease: CpgDocument = {
-};

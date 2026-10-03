@@ -159,8 +159,3 @@ export const erectileDysfunction: CpgDocument = {
     },
   ],
 };
-
-
-
-const heartFailure: CpgDocument = {
-};

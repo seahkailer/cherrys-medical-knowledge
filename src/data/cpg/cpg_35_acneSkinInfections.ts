@@ -126,9 +126,3 @@ export const acneSkinInfections: CpgDocument = {
     },
   ],
 };
-
-// ---------------------------------------------------------------------------
-// 36 NUP CPG — Acute and Recurrent Back Pain (Mar 2025)
-// ---------------------------------------------------------------------------
-const backPain: CpgDocument = {
-};

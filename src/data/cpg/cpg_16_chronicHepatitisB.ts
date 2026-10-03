@@ -182,9 +182,3 @@ export const chronicHepatitisB: CpgDocument = {
     },
   ],
 };
-
-// ---------------------------------------------------------------------------
-// 17. Chronic Hepatitis C
-// ---------------------------------------------------------------------------
-const chronicHepatitisC: CpgDocument = {
-};
