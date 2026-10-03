@@ -1,7 +1,7 @@
 import { CpgDocument } from '../types';
 
 export const eczema: CpgDocument = {
-  id: 'eczema',
+  id: 'cpg-eczema',
   condition: 'Eczema',
   source: '25 NUP CPG - Eczema.pdf',
   reviewDate: 'March 2025',

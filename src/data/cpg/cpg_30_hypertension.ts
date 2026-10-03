@@ -1,7 +1,7 @@
 import { CpgDocument } from '../types';
 
 export const hypertension: CpgDocument = {
-  id: 'hypertension',
+  id: 'cpg-hypertension',
   condition: 'Hypertension',
   source: '30 NUP CPG - Hypertension.pdf',
   reviewDate: 'October 2028',

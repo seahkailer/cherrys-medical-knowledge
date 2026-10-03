@@ -1,7 +1,7 @@
 import { CpgDocument } from '../types';
 
 export const diabetesMellitus: CpgDocument = {
-  id: 'diabetes-mellitus',
+  id: 'cpg-diabetes-mellitus',
   condition: 'Diabetes Mellitus',
   source: '22 NUP CPG - Diabetes Mellitus.pdf',
   reviewDate: 'January 2026',

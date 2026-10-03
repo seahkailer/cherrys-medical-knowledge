@@ -1,7 +1,7 @@
 import { CpgDocument } from '../types';
 
 export const epilepsy: CpgDocument = {
-  id: 'epilepsy',
+  id: 'cpg-epilepsy',
   condition: 'Epilepsy',
   source: '26 NUP CPG - Epilepsy.pdf',
   reviewDate: 'October 2027',

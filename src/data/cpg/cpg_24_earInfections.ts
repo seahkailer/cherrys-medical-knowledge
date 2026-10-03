@@ -1,7 +1,7 @@
 import { CpgDocument } from '../types';
 
 export const earInfections: CpgDocument = {
-  id: 'ear-infections',
+  id: 'cpg-ear-infections',
   condition: 'Ear Infections',
   source: '24 NUP CPG - Ear Infections.pdf',
   reviewDate: 'July 2025',

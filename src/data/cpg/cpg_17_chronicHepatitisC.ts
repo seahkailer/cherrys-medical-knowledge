@@ -1,7 +1,7 @@
 import { CpgDocument } from '../types';
 
 export const chronicHepatitisC: CpgDocument = {
-  id: 'chronic-hepatitis-c',
+  id: 'cpg-chronic-hepatitis-c',
   condition: 'Chronic Hepatitis C',
   source: '17 NUP CPG - Chronic Hepatitis C.pdf',
   reviewDate: 'October 2024',

@@ -1,7 +1,7 @@
 import { CpgDocument } from '../types';
 
 export const copd: CpgDocument = {
-  id: 'copd',
+  id: 'cpg-copd',
   condition: 'Chronic Obstructive Pulmonary Disease (COPD)',
   source: '19 NUP CPG - Chronic Obstructive Pulmonary Disease.pdf',
   reviewDate: 'October 2025',

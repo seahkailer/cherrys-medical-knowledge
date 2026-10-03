@@ -1,7 +1,7 @@
 import { CpgDocument } from '../types';
 
 export const chronicKidneyDisease: CpgDocument = {
-  id: 'chronic-kidney-disease',
+  id: 'cpg-chronic-kidney-disease',
   condition: 'Chronic Kidney Disease',
   source: '18 NUP CPG - Chronic Kidney Disease.pdf',
   reviewDate: 'December 2025',

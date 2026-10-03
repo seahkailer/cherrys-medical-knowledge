@@ -1,7 +1,7 @@
 import { CpgDocument } from '../types';
 
 export const erectileDysfunction: CpgDocument = {
-  id: 'erectile-dysfunction',
+  id: 'cpg-erectile-dysfunction',
   condition: 'Erectile Dysfunction',
   source: '28 NUP CPG - Erectile Dysfunction.pdf',
   reviewDate: 'April 2025',

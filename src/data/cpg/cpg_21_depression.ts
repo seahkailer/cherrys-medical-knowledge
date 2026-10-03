@@ -1,7 +1,7 @@
 import { CpgDocument } from '../types';
 
 export const depression: CpgDocument = {
-  id: 'depression',
+  id: 'cpg-depression',
   condition: 'Depression',
   source: '21 NUP CPG - Depression.pdf',
   reviewDate: 'June 2025',

@@ -1,7 +1,7 @@
 import { CpgDocument } from '../types';
 
 export const heartFailure: CpgDocument = {
-  id: 'heart-failure',
+  id: 'cpg-heart-failure',
   condition: 'Heart Failure',
   source: '29 NUP CPG - Heart Failure.pdf',
   reviewDate: 'November 2028',

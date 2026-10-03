@@ -1,7 +1,7 @@
 import { CpgDocument } from '../types';
 
 export const dyspepsia: CpgDocument = {
-  id: 'dyspepsia',
+  id: 'cpg-dyspepsia',
   condition: 'Dyspepsia',
   source: '23 NUP CPG - Dyspepsia.pdf',
   reviewDate: 'August 2025',

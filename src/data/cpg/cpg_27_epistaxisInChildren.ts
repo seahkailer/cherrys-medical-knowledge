@@ -1,7 +1,7 @@
 import { CpgDocument } from '../types';
 
 export const epistaxisInChildren: CpgDocument = {
-  id: 'epistaxis-in-children',
+  id: 'cpg-epistaxis-in-children',
   condition: 'Epistaxis in Children',
   source: '27 NUP CPG - Epistaxis in Children.pdf',
   reviewDate: 'April 2025',
