@@ -3,9 +3,10 @@ import { CpgDocument, CpgBlock, CpgListItem } from '../types';
 
 interface CpgDetailProps {
   doc: CpgDocument;
+  containerRef: React.RefObject<HTMLDivElement>;
 }
 
-const CpgDetail: React.FC<CpgDetailProps> = ({ doc }) => {
+const CpgDetail: React.FC<CpgDetailProps> = ({ doc, containerRef }) => {
   const [openSection, setOpenSection] = useState<number | null>(null);
   const sectionRefs = useRef<(HTMLDivElement | null)[]>([]);
 
@@ -13,9 +14,16 @@ const CpgDetail: React.FC<CpgDetailProps> = ({ doc }) => {
     const opening = openSection !== i;
     setOpenSection(opening ? i : null);
     if (opening) {
-      // After state update + paint, scroll the heading into view
+      // Wait for the DOM to paint the expanded content, then scroll
+      // the scrollable results-container so the heading sits at the top.
       requestAnimationFrame(() => {
-        sectionRefs.current[i]?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        const container = containerRef.current;
+        const section = sectionRefs.current[i];
+        if (!container || !section) return;
+        const containerTop = container.getBoundingClientRect().top;
+        const sectionTop = section.getBoundingClientRect().top;
+        const offset = sectionTop - containerTop;
+        container.scrollBy({ top: offset, behavior: 'smooth' });
       });
     }
   };

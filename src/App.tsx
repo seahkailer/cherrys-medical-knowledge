@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useCallback } from 'react';
+import React, { useState, useMemo, useCallback, useRef } from 'react';
 import Fuse from 'fuse.js';
 import { medicalCategories } from './data/medicalData';
 import { cpgDocuments } from './data/cpgData';
@@ -53,6 +53,7 @@ const cpgFuseOptions: Fuse.IFuseOptions<CpgFlatEntry> = {
 };
 
 function App() {
+  const resultsContainerRef = useRef<HTMLDivElement>(null);
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [selectedSubCategory, setSelectedSubCategory] = useState<string>('');
   const [searchQuery, setSearchQuery] = useState<string>('');
@@ -293,7 +294,7 @@ function App() {
             resultCount={searchResults.length + cpgSearchResults.length}
           />
 
-          <div className="results-container">
+          <div className="results-container" ref={resultsContainerRef}>
             {selectedEntry ? (
               <ResultDetail
                 entry={selectedEntry}
@@ -332,7 +333,7 @@ function App() {
               />
             ) : isCpgCategory && selectedCpg ? (
               /* Full CPG document view */
-              <CpgDetail doc={selectedCpg} />
+              <CpgDetail doc={selectedCpg} containerRef={resultsContainerRef} />
             ) : selectedCategory === 'paediatric-drugs' && !searchQuery.trim() ? (
               <PaediatricDrugTable />
             ) : selectedSubCategory ? (
