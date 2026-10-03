@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { CpgDocument, CpgBlock, CpgListItem } from '../types';
 
 interface CpgDetailProps {
@@ -7,8 +7,18 @@ interface CpgDetailProps {
 
 const CpgDetail: React.FC<CpgDetailProps> = ({ doc }) => {
   const [openSection, setOpenSection] = useState<number | null>(null);
+  const sectionRefs = useRef<(HTMLDivElement | null)[]>([]);
 
-  const toggle = (i: number) => setOpenSection(openSection === i ? null : i);
+  const toggle = (i: number) => {
+    const opening = openSection !== i;
+    setOpenSection(opening ? i : null);
+    if (opening) {
+      // After state update + paint, scroll the heading into view
+      requestAnimationFrame(() => {
+        sectionRefs.current[i]?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    }
+  };
 
   return (
     <div className="cpg-detail">
@@ -24,7 +34,11 @@ const CpgDetail: React.FC<CpgDetailProps> = ({ doc }) => {
 
       <div className="cpg-sections">
         {doc.sections.map((section, i) => (
-          <div key={i} className="cpg-section">
+          <div
+            key={i}
+            className="cpg-section"
+            ref={(el) => { sectionRefs.current[i] = el; }}
+          >
             <button
               className={`cpg-section-heading ${openSection === i ? 'open' : ''}`}
               onClick={() => toggle(i)}
