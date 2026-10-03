@@ -51,6 +51,16 @@ import { advanceCarePlanning } from './cpg/cpg_47_advanceCarePlanning';
 import { ocd } from './cpg/cpg_48_ocd';
 import { osteoporosis } from './cpg/cpg_49_osteoporosis';
 import { parkinsonDisease } from './cpg/cpg_50_parkinsonDisease';
+import { peripheralArterialDisease } from './cpg/cpg_51_peripheralArterialDisease';
+import { dryEyesContactLens } from './cpg/cpg_52_dryEyesContactLens';
+import { dryEyesNonContactLens } from './cpg/cpg_53_dryEyesNonContactLens';
+import { schizophrenia } from './cpg/cpg_54_schizophrenia';
+import { smokingCessation } from './cpg/cpg_55_smokingCessation';
+import { thyroidDisorders } from './cpg/cpg_56_thyroidDisorders';
+import { transientIschaemicAttack } from './cpg/cpg_57_transientIschaemicAttack';
+import { weightManagement } from './cpg/cpg_58_weightManagement';
+import { womensHealth } from './cpg/cpg_59_womensHealth';
+import { daAndImmunisation } from './cpg/cpg_60_daAndImmunisation';
 
 export const cpgDocuments: CpgDocument[] = [
   allergicConjunctivitis,
@@ -101,4 +111,14 @@ export const cpgDocuments: CpgDocument[] = [
   ocd,
   osteoporosis,
   parkinsonDisease,
+  peripheralArterialDisease,
+  dryEyesContactLens,
+  dryEyesNonContactLens,
+  schizophrenia,
+  smokingCessation,
+  thyroidDisorders,
+  transientIschaemicAttack,
+  weightManagement,
+  womensHealth,
+  daAndImmunisation,
 ];
