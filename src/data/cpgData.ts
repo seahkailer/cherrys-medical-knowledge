@@ -61,6 +61,16 @@ import { transientIschaemicAttack } from './cpg/cpg_57_transientIschaemicAttack'
 import { weightManagement } from './cpg/cpg_58_weightManagement';
 import { womensHealth } from './cpg/cpg_59_womensHealth';
 import { daAndImmunisation } from './cpg/cpg_60_daAndImmunisation';
+import { ophthalmology } from './cpg/cpg_61_ophthalmology';
+import { cdmpHandbook } from './cpg/cpg_62_cdmpHandbook';
+import { acpAmdLpaWill } from './cpg/cpg_63_acpAmdLpaWill';
+import { acuteMedsPregnancy } from './cpg/cpg_64_acuteMedsPregnancy';
+import { familialHypercholesterolaemia } from './cpg/cpg_65_familialHypercholesterolaemia';
+import { breastCancerSurvivorship } from './cpg/cpg_66_breastCancerSurvivorship';
+import { colorectalCancerSurvivorship } from './cpg/cpg_67_colorectalCancerSurvivorship';
+import { warfarinInteractions } from './cpg/cpg_68_warfarinInteractions';
+import { screenUseChildren } from './cpg/cpg_69_screenUseChildren';
+import { headacheGuidelines } from './cpg/cpg_70_headacheGuidelines';
 
 export const cpgDocuments: CpgDocument[] = [
   allergicConjunctivitis,
@@ -121,4 +131,14 @@ export const cpgDocuments: CpgDocument[] = [
   weightManagement,
   womensHealth,
   daAndImmunisation,
+  ophthalmology,
+  cdmpHandbook,
+  acpAmdLpaWill,
+  acuteMedsPregnancy,
+  familialHypercholesterolaemia,
+  breastCancerSurvivorship,
+  colorectalCancerSurvivorship,
+  warfarinInteractions,
+  screenUseChildren,
+  headacheGuidelines,
 ];
