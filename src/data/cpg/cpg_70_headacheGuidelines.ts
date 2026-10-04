@@ -444,7 +444,7 @@ export const headacheGuidelines: CpgDocument = {
             { cells: ['Anti-epileptics', 'Topiramate', '25 mg OD, titrate by 25 mg/week', '50 mg BD (up to 200 mg/day)', 'Kidney stones, kidney failure, angle-closure glaucoma; avoid in pregnancy', 'GI effects, renal calculi, paraesthesias, cognitive impairment, weight loss'] },
             { cells: ['Anti-epileptics', 'Divalproex sodium (valproate)', '250 mg OD, titrate', '750–1500 mg/day (divided BD)', 'Liver disease, bleeding disorders; avoid in pregnancy (teratogen)', 'Nausea, tremor, weight gain, alopecia, hepatic enzyme elevation'] },
             { cells: ['Antihypertensives', 'Candesartan', '8 mg OD, increase to 16 mg', '16 mg OD', 'Hypotension; avoid in pregnancy', 'Hypotension, dizziness'] },
-            { cells: ['Antihypertensives', 'Flunarizine', '5–10 mg ON', '10 mg ON', 'Depression, Parkinson's disease', 'Dizziness, weight gain, drowsiness, extrapyramidal effects (rare)'] },
+            { cells: ['Antihypertensives', 'Flunarizine', '5–10 mg ON', '10 mg ON', "Depression, Parkinson's disease", 'Dizziness, weight gain, drowsiness, extrapyramidal effects (rare)'] },
             { cells: ['Vitamins', 'Riboflavin', '400 mg OD', '400 mg OD', 'Caution at high dose in pregnancy', 'Yellow-orange urine'] },
           ],
         },
